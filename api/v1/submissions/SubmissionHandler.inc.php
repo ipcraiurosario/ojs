@@ -3,8 +3,8 @@
 /**
  * @file api/v1/submission/SubmissionHandler.inc.php
  *
- * Copyright (c) 2014-2018 Simon Fraser University
- * Copyright (c) 2003-2018 John Willinsky
+ * Copyright (c) 2014-2019 Simon Fraser University
+ * Copyright (c) 2003-2019 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class SubmissionHandler
@@ -88,9 +88,8 @@ class SubmissionHandler extends APIHandler {
 	 * @return Response
 	 */
 	public function getSubmissionList($slimRequest, $response, $args) {
-		$request = $this->getRequest();
+		$request = Application::getRequest();
 		$currentUser = $request->getUser();
-		$dispatcher = $request->getDispatcher();
 		$context = $request->getContext();
 		$submissionService = ServicesContainer::instance()->get('submission');
 
@@ -139,10 +138,7 @@ class SubmissionHandler extends APIHandler {
 	public function getSubmission($slimRequest, $response, $args) {
 		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_READER, LOCALE_COMPONENT_PKP_SUBMISSION);
 
-		$request = $this->getRequest();
-		$dispatcher = $request->getDispatcher();
-		$context = $request->getContext();
-
+		$request = Application::getRequest();
 		$submission = $this->getAuthorizedContextObject(ASSOC_TYPE_SUBMISSION);
 
 		$data = ServicesContainer::instance()
@@ -165,10 +161,11 @@ class SubmissionHandler extends APIHandler {
 	 * @return Response
 	 */
 	public function getGalleys($slimRequest, $response, $args) {
-		$request = $this->getRequest();
+		$request = Application::getRequest();
 		$context = $request->getContext();
 		$submission = $this->getAuthorizedContextObject(ASSOC_TYPE_SUBMISSION);
 
+		$publishedArticle = null;
 		if ($submission && $context) {
 			$publishedArticleDao = DAORegistry::getDAO('PublishedArticleDAO');
 			$publishedArticle = $publishedArticleDao->getPublishedArticleByBestArticleId(
@@ -212,7 +209,7 @@ class SubmissionHandler extends APIHandler {
 	 * @return Response
 	 */
 	public function getParticipants($slimRequest, $response, $args) {
-		$request = $this->getRequest();
+		$request = Application::getRequest();
 		$context = $request->getContext();
 		$submission = $this->getAuthorizedContextObject(ASSOC_TYPE_SUBMISSION);
 		$stageId = isset($args['stageId']) ? $args['stageId'] : null;
@@ -252,9 +249,8 @@ class SubmissionHandler extends APIHandler {
 	 */
 	private function _buildListRequestParams($slimRequest) {
 
-		$request = $this->getRequest();
+		$request = Application::getRequest();
 		$currentUser = $request->getUser();
-		$context = $request->getContext();
 
 		// Merge query params over default params
 		$defaultParams = array(

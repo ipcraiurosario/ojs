@@ -251,7 +251,6 @@
   'manager.setup.reviewOptions.reviewerAccessKeysEnabled.description' => '<strong>Nota:</strong> La invitación por correo electrónico para revisores/as contendrá una dirección URL especial que dirige a los revisores/as directamente a la página de revisión para el envío (con acceso a cualquier otra página que requiera iniciar sesión). Por razones de seguridad, los editores/as no pueden modificar las direcciones de correo electrónico o añadir direcciones en copia o copia oculta antes de enviar las invitaciones a los revisores/as.',
   'manager.setup.reviewOptions.reviewerRatings' => 'Calificación de los revisores/as',
   'manager.setup.reviewOptions.reviewerReminders' => 'Recordatorios para los revisores/as',
-  'manager.setup.reviewOptions.showEnsuringLink' => 'Proporcionar enlaces para <a href="javascript:openHelp(\'{$blindReviewHelpId}\')" class="action">Asegurar la evaluación anónima</a> en páginas donde los autores/as y revisores/as suben archivos.',
   'manager.setup.reviewPolicy' => 'Política de revisión',
   'manager.setup.searchEngineIndexing' => 'Indización en buscadores',
   'manager.setup.searchEngineIndexingDescription' => 'Para ayudar a los usuarios/as de buscadores a descubrir la revista, proporcione una breve descripción de ésta y las palabras clave que mejor la definan (separadas mediante punto y coma).',
@@ -287,7 +286,9 @@
   'manager.setup.useJournalStyleSheet' => 'Hoja de estilo de la revista',
   'manager.setup.userRegistration' => 'Registro de usuarios/as',
   'manager.setup.useTextTitle' => 'Título en formato de texto',
-  'manager.statistics.defaultMetricDescription' => 'Tu revista está configurada para registrar más de una métrica de uso. Las estadísticas de uso aparecerán en diversos contextos. En algunos casos se debe utilizar una sola estadística de uso, p. ej. para mostrar una lista ordenada de los artículos más consultados o para clasificar los resultados de búsqueda. Seleccione una de las siguientes métricas configuradas por defecto.',
+  'manager.statistics.defaultMetricDescription' => '
+		Tu revista está configurada para registrar más de una métrica de uso. Las estadísticas de uso aparecerán en diversos contextos. En algunos casos se debe utilizar una sola estadística de uso, p. ej. para mostrar una lista ordenada de los artículos más consultados o para clasificar los resultados de búsqueda. Seleccione una de las siguientes métricas configuradas por defecto.
+	',
   'manager.statistics.reports.defaultReport.articleDownloads' => 'Descargas del archivo del artículo',
   'manager.statistics.reports.defaultReport.articleAbstract' => 'Visitas a la página del resumen del artículo',
   'manager.statistics.reports.defaultReport.articleAbstractAndDownloads' => 'Resumen del artículo y descargas',

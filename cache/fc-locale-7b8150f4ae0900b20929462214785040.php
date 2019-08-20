@@ -4,7 +4,9 @@
   'admin.settings.options' => 'Opciones',
   'admin.settings.journalRedirectInstructions' => 'Las solicitudes para acceder al sitio principal se redirigirán a esta revista. Esto puede resultarle útil si el sitio sólo aloja una revista, por ejemplo.',
   'admin.settings.noJournalRedirect' => 'No redirigir',
-  'admin.settings.defaultMetricDescription' => 'Su instalación de OJS está configurada para registrar más de una métrica de uso. Las estadísticas de uso se mostrarán en varios contextos. En algunos casos se debe utilizar una sola estadística de uso, p. ej. para mostrar una lista ordenada de los artículos más consultados o para clasificar los resultados de búsqueda. Seleccione una de las métricas configuradas como predeterminada.',
+  'admin.settings.defaultMetricDescription' => '
+		Su instalación de OJS está configurada para registrar más de una métrica de uso. Las estadísticas de uso se mostrarán en varios contextos. En algunos casos se debe utilizar una sola estadística de uso, p. ej. para mostrar una lista ordenada de los artículos más consultados o para clasificar los resultados de búsqueda. Seleccione una de las métricas configuradas como predeterminada.
+	',
   'admin.languages.primaryLocaleInstructions' => 'Éste será el idioma predeterminado para el sitio y para todas las revistas que aloje.',
   'admin.languages.supportedLocalesInstructions' => 'Seleccione todas las configuraciones regionales que serán compatibles con el sitio. Las configuraciones regionales seleccionadas estarán disponibles para todas las revistas alojadas en el sitio y también aparecerán en el menú de selección de idioma en cada página del sitio (puede ser anulado en páginas específicas de las revistas). Si no ha seleccionado más de una configuración regional, el menú de selección no aparecerá y la configuración extendida de idioma no estará disponible para las revistas.',
   'admin.locale.maybeIncomplete' => 'Las configuraciones regionales marcadas pueden estar incompletas.',

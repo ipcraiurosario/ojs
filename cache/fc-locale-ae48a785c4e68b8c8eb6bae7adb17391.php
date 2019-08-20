@@ -17,7 +17,8 @@
 La herramienta solo copiará archivos que aún no estén en los directorios de carga de archivo usageStats (fase, procesamiento, archivo, rechazar).
 
 Uso: {$scriptName} ruta/a/apache/log/file.log
-Uso (procesamiento de todos los archivos dentro de un directorio): {$scriptName} ruta/a/apache/directorio',
+Uso (procesamiento de todos los archivos dentro de un directorio): {$scriptName} ruta/a/apache/directorio 
+	',
   'admin.copyAccessLogFileTool.error.creatingFolder' => 'Error: no se puede crear la carpeta temporal {$tmpDir}',
   'admin.copyAccessLogFileTool.error.acessingFile' => 'Error: el archivo {$filePath} no existe o no se puede acceder a él.',
   'admin.copyAccessLogFileTool.error.copyingFile' => 'Error: no se puede copiar el archivo de {$filePath} a {$tmpFilePath}',
@@ -66,8 +67,10 @@ Uso (procesamiento de todos los archivos dentro de un directorio): {$scriptName}
   'admin.settings.form.contactNameRequired' => 'Se necesita el nombre del contacto principal.',
   'admin.settings.form.minPasswordLengthRequired' => 'Debes introducir una contraseña de 4 caracteres como mínimo.',
   'admin.settings.form.titleRequired' => 'Es necesario introducir el título.',
-  'admin.settings.defaultMetricDescription' => 'Se ha configurado su instalación para registrar más de una métrica de uso. Se mostrarán las estadísticas de uso en varios contextos.
-		En algunos casos deberá utilizarse una sola estadística de uso, p. ej., para mostrar una lista ordenada de los envíos más utilizados o para clasificar resultados de búsqueda. Seleccione una de las medidas configuradas como predeterminadas.',
+  'admin.settings.defaultMetricDescription' => '
+		Se ha configurado su instalación para registrar más de una métrica de uso. Se mostrarán las estadísticas de uso en varios contextos.
+		En algunos casos deberá utilizarse una sola estadística de uso, p. ej., para mostrar una lista ordenada de los envíos más utilizados o para clasificar resultados de búsqueda. Seleccione una de las medidas configuradas como predeterminadas.
+	',
   'admin.settings.homeHeaderImage.altText' => 'Logotipo del sitio',
   'admin.settings.homeHeaderImageInvalid' => 'Formato de imagen del logotipo del sitio inválido. Formatos aceptados: .gif, .jpg y .png.',
   'admin.settings.introduction' => 'Introducción',

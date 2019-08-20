@@ -10,19 +10,18 @@
  * @uses $currentContext Journal|Press The current journal or press
  *}
 {include file="frontend/components/header.tpl" pageTitle="about.aboutContext"}
-</main>
-<main class="pkp_structure_main col-md-9" role="main">
-	<div id="main-content" class="page page_about">
 
-		{include file="frontend/components/breadcrumbs.tpl" currentTitleKey="about.aboutContext"}
+<div id="main-content" class="page page_about">
 
-		{* Page Title *}
-		<div class="page-header">
-			<h1>{translate key="about.aboutContext"}</h1>
-		</div>
-		{* /Page Title *}
+	{include file="frontend/components/breadcrumbs.tpl" currentTitleKey="about.aboutContext"}
 
-		{$currentContext->getLocalizedSetting('about')}
-	</div><!-- .page -->
+	{* Page Title *}
+	<div class="page-header">
+		<h1>{translate key="about.aboutContext"}</h1>
+	</div>
+	{* /Page Title *}
 
-	{include file="common/frontend/footer.tpl"}
+	{$currentContext->getLocalizedSetting('about')}
+</div><!-- .page -->
+
+{include file="common/frontend/footer.tpl"}

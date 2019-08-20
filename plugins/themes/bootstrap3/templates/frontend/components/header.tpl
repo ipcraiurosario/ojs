@@ -21,7 +21,7 @@
 <!DOCTYPE html>
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
 {if !$pageTitleTranslated}{capture assign="pageTitleTranslated"}{translate key=$pageTitle}{/capture}{/if}
-{include file="core:frontend/components/headerHead.tpl"}
+{include file="frontend/components/headerHead.tpl"}
 <body class="pkp_page_{$requestedPage|escape|default:"index"} pkp_op_{$requestedOp|escape|default:"index"}{if $showingLogo} has_site_logo{/if}">
 	<div class="pkp_structure_page">
 
@@ -41,11 +41,9 @@
 
 			{* User profile, login, etc, navigation menu*}
 			<div class="container-fluid">
-				<div class="row custom-user-menu">
+				<div class="row">
 					<nav aria-label="{translate|escape key="common.navigation.user"}">
-						<a class="custom-home-image" href="{$baseUrl}"><img src="{$baseUrl}/templates/images/custom/homepage.png" alt=""></a>
 						{load_menu name="user" id="navigationUser" ulClass="nav nav-pills tab-list pull-right"}
-						{include file="frontend/custom/top-menu-block.tpl"}
 					</nav>
 				</div><!-- .row -->
 			</div><!-- .container-fluid -->
@@ -77,30 +75,20 @@
 							{/if}
 						{/capture}
 						{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
-							<a href="{$baseUrl}" class="navbar-brand navbar-brand-logo">
-								<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" {if $displayPageHeaderLogo.altText != ''}alt="{$pageTitleTranslated|strip_tags|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if}>
+							<a href="{$homeUrl}" class="navbar-brand navbar-brand-logo">
+								<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"{/if}>
 							</a>
 						{elseif $displayPageHeaderTitle && !$displayPageHeaderLogo && is_string($displayPageHeaderTitle)}
-							<a href="{$baseUrl}" class="navbar-brand">{$displayPageHeaderTitle}</a>
+							<a href="{$homeUrl}" class="navbar-brand">{$displayPageHeaderTitle}</a>
 						{elseif $displayPageHeaderTitle && !$displayPageHeaderLogo && is_array($displayPageHeaderTitle)}
-							<a href="{$baseUrl}" class="navbar-brand navbar-brand-logo">
+							<a href="{$homeUrl}" class="navbar-brand navbar-brand-logo">
 								<img src="{$publicFilesDir}/{$displayPageHeaderTitle.uploadName|escape:"url"}" alt="{$displayPageHeaderTitle.altText|escape}">
 							</a>
 						{else}
-							<a href="{$baseUrl}" class="navbar-brand">
-								<img src="{$baseUrl}/templates/images/structure/logo-ur.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" />
+							<a href="{$homeUrl}" class="navbar-brand">
+								<img src="{$baseUrl}/templates/images/structure/logo.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" />
 							</a>
 						{/if}
-							<div class="navbarTitle">
-								<div class="navbarAppTitle">{$portalTitle}</div>
-								<div class="navbarPageTitle">
-									{if $portalTitle != $siteTitle}
-										{$siteTitle}
-									{else}
-										&nbsp;
-                					{/if}
-								</div>
-							</div>
 					{if $requestedOp == 'index'}
 						</h1>
 					{else}
@@ -111,17 +99,16 @@
 
 				{* Primary site navigation *}
 				{capture assign="primaryMenu"}
-				<div class="container">
-					{load_menu name="primary" id="journal-navigation" ulClass="nav navbar-nav"}
-				</div>
-				<br />
+					{load_menu name="primary" id="main-navigation" ulClass="nav navbar-nav"}
 				{/capture}
 
-				{if !empty(trim($primaryMenu)) || !$noContextsConfigured}
+				{if !empty(trim($primaryMenu)) || $currentContext}
 					<nav id="nav-menu" class="navbar-collapse collapse" aria-label="{translate|escape key="common.navigation.site"}">
-						
+						{* Primary navigation menu for current application *}
+						{$primaryMenu}
+
 						{* Search form *}
-						{if !$noContextsConfigured}
+						{if $currentContext}
 							<div class="pull-md-right">
 								{include file="frontend/components/searchForm_simple.tpl"}
 							</div>
@@ -131,11 +118,7 @@
 
 			</div><!-- .pkp_head_wrapper -->
 		</header><!-- .pkp_structure_head -->
-		<br />
-		{* Primary navigation menu for current application *}
-		
-			{$primaryMenu}
 
 		{* Wrapper for page content and sidebars *}
 		<div class="pkp_structure_content container">
-			<main class="pkp_structure_main" role="main">
+			<main class="pkp_structure_main col-xs-12 col-sm-10 col-md-8" role="main">

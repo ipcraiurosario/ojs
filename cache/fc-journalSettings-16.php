@@ -5,16 +5,13 @@
   'publicationFormatVolume' => false,
   'publicationFormatNumber' => false,
   'publicationFormatYear' => false,
+  'enableOai' => true,
   'numPageLinks' => 10,
   'itemsPerPage' => 100,
   'numWeeksPerReview' => 4,
   'privacyStatement' => 
   array (
     'es_ES' => 'Los nombres y las direcciones de correo electrónico introducidos en esta revista se usarán exclusivamente para los fines establecidos en ella y no se proporcionarán a terceros o para su uso con otros fines.',
-  ),
-  'openAccessPolicy' => 
-  array (
-    'es_ES' => 'Esta revista proporciona un acceso abierto a su contenido, basado en el principio de que ofrecer al público un acceso libre a las investigaciones ayuda a un mayor intercambio global del conocimiento.',
   ),
   'authorSelfArchivePolicy' => 
   array (
@@ -26,7 +23,7 @@
   ),
   'useLayoutEditors' => false,
   'provideRefLinkInstructions' => false,
-  'emailSignature' => NULL,
+  'emailSignature' => '________________________________________________________________________ CRAI -UR http://revistas.urosario.edu.co/index.php/crai',
   'proofInstructions' => 
   array (
     'es_ES' => '<p>La fase de corrección de pruebas tiene el propósito de detectar cualquier error ortográfico, gramático y tipográfico de la galerada. En esta fase no se realizan más cambios importantes, a menos que se haya acordado con el editor de sección. En Maquetación, haga clic en VER PRUEBA para ver la versión HTML, PDF y el resto de formatos en los que se ha publicado este texto.</p><h4>Errores ortográficos y gramaticales</h4><p>Copie la palabra o conjunto de palabras incorrectas y péguelas en el Cuadro de modificación de corrección de pruebas con la instrucción "CAMBIAR-POR" para el editor tal y como se indica:</p><pre>1. CAMBIAR...entonces las otras POR... que las otras</pre><br /><pre>2. CAMBIAR... Malinowsky POR... Malinowski</pre><br /><h4>Errores de formato</h4><p>Describa la situación y naturaleza del problema en el Cuadro de modificaciones de corrección de pruebas, incluyendo en el título "FORMATO" tal y como se indica:</p><br /><pre>3. FORMATO Los números de la tabla 3 no están alineados en la tercera columna.</pre><br /><pre>4. FORMATO El párrafo que empieza con "Este último tema..." no tiene sangría.</pre>',
@@ -211,14 +208,8 @@
   'supportName' => 'Cristhian Andres Rey Casadiego',
   'supportEmail' => 'cristhian.rey@urosario.edu.co',
   'supportPhone' => '',
-  'sponsors' => 
-  array (
-  ),
   'publisherInstitution' => '',
   'publisherUrl' => '',
-  'contributors' => 
-  array (
-  ),
   'envelopeSender' => '',
   'boardEnabled' => true,
   'remindForInvite' => false,
@@ -231,17 +222,6 @@
   'showEnsuringLink' => true,
   'mailSubmissionsToReviewers' => false,
   'authorSelectsEditor' => false,
-  'customAboutItems' => 
-  array (
-    'es_ES' => 
-    array (
-      0 => 
-      array (
-        'title' => '',
-        'content' => '',
-      ),
-    ),
-  ),
   'enableLockss' => false,
   'reviewerDatabaseLinks' => 
   array (
@@ -266,11 +246,6 @@
   'numAnnouncementsHomepage' => 0,
   'volumePerYear' => 0,
   'issuePerVolume' => 0,
-  'enablePublicIssueId' => false,
-  'enablePublicArticleId' => true,
-  'enablePublicGalleyId' => false,
-  'enablePublicSuppFileId' => false,
-  'enablePageNumber' => true,
   'includeCopyrightStatement' => false,
   'licenseURL' => '',
   'includeLicense' => false,
@@ -283,7 +258,6 @@
   'metaSubject' => false,
   'metaCoverage' => false,
   'metaType' => false,
-  'metaCitationOutputFilterId' => 45,
   'copySubmissionAckPrimaryContact' => false,
   'copySubmissionAckSpecified' => false,
   'copySubmissionAckAddress' => '',
@@ -296,5 +270,4 @@
 							</div>',
   ),
   'themePluginPath' => 'default',
-  'emailFooter' => NULL,
 ); ?>

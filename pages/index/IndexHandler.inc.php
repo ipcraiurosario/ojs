@@ -3,8 +3,8 @@
 /**
  * @file pages/index/IndexHandler.inc.php
  *
- * Copyright (c) 2014-2018 Simon Fraser University
- * Copyright (c) 2003-2018 John Willinsky
+ * Copyright (c) 2014-2019 Simon Fraser University
+ * Copyright (c) 2003-2019 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class IndexHandler
@@ -90,18 +90,18 @@ class IndexHandler extends Handler {
 			$templateMgr->assign('site', $site);
 
 			/* INICIO CRAI: Crear array con la imagen de portada del ultimo numero de cada revista */
-            		$my_issues=array();
-			$journals = $journalDao->getTitles();
+                        $my_issues=array();
+                        $journals = $journalDao->getTitles();
                         foreach($journals as $journalKey => $journalValue) {
-                                $issueDAO = DAORegistry::getDAO('IssueDAO');								
+                                $issueDAO = DAORegistry::getDAO('IssueDAO');
                                 $issue = $issueDAO->getCurrent($journalKey);
-								$imgs = $issue->getCoverImage(null);
-								foreach($imgs as $img) {
-									$my_issues[$journalKey] = $img;
-								}
+                                                                $imgs = $issue->getCoverImage(null);
+                                                                foreach($imgs as $img) {
+                                                                        $my_issues[$journalKey] = $img;
+                                                                }
                         }
                         $templateMgr->assign('my_issues', $my_issues);
-			/*FIN CRAI*/
+                        /*FIN CRAI*/
 
 			$templateMgr->setCacheability(CACHEABILITY_PUBLIC);
 			$templateMgr->display('frontend/pages/indexSite.tpl');
@@ -109,4 +109,4 @@ class IndexHandler extends Handler {
 	}
 }
 
-?>
+

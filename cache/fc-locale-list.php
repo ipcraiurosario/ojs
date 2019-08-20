@@ -114,7 +114,7 @@
   'nl_NL' => 
   array (
     'key' => 'nl_NL',
-    'complete' => 'false',
+    'complete' => 'true',
     'name' => 'Nederlands',
     'iso639-2b' => 'dut',
     'iso639-3' => 'nld',
@@ -150,6 +150,14 @@
     'name' => 'Русский',
     'iso639-2b' => 'rus',
     'iso639-3' => 'rus',
+  ),
+  'sl_SI' => 
+  array (
+    'key' => 'sl_SI',
+    'complete' => 'false',
+    'name' => 'Slovenščina',
+    'iso639-2b' => 'slv',
+    'iso639-3' => 'slv',
   ),
   'sr_RS@cyrillic' => 
   array (

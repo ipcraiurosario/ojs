@@ -22,43 +22,46 @@
 	{/if}
 {/capture}
 {include file="frontend/components/header.tpl" pageTitleTranslated=$pageTitle}
-</main>
-<main class="pkp_structure_main col-md-9" role="main">
-	<div id="main-content" class="page page_issue_archive">
-		{include file="frontend/components/breadcrumbs.tpl" currentTitle=$pageTitle}
 
-		{* No issues have been published *}
-		{if empty($issues)}
-			<div class="alert alert-info" role="alert">
-				{translate key="current.noCurrentIssueDesc"}
-			</div>
-		{else}
+<div id="main-content" class="page page_issue_archive">
+	{include file="frontend/components/breadcrumbs.tpl" currentTitle=$pageTitle}
 
-			{* List issues *}
-			<div class="issues media-list">
-				{foreach from=$issues item="issue"}
-					{include file="frontend/objects/issue_summary.tpl"}
-				{/foreach}
-			</div>
+	{* No issues have been published *}
+	{if empty($issues)}
+		<div class="alert alert-info" role="alert">
+			{translate key="current.noCurrentIssueDesc"}
+		</div>
+	{else}
 
-			{* Pagination *}
+		{* List issues *}
+		<div class="issues media-list">
+			{foreach from=$issues item="issue"}
+				{include file="frontend/objects/issue_summary.tpl"}
+			{/foreach}
+		</div>
+
+		{* Pagination *}
+		{capture assign="prevUrl"}
 			{if $prevPage > 1}
-				{url|assign:"prevUrl" router=$smarty.const.ROUTE_PAGE page="issue" op="archive" path=$prevPage}
+				{url router=$smarty.const.ROUTE_PAGE page="issue" op="archive" path=$prevPage}
 			{elseif $prevPage === 1}
-				{url|assign:"prevUrl" router=$smarty.const.ROUTE_PAGE page="issue" op="archive"}
+				{url router=$smarty.const.ROUTE_PAGE page="issue" op="archive"}
 			{/if}
+		{/capture}
+		{capture assign="nextUrl"}
 			{if $nextPage}
-				{url|assign:"nextUrl" router=$smarty.const.ROUTE_PAGE page="issue" op="archive" path=$nextPage}
+				{url router=$smarty.const.ROUTE_PAGE page="issue" op="archive" path=$nextPage}
 			{/if}
-			{include
-				file="frontend/components/pagination.tpl"
-				prevUrl=$prevUrl
-				nextUrl=$nextUrl
-				showingStart=$showingStart
-				showingEnd=$showingEnd
-				total=$total
-			}
-		{/if}
-	</div>
+		{/capture}
+		{include
+			file="frontend/components/pagination.tpl"
+			prevUrl=$prevUrl
+			nextUrl=$nextUrl
+			showingStart=$showingStart
+			showingEnd=$showingEnd
+			total=$total
+		}
+	{/if}
+</div>
 
-	{include file="common/frontend/footer.tpl"}
+{include file="common/frontend/footer.tpl"}

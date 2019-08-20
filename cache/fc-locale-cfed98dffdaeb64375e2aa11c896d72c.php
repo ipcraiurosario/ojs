@@ -17,16 +17,13 @@
   'plugins.importexport.crossref.settings.form.automaticRegistration.description' => 'OJS depositará los DOIs asignados en CrossRef de forma automática. Esto puede tomar un poco de tiempo de proceso tras la publicación. Puede comprobar todos los DOIs no registrados.',
   'plugins.importexport.crossref.settings.form.testMode.description' => 'Usar la API de pruebas de CrossRef (entorno de testing) para depositar los DOIs. No olvide desactivar esta opción cuando pase a producción.',
   'plugins.importexport.crossref.issues.description' => 'Nota: Solo los números (y no sus artículos) se toman en consideración para la exportación/registro.',
-  'plugins.importexport.crossref.status.submitted' => 'Enviados',
-  'plugins.importexport.crossref.status.completed' => 'Dipositados',
   'plugins.importexport.crossref.status.failed' => 'Fallos',
   'plugins.importexport.crossref.status.registered' => 'Activos',
   'plugins.importexport.crossref.status.markedRegistered' => 'Marcados activo',
-  'plugins.importexport.crossref.statusLegend' => '<p>Estados de depósito:</p>
+  'plugins.importexport.crossref.statusLegend' => '
+		<p>Estados de depósito:</p>
 		<p>
 		- No depositado: no se ha hecho ningún intento de deposito para este DOI.<br />
-		- Enviado: este DOI se ha enviado para despositar.<br />
-		- Depositado: este DOI se ha depositado en Crossref, pero podría no estar activo todavía.<br />
 		- Activo: el DOI se ha depositado y se resuelve correctamente.<br />
 		- Fallo: el deposito del DOI ha fallado.<br />
 		- Marcado activo: el DOI fué marcado manualmente como activo.
@@ -35,15 +32,11 @@
 		<p>Si un deposito fallase, resuelva el problema e intente registrar el DOI de nuevo.</p>',
   'plugins.importexport.crossref.action.export' => 'Descargar XML',
   'plugins.importexport.crossref.action.markRegistered' => 'Marcar activo',
-  'plugins.importexport.crossref.action.register' => 'Enviar',
-  'plugins.importexport.crossref.action.checkStatus' => 'Comprobar estado',
   'plugins.importexport.crossref.senderTask.name' => 'Tarea automática de registro en CrossRef',
-  'plugins.importexport.crossref.notification.failed' => 'Un DOI no se ha podido registrar. Visite Herramientas > Importar/Exportar > Módulo de Exportación CrossRef XML para ver los depósitos que han fallado.',
   'plugins.importexport.crossref.cliUsage' => 'Uso:
 {$scriptName} {$pluginName} export [xmlFileName] [journal_path] articles objectId1 [objectId2] ...
-{$scriptName} {$pluginName} register [journal_path] articles objectId1 [objectId2] ...',
-  'plugins.importexport.crossref.register.error.mdsError' => 'Envío con errores! El servidor de registro de DOIS ha devuelto el error: \'{$param}\'.',
-  'plugins.importexport.crossref.register.success' => 'Envio con éxito!',
+{$scriptName} {$pluginName} register [journal_path] articles objectId1 [objectId2] ...
+',
   'plugins.importexport.crossref.export.error.issueNotFound' => 'No existe ningún número con el ID "{$issueId}".',
   'plugins.importexport.crossref.export.error.articleNotFound' => 'No existe ningún artículo con el ID "{$articleId}".',
 ); ?>

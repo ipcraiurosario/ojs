@@ -55,8 +55,10 @@
   'common.notice' => 'Notificación',
   'common.captchaField.description' => 'Por favor, introduzca las letras tal como aparecen en la imagen superior.',
   'common.captchaField' => 'Validación',
-  'common.ccLicense' => '<br /><br /> <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by/3.0/"> <img alt="Licencia de Creative Commons" style="border-width:0" src="//i.creativecommons.org/l/by/3.0/80x15.png"/> </a> <br/> Este trabajo se distribuye bajo una <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by/3.0/">Licencia de reconocimiento 3.0 de Creative Commons</a>.',
-  'common.ccLicense.rt' => '<div class="rtBlock"><br /> <a rel="license" href="http://creativecommons.org/licenses/by/3.0/" target="_blank"><img alt="Licencia de Creative Commons" style="border-width:0" src="//i.creativecommons.org/l/by/3.0/80x15.png" /></a><br /> Este trabajo se distribuye bajo una <a rel="license" href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Licencia de reconocimiento 3.0 de Creative Commons</a>.</div>',
+  'common.ccLicense' => '<br /><br /> <a target="_blank" rel="license" href="https://creativecommons.org/licenses/by/3.0/"> <img alt="Licencia de Creative Commons" style="border-width:0" src="//i.creativecommons.org/l/by/3.0/80x15.png"/> </a> <br/> Este trabajo se distribuye bajo una <a rel="license" target="_blank" href="https://creativecommons.org/licenses/by/3.0/">Licencia de reconocimiento 3.0 de Creative Commons</a>.',
+  'common.ccLicense.rt' => '
+	<div class="rtBlock"><br /> <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img alt="Licencia de Creative Commons" style="border-width:0" src="//i.creativecommons.org/l/by/3.0/80x15.png" /></a><br /> Este trabajo se distribuye bajo una <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">Licencia de reconocimiento 3.0 de Creative Commons</a>.</div>
+	',
   'common.changesSaved' => 'Sus cambios se han guardado.',
   'common.chooseOne' => 'Seleccione uno',
   'common.clearSearch' => 'Limpiar frase de búsqueda',
@@ -157,7 +159,6 @@
   'common.pluginDisabled' => 'El módulo "{$pluginName}" se ha desactivado.',
   'common.prefix' => 'Prefijo',
   'common.prefixAndTitle.tip' => 'Si el título del libro comienza con "Un/a" o "El/La/Los/Las" (o algo similar que no debiera considerarse en el orden alfabético) sitúa esta palabra en Prefijo.',
-  'common.subtitle.tip' => 'El subtítulo opcional del envío aparecerá tras los dos puntos (:) que siguen al título principal.',
   'common.preview' => 'Previsualizar',
   'common.publisher' => 'Editor',
   'common.quality' => 'Calidad',
@@ -187,7 +188,6 @@
   'common.size' => 'Tamaño',
   'common.source' => 'Fuente',
   'common.status' => 'Estado',
-  'common.startTyping' => 'Empezar a escribir',
   'common.subject' => 'Materia',
   'common.subjects' => 'Asuntos',
   'common.subtitle' => 'Subtítulo',
@@ -396,11 +396,13 @@
   'review.ensuringBlindReview' => 'Garantizar una revisión anónima',
   'grid.action.showReviewPolicy' => 'Leer la política de revisión actual',
   'dashboard.tasks' => 'Tareas',
-  'review.blindPeerReview' => '<p>Para asegurar la integridad de las evaluaciones anónimas por pares de los envíos a esta editorial, se hará todo lo posible para impedir que los autores/as conozcan la identidad de los revisores/as y viceversa. Para ello, los autores/as, editores/as y revisores/as (que suban documentos como parte de la revisión) deben comprobar que se han seguido los pasos siguientes relacionados con el texto y con las propiedades del archivo:</p>
+  'review.blindPeerReview' => '
+		<p>Para asegurar la integridad de las evaluaciones anónimas por pares de los envíos a esta editorial, se hará todo lo posible para impedir que los autores/as conozcan la identidad de los revisores/as y viceversa. Para ello, los autores/as, editores/as y revisores/as (que suban documentos como parte de la revisión) deben comprobar que se han seguido los pasos siguientes relacionados con el texto y con las propiedades del archivo:</p>
 			<ul><li>Los autores/as del documento han borrado sus nombres del texto, y han empleado "Autor/a" y el año utilizado en las referencias y notas a pie de página, en lugar del nombre del autor/a, el título del artículo, etc.</li>
 			<li>En el caso de los documentos de Microsoft Office, también se deberá quitar la identificación del autor/a de las propiedades del archivo (ver en la opción Archivo en Word), haciendo clic en las opciones que se indican a continuación. Empezar con Archivo en el menú principal de la aplicación de Microsoft: Archivo > Guardar como > Herramientas (u Opciones en Mac) > Seguridad > Eliminar información personal de las propiedades del archivo al guardar > Guardar.</li>
 			<li>En el caso de los archivos PDF, también hay que eliminar los nombres de los autores/as desde las Propiedades del Documento, que se encuentran en la opción Archivo en el menú principal de Adobe Acrobat.</li>
-		</ul>',
+		</ul>
+	',
   'reviewer.submission.reviewSchedule' => 'Planificación de revisión',
   'reviewer.submission.reviewRequestDate' => 'Petición del editor/a',
   'reviewer.submission.responseDueDate' => 'Fecha límite de la contestación',
@@ -516,5 +518,4 @@
   'list.viewMore' => 'Mostrar más detalles sobre {$name}',
   'list.viewLess' => 'Ocultar los detalles sobre {$name}',
   'common.pagination.label' => 'Examinar las páginas adicionales',
-  'common.site.name' => 'Portal de Revistas UR',
 ); ?>

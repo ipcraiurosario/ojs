@@ -3,8 +3,8 @@
 /**
  * @file api/v1/issues/IssueHandler.inc.php
  *
- * Copyright (c) 2014-2018 Simon Fraser University
- * Copyright (c) 2003-2018 John Willinsky
+ * Copyright (c) 2014-2019 Simon Fraser University
+ * Copyright (c) 2003-2019 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class IssueHandler
@@ -158,7 +158,7 @@ class IssueHandler extends APIHandler {
 		\HookRegistry::call('API::issues::params', array(&$params, $slimRequest));
 
 		// You must be a manager or site admin to access unpublished Issues
-		$isAdmin = $currentUser->hasRole(array(ROLE_ID_MANAGER, ROLE_ID_SITE_ADMIN), $context->getId());
+		$isAdmin = $currentUser->hasRole(array(ROLE_ID_MANAGER), $context->getId()) || $currentUser->hasRole(array(ROLE_ID_SITE_ADMIN), CONTEXT_SITE);
 		if (isset($params['isPublished']) && !$params['isPublished'] && !$isAdmin) {
 			return $response->withStatus(403)->withJsonError('api.submissions.403.unpublishedIssues');
 		} elseif (!$isAdmin) {

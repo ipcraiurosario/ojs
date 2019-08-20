@@ -15,15 +15,9 @@
 
 {if $navigationMenu}
 	<ul id="{$id|escape}" class="{$ulClass|escape}">
-		{if $homeUrl != ''}
-			<li class="{$liClass|escape}">
-				<a href="{$homeUrl}">{translate key="common.homepageNavigationLabel"}</a>
-			</li>
-		{/if}
-		
 		{foreach key=field item=navigationMenuItemAssignment from=$navigationMenu->menuTree}
 			{if !$navigationMenuItemAssignment->navigationMenuItem->getIsDisplayed()}
-				{php}continue;{/php}
+				{continue}
 			{/if}
 			{assign var="hasChildren" value=false}
 			{if !empty($navigationMenuItemAssignment->children)}

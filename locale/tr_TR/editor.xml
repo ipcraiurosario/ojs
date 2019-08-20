@@ -4,8 +4,8 @@
 <!--
   * locale/tr_TR/editor.xml
   *
-  * Copyright (c) 2013-2018 Simon Fraser University
-  * Copyright (c) 2003-2018 John Willinsky
+  * Copyright (c) 2013-2019 Simon Fraser University
+  * Copyright (c) 2003-2019 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Localization strings for the tr_TR (Türkçe) locale.
@@ -146,6 +146,6 @@
 	<message key="editor.submission.selectGalleyFiles">Dizgi dosyalarını seç</message>
 	<message key="editor.submission.editorial.finalDraftDescription"><![CDATA[Bu listedeki nihai taslak dosyalar altında aşağıda yüklendi copyedited sürümleri, bir sayfa düzenleyici tarafından dönüştürülür.<span class="pkp_help_title">Copyediting</span>.]]></message>
 	<message key="editor.submission.proof.manageProofFilesDescription">Zaten herhangi bir başvuru aşamasında yüklenmiş olan tüm dosyalar için aşağıdaki onay kutusunu ve tıklayarak Dahil kontrol ederek Redaksiyon liste eklenebilir. Arama: Tüm mevcut dosyalar listelenir ve dahil edilmesi için seçilebilir.</message>
-	<message key="editor.publicIdentificationExistsForTheSameType">'{$publicIdentifier}' genel belirleyicisi, aynı türden başka bir nesne için zaten var. Lütfen derginizden aynı türde nesneler için benzersiz tanımlayıcılar seçin.</message>
-	<message key="editor.article.coverImage">Kapak resmi</message>
+	<message key="editor.publicIdentificationExists">Diğer objeler (sayı, makale, dizgi veya ek dosya) için '{$publicIdentifier}' adlı genel belirleyici zaten var. Lütfen derginizdeki tekil belirleyicileri seçiniz.</message>
+	<message key="editor.article.coverImage">Kapak Görseli</message>
 </locale>

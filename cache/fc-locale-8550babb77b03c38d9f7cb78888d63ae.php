@@ -1,5 +1,5 @@
 <?php return array (
-  'plugins.generic.citationStyleLanguage.displayName' => 'Lenguaje de estilos de Cita',
+  'plugins.generic.citationStyleLanguage.displayName' => 'Lenguaje de estilos de cita',
   'plugins.generic.citationStyleLanguage.description' => 'Permite que los lectores obtengan una cita de un artículo publicado en uno de los formatos compatibles con CSL (Citation Style Language).',
   'plugins.generic.citationStyleLanguage.style.acm-sig-proceedings' => 'ACM',
   'plugins.generic.citationStyleLanguage.style.acs-nano' => 'ACS',
@@ -13,5 +13,10 @@
   'plugins.generic.citationStyleLanguage.style.vancouver' => 'Vancouver',
   'plugins.generic.citationStyleLanguage.download.bibtex' => 'BibTeX',
   'plugins.generic.citationStyleLanguage.download.ris' => 'Endnote/Zotero/Mendeley (RIS)',
-  'plugins.generic.citationStyleLanguage.settings.citationDownloads' => 'Estilos descargables',
+  'plugins.generic.citationStyleLanguage.settings.citationDownloads' => 'Formatos descargables',
+  'plugins.generic.citationStyleLanguage.settings.citationDownloadsDescription' => 'Seleccione los formatos descargables que quiere ofrecer a los lectores/as. Los formatos descargables se usan normalmente para que programas de gestión de bibliotecas de terceros los importen, como EndNote o Zotero.',
+  'plugins.generic.citationStyleLanguage.settings.citationFormats' => 'Formatos de cita adicionales',
+  'plugins.generic.citationStyleLanguage.settings.citationFormatsDescription' => 'Seleccione los formatos adicionales que quiere ofrecer a los lectores/as.',
+  'plugins.generic.citationStyleLanguage.settings.citationFormatsPrimary' => 'Formato de cita primario',
+  'plugins.generic.citationStyleLanguage.settings.citationFormatsPrimaryDescription' => 'Seleccione qué formato de cita quiere mostrar como predefinido en la página de inicio.',
 ); ?>

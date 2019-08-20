@@ -6,7 +6,7 @@
   'plugins.generic.googleAnalytics.manager.settings.description' => '<p>Con este módulo activado puede usar Google Analytics para recoger y analizar datos de tráfico web de su revista. Requiere una cuenta previa creada en Google Analytics. Vea la página de <a href="http://www.google.com/analytics/" title="Google Analytics site">Google Analytics </a> para más información.</p>',
   'plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteId' => 'Número de cuenta',
   'plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteIdInstructions' => 'En Google Analytics, pulse sobre "Check Status" para ver el código de seguimiento de su página. El número de cuenta aparece en el código de seguimiento: _uacct = "###". Introduzca los caracteres que corresponden a ###.',
-  'plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteIdRequired' => 'Por favor, intoduzca un número de cuenta.',
+  'plugins.generic.googleAnalytics.manager.settings.googleAnalyticsSiteIdRequired' => 'Por favor, introduzca un número de cuenta.',
   'plugins.generic.googleAnalytics.manager.settings.trackingCode' => 'Código de seguimiento',
   'plugins.generic.googleAnalytics.manager.settings.trackingCodeRequired' => 'Por favor seleccione un código de seguimiento a utilizar.',
   'plugins.generic.googleAnalytics.manager.settings.urchin' => 'Código de seguimiento legado (urchin.js)',

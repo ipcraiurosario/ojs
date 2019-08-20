@@ -1,5 +1,4 @@
 <?php return array (
-  'emailFooter' => NULL,
   'homeHeaderTitleImage' => 
   array (
     'es_ES' => 
@@ -16,6 +15,7 @@
   array (
     'es_ES' => '1',
   ),
+  'enableOai' => true,
   'statNumPublishedIssues' => false,
   'statItemsPublished' => false,
   'statisticsSectionIds' => 
@@ -28,7 +28,9 @@
   array (
     'es_ES' => 'Autores están permitodos y animados a proveer elementos enviados a esta revista en sus paginas Web personales o institucionales, antes y después de publicación (al mismo tiempo proveyendo los detalles bibliográficos de la publicacion).',
   ),
-  'emailSignature' => NULL,
+  'emailSignature' => '________________________________________________________________________
+Revista del Colegio Mayor de Nuestra Señora del Rosario
+http://revistas.urosario.edu.co/index.php/UR',
   'readerInformation' => 
   array (
     'es_ES' => 'Recomendamos a Los lectores que se den de alta en el servicio de notificación de publicación de esta revista. Use el enlace de <a href="/index.php/UR/user/register">Registro</a> que se encuentra arriba en la home de la revista. Este registro permitirá al lector recibir la Tabla de contenidos por correo-e cada vez que se publique un nuevo número de la revista. Esto también permitirá a la revista conseguir un cierto nivel de soporte y número de lectores. Consulte la <a href="/index.php/UR/about/submissions#privacyStatement">Política de Privacidad</a> de la revista, que asegura a Los lectores que su nombre y dirección de correo-e no serán usados para otros propósitos.',
@@ -41,7 +43,10 @@
   array (
     0 => 'en_US',
     1 => 'es_ES',
+    2 => 'it_IT',
+    3 => 'fr_CA',
     4 => 'pt_BR',
+    5 => 'de_DE',
   ),
   'rtAbstract' => true,
   'rtCaptureCite' => true,
@@ -144,17 +149,10 @@
   'supportName' => 'Karol Joanna Hernández Ramos',
   'supportEmail' => 'urevista@urosario.edu.co',
   'supportPhone' => '3414006 extension 294',
-  'sponsors' => 
-  array (
-  ),
   'publisherInstitution' => 'Universidad del Rosario',
   'publisherUrl' => 'http://editorial.urosario.edu.co/',
-  'contributors' => 
-  array (
-  ),
   'envelopeSender' => '',
   'metaCitations' => false,
-  'metaCitationOutputFilterId' => -1,
   'homeHeaderTitleType' => 
   array (
     'es_ES' => '1',
@@ -201,20 +199,11 @@ El tercer párrafo no está justificado.</pre>',
   ),
   'publishingMode' => 0,
   'showGalleyLinks' => false,
-  'openAccessPolicy' => 
-  array (
-    'es_ES' => 'Esta revista provee acceso libre inmediato a su contenido bajo el principio de que hacer disponible gratuitamente investigación al publico apoya a un mayor intercambio de conocimiento global.',
-  ),
   'enableAnnouncements' => false,
   'enableAnnouncementsHomepage' => true,
   'numAnnouncementsHomepage' => 1,
   'volumePerYear' => 0,
   'issuePerVolume' => 0,
-  'enablePublicIssueId' => false,
-  'enablePublicArticleId' => false,
-  'enablePublicGalleyId' => false,
-  'enablePublicSuppFileId' => false,
-  'enablePageNumber' => true,
   'publisherNote' => 
   array (
     'es_ES' => '<p>Luis Enrique Nieto Arango</p>',
@@ -227,10 +216,6 @@ El tercer párrafo no está justificado.</pre>',
   array (
     'es_ES' => 'Revistas Universitarias',
   ),
-  'focusScopeDesc' => 
-  array (
-    'es_ES' => '<p>La Revista del Rosario es una publicación institucional que busca hacer visible a la Universidad ante la comunidad interna (estudiantes, docentes y directivas), y externa (padres de familia, alumnos de colegios convenio, empresas amigas, donantes) en cuatro ejes: docencia, investigación, extensión y cultura y patrimonio. Asimismo, se piensa como un espacio para la expresión de las diferentes visiones de los miembros de nuestra comunidad, frente a los diversos temas que conforman la vida nacional.</p><p><br />Entonces, la revista tiene como misión colaborar desde sus páginas en la consolidación de una comunidad rosarista que se comunica: es decir, que escribe, que lee y que comparte en torno a la expresión, con buenas letras y artes.</p>',
-  ),
   'remindForInvite' => false,
   'remindForSubmit' => false,
   'numDaysBeforeInviteReminder' => 0,
@@ -239,10 +224,6 @@ El tercer párrafo no está justificado.</pre>',
   'restrictReviewerFileAccess' => false,
   'reviewerAccessKeysEnabled' => false,
   'showEnsuringLink' => false,
-  'reviewPolicy' => 
-  array (
-    'es_ES' => '<p> <br />El Consejo Editorial reúne todas las colaboraciones enviadas a este correo y decide cuáles serán las publicaciones que aparecerán en el siguiente número de la Revista. Luego, informa a los autores cuyos textos han sido escogidos, que esto ha sucedido, y les pregunta si están interesados aún en publicar, si la obra es inédita y si ha sido publicada en otro lugar. <br /> <br />También devuelve con comentarios los textos que no pasaron el filtro del consejo editorial para que el escritor pueda, si quiere, con la ayuda del Laboratorio de Escritura, mejorar su texto. <br /> </p>',
-  ),
   'submissionChecklist' => 
   array (
     'es_ES' => 
@@ -309,17 +290,6 @@ El tercer párrafo no está justificado.</pre>',
   array (
     'es_ES' => 'Los nombres y direcciones de correo-e introducidos en esta revista se usarán exclusivamente para los fines declarados por esta revista y no estarán disponibles para ningún otro propósito u otra persona.',
   ),
-  'customAboutItems' => 
-  array (
-    'es_ES' => 
-    array (
-      0 => 
-      array (
-        'title' => '',
-        'content' => '',
-      ),
-    ),
-  ),
   'enableLockss' => true,
   'lockssLicense' => 
   array (
@@ -343,10 +313,6 @@ El tercer párrafo no está justificado.</pre>',
       'filename' => 'template-0.jpg',
       'title' => 'REVISTA DEL COLEGIO MAYOR DE NUESTRA SEÑORA DEL ROSARIO',
     ),
-  ),
-  'pubFreqPolicy' => 
-  array (
-    'es_ES' => 'La revista de la Universidad del Rosario tiene periodicidad semestral.',
   ),
   'pageHeaderTitleImage' => 
   array (
@@ -396,10 +362,6 @@ El tercer párrafo no está justificado.</pre>',
   'supportedFormLocales' => 
   array (
     0 => 'es_ES',
-  ),
-  'history' => 
-  array (
-    'es_ES' => '<p>“Era conveniente, además, que los hijos del Colegio, entre los cuales figuran personajes de lo más distinguido del país en las letras, el foro, la política y las ciencias, tuvieran un órgano de publicidad, donde sus escritos hallaran, no hospitalidad benévola, sino casa propia en qué vivir. No ofrecemos a los alumnos de otro tiempo las páginas de esta Revista, sino les hacemos presentes que son suyas.</p><p>“Figurarán, al lado de los trabajos de los veteranos en ciencias y letras, los ensayos, inseguros aún de los jóvenes estudiantes del Colegio. Será para ellos estímulo poderoso, y será para el amante de las patrias glorias estudio interesante, como lo son para el naturalista los vuelos vacilantes del aguilucho al salir por la primera vez del nido.</p><p>Rafael María Carrasquilla, citado por: SALVADOR IGLESIAS, Alumno que fue de este Colegio Mayor</p><p>Tomado de: Iglesias, Salvador. De cómo nació la “Revista del Colegio del Rosario”. <em>Revista del Colegio Mayor de Nuestra Señora del Rosario</em>. Vol. 31 No. 308-310 (Nov. 1936) p. 577-580</p>',
   ),
   'searchDescription' => 
   array (
@@ -461,7 +423,7 @@ El tercer párrafo no está justificado.</pre>',
   ),
   'editorialTeam' => 
   array (
-    'es_ES' => '<div id="editorialTeam"><div id="Editores/as"><h3>Editores/as</h3><p>Portal de Revistas Universidad del Rosario</p><p>Señora Karol Joanna Hernández Ramos, Asistente Revista del Rosario, Colombia</p><p>Doctor Luis Enrique Nieto Arango</p></div><div id="Editores/as de sección"><h3>Editores/as de sección</h3><p>Laura Victoria García-Matamoros, Universidad del Rosario, Colombia</p><p>Enrique Serrano</p><p>Editor Alejandro Venegas-Franco, Universidad del Rosario, Colombia</p><p>Doctor Gabriel Silgado Bernal, Decano del Medio Universitario, Colombia</p><p>Doctor Luis Enrique Nieto Arango</p><p>Doctor Leonardo Palacios Sanchez</p></div><div id="Correctores/as de pruebas"><h3>Correctores/as de pruebas</h3><p>Portal de Revistas Universidad del Rosario</p><p>Doctor Gabriel Silgado Bernal, Decano del Medio Universitario, Colombia</p><p>Doctor Luis Enrique Nieto Arango</p></div></div>',
+    'es_ES' => '<div id="editorialTeam"><div id="Editores/as"><h3>Editores/as</h3><p>Portal de Revistas Universidad del Rosario</p><p>Señora Karol Joanna Hernández Ramos, Asistente Revista del Rosario, Colombia</p><p>Doctor Luis Enrique Nieto Arango</p><p>Tatiana Morales Perdomo Tatiana Morales Perdomo, Universidad del Rosario</p></div><div id="Editores/as de sección"><h3>Editores/as de sección</h3><p>Laura Victoria García-Matamoros, Universidad del Rosario, Colombia</p><p>Enrique Serrano</p><p>Editor Alejandro Venegas-Franco, Universidad del Rosario, Colombia</p><p>Doctor Gabriel Silgado Bernal, Decano del Medio Universitario, Colombia</p><p>Doctor Luis Enrique Nieto Arango</p><p>Doctor Leonardo Palacios Sanchez</p></div><div id="Correctores/as de pruebas"><h3>Correctores/as de pruebas</h3><p>Portal de Revistas Universidad del Rosario</p><p>Doctor Gabriel Silgado Bernal, Decano del Medio Universitario, Colombia</p><p>Doctor Luis Enrique Nieto Arango</p></div></div>',
   ),
   'themePluginPath' => 'default',
 ); ?>

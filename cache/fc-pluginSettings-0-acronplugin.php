@@ -3,10 +3,10 @@
   array (
     0 => 
     array (
-      'className' => 'plugins.generic.pln.classes.tasks.Depositor',
+      'className' => 'plugins.generic.usageStats.UsageStatsLoader',
       'frequency' => 
       array (
-        'hour' => '25',
+        'hour' => 24,
       ),
       'args' => 
       array (
@@ -27,7 +27,7 @@
     ),
     2 => 
     array (
-      'className' => 'plugins.importexport.crossref.CrossrefInfoSender',
+      'className' => 'plugins.importexport.doaj.DOAJInfoSender',
       'frequency' => 
       array (
         'hour' => 24,
@@ -71,18 +71,19 @@
     ),
     6 => 
     array (
-      'className' => 'classes.tasks.ReviewReminder',
+      'className' => 'plugins.generic.usageStats.UsageStatsLoader',
       'frequency' => 
       array (
         'hour' => 24,
       ),
       'args' => 
       array (
+        0 => 'autoStage',
       ),
     ),
     7 => 
     array (
-      'className' => 'classes.tasks.SubscriptionExpiryReminder',
+      'className' => 'plugins.importexport.doaj.DOAJInfoSender',
       'frequency' => 
       array (
         'hour' => 24,
@@ -93,7 +94,208 @@
     ),
     8 => 
     array (
-      'className' => 'classes.tasks.OpenAccessNotification',
+      'className' => 'plugins.importexport.crossref.CrossrefInfoSender',
+      'frequency' => 
+      array (
+        'hour' => 24,
+      ),
+      'args' => 
+      array (
+      ),
+    ),
+    9 => 
+    array (
+      'className' => 'plugins.importexport.datacite.DataciteInfoSender',
+      'frequency' => 
+      array (
+        'hour' => 24,
+      ),
+      'args' => 
+      array (
+      ),
+    ),
+    10 => 
+    array (
+      'className' => 'plugins.importexport.medra.MedraInfoSender',
+      'frequency' => 
+      array (
+        'hour' => 24,
+      ),
+      'args' => 
+      array (
+      ),
+    ),
+    11 => 
+    array (
+      'className' => 'plugins.generic.usageStats.UsageStatsLoader',
+      'frequency' => 
+      array (
+        'hour' => 24,
+      ),
+      'args' => 
+      array (
+        0 => 'autoStage',
+      ),
+    ),
+    12 => 
+    array (
+      'className' => 'plugins.importexport.doaj.DOAJInfoSender',
+      'frequency' => 
+      array (
+        'hour' => 24,
+      ),
+      'args' => 
+      array (
+      ),
+    ),
+    13 => 
+    array (
+      'className' => 'plugins.importexport.crossref.CrossrefInfoSender',
+      'frequency' => 
+      array (
+        'hour' => 24,
+      ),
+      'args' => 
+      array (
+      ),
+    ),
+    14 => 
+    array (
+      'className' => 'plugins.importexport.datacite.DataciteInfoSender',
+      'frequency' => 
+      array (
+        'hour' => 24,
+      ),
+      'args' => 
+      array (
+      ),
+    ),
+    15 => 
+    array (
+      'className' => 'plugins.importexport.medra.MedraInfoSender',
+      'frequency' => 
+      array (
+        'hour' => 24,
+      ),
+      'args' => 
+      array (
+      ),
+    ),
+    16 => 
+    array (
+      'className' => 'plugins.generic.usageStats.UsageStatsLoader',
+      'frequency' => 
+      array (
+        'hour' => 24,
+      ),
+      'args' => 
+      array (
+        0 => 'autoStage',
+      ),
+    ),
+    17 => 
+    array (
+      'className' => 'plugins.importexport.doaj.DOAJInfoSender',
+      'frequency' => 
+      array (
+        'hour' => 24,
+      ),
+      'args' => 
+      array (
+      ),
+    ),
+    18 => 
+    array (
+      'className' => 'plugins.importexport.crossref.CrossrefInfoSender',
+      'frequency' => 
+      array (
+        'hour' => 24,
+      ),
+      'args' => 
+      array (
+      ),
+    ),
+    19 => 
+    array (
+      'className' => 'plugins.importexport.datacite.DataciteInfoSender',
+      'frequency' => 
+      array (
+        'hour' => 24,
+      ),
+      'args' => 
+      array (
+      ),
+    ),
+    20 => 
+    array (
+      'className' => 'plugins.importexport.medra.MedraInfoSender',
+      'frequency' => 
+      array (
+        'hour' => 24,
+      ),
+      'args' => 
+      array (
+      ),
+    ),
+    21 => 
+    array (
+      'className' => 'plugins.generic.usageStats.UsageStatsLoader',
+      'frequency' => 
+      array (
+        'hour' => 24,
+      ),
+      'args' => 
+      array (
+        0 => 'autoStage',
+      ),
+    ),
+    22 => 
+    array (
+      'className' => 'plugins.importexport.doaj.DOAJInfoSender',
+      'frequency' => 
+      array (
+        'hour' => 24,
+      ),
+      'args' => 
+      array (
+      ),
+    ),
+    23 => 
+    array (
+      'className' => 'plugins.importexport.crossref.CrossrefInfoSender',
+      'frequency' => 
+      array (
+        'hour' => 24,
+      ),
+      'args' => 
+      array (
+      ),
+    ),
+    24 => 
+    array (
+      'className' => 'plugins.importexport.datacite.DataciteInfoSender',
+      'frequency' => 
+      array (
+        'hour' => 24,
+      ),
+      'args' => 
+      array (
+      ),
+    ),
+    25 => 
+    array (
+      'className' => 'plugins.importexport.medra.MedraInfoSender',
+      'frequency' => 
+      array (
+        'hour' => 24,
+      ),
+      'args' => 
+      array (
+      ),
+    ),
+    26 => 
+    array (
+      'className' => 'lib.pkp.classes.task.ReviewReminder',
       'frequency' => 
       array (
         'hour' => 24,

@@ -4,8 +4,8 @@
 <!--
   * locale/sv_SE/locale.xml
   *
-  * Copyright (c) 2013-2018 Simon Fraser University
-  * Copyright (c) 2003-2018 John Willinsky
+  * Copyright (c) 2013-2019 Simon Fraser University
+  * Copyright (c) 2003-2019 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   * Localization information: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Swedish_(sv_SE)
   * Localization strings.
@@ -105,6 +105,8 @@
 	<!-- Common Article Terms -->
 	<message key="article.article">Artikel</message>
 	<message key="article.articles">Artiklar</message>
+	<message key="common.publishedSubmission">Artikel</message>
+	<message key="common.publishedSubmissions">Artiklar</message>
 	<message key="article.submissionId">Bidragets ID</message>
 	<message key="article.title">Titel</message>
 	<message key="article.authors">Författare</message>
@@ -867,7 +869,7 @@ Du kan välja att ge användaren en förklaring till varför kontot har spärrat
 	<message key="installer.ojsUpgrade">Uppgradering av OJS</message>
 	<message key="installer.installationInstructions"><![CDATA[<h4>OJS-version {$version}</h4>
 
-<p>Tack för att du laddar ned Public Knowledge Projects <strong>Open Journal Systems</strong>. Innan du fortsätter, läs <a href="{$baseUrl}/docs/README">README</a>-filen som medföljer mjukvaran. För ytterligare information om the Public Knowledge Project och dess mjukvaruprojekt, vänligen se <a href="http://pkp.sfu.ca/" target="_blank">PKP:s webbplats</a>. Om du vill rapportera buggar i Open Journal Systems eller behöver teknisk support, se <a href="http://forum.pkp.sfu.ca">PKP:s supportforum</a> eller besök PKP:s <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">buggrapporteringssystem</a>. Vi rekommenderar i första hand supportforumet om ni har frågor men det går också bra att maila supporten på: <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>.</p>
+<p>Tack för att du laddar ned Public Knowledge Projects <strong>Open Journal Systems</strong>. Innan du fortsätter, läs <a href="{$baseUrl}/docs/README.md">README</a>-filen som medföljer mjukvaran. För ytterligare information om the Public Knowledge Project och dess mjukvaruprojekt, vänligen se <a href="http://pkp.sfu.ca/" target="_blank">PKP:s webbplats</a>. Om du vill rapportera buggar i Open Journal Systems eller behöver teknisk support, se <a href="http://forum.pkp.sfu.ca">PKP:s supportforum</a> eller besök PKP:s <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">buggrapporteringssystem</a>. Vi rekommenderar i första hand supportforumet om ni har frågor men det går också bra att maila supporten på: <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>.</p>
 
 <h4>Uppgradera</h4>
 
@@ -907,7 +909,7 @@ Du kan välja att ge användaren en förklaring till varför kontot har spärrat
 <p>2. En katalog för lagring av uppladdade filer måste skapas och göras skrivbar (Se "Filinställningar" nedan).</p>]]></message>
         <message key="installer.upgradeInstructions"><![CDATA[<h4>OJS-version {$version}</h4>
 
-	<p>Tack för att du laddar ned Public Knowledge Projects <strong>Open Journal Systems</strong>. Innan du fortsätter, läs <a href="{$baseUrl}/docs/README">README</a>- och <a href="{$baseUrl}/docs/UPGRADE">UPGRADE</a>-filerna  som medföljer mjukvaran. För ytterligare information om the Public Knowledge Project och dess mjukvaruprojekt, vänligen se <a href="http://pkp.sfu.ca/" target="_blank">PKP:s webbplats</a>. Om du vill rapportera buggar i Open Journal Systems eller behöver teknisk support, se <a href="http://forum.pkp.sfu.ca">PKP:s supportforum</a> eller besök PKP:s <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">buggrapporteringssystem</a>. Vi rekommenderar i första hand supportforumet om ni har frågor men det går också bra att maila supporten på: <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>.</p>
+	<p>Tack för att du laddar ned Public Knowledge Projects <strong>Open Journal Systems</strong>. Innan du fortsätter, läs <a href="{$baseUrl}/docs/README.md">README</a>- och <a href="{$baseUrl}/docs/UPGRADE.md">UPGRADE</a>-filerna  som medföljer mjukvaran. För ytterligare information om the Public Knowledge Project och dess mjukvaruprojekt, vänligen se <a href="http://pkp.sfu.ca/" target="_blank">PKP:s webbplats</a>. Om du vill rapportera buggar i Open Journal Systems eller behöver teknisk support, se <a href="http://forum.pkp.sfu.ca">PKP:s supportforum</a> eller besök PKP:s <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">buggrapporteringssystem</a>. Vi rekommenderar i första hand supportforumet om ni har frågor men det går också bra att maila supporten på: <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>.</p>
 <p>Det <strong>rekommenderas starkt</strong> att du gör backup på din databas, filkatalogen, och OJS installationkatalog innan du fortsätter.</p>
 <p>Om du kör installationen i <a href="http://www.php.net/features.safe-mode" target="_blank">PHP Safe Mode</a>, vänligen försäkra dig om att the max_execution_time directive i din php.ini-konfigurationsfil är satt till ett högt gränsvärde. Om denna eller annan tidsbegränsning (t.ex. Apaches "Timeout"-direktiv) överskrids och uppgraderingsprocessen avbryts måste arbetet hanteras manuellt.</p>]]></message>
 	<message key="installer.localeSettingsInstructions"><![CDATA[För komplett Unicode-stöd (UTF-8), välj UTF-8 för samtliga teckenuppsättningsinställningar. Observera att fullt Unicode-stöd kräver att PHP har kompilerats med stöd för <a href="http://www.php.net/mbstring" target="_blank">mbstring</a>-biblioteket (aktiverat som default i nya PHP-installationer). Det kan uppstå problem med utökade teckenuppsättningar om inte servern uppfyller dessa krav.
@@ -1038,7 +1040,6 @@ Sök-URL:er som kräver inskickade formulärdata kan komma att visas som ogiltig
 
 	<!-- Notification Types -->
 
-	<message key="notification.type.articleSubmitted">En ny artikel, "{$title}", har skickats in.</message>
 	<message key="notification.type.editing">Redaktionella händelser</message>
 	<message key="notification.type.submissionSubmitted">En ny artikel, "{$title}", har skickats in.</message>
 	<message key="notification.type.editorDecisionComment">En kommentar har tillfogats redaktörsbeslut för "{$title}."</message>

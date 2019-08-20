@@ -4,8 +4,8 @@
 <!--
   * locale/pt_PT/locale.xml
   *
-  * Copyright (c) 2013-2018 Simon Fraser University
-  * Copyright (c) 2003-2018 John Willinsky
+  * Copyright (c) 2013-2019 Simon Fraser University
+  * Copyright (c) 2003-2019 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   * Localization information: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Portuguese_(pt_PT)
   * Localization strings.
@@ -72,6 +72,7 @@
 	<message key="section.abbreviation.example">(Por exemplo, Artigos=ART)</message>
 	<!-- Common Article Terms -->
 	<message key="article.articles">Artigos</message>
+	<message key="common.publishedSubmissions">Artigos</message>
 	<message key="article.submissionId">ID da Submissão</message>
 	<message key="article.title">Título</message>
 	<message key="article.authors">Autores</message>
@@ -509,7 +510,7 @@ Escolha um modelo para administrar os aspectos do processo editorial. (Para desi
 	<message key="installer.ojsUpgrade">Actualização do Sistema</message>
 	<message key="installer.installationInstructions"><![CDATA[<h4>OJS Versão {$version}</h4>
 
-<p>Agradecemos o seu interesse em utilizar o <strong>Sistema Electrónico de Edição de Revistas</strong>, desenvolvido pelo Public Knowledge Project. Antes de continuar, leia o documento <a href="{$baseUrl}/docs/README_pt">README_pt</a> incluído com o pacote. Para mais informações sobre o Public Knowledge Project e outros sistemas desenvolvidos, aceda ao <a href="http://pkp.sfu.ca/" target="_blank">portal do PKP</a>. Clique em <a href="http://www.ibict.br" target="_blank">portal do Ibict/MCT</a> e em <a href="http://seer.ibict.br" target="_blank">Portal do SEER</a> para mais informações sobre o envolvimento do Instituto Brasileiro de Informação em Ciência e Tecnologia com o sistema. Para reportar erros, sugestões ou dúvidas sobre o Sistema Electrónico de Edição de Revistas/Open Journal Systems visite <a href="forum.ibict.br">Forum do Ibict</a>, <a href="forum.pkp.sfu.ca">PKP Support Forum</a>, ou <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">Github.com issues</a> do PKP. Embora os fóruns sejam a forma preferencial de contacto, também pode-se entrar em contacto com a Equipa do SEER através dos formulários disponíveis na secção <a href="http://seer.ibict.br/index.php?option=com_content&task=view&id=270&Itemid=113" target="_blank">Fale conosco</a> no <a href="http://seer.ibict.br" target="_blank">portal do SEER</a> e para a <a href="mailto:pkp.contact@gmail.com">Equipa do PKP (pkp.contact@gmail.com)</a>.</p>
+<p>Agradecemos o seu interesse em utilizar o <strong>Sistema Electrónico de Edição de Revistas</strong>, desenvolvido pelo Public Knowledge Project. Antes de continuar, leia o documento <a href="{$baseUrl}/docs/README.md_pt">README_pt</a> incluído com o pacote. Para mais informações sobre o Public Knowledge Project e outros sistemas desenvolvidos, aceda ao <a href="http://pkp.sfu.ca/" target="_blank">portal do PKP</a>. Clique em <a href="http://www.ibict.br" target="_blank">portal do Ibict/MCT</a> e em <a href="http://seer.ibict.br" target="_blank">Portal do SEER</a> para mais informações sobre o envolvimento do Instituto Brasileiro de Informação em Ciência e Tecnologia com o sistema. Para reportar erros, sugestões ou dúvidas sobre o Sistema Electrónico de Edição de Revistas/Open Journal Systems visite <a href="forum.ibict.br">Forum do Ibict</a>, <a href="forum.pkp.sfu.ca">PKP Support Forum</a>, ou <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">Github.com issues</a> do PKP. Embora os fóruns sejam a forma preferencial de contacto, também pode-se entrar em contacto com a Equipa do SEER através dos formulários disponíveis na secção <a href="http://seer.ibict.br/index.php?option=com_content&task=view&id=270&Itemid=113" target="_blank">Fale conosco</a> no <a href="http://seer.ibict.br" target="_blank">portal do SEER</a> e para a <a href="mailto:pkp.contact@gmail.com">Equipa do PKP (pkp.contact@gmail.com)</a>.</p>
 
 <h4>Actualização</h4>
 
@@ -549,7 +550,7 @@ Escolha um modelo para administrar os aspectos do processo editorial. (Para desi
 <li>Um pasta para armazenar os ficheiros de submissão deve ser criado e com permissão de escrita (veja mais abaixo Configuração de Ficheiros).</li></ol>]]></message>
 	<message key="installer.upgradeInstructions"><![CDATA[<h4>Versão {$version}</h4>
 
-<p>Agradecemos o seu interesse em utilizar o <strong>Sistema Electrónico de Edição de Revistas</strong>, desenvolvido pelo Public Knowledge Project. Antes de continuar, leia o documento <a href="{$baseUrl}/docs/README_pt">README_pt</a> e o <a href="{$baseUrl}/docs/UPGRADE_pt">UPGRADE_pt</a>incluído com o pacote. Para mais informações sobre o Public Knowledge Project e outros sistemas desenvolvidos, aceda ao <a href="http://pkp.sfu.ca/" target="_blank">portal do PKP</a>. Clique em <href="http://www.ibict.br" target="_blank">portal do Ibict/MCT</a> e em <a href="http://www.ibict.br/seer/" target="_blank">Secção sobre o SEER/OJS</a>para mais informações sobre o envolvimento do Instituto Brasileiro de Informação em Ciência e Tecnologia com o sistema. Para reportar erros, sugestões ou dúvidas sobre o Sistema Electrónico de Edição de Revistas/Open Journal Systems visite <a href="forum.ibict.br">Forum do Ibict</a>, <a href="forum.pkp.sfu.ca">PKP Support Forum</a>, ou <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">Github.com issues</a> do PKP. Embora os fóruns sejam a forma preferencial de contacto, também pode-se enviar e-mail para a <a href="mailto:seer@ibict.br">Equipa do SEER (seer@ibict.br)</a> e para a <a href="mailto:pkp.contact@gmail.com">Equipa do PKP (pkp.contact@gmail.com)</a>.</p>
+<p>Agradecemos o seu interesse em utilizar o <strong>Sistema Electrónico de Edição de Revistas</strong>, desenvolvido pelo Public Knowledge Project. Antes de continuar, leia o documento <a href="{$baseUrl}/docs/README.md_pt">README_pt</a> e o <a href="{$baseUrl}/docs/UPGRADE.md_pt">UPGRADE_pt</a>incluído com o pacote. Para mais informações sobre o Public Knowledge Project e outros sistemas desenvolvidos, aceda ao <a href="http://pkp.sfu.ca/" target="_blank">portal do PKP</a>. Clique em <href="http://www.ibict.br" target="_blank">portal do Ibict/MCT</a> e em <a href="http://www.ibict.br/seer/" target="_blank">Secção sobre o SEER/OJS</a>para mais informações sobre o envolvimento do Instituto Brasileiro de Informação em Ciência e Tecnologia com o sistema. Para reportar erros, sugestões ou dúvidas sobre o Sistema Electrónico de Edição de Revistas/Open Journal Systems visite <a href="forum.ibict.br">Forum do Ibict</a>, <a href="forum.pkp.sfu.ca">PKP Support Forum</a>, ou <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">Github.com issues</a> do PKP. Embora os fóruns sejam a forma preferencial de contacto, também pode-se enviar e-mail para a <a href="mailto:seer@ibict.br">Equipa do SEER (seer@ibict.br)</a> e para a <a href="mailto:pkp.contact@gmail.com">Equipa do PKP (pkp.contact@gmail.com)</a>.</p>
 
 <p>É <strong>altamente recomendado</strong> fazer cópia de segurança da base de dados, das pastas para submissão e da pasta raíz do sistema antes de proceder.</p>
 <p>Caso esteja executando o <a href="http://www.php.net/features.safe-mode" target="_blank">PHP em Modo Seguro (Safe Mode)</a>, assegure-se que a directiva max_execution_time no php.ini esteja configurada para um limite alto. Caso este ou qualquer outro limite (ex.: directivas de timeout do Apache) for alcançada e o processo de actualização for interrompido, será necessário restaurar a versão anterior e executar novamente a actualização, alterando as configurações de limites no servidor.</p>]]></message>
@@ -771,6 +772,7 @@ Autores que publicam nesta revista concordam com os seguintes termos:
 	<message key="article.fontSize.large.altText">Maior</message>
 	<message key="journal.issn">ISSN</message>
 	<message key="article.article">Artigo</message>
+	<message key="common.publishedSubmission">Artigo</message>
 	<message key="user.manageMySubscriptions">Gerir Minhas Subscrições</message>
 	<message key="subscriptionTypes.currency">Moeda</message>
 	<message key="subscriptionTypes.year">ano</message>
@@ -844,7 +846,6 @@ Pode-se opcionalmente informar o motivo pelo qual está sendo desactivado o regi
 	<message key="payment.subscription.purchase">Adquirir Subscrições</message>
 	<message key="installer.installApplication">Instalar o sistema</message>
 	<message key="installer.upgradeApplication">Actualizar o sistema</message>
-	<message key="notification.type.articleSubmitted">Um novo artigo, "{$title}", foi submetido.</message>
 	<message key="notification.type.editing">Editando eventos</message>
 	<message key="notification.type.editorDecisionComment">Foi produzido um comentário sobre a decisão editorial de "{$title}".</message>
 	<message key="notification.type.galleyModified">A versão para publicação foi alterada para "{$title}".</message>
@@ -991,4 +992,9 @@ Setting up CLOCKSS support for Open Journal Systems does not need to take place 
 	<message key="log.editor.submissionExpedited">{$editorName} tomou o processo de edição do artigo {$submissionId}.</message>
 	<message key="notification.type.publicationScheduled">Esta submissão foi agendada para publicação.</message>
 	<message key="log.editor.recommendation">O editor {$editorName} registou uma recomendação ({$decision}) para o artigo {$submissionId}.</message>
+	<message key="user.reviewerPrompt.optin">Sim, quero ser contactado com pedidos de revisão a submissões para esta revista.</message>
+	<message key="user.register.form.emailConsentAllContexts">Sim, quero ser notificado de novas publicações e anúncios para todas as revistas em que me registei.</message>
+	<message key="user.register.form.privacyConsentThisContext"><![CDATA[Sim, concordo que os meus dados sejam recolhidos e armazenados de acordo com os <a href="{$privacyUrl}" target="_blank">termos de privacidade</a> da revista.]]></message>
+	<message key="user.register.form.missingContextConsent">Tem de concordar com os termos de privacidade para todas as revistas para as quais se registou.</message>
+	<message key="user.register.form.missingSiteConsent">Tem de concordar com os termos de privacidade deste sítio.</message>
 </locale>

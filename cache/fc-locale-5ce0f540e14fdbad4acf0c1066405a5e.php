@@ -8,7 +8,8 @@
   'plugins.importexport.pubmed.export.selectArticle' => 'Seleccione Artículos para exportar.',
   'plugins.importexport.pubmed.cliUsage' => 'Usage: 
 {$scriptName} {$pluginName} [xmlFileName] [journal_path] articles [articleId1] [articleId2] ...
-{$scriptName} {$pluginName} [xmlFileName] [journal_path] issue [issueId]',
+{$scriptName} {$pluginName} [xmlFileName] [journal_path] issue [issueId]
+',
   'plugins.importexport.pubmed.cliError' => 'ERROR:',
   'plugins.importexport.pubmed.export.error.issueNotFound' => 'No existe ningún número con el ID especificado"{$issueId}".',
   'plugins.importexport.pubmed.export.error.articleNotFound' => 'No existe ningún artículo con el ID especificado "{$articleId}".',

@@ -5,7 +5,8 @@
 Comandos:
 	import [xmlFileName] [journal_path]
 	export [xmlFileName] [journal_path]
-	export [xmlFileName] [journal_path] [userId1] [userId2] ...',
+	export [xmlFileName] [journal_path] [userId1] [userId2] ...
+',
   'plugins.importexport.users.import.importUsers' => 'Importar usuarios/as',
   'plugins.importexport.users.import.instructions' => 'Seleccione un fichero XML que contenga los datos de usarias/os que quiere importar en la revista. Consulte la ayuda e la revista para saber los detalles del formato de este fichero.<br /><br />Tenga en cuenta que si el fichero importado contiene nombres de usuaria/o o direcciones de correo-e que ya existan en el sistema no se importarán los datos de esas/os usuarias/os y los nuevos roles a crear se asignarán a las/os usuarias/os existentes.',
   'plugins.importexport.users.import.dataFile' => 'Fichero de datos de usuaria/o',

@@ -3,8 +3,8 @@
 /**
  * @file controllers/grid/users/subscriberSelect/SubscriberSelectGridHandler.inc.php
  *
- * Copyright (c) 2014-2018 Simon Fraser University
- * Copyright (c) 2000-2018 John Willinsky
+ * Copyright (c) 2014-2019 Simon Fraser University
+ * Copyright (c) 2000-2019 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class SubscriberSelectGridHandler
@@ -127,7 +127,7 @@ class SubscriberSelectGridHandler extends GridHandler {
 	/**
 	 * @copydoc GridHandler::renderFilter()
 	 */
-	function renderFilter($request) {
+	function renderFilter($request, $filterData = array()) {
 		$context = $request->getContext();
 		$userGroupDao = DAORegistry::getDAO('UserGroupDAO');
 		$userGroups = $userGroupDao->getByContextId($context->getId());
@@ -205,4 +205,4 @@ class SubscriberSelectGridHandler extends GridHandler {
 	}
 }
 
-?>
+

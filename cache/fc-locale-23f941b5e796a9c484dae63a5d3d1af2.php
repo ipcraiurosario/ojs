@@ -152,9 +152,11 @@
   'manager.reviewerSearch.form.instructions' => 'Use el siguiente formulario para configurar los valores máximos de los términos que desee buscar.  El formulario se ha rellenado previamente con los promedios calculados de esos campos.',
   'manager.roles' => 'Tareas',
   'manager.statistics' => 'Stats &amp; Reports',
-  'manager.statistics.defaultMetricDescription' => 'Tu {$contextObjectName} está conifigurado para registrar más de una métrica de uso. Se mostrarán las estadísticas de uso en varios contextos.
+  'manager.statistics.defaultMetricDescription' => '
+		Tu {$contextObjectName} está conifigurado para registrar más de una métrica de uso. Se mostrarán las estadísticas de uso en varios contextos.
 		Hay casos en los que solo se debe usar una única estadística de uso, p.ej. para mostrar una lista ordenada de los envíos más usados o para clasificar
-		los resultados de búsqueda. Seleccione una de las medidas configuradas como predeterminadas.',
+		los resultados de búsqueda. Seleccione una de las medidas configuradas como predeterminadas.
+	',
   'manager.statistics.city' => 'Ciudad',
   'manager.statistics.region' => 'Región',
   'manager.statistics.reports' => 'Generador de informes',
@@ -240,8 +242,8 @@
   'manager.plugins.deleteSuccess' => 'El módulo "{$pluginName}" se eliminó correctamente',
   'manager.plugins.doesNotExist' => 'El módulo "{$pluginName}" no existe',
   'manager.plugins.fileSelectError' => 'Seleccione un archivo primero',
-  'manager.plugins.installedVersionNewer' => 'Este módulo ya existe. Se trata de una versión posterior o igual que la que está instalada',
-  'manager.plugins.installedVersionOlder' => 'Este módulo ya existe. Se trata de una versión anterior o igual que la que está instalada',
+  'manager.plugins.installedVersionNewer' => 'Este módulo ya existe y es una versión posterior a la que está disponible en la galería.',
+  'manager.plugins.installedVersionOlder' => 'Este módulo ya existe, pero puede ser actualizado a una nueva versión.',
   'manager.plugins.installFailed' => 'Error de instalación {$errorString}',
   'manager.plugins.installSuccessful' => 'La versión {$versionNumber} se ha instalado correctamente',
   'manager.plugins.invalidPluginArchive' => 'El módulo que ha cargado no contiene ninguna carpeta que se corresponda con el nombre del módulo.',
@@ -496,4 +498,16 @@
   'manager.navigationMenus.mySubscriptions.conditionalWarning' => 'Este enlace solo se mostrará si el visitante ha iniciado la sesión, la opción de pagos está activa en Ajustes > Distribución > Pagos  y se requieren suscripciones  en Ajustes > Distribución > Acceso.',
   'manager.navigationMenus.privacyStatement.description' => 'Enlazar con la página que muestra la declaración de privacidad.',
   'manager.navigationMenus.privacyStatement.conditionalWarning' => 'Este enlace solo se mostrará si se ha introducido una declaración de privacidad en Ajustes > Flujo de trabajo > Envíos.',
+  'grid.category.add' => 'Añadir categoría',
+  'grid.category.edit' => 'Editar categoría',
+  'grid.category.name' => 'Nombre',
+  'grid.category.path' => 'Ruta',
+  'grid.category.urlWillBe' => 'La URL de la categoría, será: {$sampleUrl}',
+  'grid.category.pathAlphaNumeric' => 'La ruta de la categoría debe consistir sólo en letras y números.',
+  'grid.category.pathExists' => 'La ruta de la categoría ya existe. Por favor introduzca una ruta única.',
+  'grid.category.description' => 'Descripción',
+  'grid.category.parentCategory' => 'Categoría padre',
+  'grid.category.removeText' => '¿Está seguro que desea eliminar esta categoría?',
+  'grid.category.nameRequired' => 'Por favor, introduzca un nombre de categoría.',
+  'grid.category.categoryDetails' => 'Detalles de la categoría',
 ); ?>

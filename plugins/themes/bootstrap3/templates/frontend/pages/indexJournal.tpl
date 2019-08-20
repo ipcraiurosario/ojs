@@ -19,22 +19,20 @@
  * @uses $issue Issue Current issue
  *}
 {include file="frontend/components/header.tpl" pageTitleTranslated=$currentJournal->getLocalizedName()}
-</main>
 
-<main class="pkp_structure_main col-md-9">
 <div id="main-content" class="page_index_journal" role="content">
 
 	{call_hook name="Templates::Index::journal"}
 
-	{* Additional Homepage Content *}
-	{if $additionalHomeContent}
-		<div class="about_site row">
-			{if $homepageImage}
-				<div class="homepage-image">
-					<img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}">
-				</div>
-			{/if}
-			<div class="asd">{$additionalHomeContent}</div>
+	{if $homepageImage}
+		<div class="homepage-image">
+			<img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}">
+		</div>
+	{/if}
+
+	{if $journalDescription}
+		<div class="journal-description">
+			{$journalDescription}
 		</div>
 	{/if}
 
@@ -49,7 +47,7 @@
 			<div class="media-list">
 				{foreach name=announcements from=$announcements item=announcement}
 					{if $smarty.foreach.announcements.iteration > $numAnnouncementsHomepage}
-						{php}break;{/php}
+						{break}
 					{/if}
 					{include file="frontend/objects/announcement_summary.tpl" heading="h3"}
 				{/foreach}
@@ -77,6 +75,12 @@
 		</section>
 	{/if}
 
+	{* Additional Homepage Content *}
+	{if $additionalHomeContent}
+		<section class="additional_content">
+			{$additionalHomeContent}
+		</section>
+	{/if}
 </div><!-- .page -->
 
 {include file="frontend/components/footer.tpl"}

@@ -4,8 +4,8 @@
 <!--
   * locale/fr_CA/locale.xml
   *
-  * Copyright (c) 2013-2018 Simon Fraser University
-  * Copyright (c) 2003-2018 John Willinsky
+  * Copyright (c) 2013-2019 Simon Fraser University
+  * Copyright (c) 2003-2019 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   * Localization information: https://pkp.sfu.ca/wiki/index.php?title=OJS:_French_(fr_CA)
   * Localization strings.
@@ -83,6 +83,7 @@
 	<message key="section.abbreviation.example">(Par exemple, Articles=ART)</message>
 	<!-- Common Article Terms -->
 	<message key="article.articles">Articles</message>
+	<message key="common.publishedSubmissions">Articles</message>
 	<message key="article.submissionId">ID de la soumission</message>
 	<message key="article.title">Titre</message>
 	<message key="article.authors">Auteurs</message>
@@ -764,6 +765,7 @@ le droit de première publication, avec l’ouvrage disponible simultanément [S
 	<message key="payment.type.purchaseArticle">Frais d'achat de l'article</message>
 	<message key="journal.issn">ISSN</message>
 	<message key="article.article">Article</message>
+	<message key="common.publishedSubmission">Article</message>
 	<message key="user.manageMySubscriptions">Gérer Mes abonnements</message>
 	<message key="subscriptionTypes.currency">Devise</message>
 	<message key="subscriptionTypes.year">année</message>
@@ -843,7 +845,6 @@ Titre du système de classification]]></message>
 	<message key="rt.admin.validateUrls.description"><![CDATA[Des URLs de sites de recherche possiblement invalides sont affichés ci-dessous.<br />
 Vous devriez vérifier manuellement tous les URLs indentifiés comme invalides, car ce test n'est pas fiable à 100%.<br />
 La validation peut échouer sur les URL de recherche qui nécessitent des formulaires de données enregistrés.]]></message>
-	<message key="notification.type.articleSubmitted">Un nouvel article, "{$title}", a été soumis.</message>
 	<message key="notification.type.editing">Événements de révision</message>
 	<message key="notification.type.editorDecisionComment">Un commentaire a été laissé concernant la décision du rédacteur pour "{$title}".</message>
 	<message key="notification.type.galleyModified">Une épreuve a été modifiée pour "{$title}".</message>

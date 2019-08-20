@@ -3,7 +3,8 @@
   'plugins.importexport.doaj.description' => 'Exportar la revista a DOAJ.',
   'plugins.importexport.doaj.export.contact' => 'Contactar con DOAJ para la inclusión',
   'plugins.importexport.doaj.cliUsage' => 'Uso:
-{$scriptName} {$pluginName} export [xmlFileName] [journal_path] articles objectId1 [objectId2] ...',
+{$scriptName} {$pluginName} export [xmlFileName] [journal_path] articles objectId1 [objectId2] ...
+',
   'plugins.importexport.doaj.registrationIntro' => 'Si desea registrar artículos desde el propio OJS, introduzca su clave API DOAJ. Si no lo hace, todavía podrá exportarlos al formato DOAJ XML, pero no podrá registrar los artículos con DOAJ desde OJS.',
   'plugins.importexport.doaj.settings.form.apiKey' => 'Clave API DOAJ',
   'plugins.importexport.doaj.settings.form.apiKey.description' => 'Encontrará su clave API en su página de usuario/a de DOAJ.',
