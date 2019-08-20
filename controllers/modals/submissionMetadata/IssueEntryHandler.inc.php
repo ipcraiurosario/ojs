@@ -3,8 +3,8 @@
 /**
  * @file controllers/modals/submissionMetadata/IssueEntryHandler.inc.php
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2003-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class IssueEntryHandler
@@ -38,20 +38,21 @@ class IssueEntryHandler extends PublicationEntryHandler {
 
 		$submission = $this->getSubmission();
 
-		// load in any galley formats assigned to this published submission
+		// load in any galley formats assigned to this published article
 		$galleyDao = DAORegistry::getDAO('ArticleGalleyDAO');
-		$articleGalleys = $galleyDao->getBySubmissionId($submission->getId(), null, $submission->getSubmissionVersion());
+		$articleGalleys = $galleyDao->getBySubmissionId($submission->getId());
 
 		$templateMgr->assign('galleys', $articleGalleys->toArray());
 
-		$request = Application::get()->getRequest();
+		$application = Application::getApplication();
+		$request = $application->getRequest();
 		$router = $request->getRouter();
 		$dispatcher = $router->getDispatcher();
 
-		$tabsUrl = $dispatcher->url($request, ROUTE_COMPONENT, null, 'modals.submissionMetadata.IssueEntryHandler', 'fetchFormatInfo', null, array('submissionId' => $submission->getId(), 'stageId' => $this->getStageId(), 'submissionVersion' => $submission->getSubmissionVersion()));
+		$tabsUrl = $dispatcher->url($request, ROUTE_COMPONENT, null, 'modals.submissionMetadata.IssueEntryHandler', 'fetchFormatInfo', null, array('submissionId' => $submission->getId(), 'stageId' => $this->getStageId()));
 		$templateMgr->assign('tabsUrl', $tabsUrl);
 
-		$tabContentUrl = $dispatcher->url($request, ROUTE_COMPONENT, null, 'tab.issueEntry.IssueEntryTabHandler', 'galleyMetadata', null, array('submissionId' => $submission->getId(), 'stageId' => $this->getStageId(), 'submissionVersion' => $submission->getSubmissionVersion()));
+		$tabContentUrl = $dispatcher->url($request, ROUTE_COMPONENT, null, 'tab.issueEntry.IssueEntryTabHandler', 'galleyMetadata', null, array('submissionId' => $submission->getId(), 'stageId' => $this->getStageId()));
 		$templateMgr->assign('tabContentUrl', $tabContentUrl);
 
 		return $templateMgr->fetchJson('controllers/modals/submissionMetadata/issueEntryTabs.tpl');
@@ -67,7 +68,7 @@ class IssueEntryHandler extends PublicationEntryHandler {
 	function fetchFormatInfo($args, $request) {
 		$submission = $this->getSubmission();
 		$galleyDao = DAORegistry::getDAO('ArticleGalleyDAO');
-		$galleys = $galleyDao->getBySubmissionId($submission->getId(), null, $submission->getSubmissionVersion());
+		$galleys = $galleyDao->getBySubmissionId($submission->getId());
 		$formats = array();
 		while ($galley = $galleys->next()) {
 			$formats[$galley->getId()] = $galley->getLocalizedName();
@@ -78,4 +79,4 @@ class IssueEntryHandler extends PublicationEntryHandler {
 	}
 }
 
-
+?>

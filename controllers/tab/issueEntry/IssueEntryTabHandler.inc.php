@@ -3,8 +3,8 @@
 /**
  * @file controllers/tab/issueEntry/IssueEntryTabHandler.inc.php
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2003-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class IssueEntryTabHandler
@@ -23,7 +23,7 @@ class IssueEntryTabHandler extends PublicationEntryTabHandler {
 	function __construct() {
 		parent::__construct();
 		$this->addRoleAssignment(
-			array(ROLE_ID_SUB_EDITOR, ROLE_ID_MANAGER, ROLE_ID_ASSISTANT),
+			array(ROLE_ID_SUB_EDITOR, ROLE_ID_MANAGER),
 			array(
 				'publicationMetadata', 'savePublicationMetadataForm',
 				'identifiers', 'clearPubId', 'updateIdentifiers',
@@ -81,7 +81,7 @@ class IssueEntryTabHandler extends PublicationEntryTabHandler {
 
 		// Remove the file
 		$publicFileManager = new PublicFileManager();
-		if ($publicFileManager->removeContextFile($submission->getJournalId(), $file)) {
+		if ($publicFileManager->removeJournalFile($submission->getJournalId(), $file)) {
 			$json = new JSONMessage(true);
 			$json->setEvent('fileDeleted');
 			return $json;
@@ -101,7 +101,7 @@ class IssueEntryTabHandler extends PublicationEntryTabHandler {
 		$stageId = $this->getStageId();
 		$user = $request->getUser();
 		import('controllers.tab.issueEntry.form.IssueEntryPublicationMetadataForm');
-		$issueEntryPublicationMetadataForm = new IssueEntryPublicationMetadataForm($submission->getId(), $user->getId(), $stageId, array('submissionVersion' => $submission->getSubmissionVersion()));
+		$issueEntryPublicationMetadataForm = new IssueEntryPublicationMetadataForm($submission->getId(), $user->getId(), $stageId);
 		$issueEntryPublicationMetadataForm->initData();
 		return new JSONMessage(true, $issueEntryPublicationMetadataForm->fetch($request));
 	}
@@ -120,8 +120,8 @@ class IssueEntryTabHandler extends PublicationEntryTabHandler {
 		import('controllers.tab.issueEntry.form.IssueEntryPublicationMetadataForm');
 		$form = new IssueEntryPublicationMetadataForm($submission->getId(), $user->getId(), $stageId);
 		$form->readInputData();
-		if($form->validate()) {
-			$form->execute();
+		if($form->validate($request)) {
+			$form->execute($request);
 			// submission changed, so get it again
 			$submission = $form->getSubmission();
 			// Log the event
@@ -142,10 +142,12 @@ class IssueEntryTabHandler extends PublicationEntryTabHandler {
 			// Display assign public identifiers form
 			$assignPubIds = false;
 			$pubIdPlugins = PluginRegistry::loadCategory('pubIds', true);
-			foreach ($pubIdPlugins as $pubIdPlugin) {
-				if ($pubIdPlugin->isObjectTypeEnabled('Submission', $submission->getContextId())) {
-					$assignPubIds = true;
-					break;
+			if (is_array($pubIdPlugins)) {
+				foreach ($pubIdPlugins as $pubIdPlugin) {
+					if ($pubIdPlugin->isObjectTypeEnabled('Submission', $submission->getContextId())) {
+						$assignPubIds = true;
+						break;
+					}
 				}
 			}
 			if ($assignPubIds) {
@@ -153,7 +155,7 @@ class IssueEntryTabHandler extends PublicationEntryTabHandler {
 				$formTemplate = $this->getAssignPublicIdentifiersFormTemplate();
 				$formParams = array('stageId' => $stageId);
 				$assignPublicIdentifiersForm = new AssignPublicIdentifiersForm($formTemplate, $submission, true, '', $formParams);
-				$assignPublicIdentifiersForm->initData();
+				$assignPublicIdentifiersForm->initData($args, $request);
 				$json = new JSONMessage(true, $assignPublicIdentifiersForm->fetch($request));
 			} else {
 				$json = new JSONMessage();
@@ -180,7 +182,7 @@ class IssueEntryTabHandler extends PublicationEntryTabHandler {
 		$assignPublicIdentifiersForm = new AssignPublicIdentifiersForm($formTemplate, $submission, true, '', $formParams);
 		// Assign pub ids
 		$assignPublicIdentifiersForm->readInputData();
-		$assignPublicIdentifiersForm->execute(true);
+		$assignPublicIdentifiersForm->execute($request, true);
 		return new JSONMessage();
 	}
 
@@ -243,8 +245,8 @@ class IssueEntryTabHandler extends PublicationEntryTabHandler {
 		$stageId = $this->getStageId();
 		$form = new PublicIdentifiersForm($submission, $stageId, array('displayedInContainer' => true));
 		$form->readInputData();
-		if ($form->validate()) {
-			$form->execute();
+		if ($form->validate($request)) {
+			$form->execute($request);
 			$json = new JSONMessage();
 			import('lib.pkp.classes.log.SubmissionLog');
 			import('classes.log.SubmissionEventLogEntry'); // Log consts
@@ -279,7 +281,7 @@ class IssueEntryTabHandler extends PublicationEntryTabHandler {
 
 		$submission = $this->getSubmission();
 		import('controllers.modals.submissionMetadata.form.IssueEntrySubmissionReviewForm');
-		return new IssueEntrySubmissionReviewForm($submission->getId(), $this->getStageId(), array('displayedInContainer' => true, 'submissionVersion' => $submission->getSubmissionVersion()));
+		return new IssueEntrySubmissionReviewForm($submission->getId(), $this->getStageId(), array('displayedInContainer' => true));
 	}
 
 	/**
@@ -291,4 +293,4 @@ class IssueEntryTabHandler extends PublicationEntryTabHandler {
 	}
 }
 
-
+?>

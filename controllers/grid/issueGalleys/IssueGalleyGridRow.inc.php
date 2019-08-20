@@ -3,8 +3,8 @@
 /**
  * @file controllers/grid/issueGalleys/IssueGalleyGridRow.inc.php
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2003-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class IssueGalleyGridRow
@@ -33,10 +33,11 @@ class IssueGalleyGridRow extends GridRow {
 	// Overridden template methods
 	//
 	/*
-	 * @copydoc GridRow::initialize
+	 * Configure the grid row
+	 * @param $request PKPRequest
 	 */
-	function initialize($request, $template = null) {
-		parent::initialize($request, $template);
+	function initialize($request) {
+		parent::initialize($request);
 
 		// Is this a new row or an existing row?
 		$issueGalleyId = $this->getId();
@@ -84,4 +85,4 @@ class IssueGalleyGridRow extends GridRow {
 	}
 }
 
-
+?>

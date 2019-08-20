@@ -3,8 +3,8 @@
 /**
  * @file classes/subscription/InstitutionalSubscriptionDAO.inc.php
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2003-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class InstitutionalSubscriptionDAO
@@ -20,7 +20,6 @@ import('classes.subscription.InstitutionalSubscription');
 define('SUBSCRIPTION_INSTITUTION_NAME',	0x20);
 define('SUBSCRIPTION_DOMAIN',		0x21);
 define('SUBSCRIPTION_IP_RANGE',		0x22);
-
 
 class InstitutionalSubscriptionDAO extends SubscriptionDAO {
 	/**
@@ -125,7 +124,7 @@ class InstitutionalSubscriptionDAO extends SubscriptionDAO {
 
 	/**
 	 * Return number of institutional subscriptions with given status for journal.
-	 * @param status int
+	 * @param status int 
 	 * @return int
 	 */
 	function getStatusCount($journalId, $status = null) {
@@ -183,7 +182,7 @@ class InstitutionalSubscriptionDAO extends SubscriptionDAO {
 	 * @param $userId int User ID
 	 * @return boolean
 	 */
-	function subscriptionExistsByUser($subscriptionId, $userId) {
+	function subscriptionExistsByUser($subscriptionId, $userId) { 
 		$result = $this->retrieve(
 			'SELECT COUNT(*)
 			FROM	subscriptions s
@@ -255,7 +254,7 @@ class InstitutionalSubscriptionDAO extends SubscriptionDAO {
 	/**
 	 * Insert a new institutional subscription.
 	 * @param $institutionalSubscription InstitutionalSubscription
-	 * @return int
+	 * @return int 
 	 */
 	function insertObject($institutionalSubscription) {
 		$subscriptionId = null;
@@ -418,20 +417,41 @@ class InstitutionalSubscriptionDAO extends SubscriptionDAO {
 	}
 
 	/**
+	 * Retrieve all institutional subscription contacts.
+	 * @return object DAOResultFactory containing Users
+	 */
+	function getSubscribedUsers($journalId, $rangeInfo = null) {
+		$result = $this->retrieveRange(
+			'SELECT	u.*
+			FROM	subscriptions s
+				JOIN subscription_types st ON (s.type_id = st.type_id)
+				JOIN users u ON (s.user_id = u.user_id)
+			WHERE	st.institutional = 1 AND
+				s.journal_id = ?
+			ORDER BY u.last_name ASC, s.subscription_id',
+			array((int) $journalId),
+			$rangeInfo
+		);
+
+		$userDao = DAORegistry::getDAO('UserDAO');
+		return new DAOResultFactory($result, $userDao, '_returnUserFromRow');
+	}
+
+	/**
 	 * Retrieve institutional subscriptions matching a particular journal ID.
 	 * @param $journalId int
 	 * @param $status int
 	 * @param $searchField int
 	 * @param $searchMatch string "is" or "contains" or "startsWith"
 	 * @param $search String to look in $searchField for
-	 * @param $dateField int
+	 * @param $dateField int 
 	 * @param $dateFrom String date to search from
 	 * @param $dateTo String date to search to
 	 * @return object DAOResultFactory containing matching Subscriptions
 	 */
 	function getByJournalId($journalId, $status = null, $searchField = null, $searchMatch = null, $search = null, $dateField = null, $dateFrom = null, $dateTo = null, $rangeInfo = null) {
-		$userDao = DAORegistry::getDAO('UserDAO');
-		$params = array_merge($userDao->getFetchParameters(), array((int) $journalId));
+
+		$params = array((int) $journalId);
 		$ipRangeSql1 = $ipRangeSql2 = '';
 		$searchSql = $this->_generateSearchSQL($status, $searchField, $searchMatch, $search, $dateField, $dateFrom, $dateTo, $params);
 
@@ -478,13 +498,11 @@ class InstitutionalSubscriptionDAO extends SubscriptionDAO {
 
 
 		$result = $this->retrieveRange(
-			'SELECT DISTINCT s.*, iss.*,
-				' . $userDao->getFetchColumns() .'
+			'SELECT DISTINCT s.*, iss.*
 			FROM	subscriptions s
 				JOIN subscription_types st ON (s.type_id = st.type_id)
 				JOIN users u ON (s.user_id = u.user_id)
 				JOIN institutional_subscriptions iss ON (s.subscription_id = iss.subscription_id)
-				' . $userDao->getFetchJoins() . '
 				' . $ipRangeSql1 . '
 			WHERE	st.institutional = 1
 				' . $ipRangeSql2 . '
@@ -504,13 +522,13 @@ class InstitutionalSubscriptionDAO extends SubscriptionDAO {
 	 * @param $journalId int
 	 * @param $check int Test using either start date, end date, or both (default)
 	 * @param $checkDate date (YYYY-MM-DD) Use this date instead of current date
-	 * @return int
+	 * @return int 
 	 */
 	function isValidInstitutionalSubscription($domain, $IP, $journalId, $check = SUBSCRIPTION_DATE_BOTH, $checkDate = null) {
 		if (empty($journalId) || (empty($domain) && empty($IP))) return false;
 		$returner = false;
 
-		$today = $this->dateToDB(Core::getCurrentDate());
+		$today = $this->dateToDB(Core::getCurrentDate()); 
 
 		if ($checkDate == null) {
 			$checkDate = $today;
@@ -532,7 +550,7 @@ class InstitutionalSubscriptionDAO extends SubscriptionDAO {
 		// Check if domain match
 		if (!empty($domain)) {
 			$result = $this->retrieve('
-				SELECT	iss.subscription_id
+				SELECT	iss.subscription_id 
 				FROM	institutional_subscriptions iss
 					JOIN subscriptions s ON (iss.subscription_id = s.subscription_id)
 					JOIN subscription_types st ON (s.type_id = st.type_id)
@@ -640,10 +658,10 @@ class InstitutionalSubscriptionDAO extends SubscriptionDAO {
 
 	/**
 	 * Renew an institutional subscription by dateEnd + duration of subscription type
-	 * if the institutional subscription is expired, renew to current date + duration
+	 * if the institutional subscription is expired, renew to current date + duration  
 	 * @param $institutionalSubscription InstitutionalSubscription
 	 * @return boolean
-	 */
+	 */	
 	function renewSubscription($institutionalSubscription) {
 		return $this->_renewSubscription($institutionalSubscription);
 	}
@@ -695,7 +713,7 @@ class InstitutionalSubscriptionDAO extends SubscriptionDAO {
 	 * Internal function to insert institutional subscription IP ranges.
 	 * @param $subscriptionId int
 	 * @param $ipRanges array
-	 * @return boolean
+	 * @return boolean 
 	 */
 	function _insertSubscriptionIPRanges($subscriptionId, $ipRanges) {
 		if (empty($ipRanges)) {
@@ -707,7 +725,7 @@ class InstitutionalSubscriptionDAO extends SubscriptionDAO {
 		}
 
 		$returner = true;
-
+		
 		while (list(, $curIPString) = each($ipRanges)) {
 			$ipStart = null;
 			$ipEnd = null;
@@ -742,7 +760,7 @@ class InstitutionalSubscriptionDAO extends SubscriptionDAO {
 				// Convert wildcard IP to IP range
 				} else {
 					$ipStart = sprintf('%u', ip2long(str_replace(SUBSCRIPTION_IP_RANGE_WILDCARD, '0', trim($curIPString))));
-					$ipEnd = sprintf('%u', ip2long(str_replace(SUBSCRIPTION_IP_RANGE_WILDCARD, '255', trim($curIPString))));
+					$ipEnd = sprintf('%u', ip2long(str_replace(SUBSCRIPTION_IP_RANGE_WILDCARD, '255', trim($curIPString)))); 
 				}
 
 			// Convert wildcard IP range to IP range
@@ -766,7 +784,7 @@ class InstitutionalSubscriptionDAO extends SubscriptionDAO {
 						$curIPString,
 						$ipStart,
 						$ipEnd
-					)
+					) 
 				);
 			} else {
 				$returner = false;
@@ -789,4 +807,4 @@ class InstitutionalSubscriptionDAO extends SubscriptionDAO {
 	}
 }
 
-
+?>

@@ -3,8 +3,8 @@
 /**
  * @file controllers/grid/articleGalleys/ArticleGalleyGridHandler.inc.php
  *
- * Copyright (c) 2016-2019 Simon Fraser University
- * Copyright (c) 2000-2019 John Willinsky
+ * Copyright (c) 2016-2018 Simon Fraser University
+ * Copyright (c) 2000-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class ArticleGalleyGridHandler
@@ -23,8 +23,6 @@ class ArticleGalleyGridHandler extends GridHandler {
 
 	/** @var PKPRequest */
 	var $_request;
-
-	var $_canEdit;
 
 	/**
 	 * Constructor
@@ -102,14 +100,8 @@ class ArticleGalleyGridHandler extends GridHandler {
 			LOCALE_COMPONENT_APP_EDITOR
 		);
 
-		$this->_canEdit = true;
-
-		if ($this->getSubmission()->getSubmissionVersion() != $this->getSubmission()->getCurrentSubmissionVersion()) {
-			$this->_canEdit = false;
-		}
-
 		import('controllers.grid.articleGalleys.ArticleGalleyGridCellProvider');
-		$cellProvider = new ArticleGalleyGridCellProvider($this->getSubmission(), $this->_canEdit);
+		$cellProvider = new ArticleGalleyGridCellProvider($this->getSubmission());
 
 		// Columns
 		$this->addColumn(new GridColumn(
@@ -120,21 +112,19 @@ class ArticleGalleyGridHandler extends GridHandler {
 			$cellProvider
 		));
 
-		if ($this->_canEdit) {
-			$router = $request->getRouter();
-			$userRoles = $this->getAuthorizedContextObject(ASSOC_TYPE_USER_ROLES);
-			if (0 != count(array_intersect($userRoles, array(ROLE_ID_MANAGER, ROLE_ID_SUB_EDITOR, ROLE_ID_ASSISTANT)))) {
-				$this->addAction(new LinkAction(
-					'addGalley',
-					new AjaxModal(
-						$router->url($request, null, null, 'addGalley', null, $this->getRequestArgs()),
-						__('submission.layout.newGalley'),
-						'modal_add_item'
-					),
-					__('grid.action.addGalley'),
-					'add_item'
-				));
-			}
+		$router = $request->getRouter();
+		$userRoles = $this->getAuthorizedContextObject(ASSOC_TYPE_USER_ROLES);
+		if (0 != count(array_intersect($userRoles, array(ROLE_ID_MANAGER, ROLE_ID_SUB_EDITOR, ROLE_ID_ASSISTANT)))) {
+			$this->addAction(new LinkAction(
+				'addGalley',
+				new AjaxModal(
+					$router->url($request, null, null, 'addGalley', null, $this->getRequestArgs()),
+					__('submission.layout.newGalley'),
+					'modal_add_item'
+				),
+				__('grid.action.addGalley'),
+				'add_item'
+			));
 		}
 	}
 
@@ -145,12 +135,8 @@ class ArticleGalleyGridHandler extends GridHandler {
 	 * @copydoc GridHandler::initFeatures()
 	 */
 	function initFeatures($request, $args) {
-		if ($this->_canEdit) {
-			import('lib.pkp.classes.controllers.grid.feature.OrderGridItemsFeature');
-			return array(new OrderGridItemsFeature());
-		}
-
-		return array();
+		import('lib.pkp.classes.controllers.grid.feature.OrderGridItemsFeature');
+		return array(new OrderGridItemsFeature());
 	}
 
 	/**
@@ -181,8 +167,7 @@ class ArticleGalleyGridHandler extends GridHandler {
 	function getRowInstance() {
 		import('controllers.grid.articleGalleys.ArticleGalleyGridRow');
 		return new ArticleGalleyGridRow(
-			$this->getSubmission(),
-			$this->getAuthorizedContextObject(ASSOC_TYPE_USER_ROLES)
+			$this->getSubmission()
 		);
 	}
 
@@ -194,7 +179,6 @@ class ArticleGalleyGridHandler extends GridHandler {
 	function getRequestArgs() {
 		return array(
 			'submissionId' => $this->getSubmission()->getId(),
-			'submissionVersion' => $this->getSubmission()->getSubmissionVersion(),
 		);
 	}
 
@@ -203,7 +187,7 @@ class ArticleGalleyGridHandler extends GridHandler {
 	 */
 	function loadData($request, $filter = null) {
 		$galleyDao = DAORegistry::getDAO('ArticleGalleyDAO');
-		return $galleyDao->getBySubmissionId($this->getSubmission()->getId(), null, $this->getSubmission()->getSubmissionVersion());
+		return $galleyDao->getBySubmissionId($this->getSubmission()->getId());
 	}
 
 	//
@@ -224,7 +208,7 @@ class ArticleGalleyGridHandler extends GridHandler {
 		);
 		import('controllers.tab.pubIds.form.PublicIdentifiersForm');
 		$form = new PublicIdentifiersForm($representation);
-		$form->initData();
+		$form->initData($request);
 		return new JSONMessage(true, $form->fetch($request));
 	}
 
@@ -244,8 +228,8 @@ class ArticleGalleyGridHandler extends GridHandler {
 		import('controllers.tab.pubIds.form.PublicIdentifiersForm');
 		$form = new PublicIdentifiersForm($representation);
 		$form->readInputData();
-		if ($form->validate()) {
-			$form->execute();
+		if ($form->validate($request)) {
+			$form->execute($request);
 			return DAO::getDataChangedEvent();
 		} else {
 			return new JSONMessage(true, $form->fetch($request));
@@ -323,11 +307,6 @@ class ArticleGalleyGridHandler extends GridHandler {
 			);
 		}
 
-		//inform search index that file has been deleted
-		$articleSearchIndex = Application::getSubmissionSearchIndex();
-		$articleSearchIndex->submissionFileDeleted($galley->getSubmissionId());
-		$articleSearchIndex->submissionChangesFinished();
-
 		return DAO::getDataChangedEvent($galley->getId());
 	}
 
@@ -380,8 +359,8 @@ class ArticleGalleyGridHandler extends GridHandler {
 		$galleyForm = new ArticleGalleyForm($request, $this->getSubmission(), $galley);
 		$galleyForm->readInputData();
 
-		if ($galleyForm->validate()) {
-			$galley = $galleyForm->execute();
+		if ($galleyForm->validate($request)) {
+			$galley = $galleyForm->execute($request);
 
 			if ($this->getSubmission()->getStageId() == WORKFLOW_STAGE_ID_EDITING ||
 				$this->getSubmission()->getStageId() == WORKFLOW_STAGE_ID_PRODUCTION) {
@@ -417,4 +396,4 @@ class ArticleGalleyGridHandler extends GridHandler {
 	}
 }
 
-
+?>

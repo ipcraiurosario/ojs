@@ -1,8 +1,8 @@
 {**
  * plugins/generic/webFeed/templates/rss.tpl
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2003-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * RSS feed template
@@ -23,14 +23,14 @@
 
 		{if $journal->getLocalizedDescription()}
 			{assign var="description" value=$journal->getLocalizedDescription()}
-		{elseif $journal->getLocalizedData('searchDescription')}
-			{assign var="description" value=$journal->getLocalizedData('searchDescription')}
+		{elseif $journal->getLocalizedSetting('searchDescription')}
+			{assign var="description" value=$journal->getLocalizedSetting('searchDescription')}
 		{/if}
 
 		<description>{$description|strip|escape:"html"}</description>
 
 		{* optional elements *}
-		{assign var="publisherInstitution" value=$journal->getData('publisherInstitution')}
+		{assign var="publisherInstitution" value=$journal->getSetting('publisherInstitution')}
 		{if $publisherInstitution}
 			<dc:publisher>{$publisherInstitution|strip|escape:"html"}</dc:publisher>
 		{/if}
@@ -41,23 +41,23 @@
 
 		<prism:publicationName>{$journal->getLocalizedName()|strip|escape:"html"}</prism:publicationName>
 
-		{if $journal->getData('printIssn')}
-			{assign var="ISSN" value=$journal->getData('printIssn')}
-		{elseif $journal->getData('onlineIssn')}
-			{assign var="ISSN" value=$journal->getData('onlineIssn')}
+		{if $journal->getSetting('printIssn')}
+			{assign var="ISSN" value=$journal->getSetting('printIssn')}
+		{elseif $journal->getSetting('onlineIssn')}
+			{assign var="ISSN" value=$journal->getSetting('onlineIssn')}
 		{/if}
 
 		{if $ISSN}
 			<prism:issn>{$ISSN|escape}</prism:issn>
 		{/if}
 
-		{if $journal->getLocalizedData('licenseTerms')}
-			<prism:copyright>{$journal->getLocalizedData('licenseTerms')|strip|escape:"html"}</prism:copyright>
+		{if $journal->getLocalizedSetting('copyrightNotice')}
+			<prism:copyright>{$journal->getLocalizedSetting('copyrightNotice')|strip|escape:"html"}</prism:copyright>
 		{/if}
 
 		<items>
 			<rdf:Seq>
-			{foreach name=sections from=$publishedSubmissions item=section key=sectionId}
+			{foreach name=sections from=$publishedArticles item=section key=sectionId}
 				{foreach from=$section.articles item=article}
 					<rdf:li rdf:resource="{url page="article" op="view" path=$article->getBestArticleId()}"/>
 				{/foreach}{* articles *}
@@ -66,7 +66,7 @@
 		</items>
 	</channel>
 
-{foreach name=sections from=$publishedSubmissions item=section key=sectionId}
+{foreach name=sections from=$publishedArticles item=section key=sectionId}
 	{foreach from=$section.articles item=article}
 		<item rdf:about="{url page="article" op="view" path=$article->getBestArticleId()}">
 
@@ -80,7 +80,7 @@
 			{/if}
 
 			{foreach from=$article->getAuthors() item=author name=authorList}
-				<dc:creator>{$author->getFullName(false)|strip|escape:"html"}</dc:creator>
+				<dc:creator>{$author->getFullName()|strip|escape:"html"}</dc:creator>
 			{/foreach}
 
 			<dc:rights>
@@ -117,3 +117,4 @@
 {/foreach}{* sections *}
 
 </rdf:RDF>
+

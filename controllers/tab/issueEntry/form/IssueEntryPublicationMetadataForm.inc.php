@@ -3,8 +3,8 @@
 /**
  * @file controllers/tab/issueEntry/form/IssueEntryPublicationMetadataForm.inc.php
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2003-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class IssueEntryPublicationMetadataForm
@@ -20,8 +20,8 @@ class IssueEntryPublicationMetadataForm extends Form {
 	/** @var Submission The submission used to show metadata information */
 	var $_submission;
 
-	/** @var PublishedSubmission The published submission associated with this submission */
-	var $_publishedSubmission;
+	/** @var PublishedArticle The published article associated with this submission */
+	var $_publishedArticle;
 
 	/** @var int The current stage id */
 	var $_stageId;
@@ -44,12 +44,7 @@ class IssueEntryPublicationMetadataForm extends Form {
 	function __construct($submissionId, $userId, $stageId = null, $formParams = null) {
 		parent::__construct('controllers/tab/issueEntry/form/publicationMetadataFormFields.tpl');
 		$submissionDao = Application::getSubmissionDAO();
-
-		$submissionVersion = null;
-		if (isset($formParams) && array_key_exists("submissionVersion", $formParams)) {
-			$submissionVersion = $formParams["submissionVersion"];
-		}
-		$this->_submission = $submissionDao->getById($submissionId, null, false, $submissionVersion);
+		$this->_submission = $submissionDao->getById($submissionId);
 
 		$this->_stageId = $stageId;
 		$this->_formParams = $formParams;
@@ -70,25 +65,21 @@ class IssueEntryPublicationMetadataForm extends Form {
 		$context = $request->getContext();
 
 		$templateMgr = TemplateManager::getManager($request);
+		$templateMgr->assign(array(
+			'submissionId' => $this->getSubmission()->getId(),
+			'stageId' => $this->getStageId(),
+			'formParams' => $this->getFormParams(),
+			'context' => $context,
+		));
 
 		$journalSettingsDao = DAORegistry::getDAO('JournalSettingsDAO');
 		$templateMgr->assign('issueOptions', $this->getIssueOptions($context));
 
-		$submission = $this->getSubmission();
-		$publishedSubmission = $this->getPublishedSubmission();
-		if ($publishedSubmission) {
-			if ($submission->getCurrentSubmissionVersion() != $submission->getSubmissionVersion()) {
-				if (!isset($this->_formParams)) {
-					$this->_formParams = array();
-				}
-
-				$this->_formParams["readOnly"] = true;
-				$this->_formParams["hideSubmit"] = true;
-			}
-
-			$templateMgr->assign('publishedSubmission', $publishedSubmission);
+		$publishedArticle = $this->getPublishedArticle();
+		if ($publishedArticle) {
+			$templateMgr->assign('publishedArticle', $publishedArticle);
 			$issueDao = DAORegistry::getDAO('IssueDAO');
-			$issue = $issueDao->getById($publishedSubmission->getIssueId());
+			$issue = $issueDao->getById($publishedArticle->getIssueId());
 			if ($issue) {
 				$templateMgr->assign('issueAccess', $issue->getAccessStatus());
 				$templateMgr->assign('accessOptions', array(
@@ -107,13 +98,6 @@ class IssueEntryPublicationMetadataForm extends Form {
 			$templateMgr->assign('publicationPayment', $completedPaymentDao->getByAssoc(null, PAYMENT_TYPE_PUBLICATION, $this->getSubmission()->getId()));
 		}
 
-		$templateMgr->assign(array(
-			'submissionId' => $this->getSubmission()->getId(),
-			'stageId' => $this->getStageId(),
-			'submissionVersion' => $this->getSubmission()->getSubmissionVersion(),
-			'formParams' => $this->getFormParams(),
-			'context' => $context,
-		));
 		$templateMgr->assign('submission', $this->getSubmission());
 
 		return parent::fetch($request);
@@ -162,8 +146,8 @@ class IssueEntryPublicationMetadataForm extends Form {
 		);
 
 		$submission = $this->getSubmission();
-		$publishedSubmissionDao = DAORegistry::getDAO('PublishedSubmissionDAO');
-		$this->_publishedSubmission = $publishedSubmissionDao->getBySubmissionId($submission->getId(), null, false, $submission->getSubmissionVersion());
+		$publishedArticleDao = DAORegistry::getDAO('PublishedArticleDAO');
+		$this->_publishedArticle = $publishedArticleDao->getByArticleId($submission->getId(), null, false);
 
 		$copyrightHolder = $submission->getCopyrightHolder(null);
 		$copyrightYear = $submission->getCopyrightYear();
@@ -190,11 +174,11 @@ class IssueEntryPublicationMetadataForm extends Form {
 	}
 
 	/**
-	 * Get the PublishedSubmission
-	 * @return PublishedSubmission
+	 * Get the PublishedArticle
+	 * @return PublishedArticle
 	 */
-	function getPublishedSubmission() {
-		return $this->_publishedSubmission;
+	function getPublishedArticle() {
+		return $this->_publishedArticle;
 	}
 
 	/**
@@ -228,10 +212,9 @@ class IssueEntryPublicationMetadataForm extends Form {
 	 * Save the metadata and store the catalog data for this published
 	 * monograph.
 	 */
-	function execute() {
-		parent::execute();
+	function execute($request) {
+		parent::execute($request);
 
-		$request = Application::get()->getRequest();
 		$submission = $this->getSubmission();
 		$context = $request->getContext();
 
@@ -255,8 +238,8 @@ class IssueEntryPublicationMetadataForm extends Form {
 				PAYMENT_TYPE_PUBLICATION,
 				$markAsPaid ? $submitterAssignment->getUserId() : $user->getId(),
 				$submission->getId(),
-				$markAsPaid ? $context->getData('publicationFee') : 0,
-				$markAsPaid ? $context->getData('currency') : ''
+				$markAsPaid ? $context->getSetting('publicationFee') : 0,
+				$markAsPaid ? $context->getSetting('currency') : ''
 			);
 
 			$paymentManager->queuePayment($queuedPayment);
@@ -270,12 +253,12 @@ class IssueEntryPublicationMetadataForm extends Form {
 			$issue = $issueDao->getById($issueId, $context->getId());
 
 			$sectionDao = DAORegistry::getDAO('SectionDAO');
-			$publishedSubmissionDao = DAORegistry::getDAO('PublishedSubmissionDAO');
-			$publishedSubmission = $publishedSubmissionDao->getBySubmissionId($submission->getId(), null, false, $submission->getSubmissionVersion()); /* @var $publishedSubmission PublishedSubmission */
+			$publishedArticleDao = DAORegistry::getDAO('PublishedArticleDAO');
+			$publishedArticle = $publishedArticleDao->getByArticleId($submission->getId(), null, false); /* @var $publishedArticle PublishedArticle */
 
-			if ($publishedSubmission) {
+			if ($publishedArticle) {
 				if (!$issue || !$issue->getPublished()) {
-					$fromIssue = $issueDao->getById($publishedSubmission->getIssueId(), $context->getId());
+					$fromIssue = $issueDao->getById($publishedArticle->getIssueId(), $context->getId());
 					if ($fromIssue->getPublished()) {
 						// Insert article tombstone
 						import('classes.article.ArticleTombstoneManager');
@@ -285,14 +268,13 @@ class IssueEntryPublicationMetadataForm extends Form {
 				}
 			}
 
-			$articleSearchIndex = Application::getSubmissionSearchIndex();
-			$submissionFilesChanged = false;
-			$submissionMetadataChanged = false;
+			import('classes.search.ArticleSearchIndex');
+			$articleSearchIndex = new ArticleSearchIndex();
 
 			// define the access status for the article if none is set.
 			$accessStatus = $this->getData('accessStatus') != '' ? $this->getData('accessStatus') : ARTICLE_ACCESS_ISSUE_DEFAULT;
 
-			$submissionDao = DAORegistry::getDAO('SubmissionDAO');
+			$articleDao = DAORegistry::getDAO('ArticleDAO');
 			if (!is_null($this->getData('pages'))) {
 				$submission->setPages($this->getData('pages'));
 			}
@@ -300,33 +282,24 @@ class IssueEntryPublicationMetadataForm extends Form {
 			if ($issue) {
 
 				// Schedule against an issue.
-				if ($publishedSubmission) {
-					if ($issueId != $publishedSubmission->getIssueId()) $publishedSubmission->setSequence(REALLY_BIG_NUMBER);
-					$publishedSubmission->setIssueId($issueId);
-					$publishedSubmission->setDatePublished($this->getData('datePublished'));
-					$publishedSubmission->setAccessStatus($accessStatus);
-					$publishedSubmissionDao->updatePublishedSubmission($publishedSubmission);
+				if ($publishedArticle) {
+					if ($issueId != $publishedArticle->getIssueId()) $publishedArticle->setSequence(REALLY_BIG_NUMBER);
+					$publishedArticle->setIssueId($issueId);
+					$publishedArticle->setDatePublished($this->getData('datePublished'));
+					$publishedArticle->setAccessStatus($accessStatus);
+					$publishedArticleDao->updatePublishedArticle($publishedArticle);
 
-					// article metadata must be reindexed
-					$submissionMetadataChanged = true;
+					// Re-index the published article metadata.
+					$articleSearchIndex->articleMetadataChanged($publishedArticle);
 				} else {
-					$publishedSubmission = $publishedSubmissionDao->newDataObject();
-					$publishedSubmission->setId($submission->getId());
-					$publishedSubmission->setIssueId($issueId);
-					$publishedSubmission->setDatePublished(Core::getCurrentDate());
-					$publishedSubmission->setSequence(REALLY_BIG_NUMBER);
-					$publishedSubmission->setAccessStatus($accessStatus);
-					$publishedSubmission->setSubmissionVersion($submission->getSubmissionVersion());
-					$publishedSubmission->setIsCurrentSubmissionVersion(true);
+					$publishedArticle = $publishedArticleDao->newDataObject();
+					$publishedArticle->setId($submission->getId());
+					$publishedArticle->setIssueId($issueId);
+					$publishedArticle->setDatePublished(Core::getCurrentDate());
+					$publishedArticle->setSequence(REALLY_BIG_NUMBER);
+					$publishedArticle->setAccessStatus($accessStatus);
 
-					$prevPublishedSubmission = $publishedSubmissionDao->getBySubmissionId($submission->getId(), null, false, $submission->getSubmissionVersion() - 1);
-					if ($prevPublishedSubmission) {
-						$prevPublishedSubmission->setIsCurrentSubmissionVersion(false);
-
-						$publishedSubmissionDao->updatePublishedSubmission($prevPublishedSubmission);
-					}
-
-					$publishedSubmissionDao->insertObject($publishedSubmission);
+					$publishedArticleDao->insertObject($publishedArticle);
 
 					// If we're using custom section ordering, and if this is the first
 					// article published in a section, make sure we enter a custom ordering
@@ -338,17 +311,17 @@ class IssueEntryPublicationMetadataForm extends Form {
 						}
 					}
 
-					// Index the published submission metadata and files for the first time.
-					$submissionMetadataChanged = true;
-					$submissionFilesChanged = true;
+					// Index the published article metadata and files for the first time.
+					$articleSearchIndex->articleMetadataChanged($publishedArticle);
+					$articleSearchIndex->submissionFilesChanged($publishedArticle);
 				}
 
 			} else {
-				if ($publishedSubmission) {
+				if ($publishedArticle) {
 					// This was published elsewhere; make sure we don't
 					// mess up sequencing information.
-					$issueId = $publishedSubmission->getIssueId();
-					$publishedSubmissionDao->deletePublishedSubmissionBySubmissionId($submission->getId());
+					$issueId = $publishedArticle->getIssueId();
+					$publishedArticleDao->deletePublishedArticleByArticleId($submission->getId());
 
 					// Delete the article from the search index.
 					$articleSearchIndex->submissionFileDeleted($submission->getId());
@@ -366,7 +339,7 @@ class IssueEntryPublicationMetadataForm extends Form {
 			}
 
 			// Resequence the articles.
-			$publishedSubmissionDao->resequencePublishedSubmissions($submission->getSectionId(), $issueId);
+			$publishedArticleDao->resequencePublishedArticles($submission->getSectionId(), $issueId);
 
 			$submission->stampStatusModified();
 
@@ -379,22 +352,10 @@ class IssueEntryPublicationMetadataForm extends Form {
 				$submission->setStatus(STATUS_QUEUED);
 			}
 
-			$submissionDao->updateObject($submission);
-
-			//after the submission is updated, update the search index
-			if ($publishedSubmission) {
-				if ($submissionFilesChanged) {
-					$articleSearchIndex->submissionFilesChanged($publishedSubmission);
-				}
-
-				if ($submissionMetadataChanged) {
-					$articleSearchIndex->submissionMetadataChanged($publishedSubmission);
-				}
-			}
-
-			$articleSearchIndex->submissionChangesFinished();
+			$articleDao->updateObject($submission);
+			$articleSearchIndex->articleChangesFinished();
 		}
 	}
 }
 
-
+?>

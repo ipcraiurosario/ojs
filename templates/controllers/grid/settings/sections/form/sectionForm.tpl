@@ -1,8 +1,8 @@
 {**
  * templates/controllers/grid/settings/section/form/sectionForm.tpl
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2003-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Section form under journal management.
@@ -41,16 +41,14 @@
 			{fbvElement type="text" id="wordCount" value=$wordCount maxlength="80" label="manager.sections.wordCountInstructions"}
 		{/fbvFormSection}
 
-		{if count($reviewFormOptions)>0}
-			{fbvFormSection title="submission.reviewForm" for="reviewFormId" inline=true size=$fbvStyles.size.MEDIUM}
-				{fbvElement type="select" id="reviewFormId" defaultLabel="manager.reviewForms.noneChosen"|translate defaultValue="" from=$reviewFormOptions selected=$reviewFormId translate=false size=$fbvStyles.size.MEDIUM inline=true}
-			{/fbvFormSection}
-		{/if}
+		{fbvFormSection title="submission.reviewForm" for="reviewFormId" inline=true size=$fbvStyles.size.MEDIUM}
+			{fbvElement type="select" id="reviewFormId" defaultLabel="manager.reviewForms.noneChosen"|translate defaultValue="" from=$reviewFormOptions selected=$reviewFormId translate=false size=$fbvStyles.size.MEDIUM inline=true}
+		{/fbvFormSection}
 
 		{call_hook name="Templates::Manager::Sections::SectionForm::AdditionalMetadata" sectionId=$sectionId}
 	{/fbvFormArea}
 
-	{fbvFormArea id="indexingInfo" title="submission.sectionOptions"}
+	{fbvFormArea id="indexingInfo" title="submission.indexing"}
 		{fbvFormSection list=true}
 			{fbvElement type="checkbox" id="metaReviewed" checked=$metaReviewed label="manager.sections.submissionReview"}
 			{fbvElement type="checkbox" id="abstractsNotRequired" checked=$abstractsNotRequired label="manager.sections.abstractsNotRequired"}
@@ -69,14 +67,10 @@
 		{fbvFormSection}
 			{assign var="uuid" value=""|uniqid|escape}
 			<div id="subeditors-{$uuid}">
-				<list-panel
-					v-bind="components.subeditors"
-					@set="set"
-				/>
+				<script type="text/javascript">
+					pkp.registry.init('subeditors-{$uuid}', 'SelectListPanel', {$subEditorsListData});
+				</script>
 			</div>
-			<script type="text/javascript">
-				pkp.registry.init('subeditors-{$uuid}', 'Container', {$subEditorsListData|json_encode});
-			</script>
 		{/fbvFormSection}
 	{/if}
 

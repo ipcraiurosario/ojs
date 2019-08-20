@@ -1,8 +1,8 @@
 {**
  * plugins/generic/webFeed/templates/rss2.tpl
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2003-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * RSS 2 feed template
@@ -17,8 +17,8 @@
 
 		{if $journal->getLocalizedDescription()}
 			{assign var="description" value=$journal->getLocalizedDescription()}
-		{elseif $journal->getLocalizedData('searchDescription')}
-			{assign var="description" value=$journal->getLocalizedData('searchDescription')}
+		{elseif $journal->getLocalizedSetting('searchDescription')}
+			{assign var="description" value=$journal->getLocalizedSetting('searchDescription')}
 		{/if}
 
 		<description>{$description|strip|escape:"html"}</description>
@@ -28,16 +28,16 @@
 			<language>{$journal->getPrimaryLocale()|replace:'_':'-'|strip|escape:"html"}</language>
 		{/if}
 
-		{if $journal->getLocalizedData('licenseTerms')}
-			<copyright>{$journal->getLocalizedData('licenseTerms')|strip|escape:"html"}</copyright>
+		{if $journal->getLocalizedSetting('copyrightNotice')}
+			<copyright>{$journal->getLocalizedSetting('copyrightNotice')|strip|escape:"html"}</copyright>
 		{/if}
 
-		{if $journal->getData('contactEmail')}
-			<managingEditor>{$journal->getData('contactEmail')|strip|escape:"html"}{if $journal->getData('contactName')} ({$journal->getData('contactName')|strip|escape:"html"}){/if}</managingEditor>
+		{if $journal->getSetting('contactEmail')}
+			<managingEditor>{$journal->getSetting('contactEmail')|strip|escape:"html"}{if $journal->getSetting('contactName')} ({$journal->getSetting('contactName')|strip|escape:"html"}){/if}</managingEditor>
 		{/if}
 
-		{if $journal->getData('supportEmail')}
-			<webMaster>{$journal->getData('supportEmail')|strip|escape:"html"}{if $journal->getData('contactName')} ({$journal->getData('supportName')|strip|escape:"html"}){/if}</webMaster>
+		{if $journal->getSetting('supportEmail')}
+			<webMaster>{$journal->getSetting('supportEmail')|strip|escape:"html"}{if $journal->getSetting('contactName')} ({$journal->getSetting('supportName')|strip|escape:"html"}){/if}</webMaster>
 		{/if}
 
 		{if $issue->getDatePublished()}
@@ -52,7 +52,7 @@
 		<docs>http://blogs.law.harvard.edu/tech/rss</docs>
 		<ttl>60</ttl>
 
-		{foreach name=sections from=$publishedSubmissions item=section key=sectionId}
+		{foreach name=sections from=$publishedArticles item=section key=sectionId}
 			{foreach from=$section.articles item=article}
 				<item>
 					{* required elements *}
@@ -61,7 +61,7 @@
 					<description>{$article->getLocalizedAbstract()|strip|escape:"html"}</description>
 
 					{* optional elements *}
-					<author>{$article->getAuthorString(false)|escape:"html"}</author>
+					<author>{$article->getAuthorString()|escape:"html"}</author>
 					{* <category/> *}
 					{* <comments/> *}
 					{* <source/> *}

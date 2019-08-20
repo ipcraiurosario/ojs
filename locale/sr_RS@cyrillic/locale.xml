@@ -4,8 +4,8 @@
 <!--
   * locale/sr_RS@cyrillic/locale.xml
   *
-  * Copyright (c) 2013-2019 Simon Fraser University
-  * Copyright (c) 2003-2019 John Willinsky
+  * Copyright (c) 2013-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   * Localization information: https://pkp.sfu.ca/wiki/index.php?title=OJS:_Serbian_(sr_RS)
   * Localization strings for the sr_RS@cyrillic (Cрпски) locale.
@@ -71,11 +71,7 @@
 	<message key="section.abbreviation.example">(Нпр. Чланци=CLA)</message>
 
 
-	<!--  Common Article Terms  -->
-	<message key="article.article">Чланак</message>
-	<message key="article.articles">Чланци</message>
-	<message key="common.publication">Чланак</message>
-	<message key="common.publications">Чланци</message>
+	<!--  Common Article Terms  --><message key="article.articles">Чланци</message>
 	<message key="article.submissionId">ID поднеска чланка</message>
 	<message key="article.title">Наслов</message>
 	<message key="article.authors">Аутори</message>
@@ -240,6 +236,10 @@ Aктивирани OAI протокол може бити искључен на
 	<message key="plugins.categories.auth.description">Ауторизацијски додаци омогућују Open Journal Систему да врши проверу веродостојности корисничких приступа путем спољашњих система  као што је LDAP.</message>
 
 
+
+	<!--  Files Browser  -->	<!--  Journal Setup  -->	<!--  Setup Step 1  -->	<!--  Setup Step 2  -->	<message key="manager.setup.lockssDescription"><![CDATA[Open Journal Systems подржава <a href="http://www.lockss.org/" target="_blank">LOCKSS</a> (много копија чува ствари сигурнима) систем да би осигурао сигурну и трајну архиву за часописе. LOCKSS је програм отвореног кода развијен при универзитетској библиотеци у Станфорду који омогућује библиотекама  да чувају одабране електронске часописе тако што периодички проверавају садржај wеб сајтова часописа регистрованих у систему, те архивирају све новообјављене садржаје. Садржај сваког архива се константно успоређује са другим библиотекама које су укључене у систем, па ако је било који садржај неисправан или изгубљен, садржај се обнавља подацима из других архива у мрежи или из изворног часописа.
+<br /><br />
+Postavljanje LOCKSS podrške za Open Journal Systems није потребно док издавање електронске верзије часописа није заиста покренуто, односно први број објављен или у издавању. Да би се то учинило, потребно је следити ова два корака:]]></message>
 
 	<!--  Setup Step 3  -->	<message key="manager.setup.subjectClassificationDescription"><![CDATA[[Часопис ће користити предметну класификацију система доступну на мрежи.<br />
 Наслов класификационог система]]></message>
@@ -481,6 +481,7 @@ Aктивирани OAI протокол може бити искључен на
 	<message key="about.delayedOpenAccess">Одгођени отворени приступ</message>
 	<message key="about.delayedOpenAccessDescription1">Садржај овог часописа бит ће доступан у формату отвореног приступа</message>
 	<message key="about.delayedOpenAccessDescription2">месец(и) након објављивања броја часописа.</message>
+	<message key="about.authorSelfArchive">Аутоархивирање аутора</message>
 	<message key="about.archiving">Архивирање</message>
 	<message key="about.subscriptions">Претплате</message>
 	<message key="about.subscriptionsContact">Контакт за претплате</message>
@@ -496,7 +497,7 @@ Aктивирани OAI протокол може бити искључен на
 	<message key="installer.ojsUpgrade">OJS надоградња</message>
 	<message key="installer.installationInstructions"><![CDATA[<h4>OJS верзија {$version}</h4>
 
-<p>Хвала вам на преузимању Public Knowledge Project-овог <strong>Open Journal Systems-a</strong>. Пре поступка, молимо вас да прочитате <a href="{$baseUrl}/docs/README.md">README</a> фајл који долази уз овај програм. За више информација о Public Knowledge Project-у и његовим програмским пројектима, посетите <a href="http://pkp.sfu.ca/" target="_blank">PKP sajt</a>. Ако примите извештај о грешки у програму или тражите техничку подршку за Open Journal Systems, погледајте <a href="http://forum.pkp.sfu.ca">форум за подршку</a> или посетите  PKP-ов онлајн <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">систем за пријављивање грешке</a>. Иако је форум за подршку коришћенија метода контактирања, можете послати и имејл стручном тиму на <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>.</p>
+<p>Хвала вам на преузимању Public Knowledge Project-овог <strong>Open Journal Systems-a</strong>. Пре поступка, молимо вас да прочитате <a href="{$baseUrl}/docs/README">README</a> фајл који долази уз овај програм. За више информација о Public Knowledge Project-у и његовим програмским пројектима, посетите <a href="http://pkp.sfu.ca/" target="_blank">PKP sajt</a>. Ако примите извештај о грешки у програму или тражите техничку подршку за Open Journal Systems, погледајте <a href="http://forum.pkp.sfu.ca">форум за подршку</a> или посетите  PKP-ов онлајн <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">систем за пријављивање грешке</a>. Иако је форум за подршку коришћенија метода контактирања, можете послати и имејл стручном тиму на <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>.</p>
 
 <h4>Надоградња</h4>
 
@@ -540,7 +541,7 @@ Aктивирани OAI протокол може бити искључен на
 <p>Izaberite <strong>Manuelnu instalaciju</strong> da bi prikazali SQL izjave potrebne za kreiranje OJS схеме базе података и иницијалних података, тако да инсталација базе података може бити извршена ручно. Та опција је корисна када откривате грешке код инсталационих проблема, делимично на неподржаним платформама. Напомена: овај метод инсталације неће предузети ништа како би креирао базу података или било коју табелу, иако ће конфигурациони фајл свеједно бити записан са испорученим подешавањима базе података.</p>]]></message>
 	<message key="installer.upgradeInstructions"><![CDATA[<h4>OJS верзија {$version}</h4>
 
-<p>Хвала Вам што сте преузели Public Knowledge Project, <strong>Open Journal Systems</strong>. Пре поступка, молимо прочитајте <a href="{$baseUrl}/docs/README.md">README</a> и <a href="{$baseUrl}/docs/UPGRADE.md">UPGRADE</a> фајлове укључене у пакету са овим софтвером. За више информација о Public Knowledge Project-у и његовим софтверским пројектима, молимо посетите <a href="http://pkp.sfu.ca/" target="_blank">PKP sajt</a>. Ако имате пријаву о грешци или тражите техничку подршку за OJS, погледајте <a href="http://forum.pkp.sfu.ca">форум подршке</a> или посетите PKP-ов онлајн <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">систем пријаве грешака</a>. Иако је форум подршке преферирана метода контакта, такође можете тиму послати имејл на <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>.</p>
+<p>Хвала Вам што сте преузели Public Knowledge Project, <strong>Open Journal Systems</strong>. Пре поступка, молимо прочитајте <a href="{$baseUrl}/docs/README">README</a> и <a href="{$baseUrl}/docs/UPGRADE">UPGRADE</a> фајлове укључене у пакету са овим софтвером. За више информација о Public Knowledge Project-у и његовим софтверским пројектима, молимо посетите <a href="http://pkp.sfu.ca/" target="_blank">PKP sajt</a>. Ако имате пријаву о грешци или тражите техничку подршку за OJS, погледајте <a href="http://forum.pkp.sfu.ca">форум подршке</a> или посетите PKP-ов онлајн <a href="https://github.com/pkp/pkp-lib#issues" target="_blank">систем пријаве грешака</a>. Иако је форум подршке преферирана метода контакта, такође можете тиму послати имејл на <a href="mailto:pkp.contact@gmail.com">pkp.contact@gmail.com</a>.</p>
 
 <p><strong>Препоручљиво је</strong> да направите сигурносну копију ваше базе података, директоријума са фајловима и OJS инсталационог директоријума пре наставка.</p>
 <p>Ако имате покренут <a href="http://www.php.net/features.safe-mode" target="_blank">PHP сигурносни мод</a>, молимо осигурајте да је max_execution_time директива у вашем php.ini конфигурационом фајлу постављена на висок лимит. Ако је тај или било који други временски лимит (нпр. Apacheva "timeout" директива) досегнут и поступак надоградње прекинут, биће потребна ручна интервенција.</p>]]></message>
@@ -564,7 +565,9 @@ Aктивирани OAI протокол може бити искључен на
 	<message key="log.author.documentRevised">{$authorName} је ревидирао свој прилог {$submissionId}. ID новог фајла је {$fileId}.</message>
 	<message key="log.review.reviewerUnassigned">{$reviewerName} је повучен(а) из рецензентског поступка прилога {$submissionId} у {$round}. кругу рецензије.</message>
 	<message key="log.review.reviewInitiated">Рецензент {$reviewerName} је покренуо  {$round}. круг рецензије прилога {$submissionId}.</message>
+	<message key="log.review.reviewReinitiated">{$round}. круг рецензије рецензента {$reviewerName} за прилог {$submissionId} је изнова покренут.</message>
 	<message key="log.review.reviewCancelled">Рецензија {$round}. круга рецензента {$reviewerName} за прилог {$submissionId} је поништена.</message>
+	<message key="log.review.reviewCleared">Рецензија {$round}. круга рецензента {$reviewerName} за прилог {$submissionId} је обрисана.</message>
 	<message key="log.review.reviewerRated">{$reviewerName} је оцењен за {$round}. круг рецензије прилога {$submissionId}.</message>
 	<message key="log.review.reviewDueDateSet">Крајњи рок за {$round}. круг рецензије за прилог {$submissionId} за рецензента {$reviewerName} је промењен на {$dueDate}.</message>
 	<message key="log.review.reviewRecommendationSet">Рецензент {$reviewerName} је поставио препоруку за {$round}. круг рецензије прилога {$submissionId}.</message>
@@ -599,7 +602,31 @@ Aктивирани OAI протокол може бити искључен на
 
 	<message key="log.imported">{$userName} је унео чланак {$submissionId}.</message>
 
-	<message key="metadata.pkp.peerReviewed">Стручно рецензирани чланак</message>
+	<!--  Reading Tools entries  -->	<!--  RT Settings  --><message key="rt.admin.settings">Опције алата за читање</message>
+
+	<message key="rt.admin.settings.description">Алати за читање приказују се уз објављене прилоге у индексираним секцијама часописа (ова се опција поставља за сваку секцију под "секције часописа"). Алати за читање могу садржати разне опције које се односе на дотични објављени прилог (наведене ниже на овој страници), и скупова опција организованих по подручју и дисциплини које омогућавају претраживање других wеб сервиса за податке везане за чланком.</message>
+	<message key="rt.admin.settings.enableReadingTools">Омогући алате за читање за индексиране рубрике часописа.</message>
+	<message key="rt.admin.settings.relatedItems">Подручја</message>
+        <message key="rt.admin.settings.relatedItemsLink"><![CDATA[Погледајте <a href="{$relatedItemsLink}" class="action">подручја претраживања</a> да бисте прегледали, додали, исправили или обрисали ставке и контексте претраживања за било које подручје.]]></message>
+
+	<message key="rt.admin.options">Алати за прилоге часописа</message>
+
+	<message key="rt.admin.relatedItems">Алати за претраживање сродних садржаја</message>
+
+
+	<message key="rt.admin.settings.addComment">Додај коментар (омогућује читаоцима да остављају коментаре на објављене прилоге. Главни уредник има могућност брисања коментара).</message>
+
+	<message key="rt.metadata.dublinCore.primaryAuthor">Примарни аутор</message>
+
+	<message key="rt.metadata.pkp.primaryAuthor">Ауторово име, припадност, земља</message>
+	<message key="rt.metadata.pkp.peerReviewed">Стручно рецензирани чланак</message>
+
+	<message key="rt.beNotifiedWhen">Бићете обавештени када...</message>
+
+	<message key="rt.thisJournal">Претражи часопис</message>
+
+
+	<message key="rt.context.authorTermsDescription">За ставке које имају више од једног аутора, оставите сва имена означена ради претраживања сличних ко-ауторских радова, или претражујте једног по једног проверавајући само појединачно име. Да бисте научили више о претраживаном извору, кликните на О ЧАСОПИСУ. Ови извори су одабрани због своје релевантности и отвореног (бесплатног) приступа његовом целом или делимичном садржају.</message>
 
 	<message key="common.confirmComplete">Да ли сте сигурни да желите да означите овај задатак као комплетиран?</message>
 	<message key="common.payment">Плаћање</message>
@@ -617,7 +644,7 @@ Aктивирани OAI протокол може бити искључен на
 		<li>OJS не може модификовати локализациони registry фајл, обично "registry/locales.xml".</li>
 	</ul>
 <p>Фајл са језицима можете ручно преузети са <a href="http://pkp.sfu.ca">PKP web site</a>.</p>]]></message>
-	<message key="manager.setup.copyrightNotice.sample"><![CDATA[<h3>Предложене Creative Commons одредбе о ауторским правима</h3>
+	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Предложене Creative Commons одредбе о ауторским правима</h3>
 <h4>1. Предлог за часописе који омогућују отворен приступ</h4>
 Аутори који објављују у овом часопису пристају на следеће услове:
 <ol type="a">
@@ -684,6 +711,9 @@ Aктивирани OAI протокол може бити искључен на
 	<message key="installer.databaseSettingsInstructions">OJS za čuvanje podataka zahteva pristup SQL bazi. Pregledajte gore navedene sistemske zahteve za popis baza koje OJS подржава. У ниже приложеним пољима наведите параметре који ће се користити за повезивање с базом.</message>
 	<message key="log.review.reviewDeclinedByProxy">{$userName} је одбио/ла {$round} рецензију прилога {$submissionId} у име {$reviewerName}.</message>
 	<message key="log.editor.decision">{$editorName} је евидентирао уредничку одлуку ({$decision}) за чланак {$submissionId}.</message>
+	<message key="rt.admin.settings.addComment.authenticated">Анонимни коментари нису дозвољени. Корисници морају бити регистровани и пријављени да би могли остављати коментаре.</message>
+	<message key="rt.admin.settings.addComment.anonymous">Анонимни коментари су дозвољени, али корисници морају бити регистровани и пријављени како би оставили коментар.</message>
+	<message key="rt.admin.settings.addComment.unauthenticated">Анонимни коментари су дозвољени.</message>
 	<message key="debug.notes.currencyListLoad">Учитана је листа валута "{$filename}" из XML-a.</message>
 	<message key="reviewer.article.restrictedFileAccess">Текст пријаве ће бити на располагању када и ако рецензент прихвати понуду израде рецензије.</message>
 	<message key="reviewer.article.enterReviewForm">Кликните на икону и испуните образац за реценцзију.</message>
@@ -713,6 +743,7 @@ Aктивирани OAI протокол може бити искључен на
 	<message key="help.searchReturnResults">Повратак на резултате претраживања</message>
 	<message key="payment.type.purchaseArticle">Цена приступа појединим чланцима</message>
 	<message key="journal.issn">ISSN</message>
+	<message key="article.article">Чланак</message>
 	<message key="user.manageMySubscriptions">Управљање мојим претплатама</message>
 	<message key="subscriptionTypes.currency">Валута</message>
 	<message key="subscriptionTypes.year">година</message>
@@ -775,6 +806,7 @@ Aктивирани OAI протокол може бити искључен на
 	<message key="about.subscriptionTypes.duration">Трајање</message>
 	<message key="about.subscriptionTypes.cost">Цена</message>
 	<message key="payment.authorFees">Накнаде за аутора</message>
+	<message key="notification.type.articleSubmitted">Нови чланак, "{$param}", je predat.</message>
 	<message key="notification.type.galleyModified">Фајл за приказ је измењен за "{$param}".</message>
 	<message key="notification.type.issuePublished">Издање је објављено.</message>
 	<message key="notification.type.newAnnouncement">Ново обавештење је направљено.</message>
@@ -794,6 +826,7 @@ Aктивирани OAI протокол може бити искључен на
 	<message key="payment.subscription.purchase">Купи претплату</message>
 	<message key="installer.installApplication">Инсталирај OJS</message>
 	<message key="installer.upgradeApplication">Надогради OJS</message>
+	<message key="rt.admin.validateUrls.description"><![CDATA[Потенцијалоно погрешни URL-ovi за сајтове за претрагу су приказани ниже.<бр />Потребно је да ручно проверите сваки URL пошто ово није 100% ипсравно.]]></message>
 	<message key="notification.type.editing">Догађаји у уредништву</message>
 	<message key="notification.type.editorDecisionComment">Остављен је коментар на уредникову одлуку "{$param}".</message>
 	<message key="notification.type.reviewerFormComment">Рецензија преко рецензентске форме је предата за "{$param}".</message>
@@ -912,5 +945,8 @@ Aктивирани OAI протокол може бити искључен на
 	<message key="search.cli.rebuildIndex.indexingByJournalNotSupported">Ова примена претраге не дозвољава поновно индексирање по часопису.</message>
 	<message key="search.cli.rebuildIndex.unknownJournal">Дата путања часописа "{$journalPath}" није могла да се споји са часописом.</message>
 	<message key="notification.type.approveSubmissionTitle">Чека се одобрење.</message>
+	<message key="manager.setup.clockssDescription"><![CDATA[Open Journal Systems такође подржава <a href="http://clockss.org/" target="_blank">CLOCKSS</a> (Controlled Lots of Copies Keep Stuff Safe) систем да би се осигурало перманентно чување и рхивирање часописа. CLOCKSS је заснован на програму отвореног кода LOCKSS који је развије у  Stanford University Library која омогућава да библиотеке сачувају одабране часописе редовним покретањем регистрованих сајтова часописа за нови објављени садржај и архивирање. Свака архива је континуирано проверавана према меморији податак у библиотеци и ако се нађе да је део садржаја изгубљен или оштећен друге меморије података се употребе како би се садржај вратио.
+<br /><br />
+Подешавање CLOCKSS подршке за Open Journal Systems није потребно све док се објављивање не реализује..]]></message>
 	<message key="about.editorialPOLICY">Уређивачка политика</message>
 </locale>

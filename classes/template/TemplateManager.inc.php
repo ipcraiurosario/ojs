@@ -3,8 +3,8 @@
 /**
  * @file classes/template/TemplateManager.inc.php
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2003-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class TemplateManager
@@ -21,11 +21,12 @@ import('lib.pkp.classes.template.PKPTemplateManager');
 
 class TemplateManager extends PKPTemplateManager {
 	/**
+	 * Constructor.
 	 * Initialize template engine and assign basic template variables.
 	 * @param $request PKPRequest
 	 */
-	function initialize($request) {
-		parent::initialize($request);
+	function __construct($request) {
+		parent::__construct($request);
 
 		if (!defined('SESSION_DISABLE_INIT')) {
 			/**
@@ -42,10 +43,11 @@ class TemplateManager extends PKPTemplateManager {
 			$this->assign('sitePublicFilesDir', $siteFilesDir);
 			$this->assign('publicFilesDir', $siteFilesDir); // May be overridden by journal
 
-			if ($site->getData('styleSheet')) {
+			$siteStyleFilename = $publicFileManager->getSiteFilesPath() . '/' . $site->getSiteStyleFilename();
+			if (file_exists($siteStyleFilename)) {
 				$this->addStyleSheet(
 					'siteStylesheet',
-					$request->getBaseUrl() . '/' . $publicFileManager->getSiteFilesPath() . '/' . $site->getData('styleSheet'),
+					$request->getBaseUrl() . '/' . $siteStyleFilename,
 					array(
 						'priority' => STYLE_SEQUENCE_LATE
 					)
@@ -70,23 +72,37 @@ class TemplateManager extends PKPTemplateManager {
 				$this->assign(array(
 					'currentJournal' => $context,
 					'siteTitle' => $context->getLocalizedName(),
-					'publicFilesDir' => $request->getBaseUrl() . '/' . $publicFileManager->getContextFilesPath($context->getId()),
+					'portalTitle' => $site->getLocalizedTitle(),
+					'publicFilesDir' => $request->getBaseUrl() . '/' . $publicFileManager->getJournalFilesPath($context->getId()),
 					'primaryLocale' => $context->getPrimaryLocale(),
 					'supportedLocales' => $context->getSupportedLocaleNames(),
 					'displayPageHeaderTitle' => $context->getLocalizedPageHeaderTitle(),
 					'displayPageHeaderLogo' => $context->getLocalizedPageHeaderLogo(),
-					'displayPageHeaderLogoAltText' => $context->getLocalizedData('pageHeaderLogoImageAltText'),
-					'numPageLinks' => $context->getData('numPageLinks'),
-					'itemsPerPage' => $context->getData('itemsPerPage'),
-					'enableAnnouncements' => $context->getData('enableAnnouncements'),
-					'disableUserReg' => $context->getData('disableUserReg'),
+					'displayPageHeaderLogoAltText' => $context->getLocalizedSetting('pageHeaderLogoImageAltText'),
+					'numPageLinks' => $context->getSetting('numPageLinks'),
+					'itemsPerPage' => $context->getSetting('itemsPerPage'),
+					'enableAnnouncements' => $context->getSetting('enableAnnouncements'),
+					'contextSettings' => $context->getSettingsDAO()->getSettings($context->getId()),
+					'disableUserReg' => $context->getSetting('disableUserReg'),
 				));
 
 				// Assign meta tags
 				$favicon = $context->getLocalizedFavicon();
 				if (!empty($favicon)) {
-					$faviconDir = $request->getBaseUrl() . '/' . $publicFileManager->getContextFilesPath($context->getId());
+					$faviconDir = $request->getBaseUrl() . '/' . $publicFileManager->getJournalFilesPath($context->getId());
 					$this->addHeader('favicon', '<link rel="icon" href="' . $faviconDir . '/' . $favicon['uploadName'] . '">');
+				}
+
+				// Assign stylesheets and footer
+				$contextStyleSheet = $context->getSetting('styleSheet');
+				if ($contextStyleSheet) {
+					$this->addStyleSheet(
+						'contextStylesheet',
+						$request->getBaseUrl() . '/' . $publicFileManager->getJournalFilesPath($context->getId()) . '/' . $contextStyleSheet['uploadName'],
+						array(
+							'priority' => STYLE_SEQUENCE_LATE
+						)
+					);
 				}
 
 				// Get a link to the settings page for the current context.
@@ -97,14 +113,14 @@ class TemplateManager extends PKPTemplateManager {
 				$this->assign( 'contextSettingsUrl', $dispatcher->url($request, ROUTE_PAGE, null, 'management', 'settings', 'context') );
 
 				$paymentManager = Application::getPaymentManager($context);
-				$this->assign('pageFooter', $context->getLocalizedData('pageFooter'));
+				$this->assign('pageFooter', $context->getLocalizedSetting('pageFooter'));
 			} else {
 				// Check if registration is open for any contexts
 				$contextDao = Application::getContextDAO();
 				$contexts = $contextDao->getAll(true)->toArray();
 				$contextsForRegistration = array();
 				foreach($contexts as $context) {
-					if (!$context->getData('disableUserReg')) {
+					if (!$context->getSetting('disableUserReg')) {
 						$contextsForRegistration[] = $context;
 					}
 				}
@@ -113,11 +129,12 @@ class TemplateManager extends PKPTemplateManager {
 					'contexts' => $contextsForRegistration,
 					'disableUserReg' => empty($contextsForRegistration),
 					'displayPageHeaderTitle' => $site->getLocalizedPageHeaderTitle(),
-					'displayPageHeaderLogo' => $site->getLocalizedData('pageHeaderTitleImage'),
+					'displayPageHeaderLogo' => $site->getLocalizedSetting('pageHeaderTitleImage'),
 					'siteTitle' => $site->getLocalizedTitle(),
+					'portalTitle' => $site->getLocalizedTitle(),
 					'primaryLocale' => $site->getPrimaryLocale(),
 					'supportedLocales' => $site->getSupportedLocaleNames(),
-					'pageFooter' => $site->getLocalizedData('pageFooter'),
+					'pageFooter' => $site->getLocalizedSetting('pageFooter'),
 				));
 
 			}
@@ -125,4 +142,4 @@ class TemplateManager extends PKPTemplateManager {
 	}
 }
 
-
+?>

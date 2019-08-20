@@ -3,8 +3,8 @@
 /**
  * @file classes/issue/IssueAction.inc.php
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2003-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class IssueAction
@@ -15,6 +15,13 @@
  */
 
 class IssueAction {
+
+	/**
+	 * Constructor.
+	 */
+	function __construct() {
+	}
+
 	/**
 	 * Actions.
 	 */
@@ -31,7 +38,7 @@ class IssueAction {
 		assert($journal->getId() == $issue->getJournalId());
 
 		// Check subscription state.
-		$result = $journal->getData('publishingMode') == PUBLISHING_MODE_SUBSCRIPTION &&
+		$result = $journal->getSetting('publishingMode') == PUBLISHING_MODE_SUBSCRIPTION &&
 			$issue->getAccessStatus() != ISSUE_ACCESS_OPEN && (
 				is_null($issue->getOpenAccessDate()) ||
 				strtotime($issue->getOpenAccessDate()) > time()
@@ -84,11 +91,11 @@ class IssueAction {
 	 */
 	function subscribedUser($user, $journal, $issueId = null, $articleId = null) {
 		$subscriptionDao = DAORegistry::getDAO('IndividualSubscriptionDAO');
-		$publishedSubmissionDao = DAORegistry::getDAO('PublishedSubmissionDAO');
-		$publishedSubmission = $publishedSubmissionDao->getBySubmissionId($articleId, null, true);
+		$publishedArticleDao = DAORegistry::getDAO('PublishedArticleDAO');
+		$publishedArticle = $publishedArticleDao->getByArticleId($articleId, null, true);
 		$result = false;
 		if (isset($user) && isset($journal)) {
-			if ($publishedSubmission && $this->allowedPrePublicationAccess($journal, $publishedSubmission, $user)) {
+			if ($publishedArticle && $this->allowedPrePublicationAccess($journal, $publishedArticle, $user)) {
 				 $result = true;
 			} else {
 				$result = $subscriptionDao->isValidIndividualSubscription($user->getId(), $journal->getId());
@@ -96,11 +103,11 @@ class IssueAction {
 
 			// If no valid subscription, check if there is an expired subscription
 			// that was valid during publication date of requested content
-			if (!$result && $journal->getData('subscriptionExpiryPartial')) {
+			if (!$result && $journal->getSetting('subscriptionExpiryPartial')) {
 				if (isset($articleId)) {
-					if (isset($publishedSubmission)) {
+					if (isset($publishedArticle)) {
 						import('classes.subscription.SubscriptionDAO');
-						$result = $subscriptionDao->isValidIndividualSubscription($user->getId(), $journal->getId(), SUBSCRIPTION_DATE_END, $publishedSubmission->getDatePublished());
+						$result = $subscriptionDao->isValidIndividualSubscription($user->getId(), $journal->getId(), SUBSCRIPTION_DATE_END, $publishedArticle->getDatePublished());
 					}
 				} else if (isset($issueId)) {
 					$issueDao = DAORegistry::getDAO('IssueDAO');
@@ -132,13 +139,13 @@ class IssueAction {
 
 			// If no valid subscription, check if there is an expired subscription
 			// that was valid during publication date of requested content
-			if (!$result && $journal->getData('subscriptionExpiryPartial')) {
+			if (!$result && $journal->getSetting('subscriptionExpiryPartial')) {
 				if (isset($articleId)) {
-					$publishedSubmissionDao = DAORegistry::getDAO('PublishedSubmissionDAO');
-					$publishedSubmission = $publishedSubmissionDao->getBySubmissionId($articleId, null, true);
-					if (isset($publishedSubmission)) {
+					$publishedArticleDao = DAORegistry::getDAO('PublishedArticleDAO');
+					$publishedArticle = $publishedArticleDao->getByArticleId($articleId, null, true);
+					if (isset($publishedArticle)) {
 						import('classes.subscription.SubscriptionDAO');
-						$result = $subscriptionDao->isValidInstitutionalSubscription($request->getRemoteDomain(), $request->getRemoteAddr(), $journal->getId(), SUBSCRIPTION_DATE_END, $publishedSubmission->getDatePublished());
+						$result = $subscriptionDao->isValidInstitutionalSubscription($request->getRemoteDomain(), $request->getRemoteAddr(), $journal->getId(), SUBSCRIPTION_DATE_END, $publishedArticle->getDatePublished());
 					}
 				} else if (isset($issueId)) {
 					$issueDao = DAORegistry::getDAO('IssueDAO');
@@ -182,4 +189,4 @@ class IssueAction {
 	}
 }
 
-
+?>

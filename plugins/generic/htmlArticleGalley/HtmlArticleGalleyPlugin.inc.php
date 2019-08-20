@@ -3,8 +3,8 @@
 /**
  * @file plugins/generic/htmlArticleGalley/HtmlArticleGalleyPlugin.inc.php
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2003-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class HtmlArticleGalleyPlugin
@@ -20,12 +20,15 @@ class HtmlArticleGalleyPlugin extends GenericPlugin {
 	 * @see Plugin::register()
 	 */
 	function register($category, $path, $mainContextId = null) {
-		if (!parent::register($category, $path, $mainContextId)) return false;
-		if ($this->getEnabled($mainContextId)) {
-			HookRegistry::register('ArticleHandler::view::galley', array($this, 'articleViewCallback'), HOOK_SEQUENCE_LATE);
-			HookRegistry::register('ArticleHandler::download', array($this, 'articleDownloadCallback'), HOOK_SEQUENCE_LATE);
+		if (parent::register($category, $path, $mainContextId)) {
+			if ($this->getEnabled($mainContextId)) {
+				HookRegistry::register('ArticleHandler::view::galley', array($this, 'articleViewCallback'), HOOK_SEQUENCE_LATE);
+				HookRegistry::register('ArticleHandler::download', array($this, 'articleDownloadCallback'), HOOK_SEQUENCE_LATE);
+				$this->_registerTemplateResource();
+			}
+			return true;
 		}
-		return true;
+		return false;
 	}
 
 	/**
@@ -52,6 +55,13 @@ class HtmlArticleGalleyPlugin extends GenericPlugin {
 	}
 
 	/**
+	 * @copydoc Plugin::getTemplatePath()
+	 */
+	function getTemplatePath($inCore = false) {
+		return $this->getTemplateResourceName() . ':';
+	}
+
+	/**
 	 * Present the article wrapper page.
 	 * @param string $hookName
 	 * @param array $args
@@ -69,7 +79,7 @@ class HtmlArticleGalleyPlugin extends GenericPlugin {
 				'article' => $article,
 				'galley' => $galley,
 			));
-			$templateMgr->display($this->getTemplateResource('display.tpl'));
+			$templateMgr->display($this->getTemplatePath() . 'display.tpl');
 
 			return true;
 		}
@@ -86,7 +96,7 @@ class HtmlArticleGalleyPlugin extends GenericPlugin {
 		$article =& $args[0];
 		$galley =& $args[1];
 		$fileId =& $args[2];
-		$request = Application::get()->getRequest();
+		$request = Application::getRequest();
 
 		if ($galley && $galley->getFileType() == 'text/html' && $galley->getFileId() == $fileId) {
 			if (!HookRegistry::call('HtmlArticleGalleyPlugin::articleDownload', array($article,  &$galley, &$fileId))) {
@@ -120,7 +130,7 @@ class HtmlArticleGalleyPlugin extends GenericPlugin {
 			$submissionFileDao->getLatestRevisionsByAssocId(ASSOC_TYPE_SUBMISSION_FILE, $submissionFile->getFileId(), $submissionFile->getSubmissionId(), SUBMISSION_FILE_DEPENDENT)
 		);
 		$referredArticle = null;
-		$submissionDao = DAORegistry::getDAO('SubmissionDAO');
+		$articleDao = DAORegistry::getDAO('ArticleDAO');
 
 		foreach ($embeddableFiles as $embeddableFile) {
 			$params = array();
@@ -129,7 +139,7 @@ class HtmlArticleGalleyPlugin extends GenericPlugin {
 
 			// Ensure that the $referredArticle object refers to the article we want
 			if (!$referredArticle || $referredArticle->getId() != $galley->getSubmissionId()) {
-				$referredArticle = $submissionDao->getById($galley->getSubmissionId());
+				$referredArticle = $articleDao->getById($galley->getSubmissionId());
 			}
 			$fileUrl = $request->url(null, 'article', 'download', array($referredArticle->getBestArticleId(), $galley->getBestGalleyId(), $embeddableFile->getFileId()), $params);
 			$pattern = preg_quote(rawurlencode($embeddableFile->getOriginalFileName()));
@@ -163,12 +173,9 @@ class HtmlArticleGalleyPlugin extends GenericPlugin {
 			$contents
 		);
 
-		$templateMgr = TemplateManager::getManager($request);
-		$contents = $templateMgr->loadHtmlGalleyStyles($contents, $embeddableFiles);
-
 		// Perform variable replacement for journal, issue, site info
 		$issueDao = DAORegistry::getDAO('IssueDAO');
-		$issue = $issueDao->getBySubmissionId($galley->getSubmissionId());
+		$issue = $issueDao->getByArticleId($galley->getSubmissionId());
 
 		$journal = $request->getJournal();
 		$site = $request->getSite();
@@ -188,7 +195,7 @@ class HtmlArticleGalleyPlugin extends GenericPlugin {
 	}
 
 	function _handleOjsUrl($matchArray) {
-		$request = Application::get()->getRequest();
+		$request = Application::getRequest();
 		$url = $matchArray[2];
 		$anchor = null;
 		if (($i = strpos($url, '#')) !== false) {
@@ -253,9 +260,11 @@ class HtmlArticleGalleyPlugin extends GenericPlugin {
 				$journal = $request->getJournal();
 				import ('classes.file.PublicFileManager');
 				$publicFileManager = new PublicFileManager();
-				$url = $request->getBaseUrl() . '/' . $publicFileManager->getContextFilesPath($journal->getId()) . '/' . implode('/', $urlParts) . ($anchor?'#' . $anchor:'');
+				$url = $request->getBaseUrl() . '/' . $publicFileManager->getJournalFilesPath($journal->getId()) . '/' . implode('/', $urlParts) . ($anchor?'#' . $anchor:'');
 				break;
 		}
 		return $matchArray[1] . $url . $matchArray[3];
 	}
 }
+
+?>

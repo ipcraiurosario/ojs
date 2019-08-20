@@ -3,8 +3,8 @@
 /**
  * @file plugins/pubIds/doi/DOIPubIdPlugin.inc.php
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2003-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class DOIPubIdPlugin
@@ -35,6 +35,7 @@ class DOIPubIdPlugin extends PubIdPlugin {
 			HookRegistry::register('Submission::getProperties::values', array($this, 'modifyObjectPropertyValues'));
 			HookRegistry::register('Issue::getProperties::values', array($this, 'modifyObjectPropertyValues'));
 			HookRegistry::register('Galley::getProperties::values', array($this, 'modifyObjectPropertyValues'));
+			$this->_registerTemplateResource();
 		}
 		return $success;
 	}
@@ -54,6 +55,13 @@ class DOIPubIdPlugin extends PubIdPlugin {
 	 */
 	function getDescription() {
 		return __('plugins.pubIds.doi.description');
+	}
+
+	/**
+	 * @copydoc Plugin::getTemplatePath()
+	 */
+	function getTemplatePath($inCore = false) {
+		return $this->getTemplateResourceName() . ':templates/';
 	}
 
 
@@ -99,14 +107,14 @@ class DOIPubIdPlugin extends PubIdPlugin {
 	 * @copydoc PKPPubIdPlugin::getPubIdMetadataFile()
 	 */
 	function getPubIdMetadataFile() {
-		return $this->getTemplateResource('doiSuffixEdit.tpl');
+		return $this->getTemplatePath() . 'doiSuffixEdit.tpl';
 	}
 
 	/**
 	 * @copydoc PKPPubIdPlugin::getPubIdAssignFile()
 	 */
 	function getPubIdAssignFile() {
-		return $this->getTemplateResource('doiAssign.tpl');
+		return $this->getTemplatePath() . 'doiAssign.tpl';
 	}
 
 	/**
@@ -151,7 +159,8 @@ class DOIPubIdPlugin extends PubIdPlugin {
 	function getLinkActions($pubObject) {
 		$linkActions = array();
 		import('lib.pkp.classes.linkAction.request.RemoteActionConfirmationModal');
-		$request = Application::get()->getRequest();
+		$application = PKPApplication::getApplication();
+		$request = $application->getRequest();
 		$userVars = $request->getUserVars();
 		$userVars['pubIdPlugIn'] = get_class($this);
 		// Clear object pub id
@@ -323,4 +332,4 @@ class DOIPubIdPlugin extends PubIdPlugin {
 	}
 }
 
-
+?>

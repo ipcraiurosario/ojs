@@ -3,8 +3,8 @@
 /**
  * @file plugins/importexport/native/filter/NativeXmlArticleFilter.inc.php
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2000-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2000-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class NativeXmlArticleFilter
@@ -40,7 +40,7 @@ class NativeXmlArticleFilter extends NativeXmlSubmissionFilter {
 	 * @return DAO
 	 */
 	function getPublishedSubmissionDAO() {
-		return DAORegistry::getDAO('PublishedSubmissionDAO');
+		return DAORegistry::getDAO('PublishedArticleDAO');
 	}
 
 	/**
@@ -80,13 +80,13 @@ class NativeXmlArticleFilter extends NativeXmlSubmissionFilter {
 		$importedObjects =& parent::process($document);
 
 		// Index imported content
-		$articleSearchIndex = Application::getSubmissionSearchIndex();
+		import('classes.search.ArticleSearchIndex');
 		foreach ($importedObjects as $submission) {
 			assert(is_a($submission, 'Submission'));
-			$articleSearchIndex->submissionMetadataChanged($submission);
-			$articleSearchIndex->submissionFilesChanged($submission);
+			ArticleSearchIndex::articleMetadataChanged($submission);
+			ArticleSearchIndex::submissionFilesChanged($submission);
 		}
-		$articleSearchIndex->submissionChangesFinished();
+		ArticleSearchIndex::articleChangesFinished();
 
 		return $importedObjects;
 	}
@@ -140,11 +140,6 @@ class NativeXmlArticleFilter extends NativeXmlSubmissionFilter {
 				break;
 			case 'pages':
 				$submission->setPages($n->textContent);
-				break;
-			case 'covers':
-				import('plugins.importexport.native.filter.NativeFilterHelper');
-				$nativeFilterHelper = new NativeFilterHelper();
-				$nativeFilterHelper->parseCovers($this, $n, $submission, ASSOC_TYPE_SUBMISSION);
 				break;
 			default:
 				parent::handleChildElement($n, $submission);
@@ -201,9 +196,9 @@ class NativeXmlArticleFilter extends NativeXmlSubmissionFilter {
 
 	/**
 	 * Class-specific methods for published submissions.
-	 * @param PublishedSubmission $submission
+	 * @param PublishedArticle $submission
 	 * @param DOMElement $node
-	 * @return PublishedSubmission
+	 * @return PublishedArticle
 	 */
 	function populatePublishedSubmission($submission, $node) {
 		$deployment = $this->getDeployment();
@@ -269,3 +264,5 @@ class NativeXmlArticleFilter extends NativeXmlSubmissionFilter {
 		return $issue;
 	}
 }
+
+?>

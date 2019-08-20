@@ -3,8 +3,8 @@
 /**
  * @file controllers/grid/submissions/ExportPublishedSubmissionsListGridHandler.inc.php
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2000-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2000-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class ExportPublishedSubmissionsListGridHandler
@@ -209,7 +209,7 @@ class ExportPublishedSubmissionsListGridHandler extends GridHandler {
 	 * @copydoc GridHandler::loadData()
 	 */
 	protected function loadData($request, $filter) {
-		$publishedSubmissionDao = DAORegistry::getDAO('PublishedSubmissionDAO');
+		$publishedArticleDao = DAORegistry::getDAO('PublishedArticleDAO');
 		$context = $request->getContext();
 		list($search, $column, $issueId, $statusId) = $this->getFilterValues($filter);
 		$title = $author = null;
@@ -222,7 +222,7 @@ class ExportPublishedSubmissionsListGridHandler extends GridHandler {
 		if ($statusId) {
 			$pubIdStatusSettingName = $this->_plugin->getDepositStatusSettingName();
 		}
-		return $publishedSubmissionDao->getExportable(
+		return $publishedArticleDao->getExportable(
 			$context->getId(),
 			null,
 			$title,
@@ -291,4 +291,4 @@ class ExportPublishedSubmissionsListGridHandler extends GridHandler {
 
 }
 
-
+?>

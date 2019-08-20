@@ -3,8 +3,8 @@
 /**
  * @file controllers/grid/subscriptions/IndividualSubscriptionsGridHandler.inc.php
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2000-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2000-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class IndividualSubscriptionsGridHandler
@@ -19,7 +19,7 @@ import('controllers.grid.subscriptions.IndividualSubscriptionForm');
 
 class IndividualSubscriptionsGridHandler extends SubscriptionsGridHandler {
 	/**
-	 * @copydoc SubscriptionsGridHandler::initialize()
+	 * @copydoc GridHandler::initialize()
 	 */
 	function initialize($request, $args = null) {
 		parent::initialize($request, $args);
@@ -102,38 +102,9 @@ class IndividualSubscriptionsGridHandler extends SubscriptionsGridHandler {
 	// Implement methods from GridHandler.
 	//
 	/**
-	 * @copydoc GridHandler::renderFilter()
-	 */
-	function renderFilter($request) {
-		$context = $request->getContext();
-
-		// Import field constants.
-		import('classes.subscription.SubscriptionDAO');
-		$fieldOptions = array(
-			IDENTITY_SETTING_GIVENNAME => 'user.givenName',
-			IDENTITY_SETTING_FAMILYNAME => 'user.familyName',
-			USER_FIELD_USERNAME => 'user.username',
-			USER_FIELD_EMAIL => 'user.email',
-			SUBSCRIPTION_MEMBERSHIP => 'user.subscriptions.form.membership',
-			SUBSCRIPTION_REFERENCE_NUMBER => 'manager.subscriptions.form.referenceNumber',
-			SUBSCRIPTION_NOTES => 'manager.subscriptions.form.notes',
-		);
-
-		$matchOptions = array(
-			'contains' => 'form.contains',
-			'is' => 'form.is'
-		);
-
-		$filterData = array(
-			'fieldOptions' => $fieldOptions,
-			'matchOptions' => $matchOptions
-		);
-
-		return parent::renderFilter($request, $filterData);
-	}
-
-	/**
 	 * @copydoc GridHandler::loadData()
+	 * @param $request PKPRequest
+	 * @return array Grid data.
 	 */
 	protected function loadData($request, $filter) {
 		// Get the context.
@@ -141,7 +112,16 @@ class IndividualSubscriptionsGridHandler extends SubscriptionsGridHandler {
 
 		$subscriptionDao = DAORegistry::getDAO('IndividualSubscriptionDAO');
 		$rangeInfo = $this->getGridRangeInfo($request, $this->getId());
-		return $subscriptionDao->getByJournalId($journal->getId(), null, $filter['searchField'], $filter['searchMatch'], $filter['search']?$filter['search']:null, null, null, null, $rangeInfo);
+		return $subscriptionDao->getByJournalId($journal->getId());
+		// FIXME: , $filterStatus, $searchField, $searchMatch, $search, $dateSearchField, $fromDate, $toDate, $rangeInfo);
+		/* return $userGroupDao->getUsersById(
+			$filter['userGroup'],
+			$filter['includeNoRole']?null:$context->getId(),
+			$filter['searchField'],
+			$filter['search']?$filter['search']:null,
+			$filter['searchMatch'],
+			$rangeInfo
+		); */
 	}
 
 
@@ -157,7 +137,7 @@ class IndividualSubscriptionsGridHandler extends SubscriptionsGridHandler {
 	function editSubscription($args, $request) {
 		// Form handling.
 		$subscriptionForm = new IndividualSubscriptionForm($request, $request->getUserVar('rowId'));
-		$subscriptionForm->initData();
+		$subscriptionForm->initData($args, $request);
 
 		return new JSONMessage(true, $subscriptionForm->fetch($request));
 	}
@@ -175,7 +155,7 @@ class IndividualSubscriptionsGridHandler extends SubscriptionsGridHandler {
 		$subscriptionForm->readInputData();
 
 		if ($subscriptionForm->validate()) {
-			$subscriptionForm->execute();
+			$subscriptionForm->execute($args, $request);
 			$notificationManager = new NotificationManager();
 			$notificationManager->createTrivialNotification($request->getUser()->getId(), NOTIFICATION_TYPE_SUCCESS);
 			// Prepare the grid row data.
@@ -205,4 +185,4 @@ class IndividualSubscriptionsGridHandler extends SubscriptionsGridHandler {
 	}
 }
 
-
+?>
