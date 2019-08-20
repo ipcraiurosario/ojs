@@ -3,8 +3,8 @@
 /**
  * @file pages/issue/IssueHandler.inc.php
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2003-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class IssueHandler
@@ -39,7 +39,7 @@ class IssueHandler extends Handler {
 	}
 
 	/**
-	 * @see PKPHandler::initialize()
+	 * @copydoc PKPHandler::initialize()
 	 * @param $args array Arguments list
 	 */
 	function initialize($request, $args = array()) {
@@ -122,21 +122,20 @@ class IssueHandler extends Handler {
 		$templateMgr = TemplateManager::getManager($request);
 		$context = $request->getContext();
 
-		$count = $context->getData('itemsPerPage') ? $context->getData('itemsPerPage') : Config::getVar('interface', 'items_per_page');
+		$count = $context->getSetting('itemsPerPage') ? $context->getSetting('itemsPerPage') : Config::getVar('interface', 'items_per_page');
 		$offset = $page > 1 ? ($page - 1) * $count : 0;
 
-		import('classes.core.Services');
-		$issueService = Services::get('issue');
+		import('classes.core.ServicesContainer');
+		$issueService = ServicesContainer::instance()->get('issue');
 		$params = array(
-			'contextId' => $context->getId(),
 			'orderBy' => 'seq',
 			'orderDirection' => 'ASC',
 			'count' => $count,
 			'offset' => $offset,
 			'isPublished' => true,
 		);
-		$issues = $issueService->getMany($params);
-		$total = $issueService->getMax($params);
+		$issues = $issueService->getIssues($context->getId(), $params);
+		$total = $issueService->getIssuesMaxCount($context->getId(), $params);
 
 		$showingStart = $offset + 1;
 		$showingEnd = min($offset + $count, $offset + count($issues));
@@ -168,7 +167,7 @@ class IssueHandler extends Handler {
 			if (!HookRegistry::call('IssueHandler::download', array(&$issue, &$galley))) {
 				import('classes.file.IssueFileManager');
 				$issueFileManager = new IssueFileManager($issue->getId());
-				return $issueFileManager->downloadById($galley->getFileId(), $request->getUserVar('inline')?true:false);
+				return $issueFileManager->downloadFile($galley->getFileId(), $request->getUserVar('inline')?true:false);
 			}
 		}
 	}
@@ -214,7 +213,7 @@ class IssueHandler extends Handler {
 			$isSubscribedDomain = $issueAction->subscribedDomain($request, $journal, $issue->getId());
 
 			// Check if login is required for viewing.
-			if (!$isSubscribedDomain && !Validation::isLoggedIn() && $journal->getData('restrictArticleAccess')) {
+			if (!$isSubscribedDomain && !Validation::isLoggedIn() && $journal->getSetting('restrictArticleAccess')) {
 				Validation::redirectLogin();
 			}
 
@@ -243,7 +242,7 @@ class IssueHandler extends Handler {
 							return true;
 						} else {
 							// Otherwise queue an issue purchase payment and display payment form
-							$queuedPayment = $paymentManager->createQueuedPayment($request, PAYMENT_TYPE_PURCHASE_ISSUE, $userId, $issue->getId(), $journal->getData('purchaseIssueFee'));
+							$queuedPayment = $paymentManager->createQueuedPayment($request, PAYMENT_TYPE_PURCHASE_ISSUE, $userId, $issue->getId(), $journal->getSetting('purchaseIssueFee'));
 							$paymentManager->queuePayment($queuedPayment);
 
 							$paymentForm = $paymentManager->getPaymentForm($queuedPayment);
@@ -299,7 +298,7 @@ class IssueHandler extends Handler {
 		));
 
 		$issueGalleyDao = DAORegistry::getDAO('IssueGalleyDAO');
-		$publishedSubmissionDao = DAORegistry::getDAO('PublishedSubmissionDAO');
+		$publishedArticleDao = DAORegistry::getDAO('PublishedArticleDAO');
 
 		$genreDao = DAORegistry::getDAO('GenreDAO');
 		$primaryGenres = $genreDao->getPrimaryByContextId($journal->getId())->toArray();
@@ -310,7 +309,7 @@ class IssueHandler extends Handler {
 		$templateMgr->assign(array(
 			'issue' => $issue,
 			'issueGalleys' => $issueGalleyDao->getByIssueId($issue->getId()),
-			'publishedSubmissions' => $publishedSubmissionDao->getPublishedSubmissionsInSections($issue->getId(), true),
+			'publishedArticles' => $publishedArticleDao->getPublishedArticlesInSections($issue->getId(), true),
 			'primaryGenreIds' => $primaryGenreIds,
 		));
 
@@ -330,14 +329,14 @@ class IssueHandler extends Handler {
 			$templateMgr->assign('issueExpiryPartial', $partial);
 
 			// Partial subscription expiry for articles
-			$publishedSubmissionDao = DAORegistry::getDAO('PublishedSubmissionDAO');
-			$publishedSubmissionsTemp = $publishedSubmissionDao->getPublishedSubmissions($issue->getId());
+			$publishedArticleDao = DAORegistry::getDAO('PublishedArticleDAO');
+			$publishedArticlesTemp = $publishedArticleDao->getPublishedArticles($issue->getId());
 
 			$articleExpiryPartial = array();
-			foreach ($publishedSubmissionsTemp as $publishedSubmission) {
-				$partial = $issueAction->subscribedUser($user, $journal, $issue->getId(), $publishedSubmission->getId());
-				if (!$partial) $issueAction->subscribedDomain($request, $journal, $issue->getId(), $publishedSubmission->getId());
-				$articleExpiryPartial[$publishedSubmission->getId()] = $partial;
+			foreach ($publishedArticlesTemp as $publishedArticle) {
+				$partial = $issueAction->subscribedUser($user, $journal, $issue->getId(), $publishedArticle->getId());
+				if (!$partial) $issueAction->subscribedDomain($request, $journal, $issue->getId(), $publishedArticle->getId());
+				$articleExpiryPartial[$publishedArticle->getId()] = $partial;
 			}
 			$templateMgr->assign('articleExpiryPartial', $articleExpiryPartial);
 		}
@@ -356,3 +355,5 @@ class IssueHandler extends Handler {
 		}
 	}
 }
+
+?>

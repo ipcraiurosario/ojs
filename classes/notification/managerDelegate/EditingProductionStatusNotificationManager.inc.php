@@ -3,8 +3,8 @@
 /**
  * @file classes/notification/managerDelegate/EditingProductionStatusNotificationManager.inc.php
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2003-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class EditingProductionStatusNotificationManager
@@ -32,7 +32,7 @@ class EditingProductionStatusNotificationManager extends PKPEditingProductionSta
 	 * @copydoc PKPNotificationOperationManager::getNotificationUrl()
 	 */
 	public function getNotificationUrl($request, $notification) {
-		$dispatcher = Application::get()->getDispatcher();
+		$dispatcher = Application::getDispatcher();
 		$contextDao = Application::getContextDAO();
 		$context = $contextDao->getById($notification->getContextId());
 
@@ -58,12 +58,12 @@ class EditingProductionStatusNotificationManager extends PKPEditingProductionSta
 				if ($submission->getStageId() == WORKFLOW_STAGE_ID_PRODUCTION) {
 					$context = $request->getContext();
 					$contextId = $context->getId();
-					$publishedSubmissionDao = DAORegistry::getDAO('PublishedSubmissionDAO');
+					$publishedArticleDao = DAORegistry::getDAO('PublishedArticleDAO');
 					$stageAssignmentDao = DAORegistry::getDAO('StageAssignmentDAO');
 					$editorStageAssignments = $stageAssignmentDao->getEditorsAssignedToStage($submissionId, $submission->getStageId());
 					foreach ($editorStageAssignments as $editorStageAssignment) {
-						$publishedSubmission = $publishedSubmissionDao->getBySubmissionId($submissionId, $contextId);
-						if ($publishedSubmission) {
+						$publishedArticle = $publishedArticleDao->getByArticleId($submissionId, $contextId);
+						if ($publishedArticle) {
 							$this->_createNotification(
 								$request,
 								$submissionId,
@@ -84,4 +84,4 @@ class EditingProductionStatusNotificationManager extends PKPEditingProductionSta
 
 }
 
-
+?>

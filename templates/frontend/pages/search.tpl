@@ -1,8 +1,8 @@
 {**
  * templates/frontend/pages/search.tpl
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2003-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @brief Display the page to search and view search results.
@@ -31,9 +31,7 @@
 			<label class="pkp_screen_reader" for="query">
 				{translate key="search.searchFor"}
 			</label>
-			{block name=searchQuery}
-				<input type="text" id="query" name="query" value="{$query|escape}" class="query" placeholder="{translate|escape key="common.search"}">
-			{/block}
+			<input type="text" id="query" name="query" value="{$query|escape}" class="query" placeholder="{translate|escape key="common.search"}">
 		</div>
 
 		<fieldset class="search_advanced">
@@ -58,11 +56,8 @@
 				<label class="label" for="authors">
 					{translate key="search.author"}
 				</label>
-				{block name=searchAuthors}
-					<input type="text" for="authors" name="authors" value="{$authors|escape}">
-				{/block}
+				<input type="text" for="authors" name="authors" value="{$authors|escape}">
 			</div>
-			{call_hook name="Templates::Search::SearchResults::AdditionalFilters"}
 		</fieldset>
 
 		<div class="submit">
@@ -70,12 +65,10 @@
 		</div>
 	</form>
 
-	{call_hook name="Templates::Search::SearchResults::PreResults"}
-
 	{* Search results, finally! *}
 	<div class="search_results">
 		{iterate from=results item=result}
-			{include file="frontend/objects/article_summary.tpl" article=$result.publishedSubmission journal=$result.journal showDatePublished=true hideGalleys=true}
+			{include file="frontend/objects/article_summary.tpl" article=$result.publishedArticle journal=$result.journal showDatePublished=true hideGalleys=true}
 		{/iterate}
 	</div>
 
@@ -94,9 +87,6 @@
 			{page_links anchor="results" iterator=$results name="search" query=$query searchJournal=$searchJournal authors=$authors title=$title abstract=$abstract galleyFullText=$galleyFullText discipline=$discipline subject=$subject type=$type coverage=$coverage indexTerms=$indexTerms dateFromMonth=$dateFromMonth dateFromDay=$dateFromDay dateFromYear=$dateFromYear dateToMonth=$dateToMonth dateToDay=$dateToDay dateToYear=$dateToYear orderBy=$orderBy orderDir=$orderDir}
 		</div>
 	{/if}
-
-	{* Search Syntax Instructions *}
-	{block name=searchSyntaxInstructions}{/block}
 </div><!-- .page -->
 
 {include file="frontend/components/footer.tpl"}

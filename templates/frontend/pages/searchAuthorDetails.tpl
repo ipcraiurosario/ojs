@@ -1,11 +1,11 @@
 {**
  * templates/frontend/pages/searchAuthorDetails.tpl
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2003-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * Index of published submissions by author.
+ * Index of published articles by author.
  *
  *}
 {strip}
@@ -13,9 +13,9 @@
 {include file="frontend/components/header.tpl"}
 {/strip}
 <div id="authorDetails">
-<h3>{$authorName|escape}{if $affiliation}, {$affiliation|escape}{/if}{if $country}, {$country|escape}{/if}</h3>
+<h3>{$lastName|escape}, {$firstName|escape}{if $middleName} {$middleName|escape}{/if}{if $affiliation}, {$affiliation|escape}{/if}{if $country}, {$country|escape}{/if}</h3>
 <ul>
-{foreach from=$publishedSubmissions item=article}
+{foreach from=$publishedArticles item=article}
 	{assign var=issueId value=$article->getIssueId()}
 	{assign var=issue value=$issues[$issueId]}
 	{assign var=issueUnavailable value=$issuesUnavailable.$issueId}

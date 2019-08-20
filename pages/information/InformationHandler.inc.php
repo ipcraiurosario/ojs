@@ -3,8 +3,8 @@
 /**
  * @file pages/information/InformationHandler.inc.php
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2003-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class InformationHandler
@@ -18,21 +18,6 @@ import('classes.handler.Handler');
 class InformationHandler extends Handler {
 
 	/**
-	 * @see PKPHandler::authorize()
-	 */
-	function authorize($request, &$args, $roleAssignments) {
-		$context = $request->getContext();
-		if (!$context || !$context->getSetting('restrictSiteAccess')) {
-			$templateMgr = TemplateManager::getManager($request);
-			$templateMgr->setCacheability(CACHEABILITY_PUBLIC);
-		}
-
-		import('lib.pkp.classes.security.authorization.ContextRequiredPolicy');
-		$this->addPolicy(new ContextRequiredPolicy($request));
-		return parent::authorize($request, $args, $roleAssignments);
-	}
-
-	/**
 	 * Display the information page for the journal.
 	 * @param $args array
 	 * @param $request PKPRequest
@@ -44,24 +29,24 @@ class InformationHandler extends Handler {
 
 		switch(array_shift($args)) {
 			case 'readers':
-				$content = $journal->getLocalizedData('readerInformation');
+				$content = $journal->getLocalizedSetting('readerInformation');
 				$pageTitle = 'navigation.infoForReaders.long';
 				break;
 			case 'authors':
-				$content = $journal->getLocalizedData('authorInformation');
+				$content = $journal->getLocalizedSetting('authorInformation');
 				$pageTitle = 'navigation.infoForAuthors.long';
 				break;
 			case 'librarians':
-				$content = $journal->getLocalizedData('librarianInformation');
+				$content = $journal->getLocalizedSetting('librarianInformation');
 				$pageTitle = 'navigation.infoForLibrarians.long';
 				break;
 			case 'competingInterestGuidelines':
-				$content = $journal->getLocalizedData('competingInterestsPolicy');
+				$content = $journal->getLocalizedSetting('competingInterestsPolicy');
 				$pageTitle = 'navigation.competingInterestGuidelines';
 				break;
 			case 'sampleCopyrightWording':
 				AppLocale::requireComponents(LOCALE_COMPONENT_APP_MANAGER);
-				$content = __('manager.setup.copyrightNotice.sample');
+				$content = __('manager.setup.authorCopyrightNotice.sample');
 				$pageTitle = 'manager.setup.copyrightNotice';
 				break;
 			default:
@@ -100,11 +85,11 @@ class InformationHandler extends Handler {
 	 */
 	function setupTemplate($request) {
 		parent::setupTemplate($request);
-		if (!$request->getJournal()->getData('restrictSiteAccess')) {
+		if (!$request->getJournal()->getSetting('restrictSiteAccess')) {
 			$templateMgr = TemplateManager::getManager($request);
 			$templateMgr->setCacheability(CACHEABILITY_PUBLIC);
 		}
 	}
 }
 
-
+?>

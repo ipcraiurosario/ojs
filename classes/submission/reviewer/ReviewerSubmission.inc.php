@@ -3,8 +3,8 @@
 /**
  * @file classes/submission/reviewer/ReviewerSubmission.inc.php
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2003-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class ReviewerSubmission
@@ -14,9 +14,9 @@
  * @brief ReviewerSubmission class.
  */
 
-import('classes.article.Submission');
+import('classes.article.Article');
 
-class ReviewerSubmission extends Submission {
+class ReviewerSubmission extends Article {
 
 	/** @var array SubmissionFile reviewer file revisions of this submission */
 	var $reviewerFileRevisions;
@@ -36,7 +36,7 @@ class ReviewerSubmission extends Submission {
 	 * Get the competing interests for this submission.
 	 * @return string
 	 */
-	public function getCompetingInterests() {
+	function getCompetingInterests() {
 		return $this->getData('competingInterests');
 	}
 
@@ -44,15 +44,15 @@ class ReviewerSubmission extends Submission {
 	 * Set the competing interests statement.
 	 * @param $competingInterests string
 	 */
-	public function setCompetingInterests($competingInterests) {
-		$this->setData('competingInterests', $competingInterests);
+	function setCompetingInterests($competingInterests) {
+		return $this->setData('competingInterests', $competingInterests);
 	}
 
 	/**
 	 * Get ID of review assignment.
 	 * @return int
 	 */
-	public function getReviewId() {
+	function getReviewId() {
 		return $this->getData('reviewId');
 	}
 
@@ -60,15 +60,15 @@ class ReviewerSubmission extends Submission {
 	 * Set ID of review assignment
 	 * @param $reviewId int
 	 */
-	public function setReviewId($reviewId) {
-		$this->setData('reviewId', $reviewId);
+	function setReviewId($reviewId) {
+		return $this->setData('reviewId', $reviewId);
 	}
 
 	/**
 	 * Get ID of reviewer.
 	 * @return int
 	 */
-	public function getReviewerId() {
+	function getReviewerId() {
 		return $this->getData('reviewerId');
 	}
 
@@ -76,15 +76,15 @@ class ReviewerSubmission extends Submission {
 	 * Set ID of reviewer.
 	 * @param $reviewerId int
 	 */
-	public function setReviewerId($reviewerId) {
-		$this->setData('reviewerId', $reviewerId);
+	function setReviewerId($reviewerId) {
+		return $this->setData('reviewerId', $reviewerId);
 	}
 
 	/**
 	 * Get full name of reviewer.
 	 * @return string
 	 */
-	public function getReviewerFullName() {
+	function getReviewerFullName() {
 		return $this->getData('reviewerFullName');
 	}
 
@@ -92,15 +92,15 @@ class ReviewerSubmission extends Submission {
 	 * Set full name of reviewer.
 	 * @param $reviewerFullName string
 	 */
-	public function setReviewerFullName($reviewerFullName) {
-		$this->setData('reviewerFullName', $reviewerFullName);
+	function setReviewerFullName($reviewerFullName) {
+		return $this->setData('reviewerFullName', $reviewerFullName);
 	}
 
 	/**
 	 * Get editor decisions.
 	 * @return array
 	 */
-	public function getDecisions() {
+	function getDecisions() {
 		return $this->editorDecisions;
 	}
 
@@ -109,7 +109,7 @@ class ReviewerSubmission extends Submission {
 	 * @param $editorDecisions array
 	 * @param $round int
 	 */
-	public function setDecisions($editorDecisions) {
+	function setDecisions($editorDecisions) {
 		return $this->editorDecisions = $editorDecisions;
 	}
 
@@ -117,7 +117,7 @@ class ReviewerSubmission extends Submission {
 	 * Get reviewer recommendation.
 	 * @return string
 	 */
-	public function getRecommendation() {
+	function getRecommendation() {
 		return $this->getData('recommendation');
 	}
 
@@ -125,15 +125,15 @@ class ReviewerSubmission extends Submission {
 	 * Set reviewer recommendation.
 	 * @param $recommendation string
 	 */
-	public function setRecommendation($recommendation) {
-		$this->setData('recommendation', $recommendation);
+	function setRecommendation($recommendation) {
+		return $this->setData('recommendation', $recommendation);
 	}
 
 	/**
 	 * Get the reviewer's assigned date.
 	 * @return string
 	 */
-	public function getDateAssigned() {
+	function getDateAssigned() {
 		return $this->getData('dateAssigned');
 	}
 
@@ -141,15 +141,15 @@ class ReviewerSubmission extends Submission {
 	 * Set the reviewer's assigned date.
 	 * @param $dateAssigned string
 	 */
-	public function setDateAssigned($dateAssigned) {
-		$this->setData('dateAssigned', $dateAssigned);
+	function setDateAssigned($dateAssigned) {
+		return $this->setData('dateAssigned', $dateAssigned);
 	}
 
 	/**
 	 * Get the reviewer's notified date.
 	 * @return string
 	 */
-	public function getDateNotified() {
+	function getDateNotified() {
 		return $this->getData('dateNotified');
 	}
 
@@ -157,15 +157,15 @@ class ReviewerSubmission extends Submission {
 	 * Set the reviewer's notified date.
 	 * @param $dateNotified string
 	 */
-	public function setDateNotified($dateNotified) {
-		$this->setData('dateNotified', $dateNotified);
+	function setDateNotified($dateNotified) {
+		return $this->setData('dateNotified', $dateNotified);
 	}
 
 	/**
 	 * Get the reviewer's confirmed date.
 	 * @return string
 	 */
-	public function getDateConfirmed() {
+	function getDateConfirmed() {
 		return $this->getData('dateConfirmed');
 	}
 
@@ -173,15 +173,15 @@ class ReviewerSubmission extends Submission {
 	 * Set the reviewer's confirmed date.
 	 * @param $dateConfirmed string
 	 */
-	public function setDateConfirmed($dateConfirmed) {
-		$this->setData('dateConfirmed', $dateConfirmed);
+	function setDateConfirmed($dateConfirmed) {
+		return $this->setData('dateConfirmed', $dateConfirmed);
 	}
 
 	/**
 	 * Get the reviewer's completed date.
 	 * @return string
 	 */
-	public function getDateCompleted() {
+	function getDateCompleted() {
 		return $this->getData('dateCompleted');
 	}
 
@@ -189,15 +189,15 @@ class ReviewerSubmission extends Submission {
 	 * Set the reviewer's completed date.
 	 * @param $dateCompleted string
 	 */
-	public function setDateCompleted($dateCompleted) {
-		$this->setData('dateCompleted', $dateCompleted);
+	function setDateCompleted($dateCompleted) {
+		return $this->setData('dateCompleted', $dateCompleted);
 	}
 
 	/**
 	 * Get the reviewer's acknowledged date.
 	 * @return string
 	 */
-	public function getDateAcknowledged() {
+	function getDateAcknowledged() {
 		return $this->getData('dateAcknowledged');
 	}
 
@@ -205,15 +205,15 @@ class ReviewerSubmission extends Submission {
 	 * Set the reviewer's acknowledged date.
 	 * @param $dateAcknowledged string
 	 */
-	public function setDateAcknowledged($dateAcknowledged) {
-		$this->setData('dateAcknowledged', $dateAcknowledged);
+	function setDateAcknowledged($dateAcknowledged) {
+		return $this->setData('dateAcknowledged', $dateAcknowledged);
 	}
 
 	/**
 	 * Get the reviewer's due date.
 	 * @return string
 	 */
-	public function getDateDue() {
+	function getDateDue() {
 		return $this->getData('dateDue');
 	}
 
@@ -221,15 +221,15 @@ class ReviewerSubmission extends Submission {
 	 * Set the reviewer's due date.
 	 * @param $dateDue string
 	 */
-	public function setDateDue($dateDue) {
-		$this->setData('dateDue', $dateDue);
+	function setDateDue($dateDue) {
+		return $this->setData('dateDue', $dateDue);
 	}
 
 	/**
 	 * Get the reviewer's response due date.
 	 * @return string
 	 */
-	public function getDateResponseDue() {
+	function getDateResponseDue() {
 		return $this->getData('dateResponseDue');
 	}
 
@@ -237,15 +237,15 @@ class ReviewerSubmission extends Submission {
 	 * Set the reviewer's response due date.
 	 * @param $dateResponseDue string
 	 */
-	public function setDateResponseDue($dateResponseDue) {
-		$this->setData('dateResponseDue', $dateResponseDue);
+	function setDateResponseDue($dateResponseDue) {
+		return $this->setData('dateResponseDue', $dateResponseDue);
 	}
 
 	/**
 	 * Get the declined value.
 	 * @return boolean
 	 */
-	public function getDeclined() {
+	function getDeclined() {
 		return $this->getData('declined');
 	}
 
@@ -253,31 +253,15 @@ class ReviewerSubmission extends Submission {
 	 * Set the reviewer's declined value.
 	 * @param $declined boolean
 	 */
-	public function setDeclined($declined) {
-		$this->setData('declined', $declined);
-	}
-
-	/**
-	 * Get the cancelled value.
-	 * @return boolean
-	 */
-	public function getCancelled() {
-		return $this->getData('cancelled');
-	}
-
-	/**
-	 * Set the reviewer's cancelled value.
-	 * @param $cancelled boolean
-	 */
-	public function setCancelled($cancelled) {
-		$this->setData('cancelled', $cancelled);
+	function setDeclined($declined) {
+		return $this->setData('declined', $declined);
 	}
 
 	/**
 	 * Get quality.
 	 * @return int|null
 	 */
-	public function getQuality() {
+	function getQuality() {
 		return $this->getData('quality');
 	}
 
@@ -285,15 +269,15 @@ class ReviewerSubmission extends Submission {
 	 * Set quality.
 	 * @param $quality int|null
 	 */
-	public function setQuality($quality) {
-		$this->setData('quality', $quality);
+	function setQuality($quality) {
+		return $this->setData('quality', $quality);
 	}
 
 	/**
 	 * Get stageId.
 	 * @return int
 	 */
-	public function getStageId() {
+	function getStageId() {
 		return $this->getData('stageId');
 	}
 
@@ -301,15 +285,15 @@ class ReviewerSubmission extends Submission {
 	 * Set stageId.
 	 * @param $stageId int
 	 */
-	public function setStageId($stageId) {
-		$this->setData('stageId', $stageId);
+	function setStageId($stageId) {
+		return $this->setData('stageId', $stageId);
 	}
 
 	/**
 	 * Get the method of the review (open, blind, or double-blind).
 	 * @return int
 	 */
-	public function getReviewMethod() {
+	function getReviewMethod() {
 		return $this->getData('reviewMethod');
 	}
 
@@ -317,15 +301,15 @@ class ReviewerSubmission extends Submission {
 	 * Set the type of review.
 	 * @param $method int
 	 */
-	public function setReviewMethod($method) {
-		$this->setData('reviewMethod', $method);
+	function setReviewMethod($method) {
+		return $this->setData('reviewMethod', $method);
 	}
 
 	/**
 	 * Get round.
 	 * @return int
 	 */
-	public function getRound() {
+	function getRound() {
 		return $this->getData('round');
 	}
 
@@ -333,15 +317,15 @@ class ReviewerSubmission extends Submission {
 	 * Set round.
 	 * @param $round int
 	 */
-	public function setRound($round) {
-		$this->setData('round', $round);
+	function setRound($round) {
+		return $this->setData('round', $round);
 	}
 
 	/**
 	 * Get step.
 	 * @return int
 	 */
-	public function getStep() {
+	function getStep() {
 		return $this->getData('step');
 	}
 
@@ -349,9 +333,29 @@ class ReviewerSubmission extends Submission {
 	 * Set status.
 	 * @param $status int
 	 */
-	public function setStep($step) {
-		$this->setData('step', $step);
+	function setStep($step) {
+		return $this->setData('step', $step);
+	}
+
+	//
+	// Comments
+	//
+
+	/**
+	 * Get most recent peer review comment.
+	 * @return SubmissionComment
+	 */
+	function getMostRecentPeerReviewComment() {
+		return $this->getData('peerReviewComment');
+	}
+
+	/**
+	 * Set most recent peer review comment.
+	 * @param $peerReviewComment SubmissionComment
+	 */
+	function setMostRecentPeerReviewComment($peerReviewComment) {
+		return $this->setData('peerReviewComment', $peerReviewComment);
 	}
 }
 
-
+?>

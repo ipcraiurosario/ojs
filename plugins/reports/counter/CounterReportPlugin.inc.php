@@ -3,8 +3,8 @@
 /**
  * @file plugins/reports/counter/CounterReportPlugin.inc.php
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2003-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class CounterReportPlugin
@@ -66,6 +66,13 @@ class CounterReportPlugin extends ReportPlugin {
 	 */
 	function getDescription() {
 		return __('plugins.reports.counter.description');
+	}
+
+	/**
+	 * @see PKPPlugin::getTemplatePath()
+	 */
+	function getTemplatePath($inCore = false) {
+		return parent::getTemplatePath($inCore) . 'templates/';
 	}
 
 	/**
@@ -207,7 +214,7 @@ class CounterReportPlugin extends ReportPlugin {
 		// legacy reports are site-wide, so only site admins have access
 		$templateManager->assign('showLegacy', Validation::isSiteAdmin());
 		if (!empty($legacyYears)) $templateManager->assign('legacyYears', $legacyYears);
-		$templateManager->display($this->getTemplateResource('index.tpl'));
+		$templateManager->display($this->getTemplatePath() . 'index.tpl');
 	}
 
 	/**
@@ -220,7 +227,7 @@ class CounterReportPlugin extends ReportPlugin {
 			$metricType = OJS_METRIC_TYPE_LEGACY_COUNTER;
 			$filter = array();
 		} else {
-			$metricType = METRIC_TYPE_COUNTER;
+			$metricType = OJS_METRIC_TYPE_COUNTER;
 			$filter = array(STATISTICS_DIMENSION_ASSOC_TYPE => ASSOC_TYPE_SUBMISSION_FILE);
 		}
 		$metricsDao = DAORegistry::getDAO('MetricsDAO'); /* @var $metricsDao MetricsDAO */
@@ -236,4 +243,4 @@ class CounterReportPlugin extends ReportPlugin {
 
 }
 
-
+?>

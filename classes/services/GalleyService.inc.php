@@ -3,8 +3,8 @@
 /**
  * @file classes/services/GalleyService.php
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2000-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2000-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class GalleyService
@@ -13,15 +13,21 @@
  * @brief Helper class that encapsulates galley business logic
  */
 
-namespace APP\Services;
+namespace OJS\Services;
 
-use \Services;
-use \PKP\Services\interfaces\EntityPropertyInterface;
+use \PKP\Services\EntityProperties\PKPBaseEntityPropertyService;
 
-class GalleyService implements EntityPropertyInterface {
+class GalleyService extends PKPBaseEntityPropertyService {
 
 	/**
-	 * @copydoc \PKP\Services\interfaces\EntityPropertyInterface::getProperties()
+	 * Constructor
+	 */
+	public function __construct() {
+		parent::__construct($this);
+	}
+
+	/**
+	 * @copydoc \PKP\Services\EntityProperties\EntityPropertyInterface::getProperties()
 	 */
 	public function getProperties($galley, $props, $args = null) {
 		\PluginRegistry::loadCategory('pubIds', true);
@@ -31,8 +37,6 @@ class GalleyService implements EntityPropertyInterface {
 		$isSubmissionGalley = is_a($galley, 'Representation');
 		$isIssueGalley = is_a($galley, 'IssueFile');
 		$dispatcher = $request->getDispatcher();
-		$router = $request->getRouter();
-
 		$values = array();
 
 		foreach ($props as $prop) {
@@ -54,11 +58,12 @@ class GalleyService implements EntityPropertyInterface {
 							$parentId = $galley->getIssueId();
 						}
 						if ($parentPath) {
-							$values[$prop] = $dispatcher->url(
+							$values[$prop] = $this->getAPIHref(
 								$args['request'],
-								ROUTE_API,
-								$context->getPath(),
-								$parentPath . '/' . $parentId
+								$arguments['contextPath'],
+								$arguments['version'],
+								$parentPath,
+								$parentId
 							);
 						}
 					}
@@ -70,10 +75,10 @@ class GalleyService implements EntityPropertyInterface {
 					$values[$prop] = $galley->getLabel(null);
 					break;
 				case 'urlRemote':
-					$values[$prop] = $isSubmissionGalley ? $galley->getRemoteURL() : '';
+					$values[$prop] = $isSubmissionGalley ? $galley->getRemoteURL() : null;
 					break;
 				case 'urlPublished':
-					$values[$prop] = '';
+					$values[$prop] = null;
 					if ($isSubmissionGalley) {
 						$parentPath = 'article';
 						$parentId = $parent->getBestArticleId();
@@ -185,11 +190,7 @@ class GalleyService implements EntityPropertyInterface {
 			}
 		}
 
-		$values = Services::get('schema')->addMissingMultilingualValues(SCHEMA_GALLEY, $values, $context->getSupportedLocales());
-
 		\HookRegistry::call('Galley::getProperties::values', array(&$values, $galley, $props, $args));
-
-		ksort($values);
 
 		return $values;
 	}

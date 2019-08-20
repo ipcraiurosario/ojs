@@ -3,8 +3,8 @@
 /**
  * @file plugins/generic/usageEvent/UsageEventPlugin.inc.php
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2003-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class UsageEventPlugin
@@ -68,12 +68,12 @@ class UsageEventPlugin extends PKPUsageEventPlugin {
 					// different hook.
 					if ($op == 'view' && count($args) > 1) break;
 
-					$journal = $templateMgr->getTemplateVars('currentContext');
-					$issue = $templateMgr->getTemplateVars('issue');
-					$publishedSubmission = $templateMgr->getTemplateVars('article');
+					$journal = $templateMgr->get_template_vars('currentContext');
+					$issue = $templateMgr->get_template_vars('issue');
+					$publishedArticle = $templateMgr->get_template_vars('article');
 
 					// No published objects, no usage event.
-					if (!$journal && !$issue && !$publishedSubmission) break;
+					if (!$journal && !$issue && !$publishedArticle) break;
 
 					if ($journal) {
 						$pubObject = $journal;
@@ -88,9 +88,9 @@ class UsageEventPlugin extends PKPUsageEventPlugin {
 						$idParams = array('s' . $issue->getId());
 					}
 
-					if ($publishedSubmission) {
-						$pubObject = $publishedSubmission;
-						$assocType = ASSOC_TYPE_SUBMISSION;
+					if ($publishedArticle) {
+						$pubObject = $publishedArticle;
+						$assocType = ASSOC_TYPE_ARTICLE;
 						$canonicalUrlParams = array($pubObject->getId());
 						$idParams = array('m' . $pubObject->getId());
 					}
@@ -143,7 +143,7 @@ class UsageEventPlugin extends PKPUsageEventPlugin {
 		return array(
 			ASSOC_TYPE_JOURNAL,
 			ASSOC_TYPE_ISSUE,
-			ASSOC_TYPE_SUBMISSION,
+			ASSOC_TYPE_ARTICLE
 		);
 	}
 
@@ -151,9 +151,9 @@ class UsageEventPlugin extends PKPUsageEventPlugin {
 	 * @see PKPUsageEventPlugin::isPubIdObjectType()
 	 */
 	protected function isPubIdObjectType($pubObject) {
-		return is_a($pubObject, 'PublishedSubmission');
+		return is_a($pubObject, 'PublishedArticle');
 	}
 
 }
 
-
+?>

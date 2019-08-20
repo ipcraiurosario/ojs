@@ -3,8 +3,8 @@
 /**
  * @file classes/services/IssueService.php
 *
-* Copyright (c) 2014-2019 Simon Fraser University
-* Copyright (c) 2000-2019 John Willinsky
+* Copyright (c) 2014-2018 Simon Fraser University
+* Copyright (c) 2000-2018 John Willinsky
 * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
 *
 * @class IssueService
@@ -13,35 +13,29 @@
 * @brief Helper class that encapsulates issue business logic
 */
 
-namespace APP\Services;
+namespace OJS\Services;
 
 use \Journal;
-use \Services;
+use \PKP\Services\EntityProperties\PKPBaseEntityPropertyService;
+use \OJS\Services\QueryBuilders\IssueListQueryBuilder;
 use \DBResultRange;
 use \DAORegistry;
 use \DAOResultFactory;
-use \PKP\Services\interfaces\EntityPropertyInterface;
-use \PKP\Services\interfaces\EntityReadInterface;
-use \PKP\Services\traits\EntityReadTrait;
-use \APP\Services\QueryBuilders\IssueQueryBuilder;
 
-class IssueService implements EntityPropertyInterface, EntityReadInterface {
-	use EntityReadTrait;
+class IssueService extends PKPBaseEntityPropertyService {
 
 	/**
-	 * @copydoc \PKP\Services\interfaces\EntityReadInterface::get()
+	 * Constructor
 	 */
-	public function get($issueId) {
-		return DAORegistry::getDAO('IssueDAO')->getById($issueId);
+	public function __construct() {
+		parent::__construct($this);
 	}
 
 	/**
-	 * Get a collection of issues limited, filtered and sorted by $args
+	 * Get issues
 	 *
+	 * @param int $contextId
 	 * @param array $args {
-	 *		@option int contextId If not supplied, CONTEXT_ID_NONE will be used and
-	 *			no submissions will be returned. To retrieve submissions from all
-	 *			contexts, use CONTEXT_ID_ALL.
 	 * 		@option int volumes
 	 * 		@option int numbers
 	 * 		@option int years
@@ -54,10 +48,10 @@ class IssueService implements EntityPropertyInterface, EntityReadInterface {
 	 *
 	 * @return array
 	 */
-	public function getMany($args = array()) {
-		$issueListQB = $this->_getQueryBuilder($args);
+	public function getIssues($contextId, $args = array()) {
+		$issueListQB = $this->_buildGetIssuesQueryObject($contextId, $args);
 		$issueListQO = $issueListQB->get();
-		$range = $this->getRangeByArgs($args);
+		$range = new DBResultRange($args['count'], null, $args['offset']);
 		$issueDao = DAORegistry::getDAO('IssueDAO');
 		$result = $issueDao->retrieveRange($issueListQO->toSql(), $issueListQO->getBindings(), $range);
 		$queryResults = new DAOResultFactory($result, $issueDao, '_fromRow');
@@ -66,10 +60,13 @@ class IssueService implements EntityPropertyInterface, EntityReadInterface {
 	}
 
 	/**
-	 * @copydoc \PKP\Services\interfaces\EntityReadInterface::getMax()
+	 * Get max count of issues matching a query request
+	 *
+	 * @see self::getIssues()
+	 * @return int
 	 */
-	public function getMax($args = array()) {
-		$issueListQB = $this->_getQueryBuilder($args);
+	public function getIssuesMaxCount($contextId, $args = array()) {
+		$issueListQB = $this->_buildGetIssuesQueryObject($contextId, $args);
 		$countQO = $issueListQB->countOnly()->get();
 		$countRange = new DBResultRange($args['count'], 1);
 		$issueDao = DAORegistry::getDAO('IssueDAO');
@@ -80,15 +77,14 @@ class IssueService implements EntityPropertyInterface, EntityReadInterface {
 	}
 
 	/**
-	 * Build the issue query object for getMany requests
+	 * Build the submission query object for getSubmissions requests
 	 *
-	 * @see self::getMany()
+	 * @see self::getSubmissions()
 	 * @return object Query object
 	 */
-	private function _getQueryBuilder($args = array()) {
+	private function _buildGetIssuesQueryObject($contextId, $args = array()) {
 
 		$defaultArgs = array(
-			'contextId' => CONTEXT_ID_NONE,
 			'orderBy' => 'datePublished',
 			'orderDirection' => 'DESC',
 			'count' => 20,
@@ -101,16 +97,15 @@ class IssueService implements EntityPropertyInterface, EntityReadInterface {
 
 		$args = array_merge($defaultArgs, $args);
 
-		$issueListQB = new IssueQueryBuilder();
+		$issueListQB = new IssueListQueryBuilder($contextId);
 		$issueListQB
-			->filterByContext($args['contextId'])
 			->orderBy($args['orderBy'], $args['orderDirection'])
 			->filterByPublished($args['isPublished'])
 			->filterByVolumes($args['volumes'])
 			->filterByNumbers($args['numbers'])
 			->filterByYears($args['years']);
 
-		\HookRegistry::call('Issue::getMany::queryBuilder', array($issueListQB, $contextId, $args));
+		\HookRegistry::call('Issue::getIssues::queryBuilder', array($issueListQB, $contextId, $args));
 
 		return $issueListQB;
 	}
@@ -144,7 +139,7 @@ class IssueService implements EntityPropertyInterface, EntityReadInterface {
 		import('classes.issue.Issue');
 		$accessStatus = null;
 
-		switch ($journal->getData('publishingMode')) {
+		switch ($journal->getSetting('publishingMode')) {
 			case PUBLISHING_MODE_SUBSCRIPTION:
 			case PUBLISHING_MODE_NONE:
 				$accessStatus = ISSUE_ACCESS_SUBSCRIPTION;
@@ -159,14 +154,13 @@ class IssueService implements EntityPropertyInterface, EntityReadInterface {
 	}
 
 	/**
-	 * @copydoc \PKP\Services\interfaces\EntityPropertyInterface::getProperties()
+	 * @copydoc \PKP\Services\EntityProperties\EntityPropertyInterface::getProperties()
 	 */
 	public function getProperties($issue, $props, $args = null) {
 		\PluginRegistry::loadCategory('pubIds', true);
 		$request = $args['request'];
 		$context = $request->getContext();
 		$dispatcher = $request->getDispatcher();
-		$router = $request->getRouter();
 		$values = array();
 
 		foreach ($props as $prop) {
@@ -179,11 +173,12 @@ class IssueService implements EntityPropertyInterface, EntityReadInterface {
 					if (!empty($args['slimRequest'])) {
 						$route = $args['slimRequest']->getAttribute('route');
 						$arguments = $route->getArguments();
-						$values[$prop] = $dispatcher->url(
+						$values[$prop] = $this->getAPIHref(
 							$args['request'],
-							ROUTE_API,
 							$arguments['contextPath'],
-							'issues/' . $issue->getId()
+							$arguments['version'],
+							'issues',
+							$issue->getId()
 						);
 					}
 					break;
@@ -232,11 +227,13 @@ class IssueService implements EntityPropertyInterface, EntityReadInterface {
 					break;
 				case 'articles':
 					$values[$prop] = array();
-					$publishedSubmissionDao = \DAORegistry::getDAO('PublishedSubmissionDAO');
-					$publishedSubmissions = $publishedSubmissionDao->getPublishedSubmissions($issue->getId());
-					if (!empty($publishedSubmissions)) {
-						foreach ($publishedSubmissions as $article) {
-							$values[$prop][] = \Services::get('submission')->getSummaryProperties($article, $args);
+					$publishedArticleDao = \DAORegistry::getDAO('PublishedArticleDAO');
+					$publishedArticles = $publishedArticleDao->getPublishedArticles($issue->getId());
+					if (!empty($publishedArticles)) {
+						foreach ($publishedArticles as $article) {
+							$values[$prop][] = \ServicesContainer::instance()
+								->get('submission')
+								->getSummaryProperties($article, $args);
 						}
 					}
 					break;
@@ -246,7 +243,9 @@ class IssueService implements EntityPropertyInterface, EntityReadInterface {
 					$sections = $sectionDao->getByIssueId($issue->getId());
 					if (!empty($sections)) {
 						foreach ($sections as $section) {
-							$sectionProperties = \Services::get('section')->getSummaryProperties($section, $args);
+							$sectionProperties = \ServicesContainer::instance()
+								->get('section')
+								->getSummaryProperties($section, $args);
 							$customSequence = $sectionDao->getCustomSectionOrder($issue->getId(), $section->getId());
 							if ($customSequence) {
 								$sectionProperties['seq'] = $customSequence;
@@ -267,7 +266,7 @@ class IssueService implements EntityPropertyInterface, EntityReadInterface {
 					$issueGalleyDao = \DAORegistry::getDAO('IssueGalleyDAO');
 					$galleys = $issueGalleyDao->getByIssueId($issue->getId());
 					if ($galleys) {
-						$galleyService = \Services::get('galley');
+						$galleyService = \ServicesContainer::instance()->get('galley');
 						$galleyArgs = array_merge($args, array('parent' => $issue));
 						foreach ($galleys as $galley) {
 							$data[] = ($prop === 'galleys')
@@ -280,17 +279,13 @@ class IssueService implements EntityPropertyInterface, EntityReadInterface {
 			}
 		}
 
-		$values = Services::get('schema')->addMissingMultilingualValues(SCHEMA_ISSUE, $values, $context->getSupportedLocales());
-
 		\HookRegistry::call('Issue::getProperties::values', array(&$values, $issue, $props, $args));
-
-		ksort($values);
 
 		return $values;
 	}
 
 	/**
-	 * @copydoc \PKP\Services\interfaces\EntityPropertyInterface::getSummaryProperties()
+	 * @copydoc \PKP\Services\EntityProperties\EntityPropertyInterface::getSummaryProperties()
 	 */
 	public function getSummaryProperties($issue, $args = null) {
 		\PluginRegistry::loadCategory('pubIds', true);
@@ -306,7 +301,7 @@ class IssueService implements EntityPropertyInterface, EntityReadInterface {
 	}
 
 	/**
-	 * @copydoc \PKP\Services\interfaces\EntityPropertyInterface::getFullProperties()
+	 * @copydoc \PKP\Services\EntityProperties\EntityPropertyInterface::getFullProperties()
 	 */
 	public function getFullProperties($issue, $args = null) {
 		\PluginRegistry::loadCategory('pubIds', true);

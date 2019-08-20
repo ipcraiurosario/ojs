@@ -3,8 +3,8 @@
 /**
  * @file plugins/metadata/dc11/filter/Dc11SchemaArticleAdapter.inc.php
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2000-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2000-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class Dc11SchemaArticleAdapter
@@ -14,7 +14,7 @@
  *
  * @brief Abstract base class for meta-data adapters that
  *  injects/extracts Dublin Core schema compliant meta-data into/from
- *  an PublishedSubmission object.
+ *  an PublishedArticle object.
  */
 
 
@@ -60,7 +60,7 @@ class Dc11SchemaArticleAdapter extends MetadataDataObjectAdapter {
 	 * @return MetadataDescription
 	 */
 	function &extractMetadataFromDataObject(&$article) {
-		assert(is_a($article, 'Submission'));
+		assert(is_a($article, 'Article'));
 
 		AppLocale::requireComponents(LOCALE_COMPONENT_APP_COMMON, LOCALE_COMPONENT_PKP_SUBMISSION);
 
@@ -73,28 +73,25 @@ class Dc11SchemaArticleAdapter extends MetadataDataObjectAdapter {
 		$oaiDao = DAORegistry::getDAO('OAIDAO'); /* @var $oaiDao OAIDAO */
 		$journal = $oaiDao->getJournal($article->getJournalId());
 		$section = $oaiDao->getSection($article->getSectionId());
-		if (is_a($article, 'PublishedSubmission')) { /* @var $article PublishedSubmission */
+		if (is_a($article, 'PublishedArticle')) { /* @var $article PublishedArticle */
 			$issue = $oaiDao->getIssue($article->getIssueId());
 		} else $issue = null;
 
 		$dc11Description = $this->instantiateMetadataDescription();
 
 		// Title
-		$this->_addLocalizedElements($dc11Description, 'dc:title', $article->getFullTitle(null));
+		$this->_addLocalizedElements($dc11Description, 'dc:title', $article->getTitle(null));
 
 		// Creator
 		$authors = $article->getAuthors();
 		foreach($authors as $author) {
-			$dc11Description->addStatement('dc:creator', $author->getFullName(false, true));
+			$dc11Description->addStatement('dc:creator', $author->getFullName(true));
 		}
 
 		// Subject
-		$submissionKeywordDao = DAORegistry::getDAO('SubmissionKeywordDAO');
-		$submissionSubjectDao = DAORegistry::getDAO('SubmissionSubjectDAO');
-		$supportedLocales = array_keys(AppLocale::getSupportedFormLocales());
 		$subjects = array_merge_recursive(
-			(array) $submissionKeywordDao->getKeywords($article->getId(), $supportedLocales),
-			(array) $submissionSubjectDao->getSubjects($article->getId(), $supportedLocales)
+			(array) $article->getDiscipline(null),
+			(array) $article->getSubject(null)
 		);
 		$this->_addLocalizedElements($dc11Description, 'dc:subject', $subjects);
 
@@ -102,7 +99,7 @@ class Dc11SchemaArticleAdapter extends MetadataDataObjectAdapter {
 		$this->_addLocalizedElements($dc11Description, 'dc:description', $article->getAbstract(null));
 
 		// Publisher
-		$publisherInstitution = $journal->getData('publisherInstitution');
+		$publisherInstitution = $journal->getSetting('publisherInstitution');
 		if (!empty($publisherInstitution)) {
 			$publishers = array($journal->getPrimaryLocale() => $publisherInstitution);
 		} else {
@@ -119,7 +116,7 @@ class Dc11SchemaArticleAdapter extends MetadataDataObjectAdapter {
 
 
 		// Date
-		if (is_a($article, 'PublishedSubmission')) {
+		if (is_a($article, 'PublishedArticle')) {
 			if ($article->getDatePublished()) $dc11Description->addStatement('dc:date', date('Y-m-d', strtotime($article->getDatePublished())));
 			elseif (isset($issue) && $issue->getDatePublished()) $dc11Description->addStatement('dc:date', date('Y-m-d', strtotime($issue->getDatePublished())));
 		}
@@ -129,7 +126,7 @@ class Dc11SchemaArticleAdapter extends MetadataDataObjectAdapter {
 		$dc11Description->addStatement('dc:type', $driverType, METADATA_DESCRIPTION_UNKNOWN_LOCALE);
 		$types = $section->getIdentifyType(null);
 		$types = array_merge_recursive(
-			empty($types)?array(AppLocale::getLocale() => __('metadata.pkp.peerReviewed')):$types,
+			empty($types)?array(AppLocale::getLocale() => __('rt.metadata.pkp.peerReviewed')):$types,
 			(array) $article->getType(null)
 		);
 		$this->_addLocalizedElements($dc11Description, 'dc:type', $types);
@@ -138,7 +135,7 @@ class Dc11SchemaArticleAdapter extends MetadataDataObjectAdapter {
 
 
 		// Format
-		if (is_a($article, 'PublishedSubmission')) {
+		if (is_a($article, 'PublishedArticle')) {
 			$articleGalleyDao = DAORegistry::getDAO('ArticleGalleyDAO'); /* @var $articleGalleyDao ArticleGalleyDAO */
 			$galleys = $articleGalleyDao->getBySubmissionId($article->getId());
 			$formats = array();
@@ -148,12 +145,8 @@ class Dc11SchemaArticleAdapter extends MetadataDataObjectAdapter {
 		}
 
 		// Identifier: URL
-		import('classes.issue.IssueAction');
-		$issueAction = new IssueAction();
-		$request = Application::get()->getRequest();
-		$includeUrls = $journal->getSetting('publishingMode') != PUBLISHING_MODE_NONE || $issueAction->subscribedUser($request->getUser(), $journal, null, $article->getId());
-		if (is_a($article, 'PublishedSubmission') && $includeUrls) {
-			$dc11Description->addStatement('dc:identifier', $request->url($journal->getPath(), 'article', 'view', array($article->getBestArticleId())));
+		if (is_a($article, 'PublishedArticle')) {
+			$dc11Description->addStatement('dc:identifier', Request::url($journal->getPath(), 'article', 'view', array($article->getBestArticleId())));
 		}
 
 		// Source (journal title, issue id and pages)
@@ -161,29 +154,29 @@ class Dc11SchemaArticleAdapter extends MetadataDataObjectAdapter {
 		$pages = $article->getPages();
 		if (!empty($pages)) $pages = '; ' . $pages;
 		foreach ($sources as $locale => $source) {
-			if (is_a($article, 'PublishedSubmission')) {
+			if (is_a($article, 'PublishedArticle')) {
 				$sources[$locale] .= '; ' . $issue->getIssueIdentification(array(), $locale);
 			}
 			$sources[$locale] .=  $pages;
 		}
 		$this->_addLocalizedElements($dc11Description, 'dc:source', $sources);
-		if ($issn = $journal->getData('onlineIssn')) {
+		if ($issn = $journal->getSetting('onlineIssn')) {
 			$dc11Description->addStatement('dc:source', $issn, METADATA_DESCRIPTION_UNKNOWN_LOCALE);
 		}
-		if ($issn = $journal->getData('printIssn')) {
+		if ($issn = $journal->getSetting('printIssn')) {
 			$dc11Description->addStatement('dc:source', $issn, METADATA_DESCRIPTION_UNKNOWN_LOCALE);
 		}
 
 		// Get galleys and supp files.
 		$galleys = array();
-		if (is_a($article, 'PublishedSubmission')) {
+		if (is_a($article, 'PublishedArticle')) {
 			$articleGalleyDao = DAORegistry::getDAO('ArticleGalleyDAO'); /* @var $articleGalleyDao ArticleGalleyDAO */
 			$galleys = $articleGalleyDao->getBySubmissionId($article->getId())->toArray();
 		}
 
 		// Language
 		$locales = array();
-		if (is_a($article, 'PublishedSubmission')) {
+		if (is_a($article, 'PublishedArticle')) {
 			foreach ($galleys as $galley) {
 				$galleyLocale = $galley->getLocale();
 				if(!is_null($galleyLocale) && !in_array($galleyLocale, $locales)) {
@@ -199,8 +192,8 @@ class Dc11SchemaArticleAdapter extends MetadataDataObjectAdapter {
 
 		// Relation
 		// full text URLs
-		if ($includeUrls) foreach ($galleys as $galley) {
-			$relation = $request->url($journal->getPath(), 'article', 'view', array($article->getBestArticleId(), $galley->getBestGalleyId()));
+		foreach ($galleys as $galley) {
+			$relation = Request::url($journal->getPath(), 'article', 'view', array($article->getBestArticleId(), $galley->getBestGalleyId()));
 			$dc11Description->addStatement('dc:relation', $relation);
 			unset($relation);
 		}
@@ -271,3 +264,4 @@ class Dc11SchemaArticleAdapter extends MetadataDataObjectAdapter {
 		}
 	}
 }
+?>

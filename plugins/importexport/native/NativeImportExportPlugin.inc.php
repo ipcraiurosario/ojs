@@ -3,8 +3,8 @@
 /**
  * @file plugins/importexport/native/NativeImportExportPlugin.inc.php
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2003-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class NativeImportExportPlugin
@@ -25,6 +25,13 @@ class NativeImportExportPlugin extends ImportExportPlugin {
 		$this->addLocaleData();
 		$this->import('NativeImportExportDeployment');
 		return $success;
+	}
+
+	/**
+	 * @copydoc Plugin::getTemplatePath($inCore)
+	 */
+	function getTemplatePath($inCore = false) {
+		return parent::getTemplatePath($inCore) . 'templates/';
 	}
 
 	/**
@@ -67,33 +74,19 @@ class NativeImportExportPlugin extends ImportExportPlugin {
 	function display($args, $request) {
 		parent::display($args, $request);
 		$templateMgr = TemplateManager::getManager($request);
-		$context = $request->getContext();
+		$journal = $request->getJournal();
 		switch (array_shift($args)) {
 			case 'index':
 			case '':
-				$exportSubmissionsListPanel = new \PKP\components\listPanels\PKPSelectSubmissionsListPanel(
-					'exportSubmissionsListPanel',
-					__('plugins.importexport.native.exportSubmissionsSelect'),
-					[
-						'apiUrl' => $request->getDispatcher()->url(
-							$request,
-							ROUTE_API,
-							$context->getPath(),
-							'_submissions'
-						),
-						'canSelect' => true,
-						'canSelectAll' => true,
-						'count' => 100,
-						'lazyLoad' => true,
-						'selectorName' => 'selectedSubmissions[]',
-					]
-				);
-				$templateMgr->assign('exportSubmissionsListData', [
-					'components' => [
-						'exportSubmissionsListPanel' => $exportSubmissionsListPanel->getConfig()
-					]
-				]);
-				$templateMgr->display($this->getTemplateResource('index.tpl'));
+				import('lib.pkp.controllers.list.submissions.SelectSubmissionsListHandler');
+				$exportSubmissionsListHandler = new SelectSubmissionsListHandler(array(
+					'title' => 'plugins.importexport.native.exportSubmissionsSelect',
+					'count' => 100,
+					'inputName' => 'selectedSubmissions[]',
+					'lazyLoad' => true,
+				));
+				$templateMgr->assign('exportSubmissionsListData', json_encode($exportSubmissionsListHandler->getConfig()));
+				$templateMgr->display($this->getTemplatePath() . 'index.tpl');
 				break;
 			case 'uploadImportXML':
 				$user = $request->getUser();
@@ -108,7 +101,7 @@ class NativeImportExportPlugin extends ImportExportPlugin {
 				} else {
 					$json = new JSONMessage(false, __('common.uploadFailed'));
 				}
-				header('Content-Type: application/json');
+
 				return $json->getString();
 			case 'importBounce':
 				$json = new JSONMessage(true);
@@ -116,7 +109,6 @@ class NativeImportExportPlugin extends ImportExportPlugin {
 					'title' => __('plugins.importexport.native.results'),
 					'url' => $request->url(null, null, null, array('plugin', $this->getName(), 'import'), array('temporaryFileId' => $request->getUserVar('temporaryFileId'))),
 				));
-				header('Content-Type: application/json');
 				return $json->getString();
 			case 'import':
 				AppLocale::requireComponents(LOCALE_COMPONENT_PKP_SUBMISSION);
@@ -126,7 +118,6 @@ class NativeImportExportPlugin extends ImportExportPlugin {
 				$temporaryFile = $temporaryFileDao->getTemporaryFile($temporaryFileId, $user->getId());
 				if (!$temporaryFile) {
 					$json = new JSONMessage(true, __('plugins.inportexport.native.uploadFile'));
-					header('Content-Type: application/json');
 					return $json->getString();
 				}
 				$temporaryFilePath = $temporaryFile->getFilePath();
@@ -140,7 +131,7 @@ class NativeImportExportPlugin extends ImportExportPlugin {
 					$filter = 'native-xml=>article';
 				}
 
-				$deployment = new NativeImportExportDeployment($context, $user);
+				$deployment = new NativeImportExportDeployment($journal, $user);
 
 				libxml_use_internal_errors(true);
 				$content = $this->importSubmissions(file_get_contents($temporaryFilePath), $filter, $deployment);
@@ -187,8 +178,7 @@ class NativeImportExportPlugin extends ImportExportPlugin {
 					}
 				}
 				// Display the results
-				$json = new JSONMessage(true, $templateMgr->fetch($this->getTemplateResource('results.tpl')));
-				header('Content-Type: application/json');
+				$json = new JSONMessage(true, $templateMgr->fetch($this->getTemplatePath() . 'results.tpl'));
 				return $json->getString();
 			case 'exportSubmissions':
 				$exportXml = $this->exportSubmissions(
@@ -198,10 +188,10 @@ class NativeImportExportPlugin extends ImportExportPlugin {
 				);
 				import('lib.pkp.classes.file.FileManager');
 				$fileManager = new FileManager();
-				$exportFileName = $this->getExportFileName($this->getExportPath(), 'articles', $context, '.xml');
+				$exportFileName = $this->getExportFileName($this->getExportPath(), 'articles', $journal, '.xml');
 				$fileManager->writeFile($exportFileName, $exportXml);
-				$fileManager->downloadByPath($exportFileName);
-				$fileManager->deleteByPath($exportFileName);
+				$fileManager->downloadFile($exportFileName);
+				$fileManager->deleteFile($exportFileName);
 				break;
 			case 'exportIssues':
 				$exportXml = $this->exportIssues(
@@ -211,10 +201,10 @@ class NativeImportExportPlugin extends ImportExportPlugin {
 				);
 				import('lib.pkp.classes.file.FileManager');
 				$fileManager = new FileManager();
-				$exportFileName = $this->getExportFileName($this->getExportPath(), 'issues', $context, '.xml');
+				$exportFileName = $this->getExportFileName($this->getExportPath(), 'issues', $journal, '.xml');
 				$fileManager->writeFile($exportFileName, $exportXml);
-				$fileManager->downloadByPath($exportFileName);
-				$fileManager->deleteByPath($exportFileName);
+				$fileManager->downloadFile($exportFileName);
+				$fileManager->deleteFile($exportFileName);
 				break;
 			default:
 				$dispatcher = $request->getDispatcher();
@@ -326,7 +316,7 @@ class NativeImportExportPlugin extends ImportExportPlugin {
 		$issueDao = DAORegistry::getDAO('IssueDAO');
 		$sectionDao = DAORegistry::getDAO('SectionDAO');
 		$userDao = DAORegistry::getDAO('UserDAO');
-		$publishedSubmissionDao = DAORegistry::getDAO('PublishedSubmissionDAO');
+		$publishedArticleDao = DAORegistry::getDAO('PublishedArticleDAO');
 
 		$journal = $journalDao->getByPath($journalPath);
 
@@ -461,4 +451,4 @@ class NativeImportExportPlugin extends ImportExportPlugin {
 
 }
 
-
+?>

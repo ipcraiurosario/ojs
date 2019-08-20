@@ -1,0 +1,5 @@
+div#commentsForEditor:after {
+    content: "Indique por favor el número al cúal envía su texto.";
+    text-decoration: underline;
+    font-weight: bold;
+}

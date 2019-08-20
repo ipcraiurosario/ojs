@@ -3,8 +3,8 @@
 /**
  * @file plugins/importexport/crossref/filter/ArticleCrossrefXmlFilter.inc.php
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2000-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2000-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class ArticleCrossrefXmlFilter
@@ -45,7 +45,7 @@ class ArticleCrossrefXmlFilter extends IssueCrossrefXmlFilter {
 	function createJournalNode($doc, $pubObject) {
 		$deployment = $this->getDeployment();
 		$journalNode = parent::createJournalNode($doc, $pubObject);
-		assert(is_a($pubObject, 'PublishedSubmission'));
+		assert(is_a($pubObject, 'PublishedArticle'));
 		$journalNode->appendChild($this->createJournalArticleNode($doc, $pubObject));
 		return $journalNode;
 	}
@@ -53,14 +53,14 @@ class ArticleCrossrefXmlFilter extends IssueCrossrefXmlFilter {
 	/**
 	 * Create and return the journal issue node 'journal_issue'.
 	 * @param $doc DOMDocument
-	 * @param $submission PublishedSubmission
+	 * @param $submission PublishedArticle
 	 * @return DOMElement
 	 */
 	function createJournalIssueNode($doc, $submission) {
 		$deployment = $this->getDeployment();
 		$context = $deployment->getContext();
 		$cache = $deployment->getCache();
-		assert(is_a($submission, 'PublishedSubmission'));
+		assert(is_a($submission, 'PublishedArticle'));
 		$issueId = $submission->getIssueId();
 		if ($cache->isCached('issues', $issueId)) {
 			$issue = $cache->get('issues', $issueId);
@@ -76,13 +76,13 @@ class ArticleCrossrefXmlFilter extends IssueCrossrefXmlFilter {
 	/**
 	 * Create and return the journal article node 'journal_article'.
 	 * @param $doc DOMDocument
-	 * @param $submission PublishedSubmission
+	 * @param $submission PublishedArticle
 	 * @return DOMElement
 	 */
 	function createJournalArticleNode($doc, $submission) {
 		$deployment = $this->getDeployment();
 		$context = $deployment->getContext();
-		$request = Application::get()->getRequest();
+		$request = Application::getRequest();
 		// Issue shoulld be set by now
 		$issue = $deployment->getIssue();
 
@@ -107,17 +107,12 @@ class ArticleCrossrefXmlFilter extends IssueCrossrefXmlFilter {
 			} else {
 				$personNameNode->setAttribute('sequence', 'additional');
 			}
-			if (empty($author->getLocalizedFamilyName())) {
-				$personNameNode->appendChild($node = $doc->createElementNS($deployment->getNamespace(), 'surname', htmlspecialchars(ucfirst($author->getFullName(false)), ENT_COMPAT, 'UTF-8')));
-			} else {
-				$personNameNode->appendChild($node = $doc->createElementNS($deployment->getNamespace(), 'given_name', htmlspecialchars(ucfirst($author->getLocalizedGivenName()), ENT_COMPAT, 'UTF-8')));
-				$personNameNode->appendChild($node = $doc->createElementNS($deployment->getNamespace(), 'surname', htmlspecialchars(ucfirst($author->getLocalizedFamilyName()), ENT_COMPAT, 'UTF-8')));
-			}
+			$personNameNode->appendChild($node = $doc->createElementNS($deployment->getNamespace(), 'given_name', htmlspecialchars(ucfirst($author->getFirstName()).(($author->getMiddleName())?' '.ucfirst($author->getMiddleName()):''), ENT_COMPAT, 'UTF-8')));
+			$personNameNode->appendChild($node = $doc->createElementNS($deployment->getNamespace(), 'surname', htmlspecialchars(ucfirst($author->getLastName()), ENT_COMPAT, 'UTF-8')));
 			if ($author->getData('orcid')) {
 				$personNameNode->appendChild($node = $doc->createElementNS($deployment->getNamespace(), 'ORCID', $author->getData('orcid')));
 			}
 			$contributorsNode->appendChild($personNameNode);
-			$isFirst = false;
 		}
 		$journalArticleNode->appendChild($contributorsNode);
 
@@ -180,7 +175,7 @@ class ArticleCrossrefXmlFilter extends IssueCrossrefXmlFilter {
 		$galleys = $articleGalleyDao->getBySubmissionId($submission->getId());
 		// All full-texts, PDF full-texts and remote galleys for text-mining and as-crawled URL
 		$submissionGalleys = $pdfGalleys = $remoteGalleys = array();
-		// preferred PDF full-text for the as-crawled URL
+		// prefered PDF full-text for the as-crawled URL
 		$pdfGalleyInArticleLocale = null;
 		// get immediatelly also supplementary files for component list
 		$componentGalleys = array();
@@ -238,13 +233,13 @@ class ArticleCrossrefXmlFilter extends IssueCrossrefXmlFilter {
 	 * Append the collection node 'collection property="crawler-based"' to the doi data node.
 	 * @param $doc DOMDocument
 	 * @param $doiDataNode DOMElement
-	 * @param $submission PublishedSubmission
+	 * @param $submission PublishedArticle
 	 * @param $galleys array of galleys
 	 */
 	function appendAsCrawledCollectionNodes($doc, $doiDataNode, $submission, $galleys) {
 		$deployment = $this->getDeployment();
 		$context = $deployment->getContext();
-		$request = Application::get()->getRequest();
+		$request = Application::getRequest();
 
 		if (empty($galleys)) {
 			$crawlerBasedCollectionNode = $doc->createElementNS($deployment->getNamespace(), 'collection');
@@ -268,13 +263,13 @@ class ArticleCrossrefXmlFilter extends IssueCrossrefXmlFilter {
 	 * Append the collection node 'collection property="text-mining"' to the doi data node.
 	 * @param $doc DOMDocument
 	 * @param $doiDataNode DOMElement
-	 * @param $submission PublishedSubmission
+	 * @param $submission PublishedArticle
 	 * @param $galleys array of galleys
 	 */
 	function appendTextMiningCollectionNodes($doc, $doiDataNode, $submission, $galleys) {
 		$deployment = $this->getDeployment();
 		$context = $deployment->getContext();
-		$request = Application::get()->getRequest();
+		$request = Application::getRequest();
 
 		// start of the text-mining collection element
 		$textMiningCollectionNode = $doc->createElementNS($deployment->getNamespace(), 'collection');
@@ -294,14 +289,14 @@ class ArticleCrossrefXmlFilter extends IssueCrossrefXmlFilter {
 	/**
 	 * Create and return component list node 'component_list'.
 	 * @param $doc DOMDocument
-	 * @param $submission PublishedSubmission
+	 * @param $submission PublishedArticle
 	 * @param $componentGalleys array
 	 * @return DOMElement
 	 */
 	function createComponentListNode($doc, $submission, $componentGalleys) {
 		$deployment = $this->getDeployment();
 		$context = $deployment->getContext();
-		$request = Application::get()->getRequest();
+		$request = Application::getRequest();
 
 		// Create the base node
 		$componentListNode =$doc->createElementNS($deployment->getNamespace(), 'component_list');
@@ -328,4 +323,4 @@ class ArticleCrossrefXmlFilter extends IssueCrossrefXmlFilter {
 
 }
 
-
+?>

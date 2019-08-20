@@ -3,8 +3,8 @@
 /**
  * @file pages/article/ArticleHandler.inc.php
  *
- * Copyright (c) 2014-2019 Simon Fraser University
- * Copyright (c) 2003-2019 John Willinsky
+ * Copyright (c) 2014-2018 Simon Fraser University
+ * Copyright (c) 2003-2018 John Willinsky
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @class ArticleHandler
@@ -15,8 +15,6 @@
  */
 
 import('classes.handler.Handler');
-
-use \Firebase\JWT\JWT;
 
 class ArticleHandler extends Handler {
 	/** journal associated with the request **/
@@ -36,15 +34,6 @@ class ArticleHandler extends Handler {
 	 * @copydoc PKPHandler::authorize()
 	 */
 	function authorize($request, &$args, $roleAssignments) {
-		// Permit the use of the Authorization header and an API key for access to unpublished/subscription content
-		if ($header = array_search('Authorization', array_flip(getallheaders()))) {
-			list($bearer, $jwt) = explode(' ', $header);
-			if (strcasecmp($bearer, 'Bearer') == 0) {
-				$apiToken = json_decode(JWT::decode($jwt, Config::getVar('security', 'api_key_secret', ''), array('HS256')));
-				$this->setApiToken($apiToken);
-			}
-		}
-
 		import('lib.pkp.classes.security.authorization.ContextRequiredPolicy');
 		$this->addPolicy(new ContextRequiredPolicy($request));
 
@@ -56,23 +45,22 @@ class ArticleHandler extends Handler {
 
 	/**
 	 * @see PKPHandler::initialize()
-	 * @param $args array Arguments list
 	 */
-	function initialize($request, $args = array()) {
+	function initialize($request, $args) {
 		$articleId = isset($args[0]) ? $args[0] : 0;
 
 		$journal = $request->getContext();
-		$publishedSubmissionDao = DAORegistry::getDAO('PublishedSubmissionDAO');
-		$publishedSubmission = $publishedSubmissionDao->getPublishedSubmissionByBestSubmissionId((int) $journal->getId(), $articleId, true);
+		$publishedArticleDao = DAORegistry::getDAO('PublishedArticleDAO');
+		$publishedArticle = $publishedArticleDao->getPublishedArticleByBestArticleId((int) $journal->getId(), $articleId, true);
 
 		$issueDao = DAORegistry::getDAO('IssueDAO');
-		if (isset($publishedSubmission)) {
-			$issue = $issueDao->getById($publishedSubmission->getIssueId(), $publishedSubmission->getJournalId(), true);
+		if (isset($publishedArticle)) {
+			$issue = $issueDao->getById($publishedArticle->getIssueId(), $publishedArticle->getJournalId(), true);
 			$this->issue = $issue;
-			$this->article = $publishedSubmission;
+			$this->article = $publishedArticle;
 		} else {
-			$submissionDao = DAORegistry::getDAO('SubmissionDAO');
-			$article = $submissionDao->getById((int) $articleId, $journal->getId(), true);
+			$articleDao = DAORegistry::getDAO('ArticleDAO');
+			$article = $articleDao->getById((int) $articleId, $journal->getId(), true);
 			$this->article = $article;
 		}
 
@@ -155,7 +143,7 @@ class ArticleHandler extends Handler {
 
 		// Copyright and license info
 		$templateMgr->assign(array(
-			'licenseTerms' => $journal->getLocalizedData('licenseTerms'),
+			'copyright' => $journal->getLocalizedSetting('copyrightNotice'),
 		));
 		if ($article->getLicenseURL()) $templateMgr->assign(array(
 			'licenseUrl' => $article->getLicenseURL(),
@@ -269,7 +257,6 @@ class ArticleHandler extends Handler {
 		$galleyId = isset($args[1]) ? $args[1] : 0;
 		$fileId = isset($args[2]) ? (int) $args[2] : 0;
 
-		if (!isset($this->galley)) $request->getDispatcher()->handle404();
 		if ($this->galley->getRemoteURL()) $request->redirectUrl($this->galley->getRemoteURL());
 		else if ($this->userCanViewGalley($request, $articleId, $galleyId)) {
 			if (!$fileId) {
@@ -288,7 +275,7 @@ class ArticleHandler extends Handler {
 			if (!HookRegistry::call('ArticleHandler::download', array($this->article, &$this->galley, &$fileId))) {
 				import('lib.pkp.classes.file.SubmissionFileManager');
 				$submissionFileManager = new SubmissionFileManager($this->article->getContextId(), $this->article->getId());
-				$submissionFileManager->downloadById($fileId, null, $request->getUserVar('inline')?true:false);
+				$submissionFileManager->downloadFile($fileId, null, $request->getUserVar('inline')?true:false);
 			}
 		} else {
 			header('HTTP/1.0 403 Forbidden');
@@ -308,7 +295,7 @@ class ArticleHandler extends Handler {
 		$issueAction = new IssueAction();
 
 		$journal = $request->getJournal();
-		$publishedSubmission = $this->article;
+		$publishedArticle = $this->article;
 		$issue = $this->issue;
 		$journalId = $journal->getId();
 		$user = $request->getUser();
@@ -316,17 +303,17 @@ class ArticleHandler extends Handler {
 
 		// If this is an editorial user who can view unpublished/unscheduled
 		// articles, bypass further validation. Likewise for its author.
-		if ($publishedSubmission && $issueAction->allowedPrePublicationAccess($journal, $publishedSubmission, $user)) {
+		if ($publishedArticle && $issueAction->allowedPrePublicationAccess($journal, $publishedArticle, $user)) {
 			return true;
 		}
 
 		// Make sure the reader has rights to view the article/issue.
-		if ($issue && $issue->getPublished() && $publishedSubmission->getStatus() == STATUS_PUBLISHED) {
+		if ($issue && $issue->getPublished() && $publishedArticle->getStatus() == STATUS_PUBLISHED) {
 			$subscriptionRequired = $issueAction->subscriptionRequired($issue, $journal);
-			$isSubscribedDomain = $issueAction->subscribedDomain($request, $journal, $issue->getId(), $publishedSubmission->getId());
+			$isSubscribedDomain = $issueAction->subscribedDomain($request, $journal, $issue->getId(), $publishedArticle->getId());
 
 			// Check if login is required for viewing.
-			if (!$isSubscribedDomain && !Validation::isLoggedIn() && $journal->getData('restrictArticleAccess') && isset($galleyId) && $galleyId) {
+			if (!$isSubscribedDomain && !Validation::isLoggedIn() && $journal->getSetting('restrictArticleAccess') && isset($galleyId) && $galleyId) {
 				Validation::redirectLogin();
 			}
 
@@ -335,7 +322,7 @@ class ArticleHandler extends Handler {
 			if ( (!$isSubscribedDomain && $subscriptionRequired) && (isset($galleyId) && $galleyId) ) {
 
 				// Subscription Access
-				$subscribedUser = $issueAction->subscribedUser($user, $journal, $issue->getId(), $publishedSubmission->getId());
+				$subscribedUser = $issueAction->subscribedUser($user, $journal, $issue->getId(), $publishedArticle->getId());
 
 				import('classes.payment.ojs.OJSPaymentManager');
 				$paymentManager = Application::getPaymentManager($journal);
@@ -346,7 +333,7 @@ class ArticleHandler extends Handler {
 					$purchasedIssue = $completedPaymentDao->hasPaidPurchaseIssue($userId, $issue->getId());
 				}
 
-				if (!(!$subscriptionRequired || $publishedSubmission->getAccessStatus() == ARTICLE_ACCESS_OPEN || $subscribedUser || $purchasedIssue)) {
+				if (!(!$subscriptionRequired || $publishedArticle->getAccessStatus() == ARTICLE_ACCESS_OPEN || $subscribedUser || $purchasedIssue)) {
 
 					if ( $paymentManager->purchaseArticleEnabled() || $paymentManager->membershipEnabled() ) {
 						/* if only pdf files are being restricted, then approve all non-pdf galleys
@@ -355,7 +342,7 @@ class ArticleHandler extends Handler {
 
 							if ($this->galley && !$this->galley->isPdfGalley() ) {
 								$this->issue = $issue;
-								$this->article = $publishedSubmission;
+								$this->article = $publishedArticle;
 								return true;
 							}
 						}
@@ -368,13 +355,13 @@ class ArticleHandler extends Handler {
 						 * and just let them access the article */
 						$completedPaymentDao = DAORegistry::getDAO('OJSCompletedPaymentDAO');
 						$dateEndMembership = $user->getSetting('dateEndMembership', 0);
-						if ($completedPaymentDao->hasPaidPurchaseArticle($userId, $publishedSubmission->getId())
+						if ($completedPaymentDao->hasPaidPurchaseArticle($userId, $publishedArticle->getId())
 							|| (!is_null($dateEndMembership) && $dateEndMembership > time())) {
 							$this->issue = $issue;
-							$this->article = $publishedSubmission;
+							$this->article = $publishedArticle;
 							return true;
 						} elseif ($paymentManager->purchaseArticleEnabled()) {
-							$queuedPayment = $paymentManager->createQueuedPayment($request, PAYMENT_TYPE_PURCHASE_ARTICLE, $user->getId(), $publishedSubmission->getId(), $journal->getData('purchaseArticleFee'));
+							$queuedPayment = $paymentManager->createQueuedPayment($request, PAYMENT_TYPE_PURCHASE_ARTICLE, $user->getId(), $publishedArticle->getId(), $journal->getSetting('purchaseArticleFee'));
 							$paymentManager->queuePayment($queuedPayment);
 
 							$paymentForm = $paymentManager->getPaymentForm($queuedPayment);
@@ -406,3 +393,5 @@ class ArticleHandler extends Handler {
 		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_READER, LOCALE_COMPONENT_PKP_SUBMISSION);
 	}
 }
+
+?>
