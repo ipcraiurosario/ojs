@@ -28,8 +28,8 @@
 		{* Issue cover image and description*}
 		{assign var=issueCover value=$issue->getLocalizedCoverImageUrl()}
 		{if $issueCover}
-			{assign var="issueDetailsCol" value="8"}
-			<div class="thumbnail col-md-4">
+			{assign var="issueDetailsCol" value="10"}
+			<div class="thumbnail col-md-2">
 				<a class="cover" href="{url|escape op="view" page="issue" path=$issue->getBestIssueId()}">
 					<img class="img-responsive" src="{$issueCover|escape}"{if $issue->getLocalizedCoverImageAltText() != ''} alt="{$issue->getLocalizedCoverImageAltText()|escape}"{/if}>
 				</a>

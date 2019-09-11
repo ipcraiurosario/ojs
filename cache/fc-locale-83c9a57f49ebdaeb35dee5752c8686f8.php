@@ -44,7 +44,7 @@
   'plugins.generic.usageStats.statsSum' => 'Sumar todas las descargas de archivos',
   'plugins.generic.usageStats.noStats' => 'La descarga de datos todavía no está disponible.',
   'plugins.generic.usageStats.monthInitials' => 'Ene Feb Mar Abr May Jun Jul Ago Sep Oct Nov Dic',
-  'plugins.generic.usageStats.downloads' => 'Descargas',
+  'plugins.generic.usageStats.downloads' => 'Métricas',
   'plugins.generic.usageStats.optout.done' => '<p>Se ha excluido con éxito de la recopilación de estadísticas de uso. Mientras vea este mensaje no se recopilarán estadísticas del uso que haga de este sitio. Haga clic en el botón inferior para revertir su decisión.</p>',
   'plugins.generic.usageStats.optout.cookie' => '<p>Si lo desea puede excluirse del proceso de recopilación de datos. Haciendo clic en el botón excluirse inferior puede decidir activamente no participar en el análisis estadístico. Al hacerlo se crea una <em>cookie</em> en su sistema para guardar su decisión. Si los ajustes de privacidad de su navegador están configurados para que las cookies se eliminen automáticamente deberá volver a marcar la opción de excluirse la próxima vez que acceda al sitio web. Esta cookie solo es válida para este navegador. Si utiliza otros navegadores  deberá marcar la opción de excluirse de nuevo. Esta cookie no almacena ningún tipo de información personal y es válida durante un año desde el último acceso.</p>
 		<p>Tenga en cuenta que los registros generales del servidor no quedan afectados por la decisión de excluirse del proceso de evaluación detallada. Consulte nuestra <a href="{$privacyStatementUrl}">declaración de privacidad</a> general.</p>',

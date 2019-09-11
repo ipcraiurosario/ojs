@@ -3,35 +3,36 @@
   'enableOai' => true,
   'copyeditInstructions' => 
   array (
-    'es_ES' => 'La fase de corrección tiene el propósito de mejorar la fluidez, claridad, gramática, así como el vocabulario y formato del artículo. Supone la última oportunidad para el autor de realizar cualquier cambio importante en el texto, puesto que la siguiente fase se limita a las correcciones tipográficas y de formato. El archivo para corregir se encuentra en formato Word o .rtf y por lo tanto, puede editarse fácilmente como un documento de procesador de textos. Las instrucciones expuestas aquí plantean dos propuestas de corrección. La primera está basada en la función Control de cambios de Microsoft Word y requiere que tanto el corrector como el editor y el autor, tengan acceso a este programa. La segunda propuesta, que no depende de un software concreto, se ha tomado prestada, con el debido permiso, de la Harvard Educational Review. Puesto que el editor de la revista está en posición de modificar estas instrucciones, pueden formularse sugerencias para mejorarlas.<h4>Métodos de corrección</h4><strong>1. Control de cambios de Microsoft Word</strong> Dentro de la barra de menú, en Herramientas, la función Control de cambios permite al corrector introducir texto (éste aparece coloreado) y eliminarlo (éste aparece tachado en color o como eliminado en los márgenes). El corrector puede incluir consultas tanto al autor (Consultas al autor) como al editor (Consultas al editor) escribiéndolas entre corchetes. Una vez cargada la versión corregida, se le notifica al editor. El editor revisa entonces el texto y lo notifica al autor. El editor y el autor deben dejar los cambios que consideren pertinentes. Si es necesario realizar más cambios, el editor y el autor pueden realizarlos en las inserciones o supresiones iniciales, así como realizar nuevas inserciones o supresiones en cualquier parte del texto. Los autores y editores deben responder a cada una de la consultas recibidas, con respuestas incluidas entre los corchetes. Después de que el texto haya sido revisado por el editor y el autor, el corrector(a echará un último vistazo al texto y aceptará los cambios para la fase de maquetación y galerada. <strong>2. Harvard Educational Review </strong> <strong>Instrucciones para realizar revisiones electrónicas al manuscrito</strong> Para realizar revisiones electrónicas a su manuscrito se recomienda seguir el siguiente protocolo: <strong>Responder a los cambios sugeridos</strong>   En cada cambio sugerido que acepte, quite la negrita al texto.   En los cambios sugeridos que no acepte, vuelva a introducir el texto original y póngalo en <strong>negrita</strong>. <strong>Insertar o eliminar.</strong>   Indique las inserciones poniendo en <strong>negrita</strong> el texto nuevo.   Reemplazar secciones eliminadas con: <strong>[texto eliminado]</strong>.   Si elimina una o más frases, indíquelo con una nota, p. ej. <strong>[2 frases eliminadas]</strong>. <strong>Responder a las consultas al autor (CA).</strong>   Conserve todas las CA intactas y con el texto en negrita. No las elimine.   Para contestar a una CA, añada un comentario tras ella. Los comentarios deben estar delimitados por: <strong>[Comentario:]</strong>   p. ej. <strong>[Comentario: extensa explicación sobre la metodología sugerida]</strong>. <strong>Realizar comentarios</strong>   Haga uso de los comentarios para explicar cambios en la organización o revisiones importantes   P. ej. <strong>[Comentario: el párrafo superior se ha trasladado de la pg. 5 a la pg. 7].</strong>  Nota: al hacer referencia a los números de página, utilice los de la versión impresa del manuscrito que se le ha enviado. Esto es importante, ya que los números de página pueden variar cuando el documento se revisa de manera electrónica.<h4>Ejemplo de revisión electrónica</h4><ol><li><strong>Corrección inicial.</strong> El corrector de la revista editará el texto con el fin de mejorar la fluidez, claridad, gramática y también el vocabulario y formato, así como también añadirá las consultas al autor que sean necesarias. Una vez se complete la edición inicial, el corrector cargará el documento revisado a través del sitio web de la revista y notificará al autor de que el manuscrito editado está listo para su revisión.</li><li><strong>Corrección del autor.</strong> Antes de iniciar cambios drásticos en la estructura y organización del manuscrito editado, los autores deben comprobar junto con los editores quién más dirige la obra. Los autores deben aceptar/rechazar cualquier cambio realizado durante la corrección inicial, según convenga, y responder a todas las consultas. Al finalizar las revisiones, los autores deben renombrar el archivo de NombreAutorCA.doc a NombreAutorCAR.doc (p. ej., de LeeCA.doc a LeeCAR.doc) y cargar el documento revisado a través del sitio web de la revista tal y como se indica.</li><li><strong>Corrección final.</strong> El editor de la revista verificará los cambios realizados por el autor e incorporará las respuestas a las consultas del autor para crear el manuscrito final. Una vez terminado, el corrector cargará el documento final a través del sitio web de la revista y avisará al Editor de composición -(Diagramador) para terminar de ajustar el formato.</li></ol>',
+    'es_ES' => 'La fase de corrección tiene el propósito de mejorar la fluidez, claridad, gramática, vocabulario y formato del artículo. Supone la última oportunidad para el autor/a de realizar cualquier cambio importante en el texto, puesto que la siguiente fase se limita a las correcciones tipográficas y de formato. El archivo para corregir se encuentra en formato Word o .rtf y, por lo tanto, puede editarse fácilmente como un documento de procesador de textos. Las instrucciones expuestas aquí plantean dos enfoques de corrección. La primera está basada en la función Control de cambios de Microsoft Word y requiere que tanto el corrector/a como el editor/a y el autor/a tengan acceso a este programa. La segunda propuesta, que no depende de un software concreto, se tomó prestada, con el debido permiso, de la Harvard Educational Review. El editor/a de la revista tiene la posibilidad de modificar estas instrucciones, por lo que pueden hacerse sugerencias con el fin de mejorar el proceso de la revista. <h4>Sistemas de corrección</h4> <strong>1. Control de cambios de Microsoft Word</strong> Situado en el menú Herramientas en la barra de menús, la función Control de cambios permite al corrector/a insertar (el texto aparece en color) y suprimir contenido (el texto aparece tachado en color o al margen como eliminado). El corrector/a puede incluir consultas tanto al autor/a (Consultas al autor/a) como al editor/a (Consultas al editor/a) escribiéndolas entre corchetes. Una vez cargada la versión corregida, se le notifica al editor/a. El editor/a revisa entonces el texto y lo notifica al autor/a. El editor/a y el autor/a deben dejar los cambios que consideren pertinentes. Si es necesario realizar más cambios, el editor/a y el autor/a pueden realizarlos en las inserciones o supresiones iniciales, así como realizar nuevas inserciones o supresiones en cualquier parte del texto. Los autores/as y editores/as deben responder a cada una de las consultas recibidas, con respuestas incluidas entre los corchetes. Una vez que el editor/a y el autor/a hayan revisado el texto, el corrector realizará un repaso final del texto y aceptará los cambios como preparación para la fase de maquetación y de galerada. <strong>2. Harvard Educational Review </strong> <strong>Instrucciones para realizar revisiones electrónicas en el manuscrito</strong> Siga el siguiente protocolo para realizar revisiones electrónicas en su manuscrito: <strong>Responder a cambios sugeridos.</strong> &nbsp; Para cada cambio sugerido que acepte, elimine la negrita del texto. &nbsp; Para cada cambio sugerido que no acepte, vuelva a introducir el texto original y resáltelo en <strong>negrita</strong>. <strong>Realizar inserciones y supresiones.</strong> &nbsp; Indique las inserciones resaltando el texto nuevo en <strong>negrita</strong>. &nbsp; Reemplace las secciones eliminadas con <strong>[texto eliminado]</strong>. &nbsp; Si elimina una o más oraciones, indíquelo con una nota, p. ej., <strong>[2 oraciones eliminadas]</strong>. <strong>Responder a consultas al autor (QAs).</strong> &nbsp; Mantenga todas las consultas al autor intactas y en negrita dentro del texto. No las elimine. &nbsp; Para responder a una consulta al autor, añada un comentario tras ella. Los comentarios deben delimitarse con: <strong>[Comentario:]</strong> &nbsp; p. ej., <strong>[Comentario: Discusión de la metodología ampliada como se sugirió]</strong>. <strong>Realizar comentarios.</strong> &nbsp; Utilice comentarios para explicar cambios en la organización o revisiones graves &nbsp; p. ej., <strong>[Comentario: El párrafo anterior se ha movido de la pág. 5 a la pág. 7].</strong> &nbsp; Nota: Si hace referencia a números de página, utilice los números de página de la versión impresa del manuscrito que se le envió. Este punto es importante puesto que los números de página pueden cambiar si el documento se revisa de manera electrónica. <h4>Ejemplo de una revisión electrónica</h4> <ol> <li><strong>Corrección inici
+al.</strong> El corrector/a de la revista editará el texto para mejorar la fluidez, claridad, gramática, vocabulario y formato del artículo, así como para incluir consultas al autor si es necesario. Una vez que la edición inicial se haya completado, el corrector/a cargará el documento revisado a través del sitio web de la revista y notificará al autor/a que el manuscrito editado está disponible para revisión.</li> <li><strong>Corrección del autor/a.</strong> Antes de realizar cambios radicales en la estructura y organización del manuscrito editado, los autores/as deben comprobarlos con los editores/as que codirigen la pieza. Los autores/as deben aceptar/rechazar cualquier cambio realizado durante la corrección inicial, según convenga, y responder a todas las consultas. Cuando se finalicen las revisiones, los autores/as deben cambiar el nombre del archivo de NombreAutorQA.doc a NombreAutorQAR.doc (p. ej., de LeeQA.doc a LeeQAR.doc) y cargar el documento revisado a través del sitio web de la revista siguiendo las instrucciones.</li> <li><strong>Corrección final.</strong> El corrector/a de la revista comprobará los cambios realizados por el autor/a e incorporará las respuestas a las consultas al autor para crear un manuscrito final. Cuando termine, el corrector/a cargará el documento final a través del sitio web de la revista y enviará una alerta al maquetista para completar el formateado.</li> </ol>',
   ),
   'useLayoutEditors' => false,
   'provideRefLinkInstructions' => false,
   'emailSignature' => '________________________________________________________________________ Disertaciones – Anuario Electrónico de Estudios en Comunicación Social http://revistas.urosario.edu.co/index.php/disertaciones',
   'proofInstructions' => 
   array (
-    'es_ES' => '<p>La fase de corrección de pruebas tiene el propósito de detectar cualquier error ortográfico, gramático y tipográfico de la galerada. En esta fase no se realizan más cambios importantes, a menos que se haya acordado con el editor de sección. En Maquetación, haga clic en VER PRUEBA para ver la versión HTML, PDF y el resto de formatos en los que se ha publicado este texto.</p><h4>Errores ortográficos y gramaticales</h4><p>Copie la palabra o conjunto de palabras incorrectas y péguelas en el Cuadro de modificación de corrección de pruebas con la instrucción "CAMBIAR-POR" para el editor tal y como se indica:</p><pre>1. CAMBIAR...entonces las otras POR... que las otras</pre><br /><pre>2. CAMBIAR... Malinowsky POR... Malinowski</pre><br /><h4>Errores de formato</h4><p>Describa la situación y naturaleza del problema en el Cuadro de modificaciones de corrección de pruebas, incluyendo en el título "FORMATO" tal y como se indica:</p><br /><pre>3. FORMATO Los números de la tabla 3 no están alineados en la tercera columna.</pre><br /><pre>4. FORMATO El párrafo que empieza con "Este último tema..." no tiene sangría.</pre>',
+    'es_ES' => '<p>La fase de corrección de pruebas tiene el propósito de detectar errores ortográficos en la galerada, así como gramaticales y de formato. En esta fase no se realizan más cambios importantes, a menos que se haya acordado con el editor/a de sección. En Maquetación, haga clic en VER PRUEBA para ver los HTML, PDF y otros formatos de archivo disponibles utilizados en la edición de este elemento.</p> <h4>Para errores ortográficos y gramaticales</h4> <p>Copie la palabra o grupo de palabras problemáticas y péguelas en el cuadro de correciones de pruebas con instrucciones al editor/a "CAMBIAR-POR" como sigue:</p> <pre>1. CAMBIAR... entonces los otras POR... entonces los otros</pre> <br /> <pre>2. CAMBIAR... Malinowsky POR... Malinowski</pre> <br /> <h4>Para errores de formato</h4> <p>Describa la ubicación y naturaleza del problema en el cuadro de correcciones de pruebas después de escribir en el título "FORMATO" como sigue:</p> <br /> <pre>3. FORMATO Los números de la Tabla 3 no están alineados en la tercera columna.</pre> <br /> <pre>4. FORMATO El párrafo que comienza con "Este último tema..." no está sangrado.</pre>',
   ),
   'numPageLinks' => 10,
   'itemsPerPage' => 25,
   'numWeeksPerReview' => 2,
   'privacyStatement' => 
   array (
-    'es_ES' => 'Los nombres y las direcciones de correo electrónico introducidos en esta revista se usarán exclusivamente para los fines establecidos en ella y no se proporcionarán a terceros o para su uso con otros fines.',
+    'es_ES' => '<p>Los nombres y las direcciones de correo electrónico introducidos en esta revista se usarán exclusivamente para los fines establecidos en ella y no se proporcionarán a terceros o para su uso con otros fines.</p>',
     'pt_BR' => '<p>Os nomes e os endereços de correio eletrônico introduzidos nesta revista se utilizarão exclusivamente para os fins estabelecidos nela e não serão proporcionados a terceiros ou para o seu uso com outros fins.</p><p>Los nombres y las direcciones de correo electrónico introducidos en esta revista se usarán exclusivamente para los fines establecidos en ella y no se proporcionarán a terceros o para su uso con otros fines.</p>',
     'en_US' => '<p>The names and email addresses received by this journal will be used exclusively for the purposes established in these guidelines and will not be made available to any other party nor used for any other purpose.</p>',
   ),
   'authorSelfArchivePolicy' => 
   array (
-    'es_ES' => 'Esta revista permite y anima a los autores a publicar artículos enviados a la revista en sus sitios web personales o en depósitos institucionales, tanto antes como después de su publicación en esta revista, siempre y cuando proporcionen información bibliográfica que acredite, si procede, su publicación en ella.',
+    'es_ES' => 'Esta revista permite y anima a los autores/as a publicar artículos enviados a la revista en sus sitios web personales o en depósitos institucionales, tanto antes como después de su publicación en esta revista, siempre y cuando proporcionen información bibliográfica que acredite, si procede, su publicación en ella.',
   ),
   'refLinkInstructions' => 
   array (
-    'es_ES' => '<h4>Añadir un enlace de referencia al proceso de maquetación</h4><p>Para convertir un envío a formato HTML o PDF, es necesario comprobar que todos los enlaces del envío estén activos.</p><h4>A. El autor proporciona un enlace con una referencia</h4><ol><li>Mientras el envío aún se encuentra en formato de procesador de textos (p. ej. Word), añada la frase VER OBJETO tras la referencia que contiene una URL.</li><li>Convierta la frase en un hipervínculo seleccionándola y usando la herramienta de Word Insertar hipervínculo y la URL preparada en el no. 2.</li></ol><h4>B. Permitir a los lectores/oras buscar referencias en Google Académico</h4><ol><li>Mientras el envío aún se encuentra en formato de procesador de textos (p. ej. Word), copie el título del trabajo al que se hace referencia en la Lista de referencias (si resulta ser un título muy común, p. ej. «Paz», añada también el nombre del autor).</li><li>Pegue el título de la referencia entre %22\'s y ponga un + entre cada palabra: http://scholar.google.com/scholar?q=%22PEGAR+TÍTULO+AQUÍ%22&amp;hl=en&amp;lr=&amp;btnG=Search.</li><li>Añada la frase BÚSQUEDA GA al final de cada cita en la Lista de referencias del envío.</li><li>Convierta la frase en un hipervínculo seleccionándola y usando la herramienta de Word Insertar hipervínculo y la URL preparada en el no. 2.</li></ol><h4>C. Permitir a los lectores buscar referencias con DOI</h4><ol><li>Mientras el envío aún se encuentra en formato Word, copie una serie de referencias a consultas sobre referencias cruzadas http://www.crossref.org/freeTextQuery/.</li><li>Pegue cada DOI que se le haya proporcionado en la siguiente URL (entre = y &amp;): http://www.cmaj.ca/cgi/external_ref?access_num=PEGAR DOI#AQUÍ&amp;link_type=DOI.</li><li>Añada la frase Referencia cruzada al final de cada cita en la Lista de referencias del envío.</li><li>Convierta la frase en un hipervínculo seleccionándola y usando la herramienta de Word Insertar hipervínculo y la URL preparada en el no. 2.</li></ol>',
+    'es_ES' => '<h4>Añadir enlaces de referencia en el proceso de maquetación</h4> <p>Al convertir un envío a HTML o PDF, asegúrese de que todos los hipervínculos del envío están activos.</p> <h4>A. Si el autor/a proporciona un enlace con la referencia</h4> <ol> <li>Mientras el envío se encuentre todavía en formato de procesador de textos (p. ej., Word), añada la frase VER ELEMENTO al final de la referencia con la dirección URL.</li> <li>Convierta esa frase en un hipervínculo seleccionándola y utilizando la herramienta de Word Insertar hipervínculo y la dirección URL previa.</li> </ol> <h4>B. Permitir a los lectores/as buscar referencias en Google Académico</h4> <ol> <li>Mientras el envío se encuentre todavía en formato de procesador de textos (p. ej., Word), copie el título del trabajo referenciado en la lista de referencias (si el título es muy común —p. ej., "Paz"— copie también el autor).</li> <li>Pegue el título de la referencia entre los dos símbolos %22 y coloque un símbolo + entre cada palabra: https://scholar.google.com/sc?q=%22PEGAR+TÍTULO+AQUÍ%22</li> <li>Añada la frase BÚSQUEDA GOOGLE ACADÉMICO al final de cada cita en la lista de referencias del envío.</li> <li>Convierta esa frase en un hipervínculo seleccionándola y utilizando la herramienta de Word Insertar hipervínculo y la dirección URL preparada en el apartado nº 2.</li> </ol> <h4>C. Permitir a los lectores/as buscar referencias con un DOI</h4> <ol> <li>Mientras el envío se encuentre todavía en Word, copie un lote de referencias en el texto de consulta CrossRef https://www.crossref.org/freeTextQuery/.</li> <li>Pegue cada DOI que le proporcione la consulta en la siguiente dirección URL (entre = y &amp;): http://www.cmaj.ca/cgi/external_ref?access_num=PEGAR DOI#AQUÍ&amp;link_type=DOI.</li> <li>Añada la frase CrossRef al final de cada cita en la lista de referencias del envío.</li> <li>Convierta esa frase en un hipervínculo seleccionándola y utilizando la herramienta de Word Insertar hipervínculo y la dirección URL preparada en el apartado nº 2.</li> </ol>',
   ),
   'authorInformation' => 
   array (
-    'es_ES' => '¿Tiene interés en hacer un envío a esta revista? Le recomendamos que revise la sección <a href="/index.php/disertaciones/about">Acerca de la revista</a> para consultar la política de la misma, así como las <a href="/index.php/disertaciones/about/submissions#authorGuidelines">Normas para los autores/as</a>. Los/as autores/as necesitan <a href="/index.php/disertaciones/user/register">registrarse</a> en la revista para poder hacer envíos, o si ya están registrados pueden simplemente <a href="/index.php/disertaciones/login">identificarse</a> y empezar el proceso de 5 pasos.',
+    'es_ES' => '¿Está interesado en publicar en la revista? Se recomienda revisar la página <a href="http://10.184.184.16/ojs3/index.php/disertaciones/about">Acerca de la revista</a> para consultar las políticas de sección de la revista, así como las <a href="http://10.184.184.16/ojs3/index.php/disertaciones/about/submissions#authorGuidelines">Directrices del autor/a</a>. Los autores/as deben <a href="http://10.184.184.16/ojs3/index.php/disertaciones/user/register">registrarse</a> en la revista antes de publicar o, si ya están registrados, pueden simplemente <a href="http://10.184.184.16/ojs3/index.php/index/login">iniciar sesión</a> y comenzar el proceso de cinco pasos.',
     'en_US' => 'If you want to make a submission to our journal, please go to the <a href="/index.php/disertaciones/about/submissions#authorGuidelines" target="_blank">author guidelines</a>. Thank you!',
   ),
   'journalPageFooter' => 
@@ -51,20 +52,19 @@
   'displayCurrentIssue' => true,
   'lockssLicense' => 
   array (
-    'es_ES' => 'Esta revista utiliza el sistema LOCKSS para crear un sistema de almacenamiento distribuido entre las bibliotecas participantes y permite la creación de archivos permanentes en la revista con fines de conservación y restauración. <a href="http://www.lockss.org/">Más...</a>',
+    'es_ES' => 'Esta revista utiliza el sistema LOCKSS para crear un sistema de archivo distribuido entre bibliotecas colaboradoras, a las que permite crear archivos permanentes de la revista con fines de conservación y restauración. <a href="https://lockss.org/">Más...</a>',
     'pt_BR' => '<p>Esta revista utiliza o sistema LOCKSS para criar um sistema de armazenamento distribuído entre as bibliotecas participantes e permite a criação de arquivos permanentes na revista com fins de conservação e restauração. </p>',
     'en_US' => '<p><em>Disertaciones</em> uses the LOCKSS system to store its contents, distribute them among participating libraries, and establish permanent archives of the journal for its preservation and restoration.</p>',
   ),
   'supportedFormLocales' => 
   array (
     0 => 'en_US',
-    1 => 'es_ES',
     2 => 'pt_BR',
+    3 => 'es_ES',
   ),
   'supportedSubmissionLocales' => 
   array (
     0 => 'en_US',
-    1 => 'es_ES',
     2 => 'pt_BR',
   ),
   'submissionChecklist' => 
@@ -73,38 +73,28 @@
     array (
       0 => 
       array (
+        'content' => 'El envío no ha sido publicado previamente ni se ha sometido a consideración por ninguna otra revista (o se ha proporcionado una explicación al respecto en los Comentarios al editor/a).',
         'order' => '1',
-        'content' => 'El envío no ha sido publicado previamente ni se ha enviado previamente a otra revista (o se ha proporcionado una explicación en Comentarios al / a la editor/a).',
       ),
       1 => 
       array (
+        'content' => 'El archivo de envío está en formato OpenOffice, Microsoft Word, RTF o WordPerfect.',
         'order' => '2',
-        'content' => 'El fichero enviado está en formato Microsoft Word y éste no posee en su interior el (los) nombre (s) del autor o los autores del artículo',
       ),
       2 => 
       array (
+        'content' => 'Siempre que sea posible, se proporcionan direcciones URL para las referencias.',
         'order' => '3',
-        'content' => 'Se han añadido direcciones web para las referencias donde ha sido posible',
       ),
       3 => 
       array (
+        'content' => 'El texto tiene interlineado sencillo; 12 puntos de tamaño de fuente; se utiliza cursiva en lugar de subrayado (excepto en las direcciones URL); y todas las ilustraciones, figuras y tablas se encuentran colocadas en los lugares del texto apropiados, en vez de al final.',
         'order' => '4',
-        'content' => 'El texto tiene interlineado a espacio y medio; el tamaño de fuente Times es 12 puntos; se usa cursiva en vez de subrayado (exceptuando las direcciones URL); y todas las ilustraciones, figuras y tablas están dentro del texto en el sitio que les corresponde y no al final del todo y tiene entre 4000 y 9000 palabras',
       ),
       4 => 
       array (
+        'content' => 'El texto se adhiere a los requisitos estilísticos y bibliográficos resumidos en las <a href="http://10.184.184.16/ojs3/index.php/disertaciones/about/submissions#authorGuidelines" target="_new">Directrices del autor/a</a>, que aparecen en Acerca de la revista.',
         'order' => '5',
-        'content' => 'El artículo que desea enviar a la revista cumple con las <a href="/index.php/disertaciones/about/submissions#authorGuidelines" target="_blank">normas para autores/ras</a> expuestas en la sección acerca de la revista',
-      ),
-      5 => 
-      array (
-        'order' => '6',
-        'content' => 'Si esta enviando a una sección de la revista que se revisa por pares, tiene que asegurase que las instrucciones en <a>Asegurando de una revisión a ciegas</a>) han sido seguidas.',
-      ),
-      6 => 
-      array (
-        'order' => '7',
-        'content' => 'Al hacer el envío de este manuscrito y, en caso de ser aprobado, autorizamos al Anuario Electrónico de Estudios en Comunicación Social "Disertaciones" a publicar el artículo y reproducirlo por los medios que considere convenientes (Internet, impreso, etc.).',
       ),
     ),
     'pt_BR' => 
@@ -266,12 +256,6 @@
     'pt_BR' => 'Anuario electrónico de estudios en Comunicación Social "Disertaciones"',
     'en_US' => 'Anuario electrónico de estudios en Comunicación Social "Disertaciones"',
   ),
-  'additionalHomeContent' => 
-  array (
-    'es_ES' => '<p>Síguenos en <strong><a href="http://www.twitter.com/disertaciones" target="_blank">Twitter</a> </strong>y <strong><a href="https://www.youtube.com/channel/UCxiHU0ZOwaU0AOMh8vHchwg" target="_blank">Youtube</a></strong><br />Normas para los <strong>autores</strong> <a href="/index.php/disertaciones/about/submissions#authorGuidelines" target="_blank">aquí</a></p><p> </p>',
-    'pt_BR' => 'Siga-nos no <strong><a href="http://www.twitter.com/disertaciones" target="_blank">Twitter</a> </strong>e <strong><a href="https://www.youtube.com/channel/UCxiHU0ZOwaU0AOMh8vHchwg" target="_blank">Youtube</a></strong><br />Diretrizes para <strong>Autores</strong> <strong><a href="/index.php/disertaciones/about/submissions#authorGuidelines" target="_blank">aqui</a></strong>',
-    'en_US' => 'Follow us on <strong><a href="http://www.twitter.com/disertaciones" target="_blank">Twitter</a> </strong>and <strong><a href="https://www.youtube.com/channel/UCxiHU0ZOwaU0AOMh8vHchwg" target="_blank">Youtube</a></strong><br /><strong>Author</strong> Guidelines <strong><a href="/index.php/disertaciones/about/submissions#authorGuidelines" target="_blank">here</a></strong>',
-  ),
   'homeHeaderTitleType' => 
   array (
     'es_ES' => '1',
@@ -394,27 +378,19 @@
   'issuePerVolume' => 2,
   'readerInformation' => 
   array (
-    'es_ES' => 'Recomendamos a los/as lectores/as que se den de alta en el servicio de notificación de publicación de esta revista. Use el enlace de <a href="/index.php/disertaciones/user/register">Registro</a> que se encuentra arriba en la home de la revista. Este registro permitirá al / a la lector/a recibir la Tabla de contenidos por correo-e cada vez que se publique un nuevo número de la revista. Esto también permitirá a la revista conseguir un cierto nivel de soporte y número de lectores/as. Consulte la <a href="/index.php/disertaciones/about/submissions#privacyStatement">Política de Privacidad</a> de la revista, que asegura a los/as lectores/as que su nombre y dirección de correo-e no serán usados para otros propósitos.',
+    'es_ES' => 'Animamos a los lectores/as a registrarse en el servicio de notificación de publicaciones de la revista. Utilice el enlace <a href="http://10.184.184.16/ojs3/index.php/disertaciones/user/register">Registro</a> de la parte superior de la página de inicio de la revista. Como resultado del registro, el lector/a recibirá por correo electrónico la Tabla de contenidos de cada número de la revista. Esta lista también permite que se le atribuya a la revista un cierto nivel de apoyo o número de lectores/as. Consulte la <a href="http://10.184.184.16/ojs3/index.php/disertaciones/about/submissions#privacyStatement">Declaración de privacidad</a> de la revista, que garantiza a los lectores/as que sus nombres y direcciones de correo electrónico no se usarán con otros fines.',
   ),
   'librarianInformation' => 
   array (
-    'es_ES' => 'Recomendamos a las bibliotecas de investigación que listen esta revista en su listado de revistas electrónicas. Este sistema de publicación también está diseñado para ser alojado y operado por bibliotecas de investigación como soporte del trabajo de publicación de revistas de su facultad asociada. Para obtener más información sobre cómo usar Open Journal Systems para gestionar y publicar revistas revisadas por pares, consulte <a href="http://pkp.sfu.ca/">Public Knowledge Project</a>.',
+    'es_ES' => 'Se recomienda a los investigadores/as bibliotecarios/as que incluyan esta revista en su listado de revistas electrónicas. Asimismo, cabría destacar que el sistema de publicación de código abierto de esta revista es apto para bibliotecas con personal docente que desee editar sus propias revistas (ver <a href="http://pkp.sfu.ca/ojs">Open Journal Systems</a>).',
+  ),
+  'clockssLicense' => 
+  array (
+    'es_ES' => 'Esta revista utiliza el sistema CLOCKSS para crear un sistema de archivos distribuido entre las bibliotecas participantes y permite a estas bibliotecas crear archivos permanentes de la revista con finalidad de preservación y restauración. <a href="https://clockss.org/">Saber más...</a>',
   ),
   'homepageImageAltText' => 
   array (
     'es_ES' => 'Revista Disertaciones',
-  ),
-  'homepageImage' => 
-  array (
-    'es_ES' => 
-    array (
-      'name' => 'Screen Shot 2015-07-09 at 14.32.27.png',
-      'uploadName' => 'homepageImage_es_ES.png',
-      'width' => 500,
-      'height' => 91,
-      'mimeType' => 'cannot open `/tmp/phpxkvltg\' (No such file or directory)',
-      'dateUploaded' => '2015-07-09 07:35:07',
-    ),
   ),
   'rtVersionId' => 0,
   'rtFindingReferences' => false,
@@ -442,191 +418,699 @@
   ),
   'description' => 
   array (
-    'pt_BR' => '<table width="779" border="0"><tbody><tr><td width="158"><a href="/index.php/disertaciones"><img src="/imagenes/imagenrevista.jpg" alt="" width="100" height="134" border="0" /></a></td><td width="488"><p>Disertaciones (ISSN: 1856 - 9536) é uma publicação acadêmica e científica, arbitrada e indexada, editada conjuntamente entre a <a href="http://www.urosario.edu.co/Periodismo-y-Opinion-Publica/Inicio/" target="_blank">Universidad del Rosario</a> (Colômbia), a <a href="http://saber.ula.ve/handle/123456789/26076" target="_blank">Universidad de los Andes</a> (Venezuela) e a <a href="http://www.ucm.es/mdcs/" target="_blank">Universidad Complutense de Madrid</a> (Espanha). A revista publica aportes originais e relevantes no campo da comunicação social, especificamente nas linhas de: (i) Sociedade e Tecnologias da Informação e a Comunicação; (ii) Comunicação e Política; (iii) Jornalismo; e (iv) Comunicação e Cultura.</p></td><td width="119"> </td></tr><tr><td height="2"> </td><td> </td><td> </td></tr></tbody></table>',
-    'en_US' => '<div id="journal_Des" class="tab-content"><div id="journalDescription" class="tab-pane fade in active row"><div class="col-sm-6" style="text-align: justify;">Disertaciones (ISSN: 1856 - 9536) is a peer-reviewed and indexed academic and scientific publication. It is collaboratively edited by the <a href="http://www.urosario.edu.co/Periodismo-y-Opinion-Publica/Inicio/" target="_blank">Universidad del Rosario</a> (Colombia), the <a href="http://saber.ula.ve/handle/123456789/26076" target="_blank">Universidad de los Andes</a> (Venezuela) and the <a href="http://www.ucm.es/mdcs/" target="_blank">Universidad Complutense de Madrid</a> (Spain). Disertaciones publishes original works relevant to the field of social communication in the following areas: (i) Society and Information and Communication Technologies; (ii) Communication and Politics; (iii) Journalism; and (iv) Communication and Culture.</div><div class="col-sm-3"><strong>Clasificación OCDE:</strong> <br /> <strong>Gran área:</strong>Ciencias Sociales<br /> <strong>Area of knowledge:</strong>Journalism and communications<br /> <strong>Orderliness:</strong>Media and Social Communication</div><div id="cope" class="col-sm-2"><a href="http://publicationethics.org/members/anuario-electronico-de-estudios-en-comunicacion-social-disertaciones" target="_blank"><img src="/public/site/images/webmaster/DISERTACIONES.png" alt="" /></a></div><br /><div id="DOI"><strong>DOI:</strong>http://dx.doi.org/10.12804/disertaciones</div></div><div id="journalTeam" class="tab-pane fade">1</div><div id="journalIndexin" class="tab-pane fade"><a id="Redalyc" href="http://www.redalyc.org/revista.oa?id=5115" target="_blank">Redalyc</a><a id="Latindex" href="http://www.latindex.unam.mx/buscador/ficRev.html?opcion=1&amp;folio=18972" target="_blank">Latindex</a> <a id="REDIB" href="https://www.redib.org/recursos/Record/oai_revista1489-disertaciones-anuario-electronico-estudios-comunicacion-social" target="_blank">REDIB</a> <a id="Dialnet" href="http://dialnet.unirioja.es/servlet/revista?codigo=12925" target="_blank">Dialnet</a> <a id="ERINH" href="https://dbh.nsd.uib.no/publiseringskanaler/erihplus/periodical/info?id=488818" target="_blank">ERINH</a> <a id="Scilit" href="http://www.scilit.net/journals/386139" target="_blank">Scilit</a> <a id="JournalGuide" href="https://www.journalguide.com/journals/-anuario-electronico-de-estudios-en-comunicacion-social-disertaciones" target="_blank">JournalGuide</a> <a id="MIAR" href="http://miar.ub.edu/issn/1856-9536" target="_blank">MIAR</a><a id="Revencyt" href="http://www.revencyt.ula.ve/infoHtml.jsp?url=certificacionRevencyt" target="_blank">Revencyt</a> <a id="CommunicationSource" href="https://www.ebscohost.com/academic/communication-source" target="_blank">Communication Source</a> <a id="EJL" href="http://rzblx1.uni-regensburg.de/ezeit/searchres.phtml?bibid=AAAAA&amp;colors=7&amp;lang=en&amp;jq_type1=QS&amp;jq_term1=disertaciones" target="_blank">EJL</a></div><div id="journalMetrics" class="tab-pane fade"><div class="col-sm-3"><table class="table"><thead><tr><th colspan="3">Google Scholar</th></tr></thead><tfoot><tr><th colspan="3"><strong>Fuente:</strong>Publish or Perish. Agosto-2016.</th></tr></tfoot><tbody><tr><td><strong>h</strong></td><td>7</td></tr><tr><td><strong>h5</strong></td><td>4</td></tr><tr><td><strong>Articulos</strong></td><td>206</td></tr><tr><td><strong>Citaciones</strong></td><td>246</td></tr></tbody></table></div><div id="plumx"><script type="text/javascript" src="https://d39af2mgp1pqhg.cloudfront.net/widget-group.js"></script><a class="plumx-group" href="https://plu.mx/urosario/g/cd-2/journals/issn-18569536" data-no-name="true" data-no-description="true" data-no-researchers="true" data-no-artifacts="true" data-no-logo="true" data-site="urosario" data-num-artifacts="5" data-gp="urosario/cd-2/journals/issn-18569536">Anuario electrónico de estudios en Comunicación Social "Disertaciones" Profile on PlumX</a></div></div></div>',
-    'es_ES' => '<div id="journal_Des" class="tab-content"><div id="journalDescription" class="tab-pane fade in active row"><div class="col-sm-6" style="text-align: justify;">Publicación académica y científica, arbitrada e indizada, editada conjuntamente entre la Universidad del Rosario de Colombia, la Universidad de los Andes de Venezuela y la Universidad Complutense de Madrid de España. La revista publica aportes originales y relevantes en el campo de la comunicación social, específicamente en las líneas de: (i) Sociedad y Tecnologías de la Información y la Comunicación; (ii) Comunicación y Política; (iii) Periodismo; y (iv) Comunicación y Cultura.<br /><br /><div id="DOI"><strong>DOI:</strong><a href="http://dx.doi.org/10.12804/disertaciones">http://dx.doi.org/10.12804/disertaciones</a></div><br /><br /><iframe id="spreaker-player-513550" class="spreaker-player" src="https://widget.spreaker.com/player?episode_id=12739715&amp;theme=light&amp;playlist=false&amp;playlist-continuous=true&amp;playlist-loop=false&amp;playlist-autoupdate=true&amp;autoplay=false&amp;live-autoplay=false&amp;chapters-image=true&amp;episode_image_position=right&amp;hide-likes=false&amp;hide-comments=false&amp;hide-sharing=false&amp;hide-logo=false&amp;hide-episode-description=false&amp;hide-playlist-images=false&amp;hide-playlist-descriptions=false&amp;cover_image_url=https://d3wo5wojvuv7l.cloudfront.net/images.spreaker.com/original/81099ca6d14331cf3d3e517bcead1f8d.jpg" frameborder="0" width="100%" height="200px"></iframe><script type="text/javascript" src="https://widget.spreaker.com/widgets.js"></script></div><div class="col-sm-3"><strong>Clasificación OCDE:</strong> <br /> <strong>Gran área:</strong>Ciencias Sociales<br /> <strong>Área conocimiento:</strong>Periodismo y Comunicaciones<br /> <strong>Disciplina:</strong>Medios y Comunicación Social</div><!--<div id="cope" class="col-sm-2"><a href="http://publicationethics.org/members/anuario-electronico-de-estudios-en-comunicacion-social-disertaciones" target="_blank"> <img src="/public/site/images/webmaster/DISERTACIONES.png" alt="" /> </a></div>--></div><div id="journalTeam" class="tab-pane fade">1</div><div id="journalIndexin" class="tab-pane fade"><a id="Redalyc" href="http://www.redalyc.org/revista.oa?id=5115" target="_blank">Redalyc</a> <a id="Latindex" href="https://www.latindex.org/latindex/ficha?folio=18972" target="_blank">Latindex</a> <a id="Dialnet" href="http://dialnet.unirioja.es/servlet/revista?codigo=12925" target="_blank">Dialnet</a> <a id="REDIB" href="https://www.redib.org/recursos/Record/oai_revista1489-disertaciones-anuario-electronico-estudios-comunicacion-social" target="_blank">REDIB</a> <a id="ERINH" href="https://dbh.nsd.uib.no/publiseringskanaler/erihplus/periodical/info?id=488818" target="_blank">ERINH</a> <!--<a id="Scilit" href="http://www.scilit.net/journals/386139" target="_blank">Scilit</a> --> <a id="JournalGuide" href="https://www.journalguide.com/journals/anuario-electronico-de-estudios-en-comunicacion-social-disertaciones" target="_blank">JournalGuide</a> <a id="MIAR" href="http://miar.ub.edu/issn/1856-9536" target="_blank">MIAR</a><!--<a id="Revencyt" href="http://www.revencyt.ula.ve/infoHtml.jsp?url=certificacionRevencyt" target="_blank">Revencyt</a>--> <!--<a id="CommunicationSource" href="https://www.ebscohost.com/academic/communication-source" target="_blank">Communication Source</a>--> <a id="EJL" href="http://rzblx1.uni-regensburg.de/ezeit/searchres.phtml?bibid=AAAAA&amp;colors=7&amp;lang=en&amp;jq_type1=QS&amp;jq_term1=disertaciones" target="_blank">EJL</a></div><div id="journalMetrics" class="tab-pane fade"><div class="row"><div id="googlescholar" class="col-sm-6"><table style="width: 100%;"><thead><tr><th colspan="2">Google Scholar</th></tr></thead><tbody><tr><td><strong>Citas</strong></td><td>558</td></tr><tr><td><strong>Índice h</strong></td><td>12</td></tr><tr><td><strong>Índice i10</strong></td><td>15</td></tr></tbody><tfoot><tr><td colspan="2">Ver perfil en <a href="https://scholar.google.com/citations?user=1O0TGjUAAAAJ" target="_blank">Google Scholars</a></td></tr><tr><td colspan="2"><strong>Fuente:</strong> Google Scholars. Marzo 2019</td></tr></tfoot></table></div><div id="scimago" class="col-sm-6"> </div></div></div></div>',
+    'pt_BR' => '<div class="col-sm-8" style="text-align: justify;">Disertaciones (ISSN: 1856 - 9536) é uma publicação acadêmica e científica, arbitrada e indexada, editada conjuntamente entre a Universidad del Rosario (Colômbia), a Universidad de los Andes (Venezuela) e a Universidad Complutense de Madrid (Espanha). A revista publica aportes originais e relevantes no campo da comunicação social, especificamente nas linhas de: (i) Sociedade e Tecnologias da Informação e a Comunicação; (ii) Comunicação e Política; (iii) Jornalismo; e (iv) Comunicação e Cultura..<br><br><strong>Clasificación OCDE:</strong> <br><strong>Gran área:</strong>Ciencias Sociales<br><strong>Área conocimiento:</strong>Periodismo y Comunicaciones<br><strong>Disciplina:</strong>Medios y Comunicación Social<br><br><iframe id="spreaker-player-513550" class="spreaker-player" src="https://widget.spreaker.com/player?episode_id=12739715&amp;theme=light&amp;playlist=false&amp;playlist-continuous=true&amp;playlist-loop=false&amp;playlist-autoupdate=true&amp;autoplay=false&amp;live-autoplay=false&amp;chapters-image=true&amp;episode_image_position=right&amp;hide-likes=false&amp;hide-comments=false&amp;hide-sharing=false&amp;hide-logo=false&amp;hide-episode-description=false&amp;hide-playlist-images=false&amp;hide-playlist-descriptions=false&amp;cover_image_url=https://d3wo5wojvuv7l.cloudfront.net/images.spreaker.com/original/81099ca6d14331cf3d3e517bcead1f8d.jpg" width="100%" height="200px" frameborder="0"></iframe></div>',
+    'es_ES' => '<div class="col-sm-12" style="text-align: justify;">Publicación académica y científica, arbitrada e indizada, editada conjuntamente entre la Universidad del Rosario de Colombia, la Universidad de los Andes de Venezuela y la Universidad Complutense de Madrid de España. La revista publica aportes originales y relevantes en el campo de la comunicación social, específicamente en las líneas de: (i) Sociedad y Tecnologías de la Información y la Comunicación; (ii) Comunicación y Política; (iii) Periodismo; y (iv) Comunicación y Cultura.<br><br><strong>Clasificación OCDE:</strong><br><strong>Gran área:</strong>Ciencias Sociales<br><strong>Área conocimiento:</strong>Periodismo y Comunicaciones<br><strong>Disciplina:</strong>Medios y Comunicación Social<br><br><iframe id="spreaker-player-513550" class="spreaker-player" src="https://widget.spreaker.com/player?episode_id=12739715&amp;theme=light&amp;playlist=false&amp;playlist-continuous=true&amp;playlist-loop=false&amp;playlist-autoupdate=true&amp;autoplay=false&amp;live-autoplay=false&amp;chapters-image=true&amp;episode_image_position=right&amp;hide-likes=false&amp;hide-comments=false&amp;hide-sharing=false&amp;hide-logo=false&amp;hide-episode-description=false&amp;hide-playlist-images=false&amp;hide-playlist-descriptions=false&amp;cover_image_url=https://d3wo5wojvuv7l.cloudfront.net/images.spreaker.com/original/81099ca6d14331cf3d3e517bcead1f8d.jpg" width="100%" height="200px" frameborder="0"></iframe></div>',
+    'en_US' => '<div class="col-sm-12" style="text-align: justify;">Disertaciones (ISSN: 1856 - 9536) is a peer-reviewed and indexed academic and scientific publication. It is collaboratively edited by the Universidad del Rosario (Colombia), the Universidad de los Andes (Venezuela) and the Universidad Complutense de Madrid (Spain). Disertaciones publishes original works relevant to the field of social communication in the following areas: (i) Society and Information and Communication Technologies; (ii) Communication and Politics; (iii) Journalism; and (iv) Communication and Culture..<br><br><strong>Clasificación OCDE:</strong> <br><strong>Gran área:</strong>Ciencias Sociales<br><strong>Área conocimiento:</strong>Periodismo y Comunicaciones<br><strong>Disciplina:</strong>Medios y Comunicación Social<br><br><iframe id="spreaker-player-513550" class="spreaker-player" src="https://widget.spreaker.com/player?episode_id=12739715&amp;theme=light&amp;playlist=false&amp;playlist-continuous=true&amp;playlist-loop=false&amp;playlist-autoupdate=true&amp;autoplay=false&amp;live-autoplay=false&amp;chapters-image=true&amp;episode_image_position=right&amp;hide-likes=false&amp;hide-comments=false&amp;hide-sharing=false&amp;hide-logo=false&amp;hide-episode-description=false&amp;hide-playlist-images=false&amp;hide-playlist-descriptions=false&amp;cover_image_url=https://d3wo5wojvuv7l.cloudfront.net/images.spreaker.com/original/81099ca6d14331cf3d3e517bcead1f8d.jpg" width="100%" height="200px" frameborder="0"></iframe></div>',
   ),
-  'navItems' => 
+  'navItems' => NULL,
+  'additionalHomeContent' => 
   array (
-    'pt_BR' => 
-    array (
-      0 => 
-      array (
-        'name' => '',
-        'url' => '',
-      ),
-    ),
-    'en_US' => 
-    array (
-      0 => 
-      array (
-        'name' => '',
-        'url' => '',
-      ),
-    ),
+    'es_ES' => '<p><strong>ISSN-e: </strong>1856-9536 <br><strong>DOI:</strong> <a title="doi" href="http://dx.doi.org/10.12804/disertaciones">http://dx.doi.org/10.12804/disertaciones</a></p>',
+    'en_US' => '<p><strong>ISSN-e: </strong>1856-9536 <br><strong>DOI:</strong> <a title="doi" href="http://dx.doi.org/10.12804/disertaciones">http://dx.doi.org/10.12804/disertaciones</a></p>',
+    'pt_BR' => '<p><strong>ISSN-e: </strong>1856-9536 <br><strong>DOI:</strong> <a title="doi" href="http://dx.doi.org/10.12804/disertaciones">http://dx.doi.org/10.12804/disertaciones</a></p>',
+  ),
+  'openAccessPolicy' => 
+  array (
+    'es_ES' => 'Esta revista proporciona un acceso abierto inmediato a su contenido, basado en el principio de ofrecer al público un acceso libre a las investigaciones ayuda a un mayor intercambio global de conocimiento.',
+  ),
+  'pageHeaderLogoImage' => 
+  array (
     'es_ES' => 
     array (
-      0 => 
-      array (
-        'name' => 'Índice Anual',
-        'isLiteral' => '1',
-        'url' => '/index.php/disertaciones/pages/view/indice-anual',
-      ),
-      1 => 
-      array (
-        'name' => 'Información Pares evaluadores',
-        'isLiteral' => '1',
-        'url' => '/index.php/disertaciones/pages/view/pares-evaluadores',
-      ),
-      2 => 
-      array (
-        'name' => 'Formato de revisión',
-        'isLiteral' => '1',
-        'url' => '/index.php/disertaciones/pages/view/formato-revision',
-      ),
+      'name' => 'Logo.UR.White.png',
+      'uploadName' => 'pageHeaderLogoImage_es_ES.png',
+      'width' => 834,
+      'height' => 322,
+      'dateUploaded' => '2019-08-23 10:12:03',
+      'altText' => 'Universidad del Rosario',
     ),
   ),
   'about' => 
   array (
-    'en_US' => '
-							<div id="focusAndScope">
-							<h3>Focus and Scope</h3>
-							<p><p>The electronic journal <em>Disertaciones</em> (Dissertations) (ISSN: 1856-9536) is a peer-reviewed open access annual of studies in Social Communication, available on the Internet. <em>Disertaciones</em> is an indexed digital publication of the Universidad del Rosario (Colombia), the Universidad de los Andes (Venezuela) and the Universidad Complutense de Madrid (Spain). The journal produces one annual volume consisting of two issues: Number 1 and Number 2, corresponding to the first and second half of the year.  </p><p> </p><p>The Goal of <em>Disertaciones</em> is to make available unpublished works of empirical research in the area of Social Communication, particularly those involving (i) Society and Information and Communication Technologies; (ii) Communication and Politics; (iii) Journalism; and (iv) Communication and Culture.</p><p> </p><p><em>Disertaciones</em> is jointly edited by the Program on Journalism and Public Opinion at the Universidad del Rosario, the Department of Social Communication and the Group on Research in Communication, Culture, and Society at the Universidad de los Andes - Táchira, the Simón Rodríguez Laboratory for Educational Research (LIESR) at the Universidad de los Andes - Trujillo, and the Group for the Dialectical Mediation of Social Communication (MDCS) at the Universidad Complutense de Madrid. It is primarily directed to researchers, students, and professors in the international academic community of communication research, and its goal is to influence and participate in the dissemination of scientific studies in this research area.  </p></p>
-							</div>
-							<div id="peerReviewProcess">
-							<h3>Peer Review Process</h3>
-							<p><p><em>Disertaciones</em> evaluates author submissions using a double-blind academic peer review process. When an article manuscript is received, the Editor sends the manuscript to two academics who are experts in the area it covers (usually external to the editorial institutions) , who then submit it to a strict process of evaluation (in case of controversies, a third reviewer will be assigned). Each evaluator may accept or reject the article, or may accept it subject to suggested changes in its structure and contents. In the latter case, the author is given an opportunity to adapt the manuscript to the editorial criteria of the Annual and the manuscript will undergo a second evaluation process. The author will be given a maximum of three months to make the suggested revisions. The editor of the journal will inform the author or authors regarding the evaluation process and the selection of articles.<strong></strong></p></p>
-							</div>
-							<div id="openAccessPolicy">
-							<h3>Open Access Policy</h3>
-							<p><p>This journal provides free and immediate access to its contents under the principle that making research available to the public without cost promotes the sharing of knowledge around the world. For the same reason, <strong>the journal imposes no costs</strong> on authors for the processing and publication of their articles.</p><p>Committed to the dissemination of scientific knowledge to non-specialized audiences, <em>Disertaciones</em> also promotes its contents through <a href="http://www.lasillavacia.com/iq" target="_blank">www.lasillavacia.com/iq</a> </p></p>
-							</div>
-								<div id="custom-0">
-								<h3>Indexing</h3>
-								<p><p><strong>IB–Bibliographic index. </strong>IBN-Publindex de Colciencias <strong>(B)</strong>;</p><p><strong>BBCS–Data bases with Selection Committee. </strong>Research Data Bases –EBSCO: Communication Source; Red Iberoamericana de Innovación y Conocimiento Científico –REDIB; Dialnet de la Universidad de la Rioja; Red de Revistas Científicas de América Latina y El Caribe; España y Portugal –RedALyC; Directory of Open Access Journals–DOAJ; Red Iberoamericana de Innovación y Conocimiento Científico –REDIB; Clasificación Integrada de Revistas Científicas<strong>–</strong>CIRC (Ciencias humanas–D, ciencias sociales–C).</p><p><strong>Bibliographic databases</strong>. Google Scholar; Latindex de la Universidad Nacional Autónoma de México –UNAM–; Índice de Revistas Venezolanas de Ciencia y Teconología (Revencyt); Red de Bibliotecas Universitarias (Rebiun); Red Iberoamericana de Revistas de Comunicación y Cultura; Ulrich\'s International Periodicals Directory; Scilit;  European Reference Index for the Humanities–ERIH; Electronic Journals Library (Elektronische Zeitschriftenbibliothek o EZB); Vlex; AmeliCA.</p></p>
-								</div>
-								<div id="custom-1">
-								<h3>Ethical and Anti-Plagiarism Policy</h3>
-								<p><p><em>Disertaciones</em> <a href="https://publicationethics.org/members/anuario-electronico-de-estudios-en-comunicacion-social-disertaciones">complies with</a> with the ethical policies of the <a href="https://publicationethics.org/resources/flowcharts" target="_blank">Committee on Publication Ethics - COPE</a> followed by all journals associated with the Universidad del Rosario (Colombia):<em></em></p><p> </p><p><strong>Copyright Policy:</strong></p><p>Manuscripts submitted to <strong><em>Disertaciones</em> </strong>must be original and unpublished, and they may not be in a simultaneous process of publication in any other journal, compilation, or any other means of publication. The copyright to the article will belong to the Universidad del Rosario, the Universidad de los Andes and the Universidad Complutense de Madrid. If the author wishes to publish the manuscript in another publication, he or she must request the necessary permissions from <strong><em>Disertaciones</em></strong>. Likewise, if <strong><em>Disertaciones</em></strong> is interested in publishing articles that have been published in other journals, it will request the necessary permissions from the publisher of the journal in which the article was first published.</p><p><strong> </strong></p><p><strong>Responsibilities of authors</strong></p><p>Authors should submit their articles and reviews to the journal <strong><em>Disertaciones</em> </strong>through the Open Journal Systems (OJS) platform.</p><p><strong> </strong></p><p>After the manuscript is received, the Journal will send a letter to the author for a signature to authorize its publication. The author will sign and return this letter to the Journal attesting that the work is original and has not been published by any other journal as well as acknowledging any copyrights held by third parties. In order to respect the intellectual property rights of other parties, he or she will provide any needed permissions for the use of graphics, tables, photographs, and diagrams. The quality of the article, the ideas that are expressed in it, and the investigative rigor that it reflects are the exclusive responsibility of the author. The author will accept the article’s evaluation by anonymous Colombian or international peer reviewers. The author will not know the identity of the manuscript’s evaluators and the evaluators of the manuscript will not know the identity of its author. The author will also commit to providing any modifications suggested by evaluators within the period of time established by the journal for this purpose.</p><p>If authors do not accept the suggestions of evaluators, they should send the journal a letter explaining the principal reasons for their decision. In any case, the journal editor will make the final decision on the publication of manuscripts once the evaluation process is complete. <strong><em>Disertaciones</em></strong> will inform authors if their article has been accepted, accepted subject to modifications, or rejected. The journal may also ask authors to revise the manuscript and send a modified version. In such cases, the revised manuscript will undergo a second peer review. After receiving the final version of the manuscript, <strong><em>Disertaciones</em></strong> will make a final decision regarding its publication and will inform the author of its approval and the estimated date of publication.</p><p>If the editorial team of<strong><em> Disertaciones</em></strong> determines that a manuscript meets the basic conditions and criteria established to warrant its evaluation, the journal will so inform the manuscript’s evaluators. If a manuscript does not meet these criteria, the journal will inform the author of the reasons for which the evaluation process did not proceed. After this preliminary assessment, and if the manuscript meets the required criteria, the editorial team will determine which manuscripts will be submitted for the evaluation process. At this time, the peer reviewers best suited to the evaluation of a particular manuscript will be contacted. The results of the evaluation will be sent to the author within a period of no longer than six months. The editor will inform the author if the evaluation process takes longer than usual.</p><p><strong>About the evaluators:</strong></p><p>The evaluators selected by <strong><em>Disertaciones</em></strong> may be Colombian or international, and may be internal or external to the universities that collaborate in publishing the journal. Every manuscript that is approved in the preliminary assessment by the editorial team will be evaluated by a minimum of one external peer reviewer. The reviewers selected will have no conflict of interest with respect to the authors of the manuscripts. If there is any doubt on this matter, the journal will seek an alternative evaluator. The names of both authors and evaluators will be anonymous throughout this process.</p><p>Evaluators may suggest changes regarding the theoretical, methodological, and thematic elements of a manuscript. They will issue their evaluations guided by the journal’s evaluation form, which presents a series of carefully selected questions. Evaluators may approve, approve subject to modifications, or not approve manuscripts for publication.</p><p><strong>Responsibilities of the editorial team:</strong></p><p>The editorial team of <strong><em>Disertaciones</em></strong> is responsible for editorial policy, for the journal’s editorial guidelines, and for the observance of these guidelines in all of the journal’s publications. When appropriate, it will publish errata, clarifications, and corrections in the digital edition of the journal.</p><p>The editorial team is responsible for every part of the process through which manuscripts are submitted for publication and for maintaining the confidentiality of authors and evaluators during the process of peer evaluation up until the time of a manuscript’s publication, or when manuscripts are withdrawn or rejected.</p><p>When an issue of <strong><em>Disertaciones</em></strong> is published, the editor is responsible for its distribution to those people and institutions that have entered into exchange agreements with the journal and to the authors of the articles published therein.</p><p><em>Disertaciones</em> uses several methods to verify the originality of all the manuscripts it receives, including the tool Turnitin. By submitting a manuscript, the author assents to its examination for the purpose of avoiding plagiarism, thereby promoting academic integrity. In order to maintain transparency and best practices, prevent inappropriate practices in the publication of academic articles, and promote high quality academic production, <em>Disertaciones</em> <a href="https://publicationethics.org/members/anuario-electronico-de-estudios-en-comunicacion-social-disertaciones">adheres to</a> the policies of the <a href="https://publicationethics.org/resources/flowcharts" target="_blank">Committee on Publication Ethics - COPE</a> (JM12058).a</p></p>
-								</div>
-								<div id="custom-2">
-								<h3>Copyrights</h3>
-								<p><p>The authors who publish articles in the journal will retain rights over their work. <em>Disertaciones</em> will not retain those rights, and authors are free to use their work in the manner of their choosing. Nonetheless, if a text or any part thereof is republished, its author or authors must cite <em>Disertaciones</em> as the journal where the a version of work was first published.</p></p>
-								</div>
-								<div id="custom-3">
-								<h3>Self-archiving policy</h3>
-								<p><p><em>All the articles published in the journal are allowed to be self-archived on the institutional repositories of each of the academic institutions to which the authors of the article belong. This policy includes only the published versions of the articles. We encourage the authors to include the article’s EdocUR URL when they archive the documents on their repositories.</em></p><p><em>Terms:</em></p><ul><li><em>Author and publisher rights must be credited.</em></li><li><em>A link to the published version of the article must be added.</em></li><li><em>Only the published version of the article should be self-archived.</em></li></ul></p>
-								</div>
-								<div id="custom-4">
-								<h3>Content License</h3>
-								<p>Since 2015, due to changes in our editorial policies, all documents published in this journal are distributed under the following license: <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/ve/" rel="license">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 3.0 Venezuela</a>.</p>
-								</div>
-								<div id="sponsors">
-								<h3>Sponsors</h3>
-								<p>The journal is edited by the Universidad del Rosario (Colombia), in collaboration with the Universidad de los Andes from Venezuela (<a href="http://saber.ula.ve/handle/123456789/26076" target="_blank">Departamento de Comunicación Social de la ULA Táchira,</a> <a href="http://www.human.ula.ve/gruinco" target="_blank">Grupo de Investigación Comunicación, Cultura y Sociedad</a> &amp; <a href="http://saber.ula.ve/items-by-subject?subject=Laboratorio+de+Investigaci%C3%B3n+Educativa+Sim%C3%B3n+Rodr%C3%ADguez+%28LIESR%29" rel="nofollow" target="_blank">Laboratorio de Investigación Educativa Simón Rodríguez (LIESR)</a>) and the Universidad Complutense de Madrid from Spain (<a href="http://www.ucm.es/info/mdcs/" target="_blank">Grupo Mediación Dialéctica de la Comunicación Social MDCS</a>).</p><ul><li>
-											<a href="http://urosario.edu.co">Universidad del Rosario (Colombia)</a></li><li>
-											<a href="http://www.ula.ve/">Universidad de los Andes (Venezuela)</a></li><li>
-											<a href="http://ucm.es/">Universidad Complutense de Madrid (España)</a></li></ul></div>',
-    'es_ES' => '
-							<div id="focusAndScope">
-							<h3>Enfoque y alcance</h3>
-							<p><p>El Anuario electrónico de estudios en Comunicación Social \'Disertaciones\' (ISSN: 1856-9536) es una publicación digital arbitrada e indizada de la Universidad del Rosario (Colombia), la <a href="http://www.ula.ve/" target="_blank">Universidad de Los Andes</a> (Venezuela) y la Universidad Complutense de Madrid (España), que se distribuye gratuitamente por Internet. La revista se edita en un volumen anual, distribuido en dos números, correspondientes al primer y segundo semestre del año.</p><p>Disertaciones, tiene como fin exponer trabajos empíricos de investigación inéditos en el área temática de la Comunicación Social, específicamente en las líneas de: (i) Sociedad y Tecnologías de la Información y la Comunicación; (ii) Comunicación y Política; (iii) Periodismo; y (iv) Comunicación y Cultura.</p><p>La publicación es editada conjuntamente entre la Universidad del Rosario, la Universidad de los Andes (Departamento de Comunicación Social, <a href="http://www.human.ula.ve/grupocom" target="_blank">Grupo de Investigación Comunicación, Cultura y Sociedad</a> de la ULA Táchira y el Laboratorio de Investigación Educativa Simón Rodríguez - LIESR de la ULA Trujillo) y la Universidad Complutense de Madrid (Grupo de Mediación Dialéctica de la Comunicación Social - MDCS). Está dirigida principalmente a investigadores, estudiantes y profesores de la comunidad académica internacional en el área de investigación en comunicación, y su intención es influir y colaborar con la difusión científica de los estudios en el área.</p></p>
-							</div>
-							<div id="peerReviewProcess">
-							<h3>Proceso de evaluación por pares</h3>
-							<p>Disertaciones evalúa las contribuciones de sus autores con la política de revisión por pares académicos, utilizando la técnica del doble ciego. Una vez que es propuesto un artículo el Editor envía el manuscrito a dos revisores expertos en el área (usualmente externos a las instituciones editoras) para someterlo a un estricto proceso de arbitraje (en los casos en que haya <em>controversia</em> entre los evaluadores, se buscará a un tercer revisor). Cada evaluador puede aceptar o recharzar el artículo. Asimismo, en caso de aceptarlo, puede sugerir al autor cambios en la estructura y contenido del texto. Si este es el caso, se realiza una segunda ronda de revisión, dando así al autor la posibilidad de adapatar el texto a los criterios editoriales del Anuario. El tiempo de revisión es de máximo tres meses. El editor de la Revista deberá informar al autor o a los autores sobre el proceso de evaluación y selección de los artículos.</p>
-							</div>
-							<div id="openAccessPolicy">
-							<h3>Política de acceso abierto</h3>
-							<p><p>Esta revista provee acceso libre inmediato a su contenido bajo el principio de que hacer disponible gratuitamente investigación al público apoya a un mayor intercambio de conocimiento global. Lo anterior implica que <strong>no</strong> <strong>se generan cobros</strong> a los autores por la gestión de su artículo.</p><p><span>Comprometidos con la divulgación del conocimiento científico a públicos no especializados, <em>Disertaciones</em> también promociona sus contenidos a través del canal </span><a href="http://www.lasillavacia.com/iq" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=es&amp;q=http://www.lasillavacia.com/iq&amp;source=gmail&amp;ust=1493378043608000&amp;usg=AFQjCNFx96AM2NbW6BCmX7VOLp8w3QseTA">www.lasillavacia.com/iq</a></p></p>
-							</div>
-								<div id="custom-0">
-								<h3>Indización</h3>
-								<p><p><strong>IB–Índice bibliográfico. </strong>IBN-Publindex de Colciencias <strong>(B)</strong>;</p><p><strong>BBCS–Bases bibliográficas con comité de selección. </strong>Research Data Bases –EBSCO: Communication Source; Red Iberoamericana de Innovación y Conocimiento Científico –REDIB; Dialnet de la Universidad de la Rioja; Red de Revistas Científicas de América Latina y El Caribe; España y Portugal –RedALyC; Directory of Open Access Journals–DOAJ; Red Iberoamericana de Innovación y Conocimiento Científico –REDIB; Clasificación Integrada de Revistas Científicas<strong>–</strong>CIRC (Ciencias humanas–D, ciencias sociales–C).</p><p><strong>Bases de datos bibliográficas</strong>. Google Scholar; Latindex de la Universidad Nacional Autónoma de México –UNAM–; Índice de Revistas Venezolanas de Ciencia y Teconología (Revencyt); Red de Bibliotecas Universitarias (Rebiun); Red Iberoamericana de Revistas de Comunicación y Cultura; Ulrich\'s International Periodicals Directory; Scilit;  European Reference Index for the Humanities–ERIH; Electronic Journals Library (Elektronische Zeitschriftenbibliothek o EZB); Vlex; AmeliCA.</p></p>
-								</div>
-								<div id="custom-1">
-								<h3>Políticas éticas</h3>
-								<p><strong><em>Disertaciones</em></strong> <a href="https://publicationethics.org/members/anuario-electronico-de-estudios-en-comunicacion-social-disertaciones" target="_blank">se adhiere</a> a las políticas del <a href="https://publicationethics.org/resources/flowcharts" target="_blank">Committee on Publication Ethics - COPE</a> a las cuales se suscriben las revistas de la Universidad del Rosario (Colombia).<p><strong>Derechos de autor:</strong></p><p>Los manuscritos postulados a <strong>Disertaciones</strong> deben ser originales e inéditos y no deben estar simultáneamente en proceso de publicación en otras revistas, compilaciones o cualquier otro medio de publicación. Los derechos de autor serán de la Universidad del Rosario, la Universidad de los Andes y la Universidad Complutense de Madrid. Cuando el autor quiera publicar el manuscrito en otra publicación, deberá pedir a <strong>Disertaciones</strong> los permisos correspondientes.De igual forma, cuando la revista esté interesada en publicar artículos que ya han sido publicados en otras revistas, procederá a solicitar los permisos correspondientes en la editorial donde se realizó la primera publicación.</p><p><strong>Responsabilidades del autor:</strong></p><p>Los autores deben postular sus manuscritos y reseñas de libro a a <strong>Disertaciones</strong> por medio de la plataforma del Open Journal System (OJS).</p><p>Luego de recibido el manuscrito, la Revista le enviará una carta de autorización para publicación al autor en la que él expresa que la obra es original y que no ha sido editada por ninguna otra revista; la remitirá a la Revista con su firma. Respetando, de la misma forma, los derechos de propiedad intelectual de terceros, así como el debido permiso de gráficas, tablas, fotografías, diagramas. La calidad, la rigurosidad investigativa y las ideas expresadas en el artículo son de entera responsabilidad del autor. El autor aceptará que el manuscrito sea evaluado por pares académicos, nacionales o internacionales en condiciones de anonimato, es decir: el autor no sabe quiénes son los evaluadores del manuscrito y los evaluadores no saben quién es el autor del manuscrito. Al mismo tiempo, se compromete a enviar las modificaciones sugeridas por los evaluadores dentro de los tiempos establecidos por la Revista.</p><p>Cuando los autores no tomen en cuenta las sugerencias de los evaluadores, deberán enviar una carta explicando las razones principales de su decisión. En todo caso, el editor toma las decisiones finales sobre la publicación de los manuscritos una vez que el proceso de evaluación haya terminado. <strong>Disertaciones</strong> comunicará al autor si el artículo ha sido aprobado, aprobado con modificaciones o rechazado. La Revista también puede pedirle al autor que revise su manuscrito y envíe una nueva versión. En ese caso, se someterá el artículo a una nueva revisión de pares. Luego de recibir la versión final del manuscrito, <strong>Disertaciones</strong>tomará la decisión final sobre su publicación, se le informará al autor la aprobación y la fecha estimada de publicación.</p><p><strong>Disertaciones</strong> contactará a los evaluadores de un manuscrito si, a criterio del equipo editorial, este cumple con las condiciones básicas y con los criterios exigidos para la evaluación. En caso de que el manuscrito no cumpla con las exigencias, la Revista le informará al autor las razones por las que no procedieron con la evaluación. Después de esta primera revisión —y si cumple con las condiciones exigidas—, el equipo editorial definirá los manuscritos que se someterán al proceso de arbitraje. En este momento se contactará las personas idóneas para realizar el arbitraje. El resultado de la evaluación será enviado al autor en un plazo máximo de seis meses. Si el proceso de evaluación tarda más de lo habitual, el editor se comunicará con el autor para informarlo.</p><p><strong>Sobre los evaluadores:</strong></p><p>Los evaluadores seleccionados por <strong>Disertaciones</strong> pueden ser internos o externos a las universidades editoras y colaboradoras, y nacionales o internacionales. En cualquier caso, cada manuscrito que ha pasado por el filtro inicial del equipo editorial siempre será evaluado, como mínimo, por un par académico externo. Serán personas que no tengan conflictos de interés en cuanto a los autores de los manuscritos. Si existe alguna duda al respecto, se buscará otro evaluador. Los nombres de los autores como los de los evaluadores serán anónimos durante este proceso.</p><p>Los evaluadores podrán sugerir cambios frente a elementos de carácter teórico, metodológico y temático de los manuscritos. Para emitir su concepto se guiarán por el formato de evaluación de la Revista que contiene una serie de preguntas rigurosamente seleccionadas. Los evaluadores podrán aprobar, aprobar con correcciones o no aprobar los manuscritos para su publicación.</p><p><strong>Responsabilidades editoriales:</strong></p><p>El equipo editorial de <strong>Disertaciones</strong> es responsable de las políticas editoriales. También es responsable de las normas editoriales y del cumplimiento de estas en cada publicación. Publicará correcciones sobre erratas, aclaraciones y rectificaciones, si a ello hay lugar, en la versión digital de la Revista.</p><p>El equipo editorial es responsable de todo el proceso de los manuscritos que se postulan, así como de mantener la confidencialidad de los manuscritos en el proceso de revisión por pares hasta la publicación y cuando los manuscritos son retirados o rechazados.</p><p>Cuando un número sale publicado el editor deber encargarse de la difusión y de la distribución del número entre las personas e instituciones con las que ha adquirido compromiso de canjes y con los autores de los artículos.</p></p>
-								</div>
-								<div id="custom-2">
-								<h3>Política antiplagio</h3>
-								<p><p>Disertaciones verificará la originalidad de todos los textos recibidos haciendo uso de diferentes medios, entre esos, la herramienta Turnitin. Al enviar su texto, el autor acepta que se examine el documento con el fin de evitar plagio y promover así la integridad académica.</p><p>Disertaciones <a href="https://publicationethics.org/members/anuario-electronico-de-estudios-en-comunicacion-social-disertaciones" target="_blank">se acoge</a> a las políticas del <a href="https://publicationethics.org/resources/flowcharts" target="_blank">Committee on Publication Ethics - COPE</a> (JM12058) con el fin de mantener la transparencia y las buenas prácticas, prevenir conductas inapropiadas en la publicación de artículos e impulsar una producción académica de alta calidad.</p></p>
-								</div>
-								<div id="custom-3">
-								<h3>Derechos de autor</h3>
-								<p>Los autores que publican en la revista conservarán los derechos sobre su obra, lo cual implica que Disertaciones no los retiene y los autores pueden disponer de ella como estimen conveniente. Sin embargo, es necesario que, de republicar el texto en cualquier medida, el o los autores citen a Disertaciones como el medio donde se publicó la versión original.</p>
-								</div>
-								<div id="custom-4">
-								<h3>Política autoarchivo</h3>
-								<p><p><em>En los trabajos publicados en la revista, se permite el autoarchivo en los repositorios de las instituciones a las que pertenecen los autores, de la versión publicada por el editor (published version) y se recomienda incluir en el registro la URL correspondiente al documento en el repositorio EdocUR.</em></p><p><strong><em> </em></strong><strong><em>Condiciones:</em></strong><strong><em> </em></strong></p><ul><li><em>Los derechos de autor y editorial deben ser acreditados</em></li><li><em>Debe agregarse un enlace o link  a la  versión del editor.</em></li><li><em>Se debe agregar  la versión publicada por el editor (published version)</em></li></ul></p>
-								</div>
-								<div id="custom-5">
-								<h3>Licencia de nuestros contenidos</h3>
-								<p><span>A partir del año 2015, debido a cambios en la política editorial, todos los documentos publicados en esta revista se distribuyen bajo una <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">licencia de Creative Commons Reconocimiento-NoComercial 4.0 Internacional</a><span>.</span></span></p>
-								</div>
-								<div id="custom-6">
-								<h3>Cronograma</h3>
-								<p><table border="1" cellspacing="0" cellpadding="0"><tbody><tr><td valign="center" width="147"><p align="center"><strong>Volumen y número</strong></p></td><td valign="center" width="147"><p align="center"><strong>Mes y año de publicación</strong></p></td><td valign="center" width="147"><p align="center"><strong>Tema del número</strong></p></td><td valign="center" width="147"><p align="center"><strong>Fecha límite para envío de artículos (dd/mm/aaaa)</strong></p></td></tr><tr><td valign="center" width="147"><p align="center">10 (1)</p></td><td valign="center" width="147"><p align="center">Enero 2017</p></td><td valign="center" width="147"><p align="center">Comunicación y Tercer Sector</p></td><td valign="center" width="147"><p align="center"><span style="text-decoration: line-through;">31/01/2017</span></p></td></tr><tr><td valign="center" width="147"><p align="center">10 (2)</p></td><td valign="center" width="147"><p align="center">Junio 2017</p></td><td valign="center" width="147"><p align="center">Comunicación de riesgo y catástrofes</p></td><td valign="center" width="147"><p align="center"><span style="text-decoration: line-through;">15/04/2016</span></p></td></tr><tr><td valign="center" width="147"><p align="center">11 (1)</p></td><td valign="center" width="147"><p align="center">Enero 2018</p></td><td valign="center" width="147"><p align="center">Estudios de audiencia y recepción</p></td><td valign="center" width="147"><p align="center"><span style="text-decoration: line-through;">30/10/2016</span></p></td></tr><tr><td valign="center" width="147"><p align="center">11 (2)</p></td><td valign="center" width="147"><p align="center">Junio 2018</p></td><td valign="center" width="147"><p align="center">Comunicación indígena en América Latina</p></td><td valign="center" width="147"><p align="center"><span style="text-decoration: line-through;">15/05/2017</span></p></td></tr><tr><td valign="center" width="147"><p align="center">12 (1)</p></td><td valign="center" width="147"><p align="center">Enero 2019</p></td><td valign="center" width="147"><p align="center">Comunicación y dispositivos móviles</p></td><td valign="center" width="147"><p align="center">15/07/2017</p></td></tr><tr><td valign="center" width="147"><p align="center">12 (2)</p></td><td valign="center" width="147"><p align="center">Junio 2019</p></td><td valign="center" width="147"><p align="center">El papel del sonido en la comunicación: contribución, funciones y efectos</p></td><td valign="center" width="147"><p align="center">15/01/2018</p><p> </p></td></tr></tbody></table></p>
-								</div>
-								<div id="sponsors">
-								<h3>Sponsors</h3>
-								<p>El ANUARIO es editado por la Universidad del Rosario de Colombia, en colaboración con la Universidad de los Andes de Venezuela (<a href="http://saber.ula.ve/handle/123456789/26076" target="_blank">Departamento de Comunicación Social de la ULA Táchira,</a> <a href="http://www.human.ula.ve/gruinco" target="_blank">Grupo de Investigación Comunicación, Cultura y Sociedad</a> y <a href="http://saber.ula.ve/items-by-subject?subject=Laboratorio+de+Investigaci%C3%B3n+Educativa+Sim%C3%B3n+Rodr%C3%ADguez+%28LIESR%29" rel="nofollow" target="_blank">Laboratorio de Investigación Educativa Simón Rodríguez (LIESR)</a>) y la Universidad Complutense de Madrid de España (<a href="http://www.ucm.es/info/mdcs/" target="_blank">Grupo Mediación Dialéctica de la Comunicación Social MDCS</a>).</p><ul><li>
-											<a href="http://urosario.edu.co">Universidad del Rosario (Colombia)</a></li><li>
-											<a href="http://www.ula.ve/">Universidad de los Andes (Venezuela)</a></li><li>
-											<a href="http://ucm.es/">Universidad Complutense de Madrid (España)</a></li></ul></div>
-								<div id="history">
-								<h3>Historial de la revista</h3>
-								<p>La revista nace en 2008 del trabajo mancomunado de estudiantes de la Universidad de Los Andes (Venezuela) y profesores de varias universidades venezolanas. A este esfuerzo se unió en 2010 con mucho entusiasmo el grupo MDCS de la Universidad Complutense de Madrid (España) y de forma no oficial en 2011 otro grupo importante de la Universidad del Norte (Colombia). Adicionalmente, cada número ha sido coordinado por editores invitados de diferentes instituciones iberoamericanas, teniendo como resultado autores, evaluadores y lectores de diferentes países. La revista es el fruto de esta colaboración científica, es decir, del esfuerzo de un grupo heterogéneo de investigadores que han logrado hacer crecer la publicación.A partir de 2015, Disertaciones cuenta con la Universidad del Rosario (Colombia) como nuevo socio editor, que se suma a la lista de instituciones que articulan el proyecto editorial.</p>
-								</div>',
-    'pt_BR' => '
-							<div id="focusAndScope">
-							<h3>Foco e Escopo</h3>
-							<p><p>O Anuário eletrônico de estudos em Comunicação Social \'Disertaciones\' (ISSN: 1856-9536) é uma publicação digital arbitrada e indexada da <em>Universidad del Rosario </em>(Colômbia), a <em>Universidad de Los Andes</em> (Venezuela) e a <em>Universidad Complutense de Madrid</em> (Espanha), que se distribui gratuitamente pela Internet. A revista edita-se em um volume anual, distribuído em dois números, correspondentes ao primeiro e segundo semestre do ano.</p><p> </p><p>Disertaciones, tem como fim expor trabalhos empíricos de pesquisa inéditos na área temática da Comunicação Social, especificamente nas linhas de: (i) Sociedade e Tecnologias da Informação e a Comunicação; (ii) Comunicação e Política; (iii) Jornalismo; e (iv) Comunicação e Cultura.</p><p>A publicação é editada conjuntamente entre a Universidad del Rosario (Curso de Jornalismo e Opinião Pública), a Universidad de los Andes (Departamento de Comunicação Social, Grupo de Investigação Comunicação, Cultura e Sociedade da ULA Táchira e o Laboratório de Investigação Educativa Simón Rodríguez - LIESR da ULA Trujillo) e a Universidad Complutense de Madrid (Grupo de Mediação Dialética da Comunicação Social - MDCS). Está dirigida principalmente a pesquisadores, estudantes e professores da comunidade acadêmica internacional na área de pesquisa em comunicação, e a sua intenção é influir e colaborar com a difusão científica dos estudos na área. </p></p>
-							</div>
-							<div id="peerReviewProcess">
-							<h3>Processo de Avaliação pelos Pares</h3>
-							<p><p>Disertaciones avalia as contribuições dos seus autores com a política de revisão por pares acadêmicos, utilizando a técnica do “duplo cego”. Uma vez que é proposto um artigo o Editor envia o manuscrito a dois revisores expertos na área (geralmente externo a instituições de publicação) para submetê-lo a um estrito processo de arbitragem (em caso de controvérsias, um terceiro revisor será atribuído). Cada avaliador pode aceitar ou rejeitar o artículo. Também, no caso de aceita-lo, pode sugerir ao autor mudanças na estrutura e conteúdo do texto. Se este é o caso, se realiza uma segunda ronda de revisão, dando assim ao autor a possibilidade de adaptar o texto aos critérios editoriais do Anuário. O tempo de revisão é do máximo três meses. O Editor da Revista deverá informar ao autor ou aos autores sobre o processo de avaliação e seleção dos artigos. </p></p>
-							</div>
-							<div id="openAccessPolicy">
-							<h3>Política de Acesso Livre</h3>
-							<p><p>Esta revista provê acesso livre imediato ao seu conteúdo sob o princípio de que fazer disponível gratuitamente investigação ao público apoia a um maior intercâmbio de conhecimento global. O anterior implica que não se geram cobros aos autores pela gestão de seu artigo. </p></p>
-							</div>
-								<div id="custom-0">
-								<h3>Indexação</h3>
-								<p><p><strong>IB–Índice bibliográfico. </strong>IBN-Publindex de Colciencias <strong>(B)</strong>;</p><p><strong>BBCS–Bases bibliográficas con comité de selección. </strong>Research Data Bases –EBSCO: Communication Source; Red Iberoamericana de Innovación y Conocimiento Científico –REDIB; Dialnet de la Universidad de la Rioja; Red de Revistas Científicas de América Latina y El Caribe; España y Portugal –RedALyC; Directory of Open Access Journals–DOAJ; Red Iberoamericana de Innovación y Conocimiento Científico –REDIB; Clasificación Integrada de Revistas Científicas<strong>–</strong>CIRC (Ciencias humanas–D, ciencias sociales–C).</p><p><strong>Bases de datos bibliográficas</strong>. Google Scholar; Latindex de la Universidad Nacional Autónoma de México –UNAM–; Índice de Revistas Venezolanas de Ciencia y Teconología (Revencyt); Red de Bibliotecas Universitarias (Rebiun); Red Iberoamericana de Revistas de Comunicación y Cultura; Ulrich\'s International Periodicals Directory; Scilit;  European Reference Index for the Humanities–ERIH; Electronic Journals Library (Elektronische Zeitschriftenbibliothek o EZB); Vlex; AmeliCA.</p></p>
-								</div>
-								<div id="custom-1">
-								<h3>Políticas éticas</h3>
-								<p><p><em>Disertaciones </em>adere-se às políticas éticas das revistas da Universidad del Rosario (Colômbia):</p><p> </p><p><strong>Direitos de autor:</strong></p><p>Os manuscritos postulados a <strong>Disertaciones</strong> devem ser originais e inéditos e não devem estar simultaneamente em processo de publicação em outras revistas, compilações ou qualquer outro meio de publicação. Os direitos de autor serão da Universidad del Rosario, a Universidad de los Andes e a Universidad Complutense de Madrid. Quando o autor queira publicar o manuscrito em outra publicação, deverá pedir a <strong>Disertaciones</strong> as permissões correspondentes. De igual forma, quando a revista esteja interessada em publicar artigos que já tenham sido publicados em outras revistas, procederá a solicitar as permissões correspondentes, na editora onde se realizou a primeira publicação.</p><p><strong> </strong></p><p><strong>Responsabilidades do autor:</strong></p><p>Os autores devem postular os seus manuscritos e resenhas de livro a <strong><em>Disertaciones</em></strong> através da plataforma do Open Journal System (OJS).</p><p>Após recebido o manuscrito, a Revista lhe enviará uma carta de autorização par publicação ao autor, na qual ele declara que a obra é original e que não tem sido editada por nenhuma outra revista; a remitirá à Revista com a sua assinatura. Respeitando, da mesma forma, os direitos de propriedade intelectual de terceiros, assim como a devida permissão de gráficas, tabelas, fotografias, diagramas. A qualidade, a rigorosidade investigativa e as ideias expressadas no artigo são de inteira responsabilidade do autor. O autor aceitará que o manuscrito seja avaliado por pares acadêmicos, nacionais ou internacionais em condições de anonimato, é dizer: o autor não sabe quem são os avaliadores do manuscrito e os avaliadores não sabem quem é o autor do manuscrito. Ao mesmo tempo, compromete-se a enviar as modificações sugeridas pelos avaliadores dentro dos tempos estabelecidos pela Revista.</p><p>Quando os autores não tomem em conta as sugestões dos avaliadores, deverão enviar uma carta explicando as razões principais da sua decisão. Em tudo caso, o editor toma as decisões finais sobre a publicação dos manuscritos, uma vez que o processo de avaliação tenha terminado. <strong><em>Disertaciones</em></strong> comunicará ao autor se o artigo tem sido aprovado, aprovado com modificações ou rejeitado. A Revista também pode pedi-lhe ao autor que revise o manuscrito e envie uma nova versão. Nesse caso, se submeterá o artigo a uma nova revisão de pares. Após receber a versão final do manuscrito, D<strong><em>isertaciones</em></strong> tomará a decisão final sobre a sua publicação, se lhe informará ao autor a aprovação e a data estimada de publicação.</p><p><strong><em>Disertaciones </em></strong>contatará aos avaliadores de um manuscrito se, a critério da equipe editorial, este cumpre com as condições básicas e com os critérios exigidos para a avaliação. Em caso de que o manuscrito não cumpra com as exigências, a Revista lhe informará ao autor as razões pelas quais não procederam com a avaliação. Depois desta primeira revisão —e se cumpre com as condições exigidas—, a equipe editorial definirá os manuscritos que se submeterão ao processo de arbitragem. Neste momento se contatará às pessoas idóneas para realizar a arbitragem. O resultado da avaliação será enviado ao autor em um prazo máximo de seis meses. Se o processo de avaliação tarda mais do habitual, o editor se comunicará com o autor para informa-lo.</p><p> </p><p><strong>Sobre os avaliadores:</strong></p><p>Os avaliadores selecionados por <strong><em>Disertaciones</em></strong> podem ser internos ou externos às universidades editoras e colaboradoras, e nacionais ou internacionais. Em qualquer caso, cada manuscrito que tem passado pelo filtro inicial da equipe editorial sempre será avaliado, como mínimo, por um acadêmico externo. Serão pessoas que não tenham conflitos de interesse em quanto aos autores dos manuscritos. Se existe alguma dúvida ao respeito, se buscará outro avaliador. Os nomes dos autores como os dos avaliadores serão anónimos durante este processo.</p><p>Os avaliadores poderão sugerir mudanças frente a elementos de caráter teórico, metodológico e temático dos manuscritos. Para emitir o seu conceito se guiarão pelo formato de avaliação da Revista que contém uma série de perguntas rigorosamente selecionadas. Os avaliadores poderão aprovar, aprovar com correções ou não aprovar os manuscritos para a sua publicação.</p><p> </p><p><strong>Responsabilidades editoriais:</strong></p><p>A equipe editorial de <strong><em>Disertaciones</em></strong> é responsável das políticas editoriais. Também é responsável das normas editoriais e do cumprimento destas em cada publicação. Publicará correções sobre erratas, aclarações e retificações, se for oportuno, na versão digital da Revista.</p><p>A equipe editorial é responsável de todo o processo dos manuscritos que se postulam, assim como de manter a confidencialidade dos manuscritos no processo de revisão por pares até a publicação e quando os manuscritos são retirados ou rejeitados.</p><p>Quando o número sai publicado o editor deve encarregar-se da difusão e da distribuição do número entre as pessoas e instituições com as que tem adquirido compromisso de troca e com os autores dos artigos. </p></p>
-								</div>
-								<div id="custom-2">
-								<h3>Direitos de autor</h3>
-								<p><p>Os autores que publicam na revista conservarão os direitos sobre a sua obra, o qual implica que <strong><em>Disertaciones</em></strong> não os retém e os autores podem dispor dela como estimem conveniente. No entanto, é necessário que, de republicar o texto m qualquer medida, o ou os autores citem a <strong><em>Disertaciones</em></strong> como o meio onde se publicou a versão original. </p></p>
-								</div>
-								<div id="custom-3">
-								<h3>Política antiplágio</h3>
-								<p><p><strong><em>Disertaciones</em></strong> verificará a originalidade de todos os textos recebidos, fazendo uso de diferentes meios, entre estes, a ferramenta Turnitin. Ao enviar o seu texto, o autor aceita que se examine o documento com o fim de evitar plágio e promover assim a integridade acadêmica. <strong><em>Disertaciones </em></strong>acolhe-se às políticas do <a href="http://publicationethics.org/members/anuario-electronico-de-estudios-en-comunicacion-social-disertaciones" target="_blank">Committee on Publication Ethics - COPE</a> (JM12058) com o fim de manter a transparência e as boas práticas, prevenir condutas inapropriadas na publicação de artigos e impulsar uma produção acadêmica de alta qualidade. </p></p>
-								</div>
-								<div id="custom-4">
-								<h3>Licença de conteúdo</h3>
-								<p>Todos os documentos publicados nesta revista são distribuídos sob a seguinte licença: <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/ve/" rel="license">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 3.0 Venezuela</a>.</p>
-								</div>
-								<div id="sponsors">
-								<h3>Sponsors</h3><ul><li>
-											<a href="http://urosario.edu.co">Universidad del Rosario (Colombia)</a></li><li>
-											<a href="http://www.ula.ve/">Universidad de los Andes (Venezuela)</a></li><li>
-											<a href="http://ucm.es/">Universidad Complutense de Madrid (España)</a></li></ul></div>',
+    'en_US' => '<div id="focusAndScope">
+<h3>Focus and Scope</h3>
+<p>The electronic journal <em>Disertaciones</em> (Dissertations) (ISSN: 1856-9536) is a peer-reviewed open access annual of studies in Social Communication, available on the Internet. <em>Disertaciones</em> is an indexed digital publication of the Universidad del Rosario (Colombia), the Universidad de los Andes (Venezuela) and the Universidad Complutense de Madrid (Spain). The journal produces one annual volume consisting of two issues: Number 1 and Number 2, corresponding to the first and second half of the year. &nbsp;</p>
+<p>&nbsp;</p>
+<p>The Goal of <em>Disertaciones</em> is to make available unpublished works of empirical research in the area of Social Communication, particularly those involving (i) Society and Information and Communication Technologies; (ii) Communication and Politics; (iii) Journalism; and (iv) Communication and Culture.</p>
+<p>&nbsp;</p>
+<p><em>Disertaciones</em> is jointly edited by the Program on Journalism and Public Opinion at the Universidad del Rosario, the Department of Social Communication and the Group on Research in Communication, Culture, and Society at the Universidad de los Andes - Táchira, the Simón Rodríguez Laboratory for Educational Research (LIESR) at the Universidad de los Andes - Trujillo, and the Group for the Dialectical Mediation of Social Communication (MDCS) at the Universidad Complutense de Madrid. It is primarily directed to researchers, students, and professors in the international academic community of communication research, and its goal is to influence and participate in the dissemination of scientific studies in this research area. &nbsp;</p>
+</div>
+<div id="peerReviewProcess">
+<h3>Peer Review Process</h3>
+<p><em>Disertaciones</em> evaluates author submissions using a double-blind academic peer review process. When an article manuscript is received, the Editor sends the manuscript to two academics who are experts in the area it covers (usually external to the editorial institutions) , who then submit it to a strict process of evaluation (in case of controversies, a third reviewer will be assigned). Each evaluator may accept or reject the article, or may accept it subject to suggested changes in its structure and contents. In the latter case, the author is given an opportunity to adapt the manuscript to the editorial criteria of the Annual and the manuscript will undergo a second evaluation process. The author will be given a maximum of three months to make the suggested revisions. The editor of the journal will inform the author or authors regarding the evaluation process and the selection of articles.</p>
+</div>
+<div id="openAccessPolicy">
+<h3>Open Access Policy</h3>
+<p>This journal provides free and immediate access to its contents under the principle that making research available to the public without cost promotes the sharing of knowledge around the world. For the same reason, <strong>the journal imposes no costs</strong> on authors for the processing and publication of their articles.</p>
+<p>Committed to the dissemination of scientific knowledge to non-specialized audiences, <em>Disertaciones</em> also promotes its contents through <a href="http://www.lasillavacia.com/iq" target="_blank" rel="noopener">www.lasillavacia.com/iq</a>&nbsp;</p>
+</div>
+<div id="custom-0">
+<h3>Indexing</h3>
+<p><strong>IB–Bibliographic index.&nbsp;</strong>IBN-Publindex de Colciencias&nbsp;<strong>(B)</strong>;</p>
+<p><strong>BBCS–Data bases with Selection Committee.&nbsp;</strong>Research Data Bases –EBSCO: Communication Source; Red Iberoamericana de Innovación y Conocimiento Científico –REDIB; Dialnet de la Universidad de la Rioja; Red de Revistas Científicas de América Latina y El Caribe; España y Portugal –RedALyC; Directory of Open Access Journals–DOAJ; Red Iberoamericana de Innovación y Conocimiento Científico –REDIB; Clasificación Integrada de Revistas Científicas<strong>–</strong>CIRC (Ciencias humanas–D, ciencias sociales–C).</p>
+<p><strong>Bibliographic databases</strong>. Google Scholar; Latindex de la Universidad Nacional Autónoma de México –UNAM–; Índice de Revistas Venezolanas de Ciencia y Teconología (Revencyt); Red de Bibliotecas Universitarias (Rebiun); Red Iberoamericana de Revistas de Comunicación y Cultura; Ulrich\'s International Periodicals Directory; Scilit;&nbsp; European Reference Index for the Humanities–ERIH; Electronic Journals Library (Elektronische Zeitschriftenbibliothek o EZB); Vlex; AmeliCA.</p>
+</div>
+<div id="custom-1">
+<h3>Ethical and Anti-Plagiarism Policy</h3>
+<p><em>Disertaciones</em>&nbsp;<a href="https://publicationethics.org/members/anuario-electronico-de-estudios-en-comunicacion-social-disertaciones">complies with</a>&nbsp;with the ethical policies of the <a href="https://publicationethics.org/resources/flowcharts" target="_blank" rel="noopener">Committee on Publication Ethics - COPE</a>&nbsp;followed by all journals associated with the Universidad del Rosario (Colombia):</p>
+<p>&nbsp;</p>
+<p><strong>Copyright Policy:</strong></p>
+<p>Manuscripts submitted to <strong><em>Disertaciones</em> </strong>must be original and unpublished, and they may not be in a simultaneous process of publication in any other journal, compilation, or any other means of publication. The copyright to the article will belong to the Universidad del Rosario, the Universidad de los Andes and the Universidad Complutense de Madrid. If the author wishes to publish the manuscript in another publication, he or she must request the necessary permissions from <strong><em>Disertaciones</em></strong>. Likewise, if <strong><em>Disertaciones</em></strong> is interested in publishing articles that have been published in other journals, it will request the necessary permissions from the publisher of the journal in which the article was first published.</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>Responsibilities of authors</strong></p>
+<p>Authors should submit their articles and reviews to the journal <strong><em>Disertaciones</em> </strong>through the Open Journal Systems (OJS) platform.</p>
+<p><strong>&nbsp;</strong></p>
+<p>After the manuscript is received, the Journal will send a letter to the author for a signature to authorize its publication. The author will sign and return this letter to the Journal attesting that the work is original and has not been published by any other journal as well as acknowledging any copyrights held by third parties. In order to respect the intellectual property rights of other parties, he or she will provide any needed permissions for the use of graphics, tables, photographs, and diagrams. The quality of the article, the ideas that are expressed in it, and the investigative rigor that it reflects are the exclusive responsibility of the author. The author will accept the article’s evaluation by anonymous Colombian or international peer reviewers. The author will not know the identity of the manuscript’s evaluators and the evaluators of the manuscript will not know the identity of its author. The author will also commit to providing any modifications suggested by evaluators within the period of time established by the journal for this purpose.</p>
+<p>If authors do not accept the suggestions of evaluators, they should send the journal a letter explaining the principal reasons for their decision. In any case, the journal editor will make the final decision on the publication of manuscripts once the evaluation process is complete.&nbsp;<strong><em>Disertaciones</em></strong>&nbsp;will inform authors if their article has been accepted, accepted subject to modifications, or rejected. The journal may also ask authors to revise the manuscript and send a modified version. In such cases, the revised manuscript will undergo a second peer review. After receiving the final version of the manuscript,&nbsp;<strong><em>Disertaciones</em></strong> will make a final decision regarding its publication and will inform the author of its approval and the estimated date of publication.</p>
+<p>If the editorial team of<strong><em> Disertaciones</em></strong>&nbsp;determines that a manuscript meets the basic conditions and criteria established to warrant its evaluation, the journal will so inform the manuscript’s evaluators. If a manuscript does not meet these criteria, the journal will inform the author of the reasons for which the evaluation process did not proceed. After this preliminary assessment, and if the manuscript meets the required criteria, the editorial team will determine which manuscripts will be submitted for the evaluation process. At this time, the peer reviewers best suited to the evaluation of a particular manuscript will be contacted. The results of the evaluation will be sent to the author within a period of no longer than six months. The editor will inform the author if the evaluation process takes longer than usual.</p>
+<p><strong>About the evaluators:</strong></p>
+<p>The evaluators selected by&nbsp;<strong><em>Disertaciones</em></strong>&nbsp;may be Colombian or international, and may be internal or external to the universities that collaborate in publishing the journal. Every manuscript that is approved in the preliminary assessment by the editorial team will be evaluated by a minimum of one external peer reviewer. The reviewers selected will have no conflict of interest with respect to the authors of the manuscripts. If there is any doubt on this matter, the journal will seek an alternative evaluator. The names of both authors and evaluators will be anonymous throughout this process.</p>
+<p>Evaluators may suggest changes regarding the theoretical, methodological, and thematic elements of a manuscript. They will issue their evaluations guided by the journal’s evaluation form, which presents a series of carefully selected questions. Evaluators may approve, approve subject to modifications, or not approve manuscripts for publication.</p>
+<p><strong>Responsibilities of the editorial team:</strong></p>
+<p>The editorial team of&nbsp;<strong><em>Disertaciones</em></strong>&nbsp;is responsible for editorial policy, for the journal’s editorial guidelines, and for the observance of these guidelines in all of the journal’s publications. When appropriate, it will publish errata, clarifications, and corrections in the digital edition of the journal.</p>
+<p>The editorial team is responsible for every part of the process through which manuscripts are submitted for publication and for maintaining the confidentiality of authors and evaluators during the process of peer evaluation up until the time of a manuscript’s publication, or when manuscripts are withdrawn or rejected.</p>
+<p>When an issue of <strong><em>Disertaciones</em></strong> is published, the editor is responsible for its distribution to those people and institutions that have entered into exchange agreements with the journal and to the authors of the articles published therein.</p>
+<p><em>Disertaciones</em>&nbsp;uses several methods to verify the originality of all the manuscripts it receives, including the tool Turnitin. By submitting a manuscript, the author assents to its examination for the purpose of avoiding plagiarism, thereby promoting academic integrity. In order to maintain transparency and best practices, prevent inappropriate practices in the publication of academic articles, and promote high quality academic production,&nbsp;<em>Disertaciones</em>&nbsp;<a href="https://publicationethics.org/members/anuario-electronico-de-estudios-en-comunicacion-social-disertaciones">adheres to</a>&nbsp;the policies of the&nbsp;<a href="https://publicationethics.org/resources/flowcharts" target="_blank" rel="noopener">Committee on Publication Ethics - COPE</a>&nbsp;(JM12058).a</p>
+</div>
+<div id="custom-2">
+<h3>Copyrights</h3>
+<p>The authors who publish articles in the journal will retain rights over their work.&nbsp;<em>Disertaciones</em>&nbsp;will not retain those rights, and authors are free to use their work in the manner of their choosing. Nonetheless, if a text or any part thereof is republished, its author or authors must cite&nbsp;<em>Disertaciones</em>&nbsp;as the journal where the a version of work was first published.</p>
+</div>
+<div id="custom-3">
+<h3>Self-archiving policy</h3>
+<p><em>All the articles published in the journal are allowed to be self-archived on the institutional repositories of each of the academic institutions to which the authors of the article belong. This policy includes only the published versions of the articles. We encourage the authors to include the article’s EdocUR URL when they archive the documents on their repositories.</em></p>
+<p><em>Terms:</em></p>
+<ul>
+<li class="show"><em>Author and publisher rights must be credited.</em></li>
+<li class="show"><em>A link to the published version of the article must be added.</em></li>
+<li class="show"><em>Only the published version of the article should be self-archived.</em></li>
+</ul>
+</div>
+<div id="custom-4">
+<h3>Content License</h3>
+<p>Since 2015, due to changes in our editorial policies, all documents published in this journal are distributed under the following license: <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/ve/" rel="license">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 3.0 Venezuela</a>.</p>
+</div>
+<div id="sponsors">
+<h3>Sponsors</h3>
+<p>The journal is edited by the Universidad del Rosario (Colombia), in collaboration with the Universidad de los Andes from Venezuela (<a href="http://saber.ula.ve/handle/123456789/26076" target="_blank" rel="noopener">Departamento de Comunicación Social de la ULA Táchira,</a>&nbsp;<a href="http://www.human.ula.ve/gruinco" target="_blank" rel="noopener">Grupo de Investigación Comunicación, Cultura y Sociedad</a>&nbsp;&amp;&nbsp;<a href="http://saber.ula.ve/items-by-subject?subject=Laboratorio+de+Investigaci%C3%B3n+Educativa+Sim%C3%B3n+Rodr%C3%ADguez+%28LIESR%29" target="_blank" rel="nofollow noopener">Laboratorio de Investigación Educativa Simón Rodríguez (LIESR)</a>) and the Universidad Complutense de Madrid from Spain (<a href="http://www.ucm.es/info/mdcs/" target="_blank" rel="noopener">Grupo Mediación Dialéctica de la Comunicación Social MDCS</a>).</p>
+<ul>
+<li class="show"><a href="http://urosario.edu.co">Universidad del Rosario (Colombia)</a></li>
+<li class="show"><a href="http://www.ula.ve/">Universidad de los Andes (Venezuela)</a></li>
+<li class="show"><a href="http://ucm.es/">Universidad Complutense de Madrid (España)</a></li>
+</ul>
+</div>',
+    'es_ES' => '<div id="focusAndScope">
+<h3>Enfoque y alcance</h3>
+<p>El Anuario electrónico de estudios en Comunicación Social \'Disertaciones\' (ISSN: 1856-9536) es una publicación digital arbitrada e indizada de la Universidad del Rosario (Colombia), la&nbsp;<a href="http://www.ula.ve/" target="_blank" rel="noopener">Universidad de Los Andes</a>&nbsp;(Venezuela) y la Universidad Complutense de Madrid (España), que se distribuye gratuitamente por Internet. La revista se edita en un volumen anual, distribuido en dos números, correspondientes al primer y segundo semestre del año.</p>
+<p>Disertaciones, tiene como fin exponer trabajos empíricos de investigación inéditos en el área temática de la Comunicación Social, específicamente en las líneas de: (i) Sociedad y Tecnologías de la Información y la Comunicación; (ii) Comunicación y Política; (iii) Periodismo; y (iv) Comunicación y Cultura.</p>
+<p>La publicación es editada conjuntamente entre la Universidad del Rosario, la Universidad de los Andes (Departamento de Comunicación Social,&nbsp;<a href="http://www.human.ula.ve/grupocom" target="_blank" rel="noopener">Grupo de Investigación Comunicación, Cultura y Sociedad</a>&nbsp;de la ULA Táchira y el Laboratorio de Investigación Educativa Simón Rodríguez - LIESR de la ULA Trujillo) y la Universidad Complutense de Madrid (Grupo de Mediación Dialéctica de la Comunicación Social - MDCS). Está dirigida principalmente a investigadores, estudiantes y profesores de la comunidad académica internacional en el área de investigación en comunicación, y su intención es influir y colaborar con la difusión científica de los estudios en el área.</p>
+</div>
+<div id="peerReviewProcess">
+<h3>Proceso de evaluación por pares</h3>
+<p>Disertaciones evalúa las contribuciones de sus autores con la política de revisión por pares académicos, utilizando la técnica del doble ciego. Una vez que es propuesto un artículo el Editor envía el manuscrito a dos revisores expertos en el área (usualmente externos a las instituciones editoras) para someterlo a un estricto proceso de arbitraje (en&nbsp;los casos en que haya&nbsp;<em>controversia</em>&nbsp;entre los evaluadores, se buscará a un tercer revisor). Cada evaluador puede aceptar o recharzar el artículo. Asimismo, en caso de aceptarlo, puede sugerir al autor cambios en la estructura y contenido del texto. Si este es el caso, se realiza una segunda ronda de revisión, dando así al autor la posibilidad de adapatar el texto a los criterios editoriales del Anuario. El tiempo de revisión es de máximo tres meses. El editor de la Revista deberá informar al autor o a los autores sobre el proceso de evaluación y selección de los artículos.</p>
+</div>
+<div id="openAccessPolicy">
+<h3>Política de acceso abierto</h3>
+<p>Esta revista provee acceso libre inmediato a su contenido bajo el principio de que hacer disponible gratuitamente investigación al público apoya a un mayor intercambio de conocimiento global. Lo anterior implica que <strong>no</strong> <strong>se generan cobros</strong> a los autores por la gestión de su artículo.</p>
+<p>Comprometidos con la divulgación del conocimiento científico a públicos no especializados, <em>Disertaciones</em> también promociona sus contenidos a través del canal&nbsp;<a href="http://www.lasillavacia.com/iq" target="_blank" rel="noopener" data-saferedirecturl="https://www.google.com/url?hl=es&amp;q=http://www.lasillavacia.com/iq&amp;source=gmail&amp;ust=1493378043608000&amp;usg=AFQjCNFx96AM2NbW6BCmX7VOLp8w3QseTA">www.lasillavacia.com/iq</a></p>
+</div>
+<div id="custom-0">
+<h3>Indización</h3>
+<p><strong>IB–Índice bibliográfico. </strong>IBN-Publindex de Colciencias <strong>(B)</strong>;</p>
+<p><strong>BBCS–Bases bibliográficas con comité de selección. </strong>Research Data Bases –EBSCO: Communication Source; Red Iberoamericana de Innovación y Conocimiento Científico –REDIB; Dialnet de la Universidad de la Rioja; Red de Revistas Científicas de América Latina y El Caribe; España y Portugal –RedALyC; Directory of Open Access Journals–DOAJ; Red Iberoamericana de Innovación y Conocimiento Científico –REDIB; Clasificación Integrada de Revistas Científicas<strong>–</strong>CIRC (Ciencias humanas–D, ciencias sociales–C).</p>
+<p><strong>Bases de datos bibliográficas</strong>. Google Scholar; Latindex de la Universidad Nacional Autónoma de México –UNAM–; Índice de Revistas Venezolanas de Ciencia y Teconología (Revencyt); Red de Bibliotecas Universitarias (Rebiun); Red Iberoamericana de Revistas de Comunicación y Cultura; Ulrich\'s International Periodicals Directory; Scilit;&nbsp; European Reference Index for the Humanities–ERIH; Electronic Journals Library (Elektronische Zeitschriftenbibliothek o EZB); Vlex; AmeliCA.</p>
+</div>
+<div id="custom-1">
+<h3>Políticas éticas</h3>
+<p><strong><em>Disertaciones</em></strong> <a href="https://publicationethics.org/members/anuario-electronico-de-estudios-en-comunicacion-social-disertaciones" target="_blank" rel="noopener">se adhiere</a>&nbsp;a las políticas del <a href="https://publicationethics.org/resources/flowcharts" target="_blank" rel="noopener">Committee on Publication Ethics - COPE</a>&nbsp;a las cuales se suscriben las revistas de la Universidad del Rosario (Colombia).</p>
+<p><strong>Derechos de autor:</strong></p>
+<p>Los manuscritos postulados a&nbsp;<strong>Disertaciones</strong>&nbsp;deben ser originales e inéditos y no deben estar simultáneamente en proceso de publicación en otras revistas, compilaciones o cualquier otro medio de publicación. Los derechos de autor serán de la Universidad del Rosario, la Universidad de los Andes y la Universidad Complutense de Madrid. Cuando el autor quiera publicar el manuscrito en otra publicación, deberá pedir a&nbsp;<strong>Disertaciones</strong>&nbsp;los permisos correspondientes.De igual forma, cuando la revista esté interesada en publicar artículos que ya han sido publicados en otras revistas, procederá a solicitar los permisos correspondientes en la editorial donde se realizó la primera publicación.</p>
+<p><strong>Responsabilidades del autor:</strong></p>
+<p>Los autores deben postular sus manuscritos y reseñas de libro a a&nbsp;<strong>Disertaciones</strong>&nbsp;por medio de la plataforma del Open Journal System (OJS).</p>
+<p>Luego de recibido el manuscrito, la Revista le enviará una carta de autorización para publicación al autor en la que él expresa que la obra es original y que no ha sido editada por ninguna otra revista; la remitirá a la Revista con su firma. Respetando, de la misma forma, los derechos de propiedad intelectual de terceros, así como el debido permiso de gráficas, tablas, fotografías, diagramas. La calidad, la rigurosidad investigativa y las ideas expresadas en el artículo son de entera responsabilidad del autor. El autor aceptará que el manuscrito sea evaluado por pares académicos, nacionales o internacionales en condiciones de anonimato, es decir: el autor no sabe quiénes son los evaluadores del manuscrito y los evaluadores no saben quién es el autor del manuscrito. Al mismo tiempo, se compromete a enviar las modificaciones sugeridas por los evaluadores dentro de los tiempos establecidos por la Revista.</p>
+<p>Cuando los autores no tomen en cuenta las sugerencias de los evaluadores, deberán enviar una carta explicando las razones principales de su decisión. En todo caso, el editor toma las decisiones finales sobre la publicación de los manuscritos una vez que el proceso de evaluación haya terminado.&nbsp;<strong>Disertaciones</strong>&nbsp;comunicará al autor si el artículo ha sido aprobado, aprobado con modificaciones o rechazado. La Revista también puede pedirle al autor que revise su manuscrito y envíe una nueva versión. En ese caso, se someterá el artículo a una nueva revisión de pares. Luego de recibir la versión final del manuscrito,&nbsp;<strong>Disertaciones</strong>tomará la decisión final sobre su publicación, se le informará al autor la aprobación y la fecha estimada de publicación.</p>
+<p><strong>Disertaciones</strong>&nbsp;contactará a los evaluadores de un manuscrito si, a criterio del equipo editorial, este cumple con las condiciones básicas y con los criterios exigidos para la evaluación. En caso de que el manuscrito no cumpla con las exigencias, la Revista le informará al autor las razones por las que no procedieron con la evaluación. Después de esta primera revisión —y si cumple con las condiciones exigidas—, el equipo editorial definirá los manuscritos que se someterán al proceso de arbitraje. En este momento se contactará las personas idóneas para realizar el arbitraje. El resultado de la evaluación será enviado al autor en un plazo máximo de seis meses. Si el proceso de evaluación tarda más de lo habitual, el editor se comunicará con el autor para informarlo.</p>
+<p><strong>Sobre los evaluadores:</strong></p>
+<p>Los evaluadores seleccionados por&nbsp;<strong>Disertaciones</strong>&nbsp;pueden ser internos o externos a las universidades editoras y colaboradoras, y nacionales o internacionales. En cualquier caso, cada manuscrito que ha pasado por el filtro inicial del equipo editorial siempre será evaluado, como mínimo, por un par académico externo. Serán personas que no tengan conflictos de interés en cuanto a los autores de los manuscritos. Si existe alguna duda al respecto, se buscará otro evaluador. Los nombres de los autores como los de los evaluadores serán anónimos durante este proceso.</p>
+<p>Los evaluadores podrán sugerir cambios frente a elementos de carácter teórico, metodológico y temático de los manuscritos. Para emitir su concepto se guiarán por el formato de evaluación de la Revista que contiene una serie de preguntas rigurosamente seleccionadas. Los evaluadores podrán aprobar, aprobar con correcciones o no aprobar los manuscritos para su publicación.</p>
+<p><strong>Responsabilidades editoriales:</strong></p>
+<p>El equipo editorial de&nbsp;<strong>Disertaciones</strong>&nbsp;es responsable de las políticas editoriales. También es responsable de las normas editoriales y del cumplimiento de estas en cada publicación. Publicará correcciones sobre erratas, aclaraciones y rectificaciones, si a ello hay lugar, en la versión digital de la Revista.</p>
+<p>El equipo editorial es responsable de todo el proceso de los manuscritos que se postulan, así como de mantener la confidencialidad de los manuscritos en el proceso de revisión por pares hasta la publicación y cuando los manuscritos son retirados o rechazados.</p>
+<p>Cuando un número sale publicado el editor deber encargarse de la difusión y de la distribución del número entre las personas e instituciones con las que ha adquirido compromiso de canjes y con los autores de los artículos.</p>
+</div>
+<div id="custom-2">
+<h3>Política antiplagio</h3>
+<p>Disertaciones verificará la originalidad de todos los textos recibidos haciendo uso de diferentes medios, entre esos, la herramienta Turnitin. Al enviar su texto, el autor acepta que se examine el documento con el fin de evitar plagio y promover así la integridad académica.</p>
+<p>Disertaciones <a href="https://publicationethics.org/members/anuario-electronico-de-estudios-en-comunicacion-social-disertaciones" target="_blank" rel="noopener">se acoge</a>&nbsp;a las políticas del <a href="https://publicationethics.org/resources/flowcharts" target="_blank" rel="noopener">Committee on Publication Ethics - COPE</a>&nbsp;(JM12058) con el fin de mantener la transparencia y las buenas prácticas, prevenir conductas inapropiadas en la publicación de artículos e impulsar una producción académica de alta calidad.</p>
+</div>
+<div id="custom-3">
+<h3>Derechos de autor</h3>
+<p>Los autores que publican en la revista conservarán los derechos sobre su obra, lo cual implica que Disertaciones no los retiene y los autores pueden disponer de ella como estimen conveniente. Sin embargo, es necesario que, de republicar el texto en cualquier medida, el o los autores citen a Disertaciones como el medio donde se publicó la versión original.</p>
+</div>
+<div id="custom-4">
+<h3>Política autoarchivo</h3>
+<p><em>En los trabajos publicados en la revista, se permite el autoarchivo en los repositorios de las instituciones a las que pertenecen los autores, de la versión publicada por el editor (published version) y se recomienda incluir en el registro la URL correspondiente al documento en el repositorio EdocUR.</em></p>
+<p><strong><em>&nbsp;</em></strong><strong><em>Condiciones:</em></strong><strong><em>&nbsp;</em></strong></p>
+<ul>
+<li class="show"><em>Los derechos de autor y editorial deben ser acreditados</em></li>
+<li class="show"><em>Debe agregarse un enlace o link&nbsp; a la&nbsp; versión del editor.</em></li>
+<li class="show"><em>Se debe agregar&nbsp; la versión publicada por el editor (published version)</em></li>
+</ul>
+</div>
+<div id="custom-5">
+<h3>Licencia de nuestros contenidos</h3>
+<p>A partir del año 2015, debido a cambios en la política editorial, todos los documentos publicados en esta revista se distribuyen bajo una&nbsp;<a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">licencia de Creative Commons Reconocimiento-NoComercial 4.0 Internacional</a>.</p>
+</div>
+<div id="custom-6">
+<h3>Cronograma</h3>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="center" width="147">
+<p align="center"><strong>Volumen y número</strong></p>
+</td>
+<td valign="center" width="147">
+<p align="center"><strong>Mes y año de publicación</strong></p>
+</td>
+<td valign="center" width="147">
+<p align="center"><strong>Tema del número</strong></p>
+</td>
+<td valign="center" width="147">
+<p align="center"><strong>Fecha límite para envío de artículos (dd/mm/aaaa)</strong></p>
+</td>
+</tr>
+<tr>
+<td valign="center" width="147">
+<p align="center">10 (1)</p>
+</td>
+<td valign="center" width="147">
+<p align="center">Enero 2017</p>
+</td>
+<td valign="center" width="147">
+<p align="center">Comunicación y Tercer Sector</p>
+</td>
+<td valign="center" width="147">
+<p align="center"><span style="text-decoration: line-through;">31/01/2017</span></p>
+</td>
+</tr>
+<tr>
+<td valign="center" width="147">
+<p align="center">10 (2)</p>
+</td>
+<td valign="center" width="147">
+<p align="center">Junio 2017</p>
+</td>
+<td valign="center" width="147">
+<p align="center">Comunicación de riesgo y catástrofes</p>
+</td>
+<td valign="center" width="147">
+<p align="center"><span style="text-decoration: line-through;">15/04/2016</span></p>
+</td>
+</tr>
+<tr>
+<td valign="center" width="147">
+<p align="center">11 (1)</p>
+</td>
+<td valign="center" width="147">
+<p align="center">Enero 2018</p>
+</td>
+<td valign="center" width="147">
+<p align="center">Estudios de audiencia y recepción</p>
+</td>
+<td valign="center" width="147">
+<p align="center"><span style="text-decoration: line-through;">30/10/2016</span></p>
+</td>
+</tr>
+<tr>
+<td valign="center" width="147">
+<p align="center">11 (2)</p>
+</td>
+<td valign="center" width="147">
+<p align="center">Junio 2018</p>
+</td>
+<td valign="center" width="147">
+<p align="center">Comunicación indígena en América Latina</p>
+</td>
+<td valign="center" width="147">
+<p align="center"><span style="text-decoration: line-through;">15/05/2017</span></p>
+</td>
+</tr>
+<tr>
+<td valign="center" width="147">
+<p align="center">12 (1)</p>
+</td>
+<td valign="center" width="147">
+<p align="center">Enero 2019</p>
+</td>
+<td valign="center" width="147">
+<p align="center">Comunicación y dispositivos móviles</p>
+</td>
+<td valign="center" width="147">
+<p align="center">15/07/2017</p>
+</td>
+</tr>
+<tr>
+<td valign="center" width="147">
+<p align="center">12 (2)</p>
+</td>
+<td valign="center" width="147">
+<p align="center">Junio 2019</p>
+</td>
+<td valign="center" width="147">
+<p align="center">El papel del sonido en la comunicación: contribución, funciones y efectos</p>
+</td>
+<td valign="center" width="147">
+<p align="center">15/01/2018</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="sponsors">
+<h3>Sponsors</h3>
+<p>El ANUARIO es editado por la Universidad del Rosario de Colombia, en colaboración con la Universidad de los Andes de Venezuela (<a href="http://saber.ula.ve/handle/123456789/26076" target="_blank" rel="noopener">Departamento de Comunicación Social de la ULA Táchira,</a>&nbsp;<a href="http://www.human.ula.ve/gruinco" target="_blank" rel="noopener">Grupo de Investigación Comunicación, Cultura y Sociedad</a>&nbsp;y&nbsp;<a href="http://saber.ula.ve/items-by-subject?subject=Laboratorio+de+Investigaci%C3%B3n+Educativa+Sim%C3%B3n+Rodr%C3%ADguez+%28LIESR%29" target="_blank" rel="nofollow noopener">Laboratorio de Investigación Educativa Simón Rodríguez (LIESR)</a>) y la Universidad Complutense de Madrid de España (<a href="http://www.ucm.es/info/mdcs/" target="_blank" rel="noopener">Grupo Mediación Dialéctica de la Comunicación Social MDCS</a>).</p>
+<ul>
+<li class="show"><a href="http://urosario.edu.co">Universidad del Rosario (Colombia)</a></li>
+<li class="show"><a href="http://www.ula.ve/">Universidad de los Andes (Venezuela)</a></li>
+<li class="show"><a href="http://ucm.es/">Universidad Complutense de Madrid (España)</a></li>
+</ul>
+</div>
+<div id="history">
+<h3>Historial de la revista</h3>
+<p>La revista nace en 2008 del trabajo mancomunado de estudiantes de la Universidad de Los Andes (Venezuela) y profesores de varias universidades venezolanas. A este esfuerzo se unió en 2010 con mucho entusiasmo el grupo MDCS de la Universidad Complutense de Madrid (España) y de forma no oficial en 2011 otro grupo importante de la Universidad del Norte (Colombia). Adicionalmente, cada número ha sido coordinado por editores invitados de diferentes instituciones iberoamericanas, teniendo como resultado autores, evaluadores y lectores de diferentes países. La revista es el fruto de esta colaboración científica, es decir, del esfuerzo de un grupo heterogéneo de investigadores que han logrado hacer crecer la publicación.A partir de 2015, Disertaciones cuenta con la Universidad del Rosario (Colombia) como nuevo socio editor, que se suma a la lista de instituciones que articulan el proyecto editorial.</p>
+</div>',
+    'pt_BR' => '<div id="focusAndScope">
+<h3>Foco e Escopo</h3>
+<p>O Anuário eletrônico de estudos em Comunicação Social \'Disertaciones\' (ISSN: 1856-9536) é uma publicação digital arbitrada e indexada da <em>Universidad del Rosario </em>(Colômbia), a <em>Universidad de Los Andes</em> (Venezuela) e a <em>Universidad Complutense de Madrid</em> (Espanha), que se distribui gratuitamente pela Internet. A revista edita-se em um volume anual, distribuído em dois números, correspondentes ao primeiro e segundo semestre do ano.</p>
+<p>&nbsp;</p>
+<p>Disertaciones, tem como fim expor trabalhos empíricos de pesquisa inéditos na área temática da Comunicação Social, especificamente nas linhas de: (i) Sociedade e Tecnologias da Informação e a Comunicação; (ii) Comunicação e Política; (iii) Jornalismo; e (iv) Comunicação e Cultura.</p>
+<p>A publicação é editada conjuntamente entre a Universidad del Rosario (Curso de Jornalismo e Opinião Pública), a Universidad de los Andes (Departamento de Comunicação Social, Grupo de Investigação Comunicação, Cultura e Sociedade da ULA Táchira e o Laboratório de Investigação Educativa Simón Rodríguez - LIESR da ULA Trujillo) e a Universidad Complutense de Madrid (Grupo de Mediação Dialética da Comunicação Social - MDCS).&nbsp;Está dirigida principalmente a pesquisadores, estudantes e professores da comunidade acadêmica internacional na área de pesquisa em comunicação, e a sua intenção é influir e colaborar com a difusão científica dos estudos na área.&nbsp;</p>
+</div>
+<div id="peerReviewProcess">
+<h3>Processo de Avaliação pelos Pares</h3>
+<p>Disertaciones avalia as contribuições dos seus autores com a política de revisão por pares acadêmicos, utilizando a técnica do “duplo cego”. Uma vez que é proposto um artigo o Editor envia o manuscrito a dois revisores expertos na área (geralmente externo a instituições de publicação) para submetê-lo a um estrito processo de arbitragem (em caso de controvérsias, um terceiro revisor será atribuído). Cada avaliador pode aceitar ou rejeitar o artículo. Também, no caso de aceita-lo, pode sugerir ao autor mudanças na estrutura e conteúdo do texto. Se este é o caso, se realiza uma segunda ronda de revisão, dando assim ao autor a possibilidade de adaptar o texto aos critérios editoriais do Anuário. O tempo de revisão é do máximo três meses. O Editor da Revista deverá informar ao autor ou aos autores sobre o processo de avaliação e seleção dos artigos.&nbsp;</p>
+</div>
+<div id="openAccessPolicy">
+<h3>Política de Acesso Livre</h3>
+<p>Esta revista provê acesso livre imediato ao seu conteúdo sob o princípio de que fazer disponível gratuitamente investigação ao público apoia a um maior intercâmbio de conhecimento global. O anterior implica que não se geram cobros aos autores pela gestão de seu artigo.&nbsp;</p>
+</div>
+<div id="custom-0">
+<h3>Indexação</h3>
+<p><strong>IB–Índice bibliográfico. </strong>IBN-Publindex de Colciencias <strong>(B)</strong>;</p>
+<p><strong>BBCS–Bases bibliográficas con comité de selección. </strong>Research Data Bases –EBSCO: Communication Source; Red Iberoamericana de Innovación y Conocimiento Científico –REDIB; Dialnet de la Universidad de la Rioja; Red de Revistas Científicas de América Latina y El Caribe; España y Portugal –RedALyC; Directory of Open Access Journals–DOAJ; Red Iberoamericana de Innovación y Conocimiento Científico –REDIB; Clasificación Integrada de Revistas Científicas<strong>–</strong>CIRC (Ciencias humanas–D, ciencias sociales–C).</p>
+<p><strong>Bases de datos bibliográficas</strong>. Google Scholar; Latindex de la Universidad Nacional Autónoma de México –UNAM–; Índice de Revistas Venezolanas de Ciencia y Teconología (Revencyt); Red de Bibliotecas Universitarias (Rebiun); Red Iberoamericana de Revistas de Comunicación y Cultura; Ulrich\'s International Periodicals Directory; Scilit;&nbsp; European Reference Index for the Humanities–ERIH; Electronic Journals Library (Elektronische Zeitschriftenbibliothek o EZB); Vlex; AmeliCA.</p>
+</div>
+<div id="custom-1">
+<h3>Políticas éticas</h3>
+<p><em>Disertaciones </em>adere-se às políticas éticas das revistas da Universidad del Rosario (Colômbia):</p>
+<p>&nbsp;</p>
+<p><strong>Direitos de autor:</strong></p>
+<p>Os manuscritos postulados a <strong>Disertaciones</strong> devem ser originais e inéditos e não devem estar simultaneamente em processo de publicação em outras revistas, compilações ou qualquer outro meio de publicação. Os direitos de autor serão da Universidad del Rosario, a Universidad de los Andes e a Universidad Complutense de Madrid. Quando o autor queira publicar o manuscrito em outra publicação, deverá pedir a <strong>Disertaciones</strong> as permissões correspondentes. De igual forma, quando a revista esteja interessada em publicar artigos que já tenham sido publicados em outras revistas, procederá a solicitar as permissões correspondentes, na editora onde se realizou a primeira publicação.</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>Responsabilidades do autor:</strong></p>
+<p>Os autores devem postular os seus manuscritos e resenhas de livro a <strong><em>Disertaciones</em></strong> através da plataforma do Open Journal System (OJS).</p>
+<p>Após recebido o manuscrito, a Revista lhe enviará uma carta de autorização par publicação ao autor, na qual ele declara que a obra é original e que não tem sido editada por nenhuma outra revista; a remitirá à Revista com a sua assinatura. Respeitando, da mesma forma, os direitos de propriedade intelectual de terceiros, assim como a devida permissão de gráficas, tabelas, fotografias, diagramas. A qualidade, a rigorosidade investigativa e as ideias expressadas no artigo são de inteira responsabilidade do autor. O autor aceitará que o manuscrito seja avaliado por pares acadêmicos, nacionais ou internacionais em condições de anonimato, é dizer: o autor não sabe quem são os avaliadores do manuscrito e os avaliadores não sabem quem é o autor do manuscrito. Ao mesmo tempo, compromete-se a enviar as modificações sugeridas pelos avaliadores dentro dos tempos estabelecidos pela Revista.</p>
+<p>Quando os autores não tomem em conta as sugestões dos avaliadores, deverão enviar uma carta explicando as razões principais da sua decisão. Em tudo caso, o editor toma as decisões finais sobre a publicação dos manuscritos, uma vez que o processo de avaliação tenha terminado. <strong><em>Disertaciones</em></strong> comunicará ao autor se o artigo tem sido aprovado, aprovado com modificações ou rejeitado. A Revista também pode pedi-lhe ao autor que revise o manuscrito e envie uma nova versão. Nesse caso, se submeterá o artigo a uma nova revisão de pares. Após receber a versão final do manuscrito, D<strong><em>isertaciones</em></strong> tomará a decisão final sobre a sua publicação, se lhe informará ao autor a aprovação e a data estimada de publicação.</p>
+<p><strong><em>Disertaciones </em></strong>contatará aos avaliadores de um manuscrito se, a critério da equipe editorial, este cumpre com as condições básicas e com os critérios exigidos para a avaliação. Em caso de que o manuscrito não cumpra com as exigências, a Revista lhe informará ao autor as razões pelas quais não procederam com a avaliação. Depois desta primeira revisão —e se cumpre com as condições exigidas—, a equipe editorial definirá os manuscritos que se submeterão ao processo de arbitragem. Neste momento se contatará às pessoas idóneas para realizar a arbitragem. O resultado da avaliação será enviado ao autor em um prazo máximo de seis meses. Se o processo de avaliação tarda mais do habitual, o editor se comunicará com o autor para informa-lo.</p>
+<p>&nbsp;</p>
+<p><strong>Sobre os avaliadores:</strong></p>
+<p>Os avaliadores selecionados por <strong><em>Disertaciones</em></strong> podem ser internos ou externos às universidades editoras e colaboradoras, e nacionais ou internacionais. Em qualquer caso, cada manuscrito que tem passado pelo filtro inicial da equipe editorial sempre será avaliado, como mínimo, por um acadêmico externo. Serão pessoas que não tenham conflitos de interesse em quanto aos autores dos manuscritos. Se existe alguma dúvida ao respeito, se buscará outro avaliador. Os nomes dos autores como os dos avaliadores serão anónimos durante este processo.</p>
+<p>Os avaliadores poderão sugerir mudanças frente a elementos de caráter teórico, metodológico e temático dos manuscritos. Para emitir o seu conceito se guiarão pelo formato de avaliação da Revista que contém uma série de perguntas rigorosamente selecionadas. Os avaliadores poderão aprovar, aprovar com correções ou não aprovar os manuscritos para a sua publicação.</p>
+<p>&nbsp;</p>
+<p><strong>Responsabilidades editoriais:</strong></p>
+<p>A equipe editorial de <strong><em>Disertaciones</em></strong> é responsável das políticas editoriais. Também é responsável das normas editoriais e do cumprimento destas em cada publicação. Publicará correções sobre erratas, aclarações e retificações, se for oportuno, na versão digital da Revista.</p>
+<p>A equipe editorial é responsável de todo o processo dos manuscritos que se postulam, assim como de manter a confidencialidade dos manuscritos no processo de revisão por pares até a publicação e quando os manuscritos são retirados ou rejeitados.</p>
+<p>Quando o número sai publicado o editor deve encarregar-se da difusão e da distribuição do número entre as pessoas e instituições com as que tem adquirido compromisso de troca e com os autores dos artigos.&nbsp;</p>
+</div>
+<div id="custom-2">
+<h3>Direitos de autor</h3>
+<p>Os autores que publicam na revista conservarão os direitos sobre a sua obra, o qual implica que <strong><em>Disertaciones</em></strong> não os retém e os autores podem dispor dela como estimem conveniente. No entanto, é necessário que, de republicar o texto m qualquer medida, o ou os autores citem a <strong><em>Disertaciones</em></strong> como o meio onde se publicou a versão original.&nbsp;</p>
+</div>
+<div id="custom-3">
+<h3>Política antiplágio</h3>
+<p><strong><em>Disertaciones</em></strong> verificará a originalidade de todos os textos recebidos, fazendo uso de diferentes meios, entre estes, a ferramenta Turnitin. Ao enviar o seu texto, o autor aceita que se examine o documento com o fim de evitar plágio e promover assim a integridade acadêmica. <strong><em>Disertaciones </em></strong>acolhe-se às políticas do <a href="http://publicationethics.org/members/anuario-electronico-de-estudios-en-comunicacion-social-disertaciones" target="_blank" rel="noopener">Committee on Publication Ethics - COPE</a>&nbsp;(JM12058) com o fim de manter a transparência e as boas práticas, prevenir condutas inapropriadas na publicação de artigos e impulsar uma produção acadêmica de alta qualidade.&nbsp;</p>
+</div>
+<div id="custom-4">
+<h3>Licença de conteúdo</h3>
+<p>Todos os documentos publicados nesta revista são distribuídos sob a seguinte licença:&nbsp;<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/ve/" rel="license">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 3.0 Venezuela</a>.</p>
+</div>
+<div id="sponsors">
+<h3>Sponsors</h3>
+<ul>
+<li class="show"><a href="http://urosario.edu.co">Universidad del Rosario (Colombia)</a></li>
+<li class="show"><a href="http://www.ula.ve/">Universidad de los Andes (Venezuela)</a></li>
+<li class="show"><a href="http://ucm.es/">Universidad Complutense de Madrid (España)</a></li>
+</ul>
+</div>',
   ),
   'editorialTeam' => 
   array (
-    'en_US' => '<div id="group"><h4>Editors</h4><p>Carlos Arcila Calderón, University of Salamanca, España</p><p>Leandro Peñaranda Contreras, Colombia</p><p>José Luis Piñuel Raigada, España</p><h4>Assistant Editor</h4><p>Eduar Barbosa Caro, Colombia</p><h4>Reviews Editor</h4><p>Francisco Cabezuelo-Lorenzo, España</p><h4>Editorial Assistant</h4><p>David Blanco-Herrero, España</p><h4>Editorial Coordinator</h4><p>Claudia Luque Molano, Colombia</p><h4>Editorial Board</h4><p>José Abdelnour Nocera, Reino Unido</p><p>Alberto Ardèvol-Abreu, España</p><p>Daniel Barredo Ibáñez, Colombia</p><p>Desiderio Blanco, Perú</p><p>Francisco Cabezuelo Lorenzo, España</p><p>María Dolores Cáceres Zapatero, España</p><p>Mabel Calderín Cruz, Venezuela, República Bolivariana de</p><p>Carolina Campalans, Colombia</p><p>Joao Canavilhas, Portugal</p><p>Andrés Cañizález, Venezuela, República Bolivariana de</p><p>Anabela Carvalho, Portugal</p><p>Cosette Castro, Brasil</p><p>Carlos Del Valle Rojas</p><p>Philippe Dumas, Francia</p><p>Argelia Ferrer, Venezuela, República Bolivariana de</p><p>Heidi Figueroa Sarriera, Puerto Rico</p><p>Juan Antonio Gaitán Moya, España</p><p>Gino Gramaccia, Francia</p><p>Carlos Guzmán, Venezuela, República Bolivariana de</p><p>Heloiza Herscovitz, Estados Unidos</p><p>Juan José Igartúa Perosanz, España</p><p>Gabriel Kaplún, Uruguay</p><p>Margarida Krohling Kunsch, Brasil</p><p>Herly Quiñónez, Venezuela, República Bolivariana de</p><p>Virginia Linares Rodríguez, España</p><p>David López Jiménez, España</p><p>José Carlos Lozano, Estados Unidos</p><p>Jairo Lugo-Ocando, Qatar</p><p>Paolo Mancini, Italia</p><p>José Manuel De Pablos, España</p><p>Moisés Martins, Portugal</p><p>Dr. Carlos Muñiz Muriel, México</p><p>Isaac Nahon-Serfaty, Canadá</p><p>Raúl Fuentes Navarro, México</p><p>Fernando Oliveira Paulino, Brasil</p><p>Martín Oller Alonso, Suiza</p><p>Guillermo Orozco, México</p><p>Ángel Páez, Venezuela, República Bolivariana de</p><p>James Painter, Reino Unido</p><p>María Pérez Yglesias, Costa Rica</p><p>Denis Porto Reno, Brasil</p><p>Giuseppe Richeri, Suiza</p><p>Profesor Hernando Rojas</p><p>José A. Ruiz San Román, España</p><p>Fernando Ruiz, Argentina</p><p>Sandra Lucía Ruiz Moreno, Colombia</p><p>Hilda María Saladrigas Medina, Cuba</p><p>Pablo Schleifer, Argentina</p><p>Philip Schlesinger, Reino Unido</p><p>Gaëtan Tremblay, Canadá</p><p>Thomas Tufte, Reino Unido</p><p>Raisa Urribarri, Venezuela, República Bolivariana de</p><p>Beatrice Vacher, Francia</p><p>Dr. Sebastián Valenzuela, Chile</p><p>María Immacolata Vassallo de Lopes, Brasil</p><p>Eduardo Villanueva Mansilla, Perú</p><p>Silvio Waisbord, Estados Unidos</p><p>Lyudmyla Yezers\'ka, Perú</p><h4>Guest Editor Vol. 1, Issue 1</h4><p>Carlos Arcila Calderón, University of Salamanca, España</p><h4>Guest Editor Vol. 2, Issue 1</h4><p>Raisa Urribarri, Venezuela, República Bolivariana de</p><h4>Guest Editor Vol. 2, Issue 2</h4><p>Claudia Cavallin, Venezuela, República Bolivariana de</p><h4>Guest Editors Vol. 3, Issue 1</h4><p>Otto Rosales Cárdenas, Venezuela, República Bolivariana de</p><p>Fania Castillo, Venezuela, República Bolivariana de</p><h4>Guest Editor Vol. 3, Issue 2</h4><p>Argelia Ferrer, Venezuela, República Bolivariana de</p><h4>Guest Editors Vol. 4, Issue 1</h4><p>Raquel Álvarez de Flores, Venezuela, República Bolivariana de</p><p>Marlene Otero, Venezuela, República Bolivariana de</p><h4>Guest Editor Vol. 4, Issue 2</h4><p>Elías Said, Colombia</p><h4>Guest Editor Vol. 5, Issue 1</h4><p>Raisa Urribarri, Venezuela, República Bolivariana de</p><h4>Guest Editors Vol. 5, Issue 2</h4><p>Virginia Linares Rodríguez, España</p><p>José A. Ruiz San Román, España</p><h4>Guest Editor Vol. 6, Issue 1</h4><p>José Luis Piñuel Raigada, España</p><h4>Guest Editors Vol. 6, Issue 2</h4><p>Acianela Montes de Oca</p><p>Carlos Arcila Calderón, University of Salamanca, España</p><h4>Guest Editor Vol. 7, Issue 1</h4><p>Dr. Carlos Muñiz Muriel, México</p><h4>Guest Editors Vol. 7, Issue 2</h4><p>María Dolores Cáceres Zapatero, España</p><p>Juan Antonio Gaitán Moya, España</p><h4>Guest Editor Vol. 8, Issue 1</h4><p>Daniel Barredo Ibáñez, Colombia</p><h4>Guest Editor Vol. 8, Issue 2</h4><p>Andrés Scherman Teitelboim, Chile</p><h4>Guest Editor Vol. 9, Issue 1</h4><p>María Luisa Humanes, España</p><h4>Guest Editors Vol. 9, Issue 2</h4><p>Manuel Martínez Nicolás, España</p><p>Miguel Vicente Mariño, España</p><h4>Guest Editor Vol. 10, Issue 1</h4><p>Eloísa Nos Aldás, España</p></div>',
-    'es_ES' => '<div id="group"><h4>Editores</h4><p>Carlos Arcila Calderón, Universidad de Salamanca, España</p><p>Leandro Peñaranda Contreras, Universidad del Rosario, Colombia</p><p>José Luis Piñuel Raigada, Universidad Complutense de Madrid, España</p><h4>Editor adjunto</h4><p>Eduar Barbosa Caro, Universidad del Rosario, Colombia</p><h4>Editor de reseñas</h4><p>Francisco Cabezuelo-Lorenzo, Universidad Complutense de Madrid, España</p><h4>Asistente editorial</h4><p>David Blanco-Herrero, Universidad de Salamanca, España</p><h4>Coordinador editorial</h4><p>Claudia Luque Molano, Coordinadora de publicaciones periódicas
-Editorial
-Universidad del Rosario, Colombia</p><h4>Consejo editorial</h4><p>José Abdelnour Nocera, University of West London, Reino Unido</p><p>Alberto Ardèvol-Abreu, Universidad de La Laguna, España</p><p>Daniel Barredo Ibáñez, Universidad del Rosario, Colombia</p><p>Desiderio Blanco, Universidad de Lima, Perú</p><p>Francisco Cabezuelo Lorenzo, Universidad Complutense de Madrid, España</p><p>María Dolores Cáceres Zapatero, Universidad Complutense de Madrid, España</p><p>Mabel Calderín Cruz, Universidad Católica Andrés Bello, Venezuela, República Bolivariana de</p><p>Carolina Campalans, Universidad del Rosario, Colombia</p><p>Joao Canavilhas, Universidade de Beira Interior, Portugal</p><p>Andrés Cañizález, Universidad Católica Andrés Bello, Venezuela, República Bolivariana de</p><p>Anabela Carvalho, Universidade do Minho, Portugal</p><p>Cosette Castro, Universidad de Brasilia, Brasil</p><p>Carlos Del Valle Rojas, UNIVERSIDAD DE LA FRONTERA</p><p>Philippe Dumas, Université de Toulon, Francia</p><p>Argelia Ferrer, Universidad de los Andes, Venezuela, República Bolivariana de</p><p>Heidi Figueroa Sarriera, Departamento de Psicología
-Facultad de Ciencias Sociales
-Recinto de Río Piedras
-Universidad de Puerto Rico, Puerto Rico</p><p>Juan Antonio Gaitán Moya, Universidad Complutense de Madrid, España</p><p>Gino Gramaccia, Universidad de Bordeaux 1, Francia</p><p>Carlos Guzmán, Universidad Central de Venezuela, Venezuela, República Bolivariana de</p><p>Heloiza Herscovitz, California State University – Long Beach, Estados Unidos</p><p>Juan José Igartúa Perosanz, Universidad de Salamanca, España</p><p>Gabriel Kaplún, Universidad de la República, Uruguay</p><p>Margarida Krohling Kunsch, Universidade de São Paulo, Brasil</p><p>Herly Quiñónez, Universidad de los Andes, Venezuela, República Bolivariana de</p><p>Virginia Linares Rodríguez, Universidad Internacional de La Rioja, España</p><p>David López Jiménez, GITICE. Universidad de Huelva, España</p><p>José Carlos Lozano, Universidad Internacional de Texas A&amp;M, Estados Unidos</p><p>Jairo Lugo-Ocando, Northwestern University in Qatar, Qatar</p><p>Paolo Mancini, Università degli Studi di Perugia, Italia</p><p>José Manuel De Pablos, Universidad de la Laguna, España</p><p>Moisés Martins, Universidad do Minho, Portugal</p><p>Dr. Carlos Muñiz Muriel, Universidad Autónoma de Nuevo León, México</p><p>Isaac Nahon-Serfaty, University of Ottawa, Canadá</p><p>Raúl Fuentes Navarro, Universidad Jesuita de Guadalajara, México</p><p>Fernando Oliveira Paulino, Universidad de Brasilia, Brasil</p><p>Martín Oller Alonso, Escuela Superior Politécnica de Chimborazo (Ecuador, Suiza</p><p>Guillermo Orozco, Universidad de Guadalajara, México</p><p>Ángel Páez, Universidad del Zulia, Venezuela, República Bolivariana de</p><p>James Painter, University of Oxford, Reino Unido</p><p>María Pérez Yglesias, Universidad de Costa Rica, Costa Rica</p><p>Denis Porto Reno, Universidad Estadual Paulista, Brasil</p><p>Giuseppe Richeri, Università della Svizzera italiana, Suiza</p><p>Profesor Hernando Rojas, University of Wisconsin Madison</p><p>José A. Ruiz San Román, Universidad Complutense de Madrid, España</p><p>Fernando Ruiz, Universidad Austral, Argentina</p><p>Sandra Lucía Ruiz Moreno, Fundación Universitaria Panamericana, Colombia</p><p>Hilda María Saladrigas Medina, Facultad de Comunicación. Universidad de La Habana, Cuba</p><p>Pablo Schleifer, Universidad del Comahue, Argentina</p><p>Philip Schlesinger, University of Glasgow, Reino Unido</p><p>Gaëtan Tremblay, Universidad de Quebec, Canadá</p><p>Thomas Tufte, University of Leicester, Reino Unido</p><p>Raisa Urribarri, Universidad de los Andes, Venezuela, República Bolivariana de</p><p>Beatrice Vacher, École Nationale Supérieure des Mines d\'Albi Carmaux, Francia</p><p>Dr. Sebastián Valenzuela, Chile</p><p>María Immacolata Vassallo de Lopes, Universidade de Sao Paulo, Brasil</p><p>Eduardo Villanueva Mansilla, Pontificia Universidad Católica de Perú, Perú</p><p>Silvio Waisbord, George Washington University, Estados Unidos</p><p>Lyudmyla Yezers\'ka, Universidad de Piura, Perú</p><h4>Editor Invitado Vol. 1, N.º 1</h4><p>Carlos Arcila Calderón, Universidad de Salamanca, España</p><h4>Editora Invitada Vol. 2, N.º 1</h4><p>Raisa Urribarri, Universidad de los Andes, Venezuela, República Bolivariana de</p><h4>Editora Invitada Vol. 2, N.º 2</h4><p>Claudia Cavallin, Universidad Simón Bolivar, Venezuela, República Bolivariana de</p><h4>Editores Invitados Vol. 3, N.º 1</h4><p>Otto Rosales Cárdenas, Universidad de Los Andes (ULA), Venezuela, República Bolivariana de</p><p>Fania Castillo, Universidad de Los Andes (ULA), Venezuela, República Bolivariana de</p><h4>Editora Invitada Vol. 3, N.º 2</h4><p>Argelia Ferrer, Universidad de los Andes, Venezuela, República Bolivariana de</p><h4>Editoras Invitadas Vol. 4, N.º 1</h4><p>Raquel Álvarez de Flores, CEFI - Universidad de Los Andes, Venezuela, República Bolivariana de</p><p>Marlene Otero, Universidad de Los Andes, Venezuela, República Bolivariana de</p><h4>Editor Invitado Vol. 4, N.º 2</h4><p>Elías Said, Universidad del Norte, Colombia</p><h4>Editora Invitada Vol. 5, N.º 1</h4><p>Raisa Urribarri, Universidad de los Andes, Venezuela, República Bolivariana de</p><h4>Editores Invitados Vol. 5, N.º 2</h4><p>Virginia Linares Rodríguez, Universidad Internacional de La Rioja, España</p><p>José A. Ruiz San Román, Universidad Complutense de Madrid, España</p><h4>Editor Invitado Vol. 6, N.º 1</h4><p>José Luis Piñuel Raigada, Universidad Complutense de Madrid, España</p><h4>Editores Invitados Vol. 6, N.º 2</h4><p>Acianela Montes de Oca, Universidad Católica Andrés Bello</p><p>Carlos Arcila Calderón, Universidad de Salamanca, España</p><h4>Editor Invitado Vol. 7, N.º 1</h4><p>Dr. Carlos Muñiz Muriel, Universidad Autónoma de Nuevo León, México</p><h4>Editores Invitados Vol. 7, N.º 2</h4><p>María Dolores Cáceres Zapatero, Universidad Complutense de Madrid, España</p><p>Juan Antonio Gaitán Moya, Universidad Complutense de Madrid, España</p><h4>Editor Invitado Vol. 8, N.º 1</h4><p>Daniel Barredo Ibáñez, Universidad del Rosario, Colombia</p><h4>Editor Invitado Vol. 8, N.º 2</h4><p>Andrés Scherman Teitelboim, Universidad Diego Portales, Chile</p><h4>Editora Invitada Vol. 9, N.º 1</h4><p>María Luisa Humanes, Universidad Rey Juan Carlos, España</p><h4>Editores Invitados Vol. 9, N.º 2</h4><p>Manuel Martínez Nicolás, Universidad Rey Juan Carlos (Madrid, España), España</p><p>Miguel Vicente Mariño, Universidad de Valladolid, España</p><h4>Editora Invitada Vol. 10, N.º 1</h4><p>Eloísa Nos Aldás, Universitat Jaume I, España</p></div>',
-    'pt_BR' => '<div id="group"><h4>Editores</h4><p>Carlos Arcila Calderón, España</p><p>Leandro Peñaranda Contreras, Colombia</p><p>José Luis Piñuel Raigada, España</p><h4>Editor adjunto</h4><p>Eduar Barbosa Caro, Colombia</p><h4>Editor de Revisões</h4><p>Francisco Cabezuelo-Lorenzo, España</p><h4>Asistente editorial</h4><p>David Blanco-Herrero, España</p><h4>Coordenador Editorial</h4><p>Claudia Luque Molano, Colombia</p><h4>Conselho Editorial</h4><p>José Abdelnour Nocera, Reino Unido</p><p>Alberto Ardèvol-Abreu, España</p><p>Daniel Barredo Ibáñez, Colombia</p><p>Desiderio Blanco, Perú</p><p>Francisco Cabezuelo Lorenzo, España</p><p>María Dolores Cáceres Zapatero, España</p><p>Mabel Calderín Cruz, Venezuela, República Bolivariana de</p><p>Carolina Campalans, Colombia</p><p>Joao Canavilhas, Portugal</p><p>Andrés Cañizález, Venezuela, República Bolivariana de</p><p>Anabela Carvalho, Portugal</p><p>Cosette Castro, Brasil</p><p>Carlos Del Valle Rojas</p><p>Philippe Dumas, Francia</p><p>Argelia Ferrer, Venezuela, República Bolivariana de</p><p>Heidi Figueroa Sarriera, Puerto Rico</p><p>Juan Antonio Gaitán Moya, España</p><p>Gino Gramaccia, Francia</p><p>Carlos Guzmán, Venezuela, República Bolivariana de</p><p>Heloiza Herscovitz, Estados Unidos</p><p>Juan José Igartúa Perosanz, España</p><p>Gabriel Kaplún, Uruguay</p><p>Margarida Krohling Kunsch, Brasil</p><p>Herly Quiñónez, Venezuela, República Bolivariana de</p><p>Virginia Linares Rodríguez, España</p><p>David López Jiménez, España</p><p>José Carlos Lozano, Estados Unidos</p><p>Jairo Lugo-Ocando, Qatar</p><p>Paolo Mancini, Italia</p><p>José Manuel De Pablos, España</p><p>Moisés Martins, Portugal</p><p>Dr. Carlos Muñiz Muriel, México</p><p>Isaac Nahon-Serfaty, Canadá</p><p>Raúl Fuentes Navarro, México</p><p>Fernando Oliveira Paulino, Brasil</p><p>Martín Oller Alonso, Suiza</p><p>Guillermo Orozco, México</p><p>Ángel Páez, Venezuela, República Bolivariana de</p><p>James Painter, Reino Unido</p><p>María Pérez Yglesias, Costa Rica</p><p>Denis Porto Reno, Brasil</p><p>Giuseppe Richeri, Suiza</p><p>Profesor Hernando Rojas</p><p>José A. Ruiz San Román, España</p><p>Fernando Ruiz, Argentina</p><p>Sandra Lucía Ruiz Moreno, Colombia</p><p>Hilda María Saladrigas Medina, Cuba</p><p>Pablo Schleifer, Argentina</p><p>Philip Schlesinger, Reino Unido</p><p>Gaëtan Tremblay, Canadá</p><p>Thomas Tufte, Reino Unido</p><p>Raisa Urribarri, Venezuela, República Bolivariana de</p><p>Beatrice Vacher, Francia</p><p>Dr. Sebastián Valenzuela, Chile</p><p>María Immacolata Vassallo de Lopes, Brasil</p><p>Eduardo Villanueva Mansilla, Perú</p><p>Silvio Waisbord, Estados Unidos</p><p>Lyudmyla Yezers\'ka, Perú</p><h4>Editor Convidado Vol. 1(1)</h4><p>Carlos Arcila Calderón, España</p><h4>Editor Convidado Vol. 2(1)</h4><p>Raisa Urribarri, Venezuela, República Bolivariana de</p><h4>Editor Convidado Vol. 2(2)</h4><p>Claudia Cavallin, Venezuela, República Bolivariana de</p><h4>Editor Convidado Vol. 3(1)</h4><p>Otto Rosales Cárdenas, Venezuela, República Bolivariana de</p><p>Fania Castillo, Venezuela, República Bolivariana de</p><h4>Editor Convidado Vol. 3(2)</h4><p>Argelia Ferrer, Venezuela, República Bolivariana de</p><h4>Editores Convidados Vol. 4(1)</h4><p>Raquel Álvarez de Flores, Venezuela, República Bolivariana de</p><p>Marlene Otero, Venezuela, República Bolivariana de</p><h4>Editor Convidado Vol. 4(2)</h4><p>Elías Said, Colombia</p><h4>Editor Convidado Vol. 5(1)</h4><p>Raisa Urribarri, Venezuela, República Bolivariana de</p><h4>Editores Convidados Vol. 5(2)</h4><p>Virginia Linares Rodríguez, España</p><p>José A. Ruiz San Román, España</p><h4>Editor Convidado Vol. 6(1)</h4><p>José Luis Piñuel Raigada, España</p><h4>Editores Convidados Vol. 6(2)</h4><p>Acianela Montes de Oca</p><p>Carlos Arcila Calderón, España</p><h4>Editor Convidado Vol. 7(1)</h4><p>Dr. Carlos Muñiz Muriel, México</p><h4>Editores Convidados Vol. 7(2)</h4><p>María Dolores Cáceres Zapatero, España</p><p>Juan Antonio Gaitán Moya, España</p><h4>Editor Convidado Vol. 8(1)</h4><p>Daniel Barredo Ibáñez, Colombia</p><h4>Editor Convidado Vol. 8(2)</h4><p>Andrés Scherman Teitelboim, Chile</p><h4>Editor Convidado Vol. 9(1)</h4><p>María Luisa Humanes, España</p><h4>Editores Convidados Vol. 9(2)</h4><p>Manuel Martínez Nicolás, España</p><p>Miguel Vicente Mariño, España</p><h4>Editor Convidado Vol. 10(1)</h4><p>Eloísa Nos Aldás, España</p></div>',
+    'en_US' => '<div id="group">
+<h4>Editors</h4>
+<p>Carlos Arcila Calderón, University of Salamanca, España</p>
+<p>Leandro Peñaranda Contreras, Colombia</p>
+<p>José Luis Piñuel Raigada, España</p>
+<h4>Assistant Editor</h4>
+<p>Eduar Barbosa Caro, Colombia</p>
+<h4>Reviews Editor</h4>
+<p>Francisco Cabezuelo-Lorenzo, España</p>
+<h4>Editorial Assistant</h4>
+<p>David Blanco-Herrero, España</p>
+<h4>Editorial Coordinator</h4>
+<p>Claudia Luque Molano, Colombia</p>
+<h4>Editorial Board</h4>
+<p>José Abdelnour Nocera, Reino Unido</p>
+<p>Alberto Ardèvol-Abreu, España</p>
+<p>Daniel Barredo Ibáñez, Colombia</p>
+<p>Desiderio Blanco, Perú</p>
+<p>Francisco Cabezuelo Lorenzo, España</p>
+<p>María Dolores Cáceres Zapatero, España</p>
+<p>Mabel Calderín Cruz, Venezuela, República Bolivariana de</p>
+<p>Carolina Campalans, Colombia</p>
+<p>Joao Canavilhas, Portugal</p>
+<p>Andrés Cañizález, Venezuela, República Bolivariana de</p>
+<p>Anabela Carvalho, Portugal</p>
+<p>Cosette Castro, Brasil</p>
+<p>Carlos Del Valle Rojas</p>
+<p>Philippe Dumas, Francia</p>
+<p>Argelia Ferrer, Venezuela, República Bolivariana de</p>
+<p>Heidi Figueroa Sarriera, Puerto Rico</p>
+<p>Juan Antonio Gaitán Moya, España</p>
+<p>Gino Gramaccia, Francia</p>
+<p>Carlos Guzmán, Venezuela, República Bolivariana de</p>
+<p>Heloiza Herscovitz, Estados Unidos</p>
+<p>Juan José Igartúa Perosanz, España</p>
+<p>Gabriel Kaplún, Uruguay</p>
+<p>Margarida Krohling Kunsch, Brasil</p>
+<p>Herly Quiñónez, Venezuela, República Bolivariana de</p>
+<p>Virginia Linares Rodríguez, España</p>
+<p>David López Jiménez, España</p>
+<p>José Carlos Lozano, Estados Unidos</p>
+<p>Jairo Lugo-Ocando, Qatar</p>
+<p>Paolo Mancini, Italia</p>
+<p>José Manuel De Pablos, España</p>
+<p>Moisés Martins, Portugal</p>
+<p>Dr. Carlos Muñiz Muriel, México</p>
+<p>Isaac Nahon-Serfaty, Canadá</p>
+<p>Raúl Fuentes Navarro, México</p>
+<p>Fernando Oliveira Paulino, Brasil</p>
+<p>Martín Oller Alonso, Suiza</p>
+<p>Guillermo Orozco, México</p>
+<p>Ángel Páez, Venezuela, República Bolivariana de</p>
+<p>James Painter, Reino Unido</p>
+<p>María Pérez Yglesias, Costa Rica</p>
+<p>Denis Porto Reno, Brasil</p>
+<p>Giuseppe Richeri, Suiza</p>
+<p>Profesor Hernando Rojas</p>
+<p>José A. Ruiz San Román, España</p>
+<p>Fernando Ruiz, Argentina</p>
+<p>Sandra Lucía Ruiz Moreno, Colombia</p>
+<p>Hilda María Saladrigas Medina, Cuba</p>
+<p>Pablo Schleifer, Argentina</p>
+<p>Philip Schlesinger, Reino Unido</p>
+<p>Gaëtan Tremblay, Canadá</p>
+<p>Thomas Tufte, Reino Unido</p>
+<p>Raisa Urribarri, Venezuela, República Bolivariana de</p>
+<p>Beatrice Vacher, Francia</p>
+<p>Dr. Sebastián Valenzuela, Chile</p>
+<p>María Immacolata Vassallo de Lopes, Brasil</p>
+<p>Eduardo Villanueva Mansilla, Perú</p>
+<p>Silvio Waisbord, Estados Unidos</p>
+<p>Lyudmyla Yezers\'ka, Perú</p>
+<h4>Guest Editor Vol. 1, Issue 1</h4>
+<p>Carlos Arcila Calderón, University of Salamanca, España</p>
+<h4>Guest Editor Vol. 2, Issue 1</h4>
+<p>Raisa Urribarri, Venezuela, República Bolivariana de</p>
+<h4>Guest Editor Vol. 2, Issue 2</h4>
+<p>Claudia Cavallin, Venezuela, República Bolivariana de</p>
+<h4>Guest Editors Vol. 3, Issue 1</h4>
+<p>Otto Rosales Cárdenas, Venezuela, República Bolivariana de</p>
+<p>Fania Castillo, Venezuela, República Bolivariana de</p>
+<h4>Guest Editor Vol. 3, Issue 2</h4>
+<p>Argelia Ferrer, Venezuela, República Bolivariana de</p>
+<h4>Guest Editors Vol. 4, Issue 1</h4>
+<p>Raquel Álvarez de Flores, Venezuela, República Bolivariana de</p>
+<p>Marlene Otero, Venezuela, República Bolivariana de</p>
+<h4>Guest Editor Vol. 4, Issue 2</h4>
+<p>Elías Said, Colombia</p>
+<h4>Guest Editor Vol. 5, Issue 1</h4>
+<p>Raisa Urribarri, Venezuela, República Bolivariana de</p>
+<h4>Guest Editors Vol. 5, Issue 2</h4>
+<p>Virginia Linares Rodríguez, España</p>
+<p>José A. Ruiz San Román, España</p>
+<h4>Guest Editor Vol. 6, Issue 1</h4>
+<p>José Luis Piñuel Raigada, España</p>
+<h4>Guest Editors Vol. 6, Issue 2</h4>
+<p>Acianela Montes de Oca</p>
+<p>Carlos Arcila Calderón, University of Salamanca, España</p>
+<h4>Guest Editor Vol. 7, Issue 1</h4>
+<p>Dr. Carlos Muñiz Muriel, México</p>
+<h4>Guest Editors Vol. 7, Issue 2</h4>
+<p>María Dolores Cáceres Zapatero, España</p>
+<p>Juan Antonio Gaitán Moya, España</p>
+<h4>Guest Editor Vol. 8, Issue 1</h4>
+<p>Daniel Barredo Ibáñez, Colombia</p>
+<h4>Guest Editor Vol. 8, Issue 2</h4>
+<p>Andrés Scherman Teitelboim, Chile</p>
+<h4>Guest Editor Vol. 9, Issue 1</h4>
+<p>María Luisa Humanes, España</p>
+<h4>Guest Editors Vol. 9, Issue 2</h4>
+<p>Manuel Martínez Nicolás, España</p>
+<p>Miguel Vicente Mariño, España</p>
+<h4>Guest Editor Vol. 10, Issue 1</h4>
+<p>Eloísa Nos Aldás, España</p>
+</div>',
+    'es_ES' => '<div id="group">
+<h4>Editores</h4>
+<p>Carlos Arcila Calderón, Universidad de Salamanca, España</p>
+<p>Leandro Peñaranda Contreras, Universidad del Rosario, Colombia</p>
+<p>José Luis Piñuel Raigada, Universidad Complutense de Madrid, España</p>
+<h4>Editor adjunto</h4>
+<p>Eduar Barbosa Caro, Universidad del Rosario, Colombia</p>
+<h4>Editor de reseñas</h4>
+<p>Francisco Cabezuelo-Lorenzo, Universidad Complutense de Madrid, España</p>
+<h4>Asistente editorial</h4>
+<p>David Blanco-Herrero, Universidad de Salamanca, España</p>
+<h4>Coordinador editorial</h4>
+<p>Claudia Luque Molano, Coordinadora de publicaciones periódicas Editorial Universidad del Rosario, Colombia</p>
+<h4>Consejo editorial</h4>
+<p>José Abdelnour Nocera, University of West London, Reino Unido</p>
+<p>Alberto Ardèvol-Abreu, Universidad de La Laguna, España</p>
+<p>Daniel Barredo Ibáñez, Universidad del Rosario, Colombia</p>
+<p>Desiderio Blanco, Universidad de Lima, Perú</p>
+<p>Francisco Cabezuelo Lorenzo, Universidad Complutense de Madrid, España</p>
+<p>María Dolores Cáceres Zapatero, Universidad Complutense de Madrid, España</p>
+<p>Mabel Calderín Cruz, Universidad Católica Andrés Bello, Venezuela, República Bolivariana de</p>
+<p>Carolina Campalans, Universidad del Rosario, Colombia</p>
+<p>Joao Canavilhas, Universidade de Beira Interior, Portugal</p>
+<p>Andrés Cañizález, Universidad Católica Andrés Bello, Venezuela, República Bolivariana de</p>
+<p>Anabela Carvalho, Universidade do Minho, Portugal</p>
+<p>Cosette Castro, Universidad de Brasilia, Brasil</p>
+<p>Carlos Del Valle Rojas, UNIVERSIDAD DE LA FRONTERA</p>
+<p>Philippe Dumas, Université de Toulon, Francia</p>
+<p>Argelia Ferrer, Universidad de los Andes, Venezuela, República Bolivariana de</p>
+<p>Heidi Figueroa Sarriera, Departamento de Psicología Facultad de Ciencias Sociales Recinto de Río Piedras Universidad de Puerto Rico, Puerto Rico</p>
+<p>Juan Antonio Gaitán Moya, Universidad Complutense de Madrid, España</p>
+<p>Gino Gramaccia, Universidad de Bordeaux 1, Francia</p>
+<p>Carlos Guzmán, Universidad Central de Venezuela, Venezuela, República Bolivariana de</p>
+<p>Heloiza Herscovitz, California State University – Long Beach, Estados Unidos</p>
+<p>Juan José Igartúa Perosanz, Universidad de Salamanca, España</p>
+<p>Gabriel Kaplún, Universidad de la República, Uruguay</p>
+<p>Margarida Krohling Kunsch, Universidade de São Paulo, Brasil</p>
+<p>Herly Quiñónez, Universidad de los Andes, Venezuela, República Bolivariana de</p>
+<p>Virginia Linares Rodríguez, Universidad Internacional de La Rioja, España</p>
+<p>David López Jiménez, GITICE. Universidad de Huelva, España</p>
+<p>José Carlos Lozano, Universidad Internacional de Texas A&amp;M, Estados Unidos</p>
+<p>Jairo Lugo-Ocando, Northwestern University in Qatar, Qatar</p>
+<p>Paolo Mancini, Università degli Studi di Perugia, Italia</p>
+<p>José Manuel De Pablos, Universidad de la Laguna, España</p>
+<p>Moisés Martins, Universidad do Minho, Portugal</p>
+<p>Dr. Carlos Muñiz Muriel, Universidad Autónoma de Nuevo León, México</p>
+<p>Isaac Nahon-Serfaty, University of Ottawa, Canadá</p>
+<p>Raúl Fuentes Navarro, Universidad Jesuita de Guadalajara, México</p>
+<p>Fernando Oliveira Paulino, Universidad de Brasilia, Brasil</p>
+<p>Martín Oller Alonso, Escuela Superior Politécnica de Chimborazo (Ecuador, Suiza</p>
+<p>Guillermo Orozco, Universidad de Guadalajara, México</p>
+<p>Ángel Páez, Universidad del Zulia, Venezuela, República Bolivariana de</p>
+<p>James Painter, University of Oxford, Reino Unido</p>
+<p>María Pérez Yglesias, Universidad de Costa Rica, Costa Rica</p>
+<p>Denis Porto Reno, Universidad Estadual Paulista, Brasil</p>
+<p>Giuseppe Richeri, Università della Svizzera italiana, Suiza</p>
+<p>Profesor Hernando Rojas, University of Wisconsin Madison</p>
+<p>José A. Ruiz San Román, Universidad Complutense de Madrid, España</p>
+<p>Fernando Ruiz, Universidad Austral, Argentina</p>
+<p>Sandra Lucía Ruiz Moreno, Fundación Universitaria Panamericana, Colombia</p>
+<p>Hilda María Saladrigas Medina, Facultad de Comunicación. Universidad de La Habana, Cuba</p>
+<p>Pablo Schleifer, Universidad del Comahue, Argentina</p>
+<p>Philip Schlesinger, University of Glasgow, Reino Unido</p>
+<p>Gaëtan Tremblay, Universidad de Quebec, Canadá</p>
+<p>Thomas Tufte, University of Leicester, Reino Unido</p>
+<p>Raisa Urribarri, Universidad de los Andes, Venezuela, República Bolivariana de</p>
+<p>Beatrice Vacher, École Nationale Supérieure des Mines d\'Albi Carmaux, Francia</p>
+<p>Dr. Sebastián Valenzuela, Chile</p>
+<p>María Immacolata Vassallo de Lopes, Universidade de Sao Paulo, Brasil</p>
+<p>Eduardo Villanueva Mansilla, Pontificia Universidad Católica de Perú, Perú</p>
+<p>Silvio Waisbord, George Washington University, Estados Unidos</p>
+<p>Lyudmyla Yezers\'ka, Universidad de Piura, Perú</p>
+<h4>Editor Invitado Vol. 1, N.º 1</h4>
+<p>Carlos Arcila Calderón, Universidad de Salamanca, España</p>
+<h4>Editora Invitada Vol. 2, N.º 1</h4>
+<p>Raisa Urribarri, Universidad de los Andes, Venezuela, República Bolivariana de</p>
+<h4>Editora Invitada Vol. 2, N.º 2</h4>
+<p>Claudia Cavallin, Universidad Simón Bolivar, Venezuela, República Bolivariana de</p>
+<h4>Editores Invitados Vol. 3, N.º 1</h4>
+<p>Otto Rosales Cárdenas, Universidad de Los Andes (ULA), Venezuela, República Bolivariana de</p>
+<p>Fania Castillo, Universidad de Los Andes (ULA), Venezuela, República Bolivariana de</p>
+<h4>Editora Invitada Vol. 3, N.º 2</h4>
+<p>Argelia Ferrer, Universidad de los Andes, Venezuela, República Bolivariana de</p>
+<h4>Editoras Invitadas Vol. 4, N.º 1</h4>
+<p>Raquel Álvarez de Flores, CEFI - Universidad de Los Andes, Venezuela, República Bolivariana de</p>
+<p>Marlene Otero, Universidad de Los Andes, Venezuela, República Bolivariana de</p>
+<h4>Editor Invitado Vol. 4, N.º 2</h4>
+<p>Elías Said, Universidad del Norte, Colombia</p>
+<h4>Editora Invitada Vol. 5, N.º 1</h4>
+<p>Raisa Urribarri, Universidad de los Andes, Venezuela, República Bolivariana de</p>
+<h4>Editores Invitados Vol. 5, N.º 2</h4>
+<p>Virginia Linares Rodríguez, Universidad Internacional de La Rioja, España</p>
+<p>José A. Ruiz San Román, Universidad Complutense de Madrid, España</p>
+<h4>Editor Invitado Vol. 6, N.º 1</h4>
+<p>José Luis Piñuel Raigada, Universidad Complutense de Madrid, España</p>
+<h4>Editores Invitados Vol. 6, N.º 2</h4>
+<p>Acianela Montes de Oca, Universidad Católica Andrés Bello</p>
+<p>Carlos Arcila Calderón, Universidad de Salamanca, España</p>
+<h4>Editor Invitado Vol. 7, N.º 1</h4>
+<p>Dr. Carlos Muñiz Muriel, Universidad Autónoma de Nuevo León, México</p>
+<h4>Editores Invitados Vol. 7, N.º 2</h4>
+<p>María Dolores Cáceres Zapatero, Universidad Complutense de Madrid, España</p>
+<p>Juan Antonio Gaitán Moya, Universidad Complutense de Madrid, España</p>
+<h4>Editor Invitado Vol. 8, N.º 1</h4>
+<p>Daniel Barredo Ibáñez, Universidad del Rosario, Colombia</p>
+<h4>Editor Invitado Vol. 8, N.º 2</h4>
+<p>Andrés Scherman Teitelboim, Universidad Diego Portales, Chile</p>
+<h4>Editora Invitada Vol. 9, N.º 1</h4>
+<p>María Luisa Humanes, Universidad Rey Juan Carlos, España</p>
+<h4>Editores Invitados Vol. 9, N.º 2</h4>
+<p>Manuel Martínez Nicolás, Universidad Rey Juan Carlos (Madrid, España), España</p>
+<p>Miguel Vicente Mariño, Universidad de Valladolid, España</p>
+<h4>Editora Invitada Vol. 10, N.º 1</h4>
+<p>Eloísa Nos Aldás, Universitat Jaume I, España</p>
+</div>',
+    'pt_BR' => '<div id="group">
+<h4>Editores</h4>
+<p>Carlos Arcila Calderón, España</p>
+<p>Leandro Peñaranda Contreras, Colombia</p>
+<p>José Luis Piñuel Raigada, España</p>
+<h4>Editor adjunto</h4>
+<p>Eduar Barbosa Caro, Colombia</p>
+<h4>Editor de Revisões</h4>
+<p>Francisco Cabezuelo-Lorenzo, España</p>
+<h4>Asistente editorial</h4>
+<p>David Blanco-Herrero, España</p>
+<h4>Coordenador Editorial</h4>
+<p>Claudia Luque Molano, Colombia</p>
+<h4>Conselho Editorial</h4>
+<p>José Abdelnour Nocera, Reino Unido</p>
+<p>Alberto Ardèvol-Abreu, España</p>
+<p>Daniel Barredo Ibáñez, Colombia</p>
+<p>Desiderio Blanco, Perú</p>
+<p>Francisco Cabezuelo Lorenzo, España</p>
+<p>María Dolores Cáceres Zapatero, España</p>
+<p>Mabel Calderín Cruz, Venezuela, República Bolivariana de</p>
+<p>Carolina Campalans, Colombia</p>
+<p>Joao Canavilhas, Portugal</p>
+<p>Andrés Cañizález, Venezuela, República Bolivariana de</p>
+<p>Anabela Carvalho, Portugal</p>
+<p>Cosette Castro, Brasil</p>
+<p>Carlos Del Valle Rojas</p>
+<p>Philippe Dumas, Francia</p>
+<p>Argelia Ferrer, Venezuela, República Bolivariana de</p>
+<p>Heidi Figueroa Sarriera, Puerto Rico</p>
+<p>Juan Antonio Gaitán Moya, España</p>
+<p>Gino Gramaccia, Francia</p>
+<p>Carlos Guzmán, Venezuela, República Bolivariana de</p>
+<p>Heloiza Herscovitz, Estados Unidos</p>
+<p>Juan José Igartúa Perosanz, España</p>
+<p>Gabriel Kaplún, Uruguay</p>
+<p>Margarida Krohling Kunsch, Brasil</p>
+<p>Herly Quiñónez, Venezuela, República Bolivariana de</p>
+<p>Virginia Linares Rodríguez, España</p>
+<p>David López Jiménez, España</p>
+<p>José Carlos Lozano, Estados Unidos</p>
+<p>Jairo Lugo-Ocando, Qatar</p>
+<p>Paolo Mancini, Italia</p>
+<p>José Manuel De Pablos, España</p>
+<p>Moisés Martins, Portugal</p>
+<p>Dr. Carlos Muñiz Muriel, México</p>
+<p>Isaac Nahon-Serfaty, Canadá</p>
+<p>Raúl Fuentes Navarro, México</p>
+<p>Fernando Oliveira Paulino, Brasil</p>
+<p>Martín Oller Alonso, Suiza</p>
+<p>Guillermo Orozco, México</p>
+<p>Ángel Páez, Venezuela, República Bolivariana de</p>
+<p>James Painter, Reino Unido</p>
+<p>María Pérez Yglesias, Costa Rica</p>
+<p>Denis Porto Reno, Brasil</p>
+<p>Giuseppe Richeri, Suiza</p>
+<p>Profesor Hernando Rojas</p>
+<p>José A. Ruiz San Román, España</p>
+<p>Fernando Ruiz, Argentina</p>
+<p>Sandra Lucía Ruiz Moreno, Colombia</p>
+<p>Hilda María Saladrigas Medina, Cuba</p>
+<p>Pablo Schleifer, Argentina</p>
+<p>Philip Schlesinger, Reino Unido</p>
+<p>Gaëtan Tremblay, Canadá</p>
+<p>Thomas Tufte, Reino Unido</p>
+<p>Raisa Urribarri, Venezuela, República Bolivariana de</p>
+<p>Beatrice Vacher, Francia</p>
+<p>Dr. Sebastián Valenzuela, Chile</p>
+<p>María Immacolata Vassallo de Lopes, Brasil</p>
+<p>Eduardo Villanueva Mansilla, Perú</p>
+<p>Silvio Waisbord, Estados Unidos</p>
+<p>Lyudmyla Yezers\'ka, Perú</p>
+<h4>Editor Convidado Vol. 1(1)</h4>
+<p>Carlos Arcila Calderón, España</p>
+<h4>Editor Convidado Vol. 2(1)</h4>
+<p>Raisa Urribarri, Venezuela, República Bolivariana de</p>
+<h4>Editor Convidado Vol. 2(2)</h4>
+<p>Claudia Cavallin, Venezuela, República Bolivariana de</p>
+<h4>Editor Convidado Vol. 3(1)</h4>
+<p>Otto Rosales Cárdenas, Venezuela, República Bolivariana de</p>
+<p>Fania Castillo, Venezuela, República Bolivariana de</p>
+<h4>Editor Convidado Vol. 3(2)</h4>
+<p>Argelia Ferrer, Venezuela, República Bolivariana de</p>
+<h4>Editores Convidados Vol. 4(1)</h4>
+<p>Raquel Álvarez de Flores, Venezuela, República Bolivariana de</p>
+<p>Marlene Otero, Venezuela, República Bolivariana de</p>
+<h4>Editor Convidado Vol. 4(2)</h4>
+<p>Elías Said, Colombia</p>
+<h4>Editor Convidado Vol. 5(1)</h4>
+<p>Raisa Urribarri, Venezuela, República Bolivariana de</p>
+<h4>Editores Convidados Vol. 5(2)</h4>
+<p>Virginia Linares Rodríguez, España</p>
+<p>José A. Ruiz San Román, España</p>
+<h4>Editor Convidado Vol. 6(1)</h4>
+<p>José Luis Piñuel Raigada, España</p>
+<h4>Editores Convidados Vol. 6(2)</h4>
+<p>Acianela Montes de Oca</p>
+<p>Carlos Arcila Calderón, España</p>
+<h4>Editor Convidado Vol. 7(1)</h4>
+<p>Dr. Carlos Muñiz Muriel, México</p>
+<h4>Editores Convidados Vol. 7(2)</h4>
+<p>María Dolores Cáceres Zapatero, España</p>
+<p>Juan Antonio Gaitán Moya, España</p>
+<h4>Editor Convidado Vol. 8(1)</h4>
+<p>Daniel Barredo Ibáñez, Colombia</p>
+<h4>Editor Convidado Vol. 8(2)</h4>
+<p>Andrés Scherman Teitelboim, Chile</p>
+<h4>Editor Convidado Vol. 9(1)</h4>
+<p>María Luisa Humanes, España</p>
+<h4>Editores Convidados Vol. 9(2)</h4>
+<p>Manuel Martínez Nicolás, España</p>
+<p>Miguel Vicente Mariño, España</p>
+<h4>Editor Convidado Vol. 10(1)</h4>
+<p>Eloísa Nos Aldás, España</p>
+</div>',
   ),
-  'themePluginPath' => 'default',
+  'themePluginPath' => 'bootstrap3',
 ); ?>

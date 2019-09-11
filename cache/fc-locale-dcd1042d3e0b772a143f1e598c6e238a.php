@@ -147,4 +147,10 @@
   'user.register.form.privacyConsent' => 'Sí, consiento que mis datos se recopilen y se almacenen de acuerdo con la <a href="{$privacyUrl}" target="_blank">declaración de políticas</a>.',
   'user.register.form.emailConsent' => 'Sí, deseo que me notifiquen acerca de nuevas publicaciones y avisos.',
   'user.privacyLink' => 'Sus datos se han almacenado de acuerdo con nuestra <a href="{$privacyUrl}" target="_blank">declaración de privacidad</a>.',
+  'user.givenName' => 'Nombre(s)',
+  'user.familyName' => 'Apellido(s)',
+  'user.preferredPublicName' => 'Nombre público preferido',
+  'user.preferredPublicName.description' => '¿Cómo prefiere ser saludado? Se pueden agregar saludos, segundos nombres y sufijos aquí si lo desea.',
+  'user.profile.form.givenNameRequired' => 'Se requiere un Nombre',
+  'user.profile.form.givenNameRequired.locale' => 'Ha agregado un apellido para un idioma al que le falta el nombre. Agregue un nombre para este idioma.',
 ); ?>

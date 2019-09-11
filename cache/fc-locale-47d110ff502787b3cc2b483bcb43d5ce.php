@@ -422,7 +422,7 @@
   'notification.signedFile' => 'Archivo examinado.',
   'user.authorization.submissionFile' => 'El usuario/a actual no tiene autorización para acceder al archivo de envío especificado.',
   'user.authorization.invalidSubmission' => 'Envío no válido.',
-  'navigation.archives' => 'Archivos',
+  'navigation.archives' => 'Números anteriores',
   'user.authorization.authorRoleMissing' => 'Actualmente no posee los permisos suficientes para ver el envío. Edite su perfil para asegurarse de que le han concedido el rol apropiado en la opción "Registrarse como".',
   'user.authorization.submissionAuthor' => 'El usuario/a actual no es el autor/a del envío solicitado. Compruebe que se ha identificado con la cuenta de usuario/a correcta.',
   'common.homepageNavigationLabel' => 'Inicio',
@@ -518,4 +518,5 @@
   'list.viewMore' => 'Mostrar más detalles sobre {$name}',
   'list.viewLess' => 'Ocultar los detalles sobre {$name}',
   'common.pagination.label' => 'Examinar las páginas adicionales',
+  'common.commaListSeparator' => ', ',
 ); ?>

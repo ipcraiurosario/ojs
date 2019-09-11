@@ -44,6 +44,7 @@
 				<div class="row">
 					<nav aria-label="{translate|escape key="common.navigation.user"}">
 						{load_menu name="user" id="navigationUser" ulClass="nav nav-pills tab-list pull-right"}
+						{include file="frontend/custom/top-menu-block.tpl"}
 					</nav>
 				</div><!-- .row -->
 			</div><!-- .container-fluid -->
@@ -89,6 +90,22 @@
 								<img src="{$baseUrl}/templates/images/structure/logo.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" />
 							</a>
 						{/if}
+						<div class="navbarTitle">
+	                        <div class="navbarAppTitle">
+								{if $portalTitle != $siteTitle}
+                                    {$siteTitle}
+                                {else}
+                           	        {$portalTitle}
+                                {/if}
+							</div>
+       	                    <div class="navbarPageTitle">
+                        	    {if $additionalHomeContent}
+									{$additionalHomeContent}
+								{else}
+									&nbsp;
+								{/if}
+                            </div>
+                        </div>
 					{if $requestedOp == 'index'}
 						</h1>
 					{else}
@@ -99,26 +116,27 @@
 
 				{* Primary site navigation *}
 				{capture assign="primaryMenu"}
-					{load_menu name="primary" id="main-navigation" ulClass="nav navbar-nav"}
+					<div class="container">
+						{load_menu name="primary" id="journal-navigation" ulClass="nav navbar-nav"}
+					</div>
+					<br />
 				{/capture}
 
-				{if !empty(trim($primaryMenu)) || $currentContext}
-					<nav id="nav-menu" class="navbar-collapse collapse" aria-label="{translate|escape key="common.navigation.site"}">
-						{* Primary navigation menu for current application *}
-						{$primaryMenu}
-
-						{* Search form *}
-						{if $currentContext}
-							<div class="pull-md-right">
-								{include file="frontend/components/searchForm_simple.tpl"}
-							</div>
-						{/if}
-					</nav>
-				{/if}
+				<nav id="nav-menu" class="navbar-collapse collapse" aria-label="{translate|escape key="common.navigation.site"}">
+					{* Search form *}
+					<div class="pull-md-right">
+						{include file="frontend/components/searchForm_simple.tpl"}
+					</div>
+				</nav>
+				
 
 			</div><!-- .pkp_head_wrapper -->
 		</header><!-- .pkp_structure_head -->
+		<br />
+
+		{* Primary navigation menu for current application *}
+		{$primaryMenu}
 
 		{* Wrapper for page content and sidebars *}
 		<div class="pkp_structure_content container">
-			<main class="pkp_structure_main col-xs-12 col-sm-10 col-md-8" role="main">
+			<main role="main">

@@ -71,6 +71,7 @@ class TemplateManager extends PKPTemplateManager {
 				$this->assign(array(
 					'currentJournal' => $context,
 					'siteTitle' => $context->getLocalizedName(),
+					'portalTitle' => $site->getLocalizedTitle(),
 					'publicFilesDir' => $request->getBaseUrl() . '/' . $publicFileManager->getJournalFilesPath($context->getId()),
 					'primaryLocale' => $context->getPrimaryLocale(),
 					'supportedLocales' => $context->getSupportedLocaleNames(),
@@ -129,6 +130,7 @@ class TemplateManager extends PKPTemplateManager {
 					'displayPageHeaderTitle' => $site->getLocalizedPageHeaderTitle(),
 					'displayPageHeaderLogo' => $site->getLocalizedSetting('pageHeaderTitleImage'),
 					'siteTitle' => $site->getLocalizedTitle(),
+					'portalTitle' => $site->getLocalizedTitle(),
 					'primaryLocale' => $site->getPrimaryLocale(),
 					'supportedLocales' => $site->getSupportedLocaleNames(),
 					'pageFooter' => $site->getLocalizedSetting('pageFooter'),

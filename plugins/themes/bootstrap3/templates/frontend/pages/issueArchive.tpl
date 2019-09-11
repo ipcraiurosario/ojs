@@ -35,8 +35,16 @@
 
 		{* List issues *}
 		<div class="issues media-list">
+			{assign var=issueYearCur value=0}
 			{foreach from=$issues item="issue"}
-				{include file="frontend/objects/issue_summary.tpl"}
+				{assign var=issueYear value=$issue->getYear()}
+				{if $issueYear != $issueYearCur}
+					<div class="issue-archive-year">
+						{$issueYear}
+					</div>
+					{assign var=issueYearCur value=$issueYear}
+				{/if}
+				{include file="frontend/objects/issue_summary_archive.tpl"}
 			{/foreach}
 		</div>
 

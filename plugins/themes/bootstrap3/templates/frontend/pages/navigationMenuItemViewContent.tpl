@@ -8,16 +8,18 @@
  * Display NavigationMenuItem content
  *}
 {include file="frontend/components/header.tpl" pageTitleTranslated=$title}
+</main>
 
-<div id="main-content" class="page page_about">
+<main class="pkp_structure_main col-md-9">
+	<div id="main-content" class="page page_about">
 
-	{* Page Title *}
-	<div class="page-header">
-		<h1>{$title|escape}</h1>
-	</div>
-	{* /Page Title *}
+		{* Page Title *}
+		<div class="page-header">
+			<h1>{$title|escape}</h1>
+		</div>
+		{* /Page Title *}
 
-	{$content}
-</div><!-- .page -->
+		{$content}
+	</div><!-- .page -->
 
-{include file="frontend/components/footer.tpl"}
+	{include file="frontend/components/footer.tpl"}

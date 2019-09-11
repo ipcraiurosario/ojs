@@ -13,14 +13,14 @@
 .navbar {
   position: relative;
   min-height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
-  margin-bottom: @navbar-margin-bottom;
-  border: 1px solid transparent;
+  //margin-bottom: @navbar-margin-bottom;
+  //border: 1px solid transparent;
 
   // Prevent floats from breaking the navbar
   &:extend(.clearfix all);
 
   @media (min-width: @grid-float-breakpoint) {
-    border-radius: @navbar-border-radius;
+    //border-radius: @navbar-border-radius;
   }
 }
 
@@ -163,7 +163,7 @@
 .navbar-brand {
   float: left;
   height: @navbar-height;
-  padding: @navbar-padding-vertical @navbar-padding-horizontal;
+  //padding: @navbar-padding-vertical @navbar-padding-horizontal;
   font-size: @font-size-large;
   line-height: @line-height-computed;
 
@@ -176,12 +176,12 @@
     display: block;
   }
 
-  @media (min-width: @grid-float-breakpoint) {
+  /*@media (min-width: @grid-float-breakpoint) {
     .navbar > .container &,
     .navbar > .container-fluid & {
       margin-left: -@navbar-padding-horizontal;
     }
-  }
+  }*/
 }
 
 
@@ -233,8 +233,8 @@
   margin: (@navbar-padding-vertical / 2) -@navbar-padding-horizontal;
 
   > li > a {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    //padding-top: 10px;
+    //padding-bottom: 10px;
     line-height: @line-height-computed;
   }
 
@@ -269,10 +269,10 @@
 
     > li {
       float: left;
-      > a {
-        padding-top: @navbar-padding-vertical;
-        padding-bottom: @navbar-padding-vertical;
-      }
+      /*> a {
+        //padding-top: @navbar-padding-vertical;
+        //padding-bottom: @navbar-padding-vertical;
+      }*/
     }
   }
 }
@@ -394,7 +394,7 @@
 // Default navbar
 .navbar-default {
   background-color: @navbar-default-bg;
-  border-color: @navbar-default-border;
+  //border-color: @navbar-default-border;
 
   .navbar-brand {
     color: @navbar-default-brand-color;

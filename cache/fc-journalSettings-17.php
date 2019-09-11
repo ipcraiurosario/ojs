@@ -44,6 +44,30 @@ https://revistas.urosario.edu.co/index.php/RDC',
   'metaSubject' => true,
   'metaSubjectClass' => false,
   'metaType' => true,
+  'navItems' => 
+  array (
+    'es_ES' => 
+    array (
+      0 => 
+      array (
+        'name' => 'Índice Anual',
+        'isLiteral' => '1',
+        'url' => '/index.php/RDC/pages/view/indice-anual',
+      ),
+      1 => 
+      array (
+        'name' => 'Información Pares evaluadores',
+        'isLiteral' => '1',
+        'url' => '/index.php/RDC/pages/view/pares-evaluadores',
+      ),
+      2 => 
+      array (
+        'name' => 'Formato de revisión',
+        'isLiteral' => '1',
+        'url' => '/index.php/RDC/pages/view/formato-revision',
+      ),
+    ),
+  ),
   'notifyAllAuthorsOnDecision' => false,
   'numAnnouncementsHomepage' => 0,
   'numDaysBeforeInviteReminder' => 0,
@@ -98,11 +122,8 @@ https://revistas.urosario.edu.co/index.php/RDC',
   ),
   'supportedLocales' => 
   array (
-    0 => 'de_DE',
     1 => 'en_US',
     2 => 'es_ES',
-    3 => 'fr_CA',
-    4 => 'it_IT',
     5 => 'pt_BR',
   ),
   'supportedSubmissionLocales' => 
@@ -113,12 +134,17 @@ https://revistas.urosario.edu.co/index.php/RDC',
   'supportEmail' => 'carlos.reyes@urosario.edu.co',
   'supportName' => 'Carlos Roberto Reyes',
   'supportPhone' => '22970200 ext. 2361',
-  'themePluginPath' => 'default',
+  'themePluginPath' => 'bootstrap3',
   'useCopyeditors' => false,
   'useEditorialBoard' => false,
   'useLayoutEditors' => false,
   'useProofreaders' => false,
   'volumePerYear' => 0,
+  'additionalHomeContent' => 
+  array (
+    'en_US' => '<p><strong>ISSN:</strong> 2590-924X</p>',
+    'es_ES' => '<p><strong>ISSN:</strong> 2590-924X</p>',
+  ),
   'description' => 
   array (
     'en_US' => '<p>This publicity is allowed to present the investigative work of the Universidad del Rosario. It will be possible to find investigative material of an institutional nature, which covers topics such as inclusion, the environment, peace agreements, quality of life of people, the country\'s current issues and leadership and social innovation.</p>',
@@ -215,28 +241,16 @@ https://revistas.urosario.edu.co/index.php/RDC',
   array (
     'es_ES' => 'Afiliación a una asociación',
   ),
-  'navItems' => 
+  'pageHeaderLogoImage' => 
   array (
     'es_ES' => 
     array (
-      0 => 
-      array (
-        'name' => 'Índice Anual',
-        'isLiteral' => '1',
-        'url' => '/index.php/RDC/pages/view/indice-anual',
-      ),
-      1 => 
-      array (
-        'name' => 'Información Pares evaluadores',
-        'isLiteral' => '1',
-        'url' => '/index.php/RDC/pages/view/pares-evaluadores',
-      ),
-      2 => 
-      array (
-        'name' => 'Formato de revisión',
-        'isLiteral' => '1',
-        'url' => '/index.php/RDC/pages/view/formato-revision',
-      ),
+      'name' => 'Logo.UR.White.png',
+      'uploadName' => 'pageHeaderLogoImage_es_ES.png',
+      'width' => 834,
+      'height' => 322,
+      'dateUploaded' => '2019-09-05 11:57:03',
+      'altText' => 'Universidad del Rosario',
     ),
   ),
   'privacyStatement' => 

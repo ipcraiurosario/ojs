@@ -979,4 +979,18 @@ La configuración del soporte CLOCKSS para Open Journal Systems no hace falta qu
 	<message key="payment.requestPublicationFee">Solicitar tasa de publicación ({$feeAmount})</message>
 	<message key="payment.notFound">Se le ha solicitado un pago pero la petición ha expirado. Contacte con el administrador/a de la revista para obtener más detalles.</message>
 	<message key="notification.type.public">Avisos públicos</message>
+
+	<!-- Etiquetas faltantes en locale:EN -->
+	<message key="common.publishedSubmission">Artículo</message>
+	<message key="common.publishedSubmissions">Artículos</message>
+	<message key="user.register.form.missingContextConsent">Debe aceptar la declaración de privacidad de cualquier diario con el que se esté registrando.</message>
+	<message key="user.register.form.missingSiteConsent">Debe aceptar la declaración de privacidad de este sitio.</message>
+	<message key="user.register.form.privacyConsentThisContext"><![CDATA[Sí, acepto que mis datos se recopilen y almacenen de acuerdo con la <a href="{$privacyUrl}" target="_blank"> declaración de privacidad </a> de esta revista.]]></message>
+	<message key="section.policy">Política de la sección</message>
+	<message key="about.onlineSubmissions.submitToSection"><![CDATA[Realice un nuevo envío a la sección <a href="{$url}"> {$ name} </a>.]]></message>
+	<message key="catalog.sortBy">Orden de articulos</message>
+	<message key="catalog.sortBy.categoryDescription">Elija cómo ordenar artículos en esta categoría.</message>
+
+	<!-- Etiquetas nuevas CRAI -->
+	<message key="article.qr">Escanee aquí para descargar</message>
 </locale>

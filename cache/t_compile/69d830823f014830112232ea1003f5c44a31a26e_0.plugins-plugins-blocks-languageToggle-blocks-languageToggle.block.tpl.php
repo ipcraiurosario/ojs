@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-08-16 13:41:59
+/* Smarty version 3.1.33, created on 2019-09-10 09:18:55
   from 'plugins-plugins-blocks-languageToggle-blocks-languageToggle:block.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5d56f8f72c4d42_72897070',
+  'unifunc' => 'content_5d77b0cf5d5a56_84932487',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '69d830823f014830112232ea1003f5c44a31a26e' => 
     array (
       0 => 'plugins-plugins-blocks-languageToggle-blocks-languageToggle:block.tpl',
-      1 => 1559234184,
+      1 => 1566316600,
       2 => 'plugins-plugins-blocks-languageToggle-blocks-languageToggle',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5d56f8f72c4d42_72897070 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5d77b0cf5d5a56_84932487 (Smarty_Internal_Template $_smarty_tpl) {
 if ($_smarty_tpl->tpl_vars['enableLanguageToggle']->value) {?>
 <div class="pkp_block block_language">
 	<span class="title">

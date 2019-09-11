@@ -19,22 +19,26 @@
  * @uses $issue Issue Current issue
  *}
 {include file="frontend/components/header.tpl" pageTitleTranslated=$currentJournal->getLocalizedName()}
+</main>
 
+<main class="pkp_structure_main col-md-9">
 <div id="main-content" class="page_index_journal" role="content">
 
 	{call_hook name="Templates::Index::journal"}
-
-	{if $homepageImage}
-		<div class="homepage-image">
-			<img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}">
-		</div>
-	{/if}
-
-	{if $journalDescription}
-		<div class="journal-description">
-			{$journalDescription}
-		</div>
-	{/if}
+	{* Additional Homepage Content *}
+	<div class="about_site row">
+		{if $homepageImage}
+                        <div class="homepage-image">
+                                <img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}">
+                        </div>
+                {/if}
+                <div class="journal-description">
+					<div class="col-sm-12">
+						{$additionalHomeContent}
+					</div>
+					{$journalDescription}
+				</div>
+			</div>
 
 	{* Announcements *}
 	{if $numAnnouncementsHomepage && $announcements|count}
@@ -75,12 +79,12 @@
 		</section>
 	{/if}
 
-	{* Additional Homepage Content *}
+	{* Additional Homepage Content 
 	{if $additionalHomeContent}
 		<section class="additional_content">
 			{$additionalHomeContent}
 		</section>
-	{/if}
+	{/if}*}
 </div><!-- .page -->
 
 {include file="frontend/components/footer.tpl"}

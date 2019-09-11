@@ -1112,4 +1112,6 @@ Validation may fail on search URLs that require posted form data.]]></message>
 
 	<message key="catalog.sortBy">Order of articles</message>
 	<message key="catalog.sortBy.categoryDescription">Choose how to order articles in this category.</message>
+
+	<message key="article.qr">Scan here for download</message>
 </locale>

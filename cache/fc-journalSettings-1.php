@@ -452,14 +452,9 @@ var _gaq = _gaq || [];
   ),
   'description' => 
   array (
-    'en_US' => '<div id="journal_Des" class="tab-content"><div id="journalDescription" class="tab-pane fade in active row"><div class="col-sm-6" style="text-align: justify;">Avances en Psicología Latinoamericana is a peer reviewed journal that every four months publishes articles in all areas of Psychology.  The journal is oriented to scientists and professionals in Psychology and related disciplines.It includes original empirical and theoretical contributions and exceptionally strong literary reviews.  The journal accepts submission of articles in Spanish, English, Portuguese or Italian with abstracts and key words (obtained in the Thesaurus de la American Psychological Association) in Spanish and English.  The submitted articles should follow the style of the Publication Manual of the American Psychological Association (sixth edition, 2010). APL journal uses the platform Open Journal System (OJS) which does not generate costs for readers and, as a politic, does not generate costs to the authors for the processes of revision, peer evaluation and publication.</div><div class="col-sm-6"><strong>OCDE Classification:</strong> </div><div class="col-sm-6"><strong>Area:</strong>Ciencias Sociales</div><br /><div class="col-sm-6"><strong>Areas of knowledge:</strong>Psicología</div><div class="col-sm-6"><strong>Disciplinas:</strong>Psicología(incluye relaciones hombre-máquina), Psicología (incluye terapias de aprendizaje, habla, visual y otras discapacidades físicas y mentales)</div><div class="col-sm-6" style="text-align: justify;"> </div><div class="col-sm-6" style="text-align: justify;"><strong>DOI:</strong>http://dx.doi.org/10.12804/apl</div></div><div id="journalTeam" class="tab-pane fade">1</div><div id="journalIndexin" class="tab-pane fade"><a id="Latindex" href="http://www.latindex.unam.mx/buscador/ficRev.html?opcion=1&amp;folio=7318" target="_blank">Latindex</a> <a id="REDIB" href="https://www.redib.org/recursos/Record/oai_revista535-avances-psicologia-latinoamericana" target="_blank">REDIB</a> <a id="Dialnet" href="http://dialnet.unirioja.es/servlet/revista?codigo=11594" target="_blank">Dialnet</a> <a id="DOAJ" href="https://doaj.org/toc/2145-4515" target="_blank">DOAJ</a> <a id="Redalyc" href="http://www.redalyc.org/revista.oa?id=799" target="_blank">Redalyc</a> <a id="CLASE" href="/index.php/apl/manager/setup/" target="_blank">CLASE</a> <a id="Scopus" href="http://scimagojr.com/journalsearch.php?q=1794-4724&amp;tip=iss" target="_blank">Scopus</a> <a id="SciELO" href="http://www.scielo.org.co/scielo.php?script=sci_issues&amp;pid=1794-4724&amp;lng=es&amp;nrm=iso" target="_blank">SciELO</a> <a id="SciELO Citation  Index" href="http://apps.webofknowledge.com.ez.urosario.edu.co/Search.do?product=UA&amp;SID=1DEziNoTpoNTjuSvnMY&amp;search_mode=GeneralSearch&amp;prID=bd177b18-a4a9-4458-adb2-73e9670a2a92" target="_blank">SciELO Citation Index</a> <a id="ESCI" href="http://science.thomsonreuters.com/cgi-bin/jrnlst/jlresults.cgi?PC=MASTER&amp;ISSN=1794-4724" target="_blank">ESCI</a> <a id="ERINH" href="https://dbh.nsd.uib.no/publiseringskanaler/erihplus/periodical/info?id=472216" target="_blank">ERINH</a> <a id="Scilit" href="http://www.scilit.net/journals/21207" target="_blank">Scilit</a> <a id="psicodoc" href="http://psicodoc.idbaratz.com" target="_blank">Psicodoc</a><a id="JournalGuide" href="https://www.journalguide.com/journals/avances-en-psicologia-latinoamericana" target="_blank">JournalGuide</a> <a id="MIAR" href="http://miar.ub.edu/issn/1794-4724" target="_blank">MIAR</a></div><div id="journalMetrics" class="tab-pane fade"><div class="col-sm-3"><table class="table"><thead><tr><th colspan="3">Google Scholar</th></tr></thead><tfoot><tr><th colspan="3"><strong>Fuente:</strong>Publish or Perish. Noviembre-2016.</th></tr></tfoot><tbody><tr><td><strong>h</strong></td><td>25</td></tr><tr><td><strong>h5</strong></td><td>14</td></tr><tr><td><strong>Articulos</strong></td><td>622</td></tr><tr><td><strong>Citaciones</strong></td><td>2558</td></tr></tbody></table></div><div id="plumx"><script type="text/javascript" src="https://d39af2mgp1pqhg.cloudfront.net/widget-group.js"></script><a class="plumx-group" href="https://plu.mx/urosario/g/cd-2/journals/issn-21454515" data-no-name="true" data-no-description="true" data-no-researchers="true" data-no-artifacts="true" data-no-logo="true" data-site="urosario" data-num-artifacts="5" data-gp="urosario/cd-2/journals/issn-21454515">Avances en Psicología Latinoamericana Profile on PlumX</a></div><div id="scimago"><table class="table"><thead><tr><th colspan="3">Scimago</th></tr></thead><tbody><tr><td><a title="SCImago Journal &amp; Country Rank" href="https://www.scimagojr.com/journalsearch.php?q=5200152705&amp;tip=sid&amp;exact=no"> <img style="width: 25%;" src="http://www.scimagojr.com/journal_img.php?id=5200152705" alt="Scimago Journal &amp; Country Rank" /></a> <a href="#"> <img src="/public/site/images/mgutierrez/logo3.jpg" alt="" /> </a></td></tr></tbody></table></div></div></div>',
-    'pt_BR' => '<div id="journal_Des" class="tab-content"><div id="journalDescription" class="tab-pane fade in active row"><div class="col-sm-6" style="text-align: justify;">Avances en Psicología Latinoamericana (APL) é uma revista eletrônica quadrimestral com avaliação por pares, que publica artigos em todas as áreas da psicologia. A revista se dirige a científicos e profissionais em psicologia e disciplinas afins. Inclui contribuições empíricas e teóricas originais e excepcionalmente revisões de literatura de alta qualidade. Se publicam artigos escritos em espanhol, inglês, português ou italiano com resumo e palavras-chave (obtidas do Thesaurus da American Psychological Association) em espanhol e inglês. Os artigos enviados devem seguir as normas do Manual de Estilo de Publicações da American Psychological Association (Sexta edição, 2010). A revista APL utiliza a plataforma Open Journal System (OJS) a qual não gera custos para os leitores e, por política, também não acarreia custos para os autores pelos processos de revisão, avaliação por pares e publicação.</div><div class="col-sm-6"><strong>Clasificación OCDE:</strong> </div><div class="col-sm-6"><strong>Gran área:</strong>Ciencias Sociales</div><br /><div class="col-sm-6"><strong>Areas de conocimiento:</strong>Psicología</div><div class="col-sm-6"><strong>Disciplinas:</strong>Psicología(incluye relaciones hombre-máquina), Psicología (incluye terapias de aprendizaje, habla, visual y otras discapacidades físicas y mentales)</div><div class="col-sm-6" style="text-align: justify;"> </div><div class="col-sm-6" style="text-align: justify;"><strong>DOI: </strong><a href="http://dx.doi.org/10.12804/apl"> <span style="text-decoration: underline;">http://dx.doi.org/10.12804/apl</span> </a></div></div><div id="journalTeam" class="tab-pane fade">1</div><div id="journalIndexin" class="tab-pane fade"><a id="Latindex" href="http://www.latindex.unam.mx/buscador/ficRev.html?opcion=1&amp;folio=7318" target="_blank">Latindex</a> <a id="REDIB" href="https://www.redib.org/recursos/Record/oai_revista535-avances-psicologia-latinoamericana" target="_blank">REDIB</a> <a id="Dialnet" href="http://dialnet.unirioja.es/servlet/revista?codigo=11594" target="_blank">Dialnet</a> <a id="DOAJ" href="https://doaj.org/toc/2145-4515" target="_blank">DOAJ</a> <a id="Redalyc" href="http://www.redalyc.org/revista.oa?id=799" target="_blank">Redalyc</a> <a id="CLASE" href="/index.php/apl/manager/setup/" target="_blank">CLASE</a> <a id="Scopus" href="http://scimagojr.com/journalsearch.php?q=1794-4724&amp;tip=iss" target="_blank">Scopus</a> <a id="SciELO" href="http://www.scielo.org.co/scielo.php?script=sci_issues&amp;pid=1794-4724&amp;lng=es&amp;nrm=iso" target="_blank">SciELO</a> <a id="SciELO Citation  Index" href="http://apps.webofknowledge.com.ez.urosario.edu.co/Search.do?product=UA&amp;SID=1DEziNoTpoNTjuSvnMY&amp;search_mode=GeneralSearch&amp;prID=bd177b18-a4a9-4458-adb2-73e9670a2a92" target="_blank">SciELO Citation Index</a> <a id="ESCI" href="http://science.thomsonreuters.com/cgi-bin/jrnlst/jlresults.cgi?PC=MASTER&amp;ISSN=1794-4724" target="_blank">ESCI</a> <a id="ERINH" href="https://dbh.nsd.uib.no/publiseringskanaler/erihplus/periodical/info?id=472216" target="_blank">ERINH</a> <a id="Scilit" href="http://www.scilit.net/journals/21207" target="_blank">Scilit</a> <a id="psicodoc" href="http://psicodoc.idbaratz.com" target="_blank">Psicodoc</a><a id="JournalGuide" href="https://www.journalguide.com/journals/avances-en-psicologia-latinoamericana" target="_blank">JournalGuide</a> <a id="MIAR" href="http://miar.ub.edu/issn/1794-4724" target="_blank">MIAR</a></div><div id="journalMetrics" class="tab-pane fade"><div class="col-sm-3"><table class="table"><thead><tr><th colspan="3">Google Scholar</th></tr></thead><tfoot><tr><th colspan="3"><strong>Fuente:</strong>Publish or Perish. Noviemnbre-2017.</th></tr></tfoot><tbody><tr><td><strong>h</strong></td><td>25</td></tr><tr><td><strong>h5</strong></td><td>14</td></tr><tr><td><strong>Articulos</strong></td><td>622</td></tr><tr><td><strong>Citaciones</strong></td><td>2558</td></tr></tbody></table></div><div id="plumx"><script type="mce-mce-text/javascript" src="https://d39af2mgp1pqhg.cloudfront.net/widget-group.js">// <![CDATA[
-<a class="plumx-group" href="https://plu.mx/urosario/g/cd-2/journals/issn-21454515" data-no-name="true" data-no-description="true" data-no-researchers="true" data-no-artifacts="true" data-no-logo="true" data-site="urosario" data-num-artifacts="5" data-gp="urosario/cd-2/journals/issn-21454515">Avances en Psicología Latinoamericana Profile on Plu</a>
-		</div>
-	</div>
-</div>
-// ]]></script></div></div></div>',
-    'es_ES' => '<div id="journal_Des" class="tab-content"><div id="journalDescription" class="tab-pane fade in active row"><div class="col-sm-6" style="text-align: justify;">Avances en Psicología Latinoamericana (APL) es una revista electrónica cuatrimestral con evaluación por pares, que publica artículos en todas las áreas de la psicología. La revista se dirige a científicos y profesionales en psicología y disciplinas afines. Incluye contribuciones empíricas y teóricas originales y excepcionalmente revisiones de literatura de alta calidad. Se publican artículos escritos en español, inglés, portugués o italiano con resumen y palabras clave (obtenidas del Thesaurus de la American Psychological Association) en español e inglés. Los artículos enviados deben seguir las normas del Manual de Estilo de Publicaciones de la American Psychological Association (Sexta edición, 2010).<br /><br /><div id="doi"><strong>DOI: </strong><a href="http://dx.doi.org/10.12804/apl">http://dx.doi.org/10.12804/apl</a></div></div><div class="col-sm-6"><strong>Clasificación OCDE:</strong> <br /> <strong>Gran área: </strong>Ciencias Sociales<br /><strong>Areas de conocimiento: </strong>Psicología<br /><strong>Disciplinas: </strong>Psicología(incluye relaciones hombre-máquina), Psicología (incluye terapias de aprendizaje, habla, visual y otras discapacidades físicas y mentales)</div></div><div id="journalTeam" class="tab-pane fade">1</div><div id="journalIndexin" class="tab-pane fade"><a id="sucupira" href="https://sucupira.capes.gov.br/sucupira/public/consultas/coleta/veiculoPublicacaoQualis/listaConsultaGeralPeriodicos.xhtml" target="_blank">Scopus</a> <a id="Scopus" href="https://www.elsevier.com/__data/assets/excel_doc/0015/91122/ext_list_September_2018.xlsx" target="_blank">Scopus</a> <a id="sjr" href="https://www.scimagojr.com/journalsearch.php?q=5200152705&amp;tip=sid" target="_blank" data-urll="https://www.scimagojr.com/journalsearch.php?q=5200152705&amp;tip=sid&amp;clean=0">SJR</a> <a id="SciELO" href="http://www.scielo.org.co/scielo.php?script=sci_serial&amp;pid=1794-4724&amp;lng=es&amp;nrm=iso" target="_blank">SciELO</a> <a id="Redalyc" href="http://www.redalyc.org/revista.oa?id=799" target="_blank">Redalyc</a> <a id="DOAJ" href="https://doaj.org/toc/2145-4515" target="_blank">DOAJ</a> <a id="Latindex" href="https://www.latindex.org/latindex/ficha?folio=7318" target="_blank">Latindex</a> <a id="Dialnet" href="http://dialnet.unirioja.es/servlet/revista?codigo=11594" target="_blank">Dialnet</a> <a id="REDIB" href="https://www.redib.org/recursos/Record/oai_revista535-avances-psicologia-latinoamericana" target="_blank">REDIB</a> <a id="ERINH" href="https://dbh.nsd.uib.no/publiseringskanaler/erihplus/periodical/info?id=472216" target="_blank">ERINH</a> <a id="Scilit" href="https://www.scilit.net/statistic-publisher-journal/6612/1260993" target="_blank">Scilit</a> <a id="JournalGuide" href="https://www.journalguide.com/journals/avances-en-psicologia-latinoamericana" target="_blank">JournalGuide</a> <a id="ESCI" href="http://science.thomsonreuters.com/cgi-bin/jrnlst/jlresults.cgi?PC=MASTER&amp;ISSN=1794-4724" target="_blank">ESCI</a> <a id="psicodoc" href="http://www.psicodoc.org" target="_blank">Psicodoc</a> <a id="EJL" href="https://rzblx1.uni-regensburg.de/ezeit/searchres.phtml?bibid=AAAAA&amp;colors=7&amp;lang=en&amp;jq_type1=QS&amp;jq_term1=avances+en+psicologia+latinoamericana" target="_blank">Psicodoc</a> <a id="googles" href="https://scholar.google.es/citations?user=fs3-T8kAAAAJ" target="_blank">Psicodoc</a> <a id="sherpa" href="http://www.sherpa.ac.uk/romeo/search.php" target="_blank">Psicodoc</a> <a id="publons" href="https://publons.com/journal/13992/avances-en-psicologia-latinoamericana" target="_blank">Psicodoc</a> <a id="researchgate" href="https://www.researchgate.net/journal/1794-4724_Avances_en_Psicologia_Latinoamericana" target="_blank">Psicodoc</a> <a id="publindex" href="https://scienti.colciencias.gov.co/publindex/EnArticulo/busquedaArticulo.do?cod_revista=195&amp;tpo_busqueda=REV&amp;txt_nme_titulo=&amp;nro_issn=1794-4724&amp;nro_ano=" target="_blank">Publindex</a> <a id="j4f" href="http://journals4free.com/link.jsp?l=2367056" target="_blank">Psicodoc</a> <a id="ajd" href="http://journaldatabase.info/journal/issn1794-4724" target="_blank">journaldatabase</a></div><div id="journalMetrics" class="tab-pane fade "><div class="row"><div id="googlescholar" class="col-sm-4"><table style="width: 100%;"><thead><tr><th colspan="2">Google Scholar</th></tr></thead><tbody><tr><td><strong>Citas</strong></td><td>5297</td></tr><tr><td><strong>Índice h</strong></td><td>37</td></tr><tr><td><strong>Índice i10</strong></td><td>132</td></tr></tbody><tfoot><tr><td colspan="2">Ver perfil en <a href="https://scholar.google.com/citations?user=fs3-T8kAAAAJ" target="_blank">Google Scholars</a></td></tr><tr><td colspan="2"><strong>Fuente:</strong> Google Scholars. Marzo 2019</td></tr></tfoot></table></div><div id="scimago" class="col-sm-6"><a title="SCImago Journal &amp; Country Rank" href="http://www.scimagojr.com/journalsearch.php?q=5200152705&amp;tip=sid&amp;exact=no"><img src="http://www.scimagojr.com/journal_img.php?id=5200152705&amp;title=true" alt="SCImago Journal &amp; Country Rank" border="0" /></a></div></div></div></div>',
+    'en_US' => '<div id="journalDescription" class="col-md-12">Avances en Psicología Latinoamericana&nbsp;is a peer reviewed journal that every four months publishes articles in all areas of Psychology.&nbsp; The journal is oriented to scientists and professionals in Psychology and related disciplines.It includes original empirical and theoretical contributions and exceptionally strong literary reviews.&nbsp; The journal accepts submission of articles in Spanish, English, Portuguese or Italian with abstracts and key words (obtained in the Thesaurus de la American Psychological Association) in Spanish and English.&nbsp; The submitted articles should follow the style of the Publication Manual of the American Psychological Association (sixth edition, 2010). APL journal uses the platform Open Journal System (OJS) which does not generate costs for readers and, as a politic, does not generate costs to the authors for the processes of revision, peer evaluation and publication.<br><br><strong>Clasificación OCDE:</strong> <br><strong>Gran área: </strong>Ciencias Sociales<br><strong>Areas de conocimiento: </strong>Psicología<br><strong>Disciplinas: </strong>Psicología(incluye relaciones hombre-máquina), Psicología (incluye terapias de aprendizaje, habla, visual y otras discapacidades físicas y mentales)</div>',
+    'pt_BR' => '<div id="journalDescription" class="col-md-12">Avances en Psicología Latinoamericana (APL) é uma revista eletrônica quadrimestral com avaliação por pares, que publica artigos em todas as áreas da psicologia. A revista se dirige a científicos e profissionais em psicologia e disciplinas afins. Inclui contribuições empíricas e teóricas originais e excepcionalmente revisões de literatura de alta qualidade. Se publicam artigos escritos em espanhol, inglês, português ou italiano com resumo e palavras-chave (obtidas do Thesaurus da American Psychological Association) em espanhol e inglês. Os artigos enviados devem seguir as normas do Manual de Estilo de Publicações da American Psychological Association (Sexta edição, 2010). A revista APL utiliza a plataforma Open Journal System (OJS) a qual não gera custos para os leitores e, por política, também não acarreia custos para os autores pelos processos de revisão, avaliação por pares e publicação.<br><br><strong>Clasificación OCDE:</strong> <br><strong>Gran área: </strong>Ciencias Sociales<br><strong>Areas de conocimiento: </strong>Psicología<br><strong>Disciplinas: </strong>Psicología(incluye relaciones hombre-máquina), Psicología (incluye terapias de aprendizaje, habla, visual y otras discapacidades físicas y mentales)</div>',
+    'es_ES' => '<div id="journalDescription" class="col-md-12">Avances en Psicología Latinoamericana (APL) es una revista electrónica cuatrimestral con evaluación por pares, que publica artículos en todas las áreas de la psicología. La revista se dirige a científicos y profesionales en psicología y disciplinas afines. Incluye contribuciones empíricas y teóricas originales y excepcionalmente revisiones de literatura de alta calidad. Se publican artículos escritos en español, inglés, portugués o italiano con resumen y palabras clave (obtenidas del Thesaurus de la American Psychological Association) en español e inglés. Los artículos enviados deben seguir las normas del Manual de Estilo de Publicaciones de la American Psychological Association (Sexta edición, 2010). <br><br><strong>Clasificación OCDE:</strong> <br><strong>Gran área: </strong>Ciencias Sociales<br><strong>Areas de conocimiento: </strong>Psicología<br><strong>Disciplinas: </strong>Psicología(incluye relaciones hombre-máquina), Psicología (incluye terapias de aprendizaje, habla, visual y otras discapacidades físicas y mentales)</div>',
   ),
   'lockssLicense' => 
   array (
@@ -492,48 +487,7 @@ var _gaq = _gaq || [];
 
 </div>',
   ),
-  'navItems' => 
-  array (
-    'es_ES' => 
-    array (
-      0 => 
-      array (
-        'name' => 'Índice Anual',
-        'isLiteral' => '1',
-        'url' => '/index.php/apl/pages/view/indice-anual',
-      ),
-      1 => 
-      array (
-        'name' => 'Información Pares evaluadores',
-        'isLiteral' => '1',
-        'url' => '/index.php/apl/pages/view/pares-evaluadores',
-      ),
-      2 => 
-      array (
-        'name' => 'Formato de revisión',
-        'isLiteral' => '1',
-        'url' => '/index.php/apl/pages/view/formato-revision',
-      ),
-    ),
-    'en_US' => 
-    array (
-      0 => 
-      array (
-        'name' => 'Indexing',
-        'isLiteral' => '1',
-        'url' => 'http://revistas.urosario.edu.co/index.php/apl/pages/view/indexacion',
-        'isAbsolute' => '1',
-      ),
-    ),
-    'pt_BR' => 
-    array (
-      0 => 
-      array (
-        'name' => '',
-        'url' => '',
-      ),
-    ),
-  ),
+  'navItems' => NULL,
   'authorGuidelines' => 
   array (
     'pt_BR' => '<p>Os artigos submetidos à revista devem seguir as normas do Manual de Estilo de Publicações da <em>American Psychological Association</em> (Sexta edição, 2010) no que respeita a sua apresentação formal.</p><p>Para além do manuscrito, é necessário enviar autorização para publicação em formato da revista. O formulário que deve ser diligenciado e assinado por cada um dos autores do manuscrito pode ser descarregado <a href="/public/site/Autorizacion_publicacion_autores_2016_APL.docx">aqui</a></p><p>O comité editorial avalia a pertinência dos manuscritos remitidos e verifica o cumprimento dos requisitos solicitados na seção “Diretrizes para autores”. Se cumpre com estes requisitos, a continuação se dá início ao processo de revisão por pares, no que é avaliado por dois especialistas na matéria. Este processo de tipo duplo cego se realiza de forma anónima e a única pessoa que conhece as identidades tanto do autor quanto do revisor é o editor da revista, quem se encarrega de enviar a correspondência. Os processos de revisão, avaliação por pares e publicação não acarreiam custos para os autores.</p><p><br /> <strong>Forma e apresentação de manuscritos: instruções aos autores</strong></p><ul><li><strong>Conteúdo</strong>. Se aceitam trabalhos originais empíricos, teóricos ou de revisão em profundidade, que contribuam ao avanço da psicologia como ciência ou como profissão. Os artigos enviados submeteram-se a avaliação “dupla cega” por dois árbitros.</li><li><strong>Aspectos éticos</strong>. Os artigos baseados em pesquisas com seres humanos devem incluir uma declaração na seção de métodos, na que se certifique que os experimentos se fizeram com o conhecimento e o consentimento escrito de cada um dos sujeitos participantes. Quando se usem animais experimentais, deve-se fazer referência explícita na seção de Métodos ao uso de medidas apropriadas para minimizar a dor. Em ambos os casos, os autores devem seguir as normas éticas da APA.</li><li><strong>Línguas</strong>. Publicam-se artigos em espanhol, inglês, português e italiano, com resumo e palavras-chave (obtidas do <em>Thesaurus da American Psychological Association</em>) em espanhol e inglês.</li><li><strong>Forma</strong>.<strong> </strong>Os autores devem enviar seus artigos seguindo o estilo internacional em psicologia (normas da <em>American Psychological Association</em>; sexta edição, 2010). Os trabalhos que não sigam estas normas de apresentação serão devolvidos aos seus autores para ser revisados. No texto deve se citar por autor e ano. Assim: Estes (2000), Gutiérrez (1999), Ruiz, Pellón e García (2006) e Wolfgang (1997). Na lista de referências, ao final do artigo, devem-se citar todos os trabalhos (artigos, livros, capítulos de livros, materiais tomados da Internet, apresentações a congressos, etc.), em ordem alfabética do primeiro autor. Por exemplo:</li><li><strong>Figuras e tabelas</strong>. Enviar cada uma em uma página aparte. As figuras devem estar prontas para entrar em prensa, o mesmo que as fotografias, se as houvesse. Cada uma das figuras deve ser enviada em ficheiros originais.</li><li><strong>Longitude.</strong> O manuscrito deve conter máximo 30 folhas incluindo TODOS os apartes do documento.</li><li><strong>Linguagem.</strong> Usar uma linguagem “standard”, que seja o mais geral e simples possível. Evitar o uso de regionalismos ou de anglicismos que tenham um claro equivalente na língua original (em português, por exemplo: usar “prova” em vez de “test”). Devem evitar-se os sesgos da linguagem que possam resultar pejorativos ou discriminatórios.</li><li><strong>Abreviaturas: </strong>Podem se utilizar, sempre que a primeira vez se apresente a frase completa. Por exemplo: <em>Eysenck Personality Inventory</em> (EPI); depois no texto se utilizará unicamente EPI. <strong></strong></li><li><strong>Separatas.</strong> O autor receberá cópia eletrônica de seu artigo em formato PDF, para a sua distribuição unicamente com fins acadêmicos. <strong></strong></li></ul><ol start="1"><li>Estes, W. K. (2000). Basic methods of psychological science. Em K. Pawlik &amp; M. R. Rosenzweig (Eds.), International handbook of psychology (pp. 20-39). London: SAGE.</li><li>Gutiérrez, G. (1999). Hormonas y reproducción en aves: la influencia de factores ambientales y sociales. Revista Latinoamericana de Psicología, 31, 151-174.</li><li>Ruiz, G., Pellón, R. e García, A. (2006). Análisis experimental de la conducta en España. Avances en Psicología Latinoamericana, 24, 71-103.</li><li>Wolfgang, A. (1997). Nonverbal behavior. Perspectives, application, intercultural insights. Seattle, WA: Hogrefe e Huber.</li></ol><p><strong>Envio de manuscritos</strong></p><p>O material deve se enviar em formato eletrônico através da plataforma <em>Open Journal System (OJS)</em> da revista, disponível no endereço eletrônico: <strong></strong></p><p><a href="/index.php/apl/index">http://revistas.urosario.edu.co/index.php/apl/index</a></p><p>No sistema deve criar-se uma conta de usuário com o perfil do autor e se fazer  o envio do manuscrito a ser revisado.</p>',
@@ -542,8 +496,147 @@ var _gaq = _gaq || [];
   ),
   'additionalHomeContent' => 
   array (
-    'en_US' => '<strong>Included in: ISI Web of Science (Main Colección and SciELO Citation Index</strong><strong>), Scopus,</strong><span class="apple-converted-space"><strong> </strong></span><strong>PsycINFO, DOAJ, HINARI, SciMAGO, Psicodoc, Redalyc, SciELO, Academic OneFile, Dialnet, REDIB, WebQualis, Latindex, Publindex, Pserinfo and Google Academics.</strong>',
-    'pt_BR' => '<strong>Incluídas na: ISI Web of Science (Colección Principal y SciELO Citation Index</strong><strong>), Scopus,</strong><span class="apple-converted-space"><strong> </strong></span><strong>PsycINFO, DOAJ, HINARI, SciMAGO, Psicodoc, Redalyc, SciELO, Academic OneFile, Dialnet, REDIB, WebQualis, Latindex, Publindex, Pserinfo y Google Académico.</strong>',
+    'en_US' => '<p><strong>ISSN-e:</strong> 2145-4515<br><strong>ISSN:</strong> 1794-4724 <br><strong>DOI:</strong> <a href="http://dx.doi.org/10.12804/apl">http://dx.doi.org/10.12804/apl</a></p>',
+    'pt_BR' => '<p><strong>ISSN-e:</strong> 2145-4515<br><strong>ISSN:</strong> 1794-4724 <br><strong>DOI:</strong> <a href="http://dx.doi.org/10.12804/apl">http://dx.doi.org/10.12804/apl</a></p>',
+    'es_ES' => '<p><strong>ISSN-e:</strong> 2145-4515<br><strong>ISSN:</strong> 1794-4724 <br><strong>DOI:</strong> <a href="http://dx.doi.org/10.12804/apl">http://dx.doi.org/10.12804/apl</a></p>',
+  ),
+  'editorialTeam' => 
+  array (
+    'es_ES' => '<div id="group">
+<h4>Director</h4>
+<p>Dr. Miguel Gutiérrez-Peláez, Universidad del Rosario, Colombia</p>
+<h4>Editora General</h4>
+<p>Dra. Luisa Fernanda Ramírez, Universidad del Rosario, Colombia</p>
+<h4>Editores Asociados</h4>
+<p>Dra. Mónica Roncancio Moreno, Universidad Pontificia Bolivariana, Colombia</p>
+<p>Doutora Marília Pinheiro de Carvalho</p>
+<p>Dra. Eunice Castro Seixas, Universidad de Lisboa ISEG Centro de Sociología Económica de las Organizaciones, Portugal</p>
+<p>Dra. Jenny Amanda Ortiz Muñoz, Jenny A. Ortiz M. PhD. Programa de Psicología Universidad del Rosario, Colombia</p>
+<p>Dr. Carlos J Nieto Silva, Universidad del Rosario</p>
+<p>Dr. Cesar López Rodríguez, Universidad Autónoma de Madrid (España), España</p>
+<p>Dra. Elina Boycheva, Universidad de Salamanca, España</p>
+<p>Dr. Luis Manuel Silva, Pontificia Universidad Javeriana de Bogotá (Colombia), Colombia</p>
+<p>Dra. Giovanna Bartucci, Psicanalista Associação Brasileira de Psicanálise de Casal e Família (ABPCF), Brasil</p>
+<p>Dr. James Ferreira Moura Jr, Instituto de Humanidades e Letras da Universidade da Integração Internacional da Lusofonia Afro-Brasileira (UNILAB) Programa de Pós-graduação em Psicologia da Universidade Federal do Ceará (UFC), Brasil</p>
+<p>Dr. Karlos Luna, Escola de Psicologia, Universidade do Minho (Portugal), Portugal</p>
+<p>Dra. Sara Cadavid, Universidad del Rosario, Colombia</p>
+<p>Dra. Martha del Rosario Peña-Sarmiento, Universidad Católica de Colombia, Colombia</p>
+<p>Dr. Juan Felipe Cardona Londoño, Universidad del Valle, Colombia</p>
+<p>Dr. Bruno Marinho de Sousa, Universidade Federal de Goiás, Brasil</p>
+<p>Dra. Ana Karla Silva Soares, Universidade Federal do Mato Grosso do Sul Federal University of Mato Grosso do Sul, Brasil</p>
+<p>Dr. Oliver Muller, Universidad del Rosario, Colombia</p>
+<p>Dra. Lina Maria Perilla-Rodriguez, Asociación Colombiana para el Avance de la Ciencia, Brasil</p>
+<p>Dra. Ximena Palacios Espinosa, Universidad del Rosario, Colombia</p>
+<p>Dr. Leonardo Gomes Bernardino, Instituto de Psicologia da Universidade Federal de Uberlândia (UFU), Brasil</p>
+<h4>Comite Científico</h4>
+<p>Dr. Kate Ellis, American University in Cairo (AUC), Egipto</p>
+<p>Dr. Bruna Zani, Italia</p>
+<p>Dr. Héctor López, Universidad de Buenos Aires, Argentina</p>
+<p>Dr. Stijn Vanheule, Bélgica</p>
+<p>Dra. Lucía Rossi, Universidad de Buenos Aires (UBA), Argentina</p>
+<p>Chidambaram Ramanathan, The University of Memphis, Estados Unidos</p>
+<p>Professor Dr. Sefa Bulut, Ibn Haldun University, Istanbul, Turkey, Turquía</p>
+<p>Doctor Rolando Díaz-Loving, Universidad Nacional Autónoma de México, México</p>
+<p>Rebeca Puche-Navarro, Universidad del Valle, Colombia</p>
+<p>Dra. Francoise Venezia Contreras Torres, Universidad del Rosario, Colombia</p>
+<p>Alfonso Villalobos-Pérez, Universidad de Iberoamérica, Costa Rica</p>
+<p>Doctora Alba Elisabeth Mustaca, Centro de Altos Estudios de Ciencias Humanas y de la Salud (CAECIHS)- Facultad de Psicología y Ciencias Humanas- Universidad Abierta Interamericana, Argentina</p>
+<p>Dr. Lisa Rosenthal, Pace University, Estados Unidos</p>
+<h4>Gestor de Indexación</h4>
+<p>Prof. Andrés M. Pérez-Acosta, Universidad del Rosario, Colombia</p>
+<h4>Asistente editorial</h4>
+<p>Maria del Mar Agudelo, Universidad del Rosario, Colombia</p>
+</div>',
+    'en_US' => '<div id="group">
+<h4>Director APL</h4>
+<p>Dr. Miguel Gutiérrez-Peláez, Colombia</p>
+<h4>Editora General</h4>
+<p>Dra. Luisa Fernanda Ramírez, Colombia</p>
+<h4>Editores Asociados</h4>
+<p>Dra. Mónica Roncancio Moreno, Colombia</p>
+<p>Doutora Marília Pinheiro de Carvalho</p>
+<p>Dra. Eunice Castro Seixas, Portugal</p>
+<p>Dra. Jenny Amanda Ortiz Muñoz, Colombia</p>
+<p>Dr. Carlos J Nieto Silva</p>
+<p>Dr. Cesar López Rodríguez, España</p>
+<p>Dra. Elina Boycheva, España</p>
+<p>Dr. Luis Manuel Silva, Colombia</p>
+<p>Dra. Giovanna Bartucci, Brasil</p>
+<p>Dr. James Ferreira Moura Jr, Brasil</p>
+<p>Dr. Karlos Luna, Portugal</p>
+<p>Dra. Sara Cadavid, Colombia</p>
+<p>Dra. Martha del Rosario Peña-Sarmiento, Colombia</p>
+<p>Dr. Juan Felipe Cardona Londoño, Colombia</p>
+<p>Dr. Bruno Marinho de Sousa, Brasil</p>
+<p>Dra. Ana Karla Silva Soares, Brasil</p>
+<p>Dr. Oliver Muller, Colombia</p>
+<p>Dra. Lina Maria Perilla-Rodriguez, Brasil</p>
+<p>Dra. Ximena Palacios Espinosa, Colombia</p>
+<p>Dr. Leonardo Gomes Bernardino, Brasil</p>
+<h4>&nbsp;</h4>
+<p>Dr. Kate Ellis, American University in Cairo (AUC), Egipto</p>
+<p>Dr. Bruna Zani, Università di Bologna, Italia</p>
+<p>Dr. Héctor López, Argentina</p>
+<p>Dr. Stijn Vanheule, Professor of Psychoanalysis and Clinical Psychodiagnostics at Ghent University, Bélgica</p>
+<p>Dra. Lucía Rossi</p>
+<p>Chidambaram Ramanathan, Estados Unidos</p>
+<p>Professor Dr. Sefa Bulut, Turquía</p>
+<p>Doctor Rolando Díaz-Loving, México</p>
+<p>Rebeca Puche-Navarro, Colombia</p>
+<p>Dra. Francoise Venezia Contreras Torres, Colombia</p>
+<p>Alfonso Villalobos-Pérez, Costa Rica</p>
+<p>Doctora Alba Elisabeth Mustaca, Argentina</p>
+<p>Dr. Lisa Rosenthal, Estados Unidos</p>
+<h4>Gestor de Indexación</h4>
+<p>Prof. Andrés M. Pérez-Acosta, Colombia</p>
+<h4>Asistente editorial</h4>
+<p>Maria del Mar Agudelo, Colombia</p>
+</div>',
+    'pt_BR' => '<div id="group">
+<h4>Director</h4>
+<p>Dr. Miguel Gutiérrez-Peláez, Colombia</p>
+<h4>Editora General</h4>
+<p>Dra. Luisa Fernanda Ramírez, Colombia</p>
+<h4>Editores Asociados</h4>
+<p>Dra. Mónica Roncancio Moreno, Colombia</p>
+<p>Doutora Marília Pinheiro de Carvalho, Universidade Federal do Pará (Brasil)</p>
+<p>Dra. Eunice Castro Seixas, Portugal</p>
+<p>Dra. Jenny Amanda Ortiz Muñoz, Colombia</p>
+<p>Dr. Carlos J Nieto Silva</p>
+<p>Dr. Cesar López Rodríguez, España</p>
+<p>Dra. Elina Boycheva, España</p>
+<p>Dr. Luis Manuel Silva, Colombia</p>
+<p>Dra. Giovanna Bartucci, Brasil</p>
+<p>Dr. James Ferreira Moura Jr, Brasil</p>
+<p>Dr. Karlos Luna, Portugal</p>
+<p>Dra. Sara Cadavid, Colombia</p>
+<p>Dra. Martha del Rosario Peña-Sarmiento, Colombia</p>
+<p>Dr. Juan Felipe Cardona Londoño, Colombia</p>
+<p>Dr. Bruno Marinho de Sousa, Universidade Federal de Goiás, Regional Catalão, Brasil, Brasil</p>
+<p>Dra. Ana Karla Silva Soares, Universidade Federal do Mato Grosso do Sul, Brasil</p>
+<p>Dr. Oliver Muller, Colombia</p>
+<p>Dra. Lina Maria Perilla-Rodriguez, Brasil</p>
+<p>Dra. Ximena Palacios Espinosa, Colombia</p>
+<p>Dr. Leonardo Gomes Bernardino, Brasil</p>
+<h4>Comite Científico</h4>
+<p>Dr. Kate Ellis, Egipto</p>
+<p>Dr. Bruna Zani, Italia</p>
+<p>Dr. Héctor López, Argentina</p>
+<p>Dr. Stijn Vanheule, Bélgica</p>
+<p>Dra. Lucía Rossi</p>
+<p>Chidambaram Ramanathan, Estados Unidos</p>
+<p>Professor Dr. Sefa Bulut, Turquía</p>
+<p>Doctor Rolando Díaz-Loving, México</p>
+<p>Rebeca Puche-Navarro, Colombia</p>
+<p>Dra. Francoise Venezia Contreras Torres, Colombia</p>
+<p>Alfonso Villalobos-Pérez, Costa Rica</p>
+<p>Doctora Alba Elisabeth Mustaca, Argentina</p>
+<p>Dr. Lisa Rosenthal, Estados Unidos</p>
+<h4>Gestor de Indexación</h4>
+<p>Prof. Andrés M. Pérez-Acosta, Colombia</p>
+<h4>Asistente editorial</h4>
+<p>Maria del Mar Agudelo, Colombia</p>
+</div>',
   ),
   'copyrightYearBasis' => '',
   'enableOai' => true,
@@ -551,113 +644,165 @@ var _gaq = _gaq || [];
   array (
     'es_ES' => 'Director',
   ),
+  'pageHeaderLogoImage' => 
+  array (
+    'es_ES' => 
+    array (
+      'name' => 'Logo.UR.White.png',
+      'uploadName' => 'pageHeaderLogoImage_es_ES.png',
+      'width' => 834,
+      'height' => 322,
+      'dateUploaded' => '2019-09-05 11:03:59',
+      'altText' => 'Universidad del Rosario',
+    ),
+  ),
   'about' => 
   array (
-    'en_US' => '
-							<div id="focusAndScope">
-							<h3>Focus and Scope</h3>
-							<p><p>Avances en Psicología Latinoamericana is a peer reviewed journal that every four months publishes articles in all areas of Psychology.  The journal is oriented to scientists and professionals in Psychology and related disciplines.</p><p>It includes original empirical research and exceptionally strong literary reviews or theoretical contributions.  The journal accepts submission of articles in Spanish, English, Portuguese or Italian with abstracts and key words (obtained in the Thesaurus of the American Psychological Association) in Spanish and English.  The submitted articles should follow the style of the Publication Manual of the American Psychological Association (sixth edition, 2010).</p><p>APL journal uses the platform Open Journal System (OJS) which does not generate charge for readers and, as a politic, does not charge authors for the processes of revision, peer evaluation and publication.</p><p>DOI: <a href="http://dx.doi.org/10.12804/apl">http://dx.doi.org/10.12804/apl</a></p><p>COPE (JM11891): <span><a href="http://publicationethics.org/members/avances-en-psicologia-latinoamericana">http://publicationethics.org/members/avances-en-psicologia-latinoamericana</a></span></p></p>
-							</div>
-							<div id="peerReviewProcess">
-							<h3>Peer Review Process</h3>
-							<p><p>The editorial board assesses the relevance of manuscripts received and verifies compliance with the requirements stipulated in the “Guidelines for authors ". If the requirements are met, then the peer review process begins, with evaluation of the manuscript by two specialists in the field. This double-blind process is done anonymously and the only person who knows the identities of both the author and the reviewer is the editor of the magazine, who is responsible for sending the correspondence. The processes of revision, peer evaluation and publication do not entail costs for authors.</p></p>
-							</div>
-							<div id="openAccessPolicy">
-							<h3>Open Access Policy</h3>
-							<p><p>This journal provides immediate access to its content on the premise making freely available research findings to the public favors to the public favors a greater global exchange of knowledge.</p></p>
-							</div>
-								<div id="custom-0">
-								<h3>Ethical Principles</h3>
-								<p><p><em>Avances en Psicología Latinoamericana</em> complies with APA’s principles regarding ethical standards in publications (<a href="http://www.apa.org/pubs/authors/ethics02.pdf">http://www.apa.org/pubs/authors/ethics02.pdf</a>) and those of the <em>Committee on Publication Ethics</em> (COPE) (<a href="http://publicationethics.org/">http://publicationethics.org</a>).  </p><p>It is expected that authors comply as well with these ethical standards both for investigations with human subjects and animals.  In the letter of originality, mention should be made of the evaluation and approval of the investigation project by the ethics committee enabled for that purpose whenever required.</p><p>Without exception, every time the publication of the results of an investigation requires the recollection of information with human participants, the investigators should make explicit mention in the manuscript of the proceedings of informed consent and the acceptance when people without legal capacity to consent are involved.</p><p>Every time that an investigation implies any form of deception to participants, this type of procedure must be justified as an integral part of the investigation’s design and the participants must be informed as soon as possible about this deception.  In any case, it should be done before finalizing the data collection phase.  Additionally, participants must be allowed to retire their information if they wish to do so.</p><p>APL considers that the publication of information or data that has been previously published in any other format constitutes a violation of the ethical principles of publication.  This is why, together with the manuscript, authors must present a letter of originality that addresses this issue and without which the process of evaluation does not begin.</p><p>In accordance with APA’s ethical principles, once the results of the investigation are published, authors must be willing to allow other investigators to examine their data (for a period of 5 years) to conduct new analysis and evaluate the statements presented in the context of the publication and only with this purpose.  In any case, special emphasis must be made in the protection of the confidentiality of the information and the anonymity of the participants.</p><p>The authors agree to duly accredit all their sources of information, as well as their own work, and to allow the journal to evaluate the compliance of this aspect using the means that it considers necessary for this purpose (e.g. through the use of Turnitin software, amongst others).  The inclusion of authors must reflect the real contribution of each author in the manuscript from the beginning of the process, independent of their status.  Minor contributions may be recognized in an author’s note.</p></p>
-								</div>
-								<div id="custom-1">
-								<h3>Antiplagiarism policies</h3>
-								<p><p>APL will review the originality of all the manuscripts submitted to the journal through different media, amongst them the software Turnitin.  When submitting an article for review, the authors accept that the document be examined in order to avoid situations of plagiarism and to promote ethical policies in publications.</p></p>
-								</div>
-								<div id="custom-2">
-								<h3>Self-archiving policy</h3>
-								<p><p>All the articles published in the journal are allowed to be self-archived on the institutional repositories of each of the academic institutions to which the authors of the article belong. This policy includes only the published versions of the articles. We encourage the authors to include the article’s EdocUR URL when they archive the documents on their repositories.</p><p><strong>Terms:</strong></p><ul><li><strong> </strong>Author and publisher rights must be credited.</li><li>A link to the published version of the article must be added.</li><li>Only the published version of the article should be self-archived.</li></ul></p>
-								</div>
-								<div id="sponsors">
-								<h3>Sponsors</h3><ul><li>
-											<a href="http://www.urosario.edu.co/">Universidad del Rosario</a></li></ul></div>
-								<div id="history">
-								<h3>Journal History</h3>
-								<p><p>The journal <em>Avances en Psicología Latinoamericana</em> (<em>APL</em>) was founded by Dr. Rubén Ardila in 1982 under the title <em>Avances en Psicología Clínica Latinoamericana</em><em> </em>(ISSN: 0120-3797). It was published under this name until 2003. Since 2004, it has its current title (ISSN 1794-4724). In 2007 it passed from being published by the <em>Fundación para el Avance de la Psicología</em> [<em>Foundation for the Advancement of Psychology</em>] to the <em>Universidad del Rosario</em>. In that same year, it passed from one volume per year to two (June and December). In 2013, APL had two important milestones: it became an exclusively electronic journal (ISSNe 2145-4515), publishing three volumes per year.  Since 2004, APL includes the <em>Galería Latinoamericana de Arte</em> [<em>Gallery of Latin American Art</em>] in its cover, which each year highlights the work of a Latin American Artist; some of these artists are also psychologists.</p></p>
-								</div>',
-    'es_ES' => '
-							<div id="focusAndScope">
-							<h3>Enfoque y alcance</h3>
-							<p><p>Avances en Psicología Latinoamericana (APL) es una revista electrónica cuatrimestral con evaluación por pares, que publica artículos en todas las áreas de la psicología.  La revista se dirige a científicos y profesionales en psicología y disciplinas afines.</p><p>Incluye contribuciones empíricas y teóricas originales, y excepcionalmente revisiones sistemáticas de literatura.  Se publican artículos escritos en español, inglés y portugués con resumen y palabras clave (obtenidas del Thesaurus de la American Psychological Association) en el idioma original e inglés.  Los artículos enviados deben seguir las normas del Manual de Estilo de Publicaciones de la American Psychological Association (Sexta edición, 2010).</p><p>La revista APL utiliza la plataforma Open Journal System (OJS) la cual no genera costos para los lectores y, por política, tampoco acarrea costos para los autores por los procesos de revisión, evaluación por pares y publicación.</p><p>DOI: <a href="http://dx.doi.org/10.12804/apl">http://dx.doi.org/10.12804/apl</a></p><p>COPE (<span>JM11891</span>): <span style="text-decoration: underline;"><a href="http://publicationethics.org/members/avances-en-psicologia-latinoamericana">http://publicationethics.org/members/avances-en-psicologia-latinoamericana</a></span></p></p>
-							</div>
-							<div id="peerReviewProcess">
-							<h3>Proceso de evaluación por pares</h3>
-							<p><p>El comité editorial evalúa la pertinencia de los manuscritos remitidos y verifica el cumplimiento de los requisitos solicitados en la sección <a href="/index.php/apl/about/submissions#authorGuidelines">“Directrices para los autores”</a> . Si cumple con estos requisitos, a continuación se da inicio al proceso de revisión por pares a cargo de un editor asociado, en el que es evaluado por dos especialistas en la materia.  El manuscrito debe cumplir los criterios de envío especificados para ser enviado a revisión por pares, de lo contrario, será devuelto a los autores.</p><p>Este proceso de tipo doble ciego se realiza de forma anónima y la única persona que conoce las identidades tanto del autor como del revisor es el editor de la revista, quien se encarga de enviar la correspondencia.  Los manuscritos sometidos a APL pueden ser revisados en cuanto a su originalidad utilizando algún software especializado (ej. turnitin)</p><p>La revisión inicial toma por lo general  entre 4 y 8 semanas dependiento de su adherencia a las normas de publicación especificadas por la revista. Si el manuscrito cumple todas  las condiciones de envío, el proceso de revisión por pares tiene una duración aproximada de entre 6 y 12 meses, dependiento de varios aspectos como la respuesta de los pares y la agilidad de los autores para atender a sus recomendaciones. En algunos casos, los manuscritos pueden ser enviados a una segunda ronda de revisión.</p><p>Cuando los autores deseen someter manuscritos que hayan sido rechazados por otras revistas con evaluación por pares, podrán someter junto con sus manuscritos los conceptos de revisiones anteriores. </p><p>Los procesos de revisión, evaluación por pares y publicación no acarrean costos para los autores.</p></p>
-							</div>
-							<div id="openAccessPolicy">
-							<h3>Política de acceso abierto</h3>
-							<p><p>Esta revista provee acceso libre inmediato a su contenido bajo la premisa de que hacer disponible gratuitamente al público el conocimiento resultado de investigación favorece un mayor intercambio de conocimiento global.</p></p>
-							</div>
-								<div id="custom-0">
-								<h3>Principios éticos</h3>
-								<p><p><span> Avances en Psicología Latinoamericana se acoge a los lineamientos de la APA en cuanto a los estándares y ética en la publicación  (<a href="http://www.apa.org/pubs/authors/ethics02.pdf">http://www.apa.org/pubs/authors/ethics02.pdf</a>) y los del<span class="apple-converted-space"> </span><em>Committee on Publication Ethics</em><span class="apple-converted-space"> </span>(COPE) [<em>Comité de Ética en las Publicaciones</em>] (</span><a href="http://publicationethics.org/"><span>http://publicationethics.org/</span></a><span>).  </span></p><p><span> Se espera que los investigadores se acojan a los estándares éticos tanto para la investigación con seres humanos como con animales. En la carta de presentación del manuscrito, se debe establecer la originalidad del documento, especificando el aporte de los autores en la elaboración del mismo. Adicionalmente, que el manuscrito no se encuentra en proceso de evaluación en otra revista. La carta debe estar firmada por todos los autores.</span></p><p><span> Cuando se trate de un artículo empírico, hacer mención de la evaluación y aprobación del proyecto de investigación por parte de un comité de ética habilitado para tal fin, siempre que sea pertinente.</span></p><p><span> Sin excepción, siempre que la publicación de los resultados de una investigación involucre recolección de información con sujetos humanos, los investigadores deberán explicitar en el manuscrito los procedimientos de consentimiento informado,  y  de asentimiento cuando hayan participado personas sin capacidad legal para consentir.</span></p><p><span>Siempre que una investigación implique alguna forma de engaño a los participantes, este tipo de procedimiento debe estar justificado como parte integral del diseño de la investigación, y los participantes deben ser informados tan pronto como sea posible sobre el engaño. En todo caso, antes de finalizar la fase recolección de información. Adicionalmente, se debe permitir que los participantes retiren su información si es su deseo.</span></p><p><span> APL considera que la publicación de información o datos que han sido publicados previamente en cualquier otro formato constituye una violación a los principios éticos de publicación. De ahí la declaración de los autores en el sentido de que su manuscrito es original e inédito sin la cual no se da inicio al proceso de evaluación.</span></p><p><span> De acuerdo con los principios éticos de la APA, una vez publicados los resultados de una investigación los autores  deben estar en disposición de permitir que otros investigadores examinen sus datos (por un periodo de 5 años) para conducir nuevos análisis y evaluar las afirmaciones realizadas en el contexto de la publicación, y solamente con este propósito.  En cualquier caso, se observará ante todo la protección de la confidencialidad de la información y la anonimidad de los participantes.</span></p><p><span> Los autores se comprometen a acreditar debidamente todas sus fuentes de información, así como su propio trabajo, y a permitir que la revista evalúe el cumplimiento de este aspecto utilizando los medios que considere necesarios (ej. mediante el uso de software Turnitin y otros). La asignación de los autores, debe reflejar la contribución real de los mismos a la realización del trabajo publicado sin importar su estatus. Contribuciones menores pueden ser reconocidas en la nota de autor. </span></p></p>
-								</div>
-								<div id="custom-1">
-								<h3>Política antiplagio</h3>
-								<p>Los manuscritos que se sometan a revisión en APL deben ser originales e inéditos.  APL revisará la originalidad de todos los manuscritos sometidos a la revista a través de diferentes medios, entre esos, la herramienta Turnitin. Al someter un artículo a revisión, los autores aceptan que el documento sea examinado con el fin de evitar situaciones de plagio y promover las políticas de ética en las publicaciones.</p>
-								</div>
-								<div id="custom-2">
-								<h3>Política autoarchivo</h3>
-								<p><p>Los trabajos publicados en la revista, <em><strong>se permite el autoarchivo en los repositorios de las instituciones a las que pertenecen los autores</strong></em>, <strong><em>de la versión publicada por el editor</em> </strong>(published version) y se recomienda incluir en el registro la URL correspondiente al documento en el repositorio EdocUR.</p><p><strong>Condiciones:</strong></p><ul><li>Los derechos de autor y editorial deben ser acreditados</li><li>Debe agregarse un enlace o link  a la  versión del editor.</li><li>Se debe agregar  la versión publicada por el editor (published version)</li></ul></p>
-								</div>
-								<div id="sponsors">
-								<h3>Sponsors</h3><ul><li>
-											<a href="http://www.urosario.edu.co/">Universidad del Rosario</a></li></ul></div>
-								<div id="history">
-								<h3>Historial de la revista</h3>
-								<p><p>La revista <em>Avances en Psicología Latinoamericana</em> fue fundada por el Dr. Rubén Ardila en 1982 con el título de <em>Avances en Psicología Clínica Latinoamericana </em>(ISSN: 0120-3797). Se publicó con ese título hasta 2003. A partir de 2004 pasó a tener su título actual (ISSN 1794-4724). Desde 2007 pasó de ser publicada por la Fundación para el Avance de la Psicología a la Universidad del Rosario. También en ese año pasó de publicarse una vez al año a publicarse dos veces al año (junio y diciembre). En 2013, la revista tuvo otros dos hitos: pasó a convertirse en una revista exclusivamente electrónica (ISSNe 2145-4515) y a ser una revista cuatrimestral. La revista incluye desde 2004 la Galería Latinoamericana de Arte en Portada, que resalta cada año la obra de un artista latinoamericano; algunos de los artistas son también psicólogos.</p></p>
-								</div>',
-    'pt_BR' => '
-							<div id="focusAndScope">
-							<h3>Foco e Escopo</h3>
-							<p><p><em>Avances en Psicología Latinoamericana</em> (APL) é uma revista eletrônica quadrimestral com avaliação por pares, que publica artigos em todas as áreas da psicologia. A revista se dirige a científicos e profissionais em psicologia e disciplinas afins.</p><p>Inclui contribuições empíricas e teóricas originais e excepcionalmente revisões de literatura de alta qualidade. Se publicam artigos escritos em espanhol, inglês, português ou italiano com resumo e palavras-chave (obtidas do Thesaurus da <em>American Psychological Association</em>) em espanhol e inglês. Os artigos enviados devem seguir as normas do Manual de Estilo de Publicações da <em>American Psychological Association</em> (Sexta edição, 2010).</p><p>A revista APL utiliza a plataforma <em>Open Journal System</em> (OJS) a qual não gera custos para os leitores e, por política, também não acarreia custos para os autores pelos processos de revisão, avaliação por pares e publicação. </p><p>DOI: <a href="http://dx.doi.org/10.12804/apl">http://dx.doi.org/10.12804/apl</a></p><p>COPE (JM11891): <span><a href="http://publicationethics.org/members/avances-en-psicologia-latinoamericana">http://publicationethics.org/members/avances-en-psicologia-latinoamericana</a></span></p></p>
-							</div>
-							<div id="peerReviewProcess">
-							<h3>Processo de Avaliação pelos Pares</h3>
-							<p><p>O comité editorial avalia a pertinência dos manuscritos remitidos e verifica o cumprimento dos requisitos solicitados na seção “Diretrizes para os autores”. Se cumpre com estes requisitos, a continuação se dá início ao processo de revisão por pares, no que é avaliado por dois especialistas na matéria. Este processo de tipo duplo cego se realiza de forma anónima e a única pessoa que conhece as identidades tanto do autor quanto do revisor é o editor da revista, quem se encarrega de enviar a correspondência. Os processos de revisão, avaliação por pares e publicação não acarreiam custos para os autores. </p></p>
-							</div>
-							<div id="openAccessPolicy">
-							<h3>Política de Acesso Livre</h3>
-							<p><p>Esta revista provê acesso livre imediato a seu conteúdo sob a premissa que fazer disponível gratuitamente ao público o conhecimento resultado de investigação favorece um maior intercâmbio de conhecimento global. </p></p>
-							</div>
-								<div id="custom-0">
-								<h3>Princípios éticos</h3>
-								<p><p><em>Avances em Psicología</em> se acolhe às diretrizes da APA em quanto aos standards e ética na publicação (<a href="http://www.apa.org/pubs/authors/ethics02.pdf">http://www.apa.org/pubs/authors/ethics02.pdf</a>) e os do <em>Committee on Publication Ethic</em>s (COPE) [Comité de Ética nas Publicações] <a href="http://publicationethics.org/">http://publicationethics.org/</a></p><p> Se espera que os pesquisadores se acolham aos standards éticos tanto para a pesquisa com seres humanos quanto com animais. Na carta de originalidade, deve-se fazer menção da avaliação e aprovação do projeto de pesquisa por parte de um comité de ética habilitado tal fim sempre que seja requerido.</p><p>Sem exceção, sempre que a publicação dos resultados de uma pesquisa envolva recolecção de informação com sujeitos humanos, os pesquisadores deverão explicitar no manuscrito os procedimentos de consentimento informado, e de assentimento quando tenham participado pessoas sem capacidade legal para consentir.</p><p>Sempre que uma pesquisa implique alguma forma de engano aos participantes, este tipo de procedimento deve ser justificado como parte integral do desenho da pesquisa, e os participantes devem ser informados logo que seja possível sobre o engano. Em todo caso, antes de finalizar a fase recolecção de informação. Adicionalmente, se deve permitir que os participantes retirem a sua informação se assim o desejarem.</p><p>APL considera que a publicação de informação ou dados que têm sido publicados previamente em qualquer outro formato constitui uma violação aos princípios éticos de publicação. Daí que junto ao manuscrito os autores devem apresentar uma carta de originalidade que inclui este aspecto e sem a qual não se dá início ao processo de avaliação.</p><p>De acordo com os princípios éticos da APA, uma vez publicados os resultados de uma pesquisa os autores devem estar em disposição de permitir que outros pesquisadores examinem os seus dados (por um período de 5 anos) para conduzir novas análises e avaliar as afirmações realizadas no contexto da publicação e só com este propósito. Em qualquer caso, se observará ante todo a proteção da confidencialidade da informação e o anonimato dos participantes.</p><p>Os autores comprometem-se a acreditar devidamente todas as suas fontes de informação, assim como o seu próprio trabalho, e a permitir que a revista avalie o cumprimento deste aspecto utilizando os meios que considere necessários (ex. mediante o uso do software Turnitin e outros). A assinação dos autores, devem refletir a contribuição real dos mesmos à realização do trabalho publicado sem importar o seu status. Contribuições menores podem ser reconhecidas na nota do autor. </p></p>
-								</div>
-								<div id="custom-1">
-								<h3>Política anti-plágio</h3>
-								<p><p>APL revisará a originalidade de todos os manuscritos submetidos à revista através de diferentes meios, entre esses, a ferramenta Turnitin. Ao submeter um artigo a revisão, os autores aceitam que o documento seja examinado com o fim de evitar situações de plágio e promover as políticas de ética nas publicações. </p></p>
-								</div>
-								<div id="sponsors">
-								<h3>Sponsors</h3><ul><li>
-											<a href="http://www.urosario.edu.co/">Universidad del Rosario</a></li></ul></div>
-								<div id="history">
-								<h3>Histórico do periódico</h3>
-								<p><p>A revista <em>Avances en Psicología Latinoamericana</em> foi fundada pelo Dr. Rubén Ardila em 1987 com o título de <em>Avances en Psicología Clínica Latinoamericana</em><em> </em>(ISSN: 0120-3797). Se publicou com esse título até 2003. A partir de 2004 passou a ter seu título atual (ISSN 1794-4724). Desde 2007 passou de ser publicada pela <em>Fundación para el Avance de la Psicología</em> à <em>Universidad del Rosario</em>. Também nesse ano passou de publicar-se uma vez ao ano a se publicar duas vezes ao ano (junho e dezembro). Em 2013, a revista teve outros dois acontecimentos: passou a se converter em uma revista exclusivamente eletrônica (ISSNe 2145-4515) e a ser uma revista quadrimestral. A revista inclui desde 2004 a Galeria Latino-Americana da Arte em portada, que ressalta cada ano a obra de um artista latino-americano; alguns dos artistas são também psicólogos. </p></p>
-								</div>',
+    'en_US' => '<div id="focusAndScope">
+<h3>Focus and Scope</h3>
+<p>Avances en Psicología Latinoamericana&nbsp;is a peer reviewed journal that every four months publishes articles in all areas of Psychology.&nbsp; The journal is oriented to scientists and professionals in Psychology and related disciplines.</p>
+<p>It includes original empirical research and exceptionally strong literary reviews or&nbsp;theoretical contributions.&nbsp; The journal accepts submission of articles in Spanish, English, Portuguese or Italian with abstracts and key words (obtained in the Thesaurus of the American Psychological Association) in Spanish and English.&nbsp; The submitted articles should follow the style of the Publication Manual of the American Psychological Association (sixth edition, 2010).</p>
+<p>APL journal uses the platform Open Journal System (OJS) which does not generate charge for readers and, as a politic, does not charge authors for the processes of revision, peer evaluation and publication.</p>
+<p>DOI:&nbsp;<a href="http://dx.doi.org/10.12804/apl">http://dx.doi.org/10.12804/apl</a></p>
+<p>COPE (JM11891):&nbsp;<a href="http://publicationethics.org/members/avances-en-psicologia-latinoamericana">http://publicationethics.org/members/avances-en-psicologia-latinoamericana</a></p>
+</div>
+<div id="peerReviewProcess">
+<h3>Peer Review Process</h3>
+<p>The editorial board assesses the relevance of manuscripts received and verifies compliance with the requirements stipulated in the “Guidelines for authors ". If the requirements are met, then the peer review process begins, with evaluation of the manuscript by two specialists in the field. This double-blind process is done anonymously and the only person who knows the identities of both the author and the reviewer is the editor of the magazine, who is responsible for sending the correspondence. The processes of revision, peer evaluation and publication do not entail costs for authors.</p>
+</div>
+<div id="openAccessPolicy">
+<h3>Open Access Policy</h3>
+<p>This journal provides immediate access to its content on the premise making freely available research findings to the public favors&nbsp;to the public favors&nbsp;a greater global exchange of knowledge.</p>
+</div>
+<div id="custom-0">
+<h3>Ethical Principles</h3>
+<p><em>Avances en Psicología Latinoamericana</em> complies with APA’s principles regarding ethical standards in publications&nbsp;(<a href="http://www.apa.org/pubs/authors/ethics02.pdf">http://www.apa.org/pubs/authors/ethics02.pdf</a>) and those of the <em>Committee on Publication Ethics</em>&nbsp;(COPE) (<a href="http://publicationethics.org/">http://publicationethics.org</a>).&nbsp;&nbsp;</p>
+<p>It is expected that authors comply as well with these ethical standards both for investigations with human subjects and animals. &nbsp;In the letter of originality, mention should be made of the evaluation and approval of the investigation project by the ethics committee enabled for that purpose whenever required.</p>
+<p>Without exception, every time the publication of the results of an investigation requires the recollection of information with human participants, the investigators should make explicit mention in the manuscript of the proceedings of informed consent and the acceptance when people without legal capacity to consent are involved.</p>
+<p>Every time that an investigation implies any form of deception to participants, this type of procedure must be justified as an integral part of the investigation’s design and the participants must be informed as soon as possible about this deception.&nbsp; In any case, it should be done before finalizing the data collection phase.&nbsp; Additionally, participants must be allowed to retire their information if they wish to do so.</p>
+<p>APL considers that the publication of information or data that has been previously published in any other format constitutes a violation of the ethical principles of publication.&nbsp; This is why, together with the manuscript, authors must present a letter of originality that addresses this issue and without which the process of evaluation does not begin.</p>
+<p>In accordance with APA’s ethical principles, once the results of the investigation are published, authors must be willing to allow other investigators to examine their data (for a period of 5 years) to conduct new analysis and evaluate the statements presented in the context of the publication and only with this purpose. &nbsp;In any case, special emphasis must be made in the protection of the confidentiality of the information and the anonymity of the participants.</p>
+<p>The authors agree to duly accredit all their sources of information, as well as their own work, and to allow the journal to evaluate the compliance of this aspect using the means that it considers necessary for this purpose (e.g. through the use of Turnitin software, amongst others).&nbsp; The inclusion of authors must reflect the real contribution of each author in the manuscript from the beginning of the process, independent of their status.&nbsp; Minor contributions may be recognized in an author’s note.</p>
+</div>
+<div id="custom-1">
+<h3>Antiplagiarism policies</h3>
+<p>APL will review the originality of all the manuscripts submitted to the journal through different media, amongst them the software Turnitin. &nbsp;When submitting an article for review, the authors accept that the document be examined in order to avoid situations of plagiarism and to promote ethical policies in publications.</p>
+</div>
+<div id="custom-2">
+<h3>Self-archiving policy</h3>
+<p>All the articles published in the journal are allowed to be self-archived on the institutional repositories of each of the academic institutions to which the authors of the article belong. This policy includes only the published versions of the articles. We encourage the authors to include the article’s EdocUR URL when they archive the documents on their repositories.</p>
+<p><strong>Terms:</strong></p>
+<ul>
+<li class="show"><strong>&nbsp;</strong>Author and publisher rights must be credited.</li>
+<li class="show">A link to the published version of the article must be added.</li>
+<li class="show">Only the published version of the article should be self-archived.</li>
+</ul>
+</div>
+<div id="sponsors">
+<h3>Sponsors</h3>
+<ul>
+<li class="show"><a href="http://www.urosario.edu.co/">Universidad del Rosario</a></li>
+</ul>
+</div>
+<div id="history">
+<h3>Journal History</h3>
+<p>The journal&nbsp;<em>Avances en Psicología Latinoamericana</em>&nbsp;(<em>APL</em>) was founded by Dr. Rubén Ardila in 1982 under the title&nbsp;<em>Avances en Psicología Clínica Latinoamericana</em><em>&nbsp;</em>(ISSN: 0120-3797). It was published under this name until 2003. Since 2004, it has its current title (ISSN 1794-4724). In 2007 it passed from being published by the <em>Fundación para el Avance de la Psicología</em> [<em>Foundation for the Advancement of Psychology</em>] to the <em>Universidad del Rosario</em>. In that same year, it passed from one volume per year to two (June and December). In 2013, APL had two important milestones: it became an exclusively electronic journal (ISSNe 2145-4515), publishing three volumes per year.&nbsp; Since 2004, APL includes the <em>Galería Latinoamericana de Arte</em> [<em>Gallery of Latin American Art</em>] in its cover, which each year highlights the work of a Latin American Artist; some of these artists are also psychologists.</p>
+</div>',
+    'es_ES' => '<div id="focusAndScope">
+<h3>Enfoque y alcance</h3>
+<p>Avances en Psicología Latinoamericana&nbsp;(APL) es una revista electrónica cuatrimestral con evaluación por pares, que publica artículos en todas las áreas de la psicología. &nbsp;La revista se dirige a científicos y profesionales en psicología y disciplinas afines.</p>
+<p>Incluye contribuciones empíricas y teóricas originales, y excepcionalmente revisiones sistemáticas de literatura. &nbsp;Se publican artículos escritos en español, inglés y portugués con resumen y palabras clave (obtenidas del Thesaurus de la American Psychological Association) en el idioma original e inglés. &nbsp;Los artículos enviados deben seguir las normas del Manual de Estilo de Publicaciones de la American Psychological Association (Sexta edición, 2010).</p>
+<p>La revista APL utiliza la plataforma Open Journal System (OJS) la cual no genera costos para los lectores y, por política, tampoco acarrea costos para los autores por los procesos de revisión, evaluación por pares y publicación.</p>
+<p>DOI:&nbsp;<a href="http://dx.doi.org/10.12804/apl">http://dx.doi.org/10.12804/apl</a></p>
+<p>COPE (JM11891):&nbsp;<span style="text-decoration: underline;"><a href="http://publicationethics.org/members/avances-en-psicologia-latinoamericana">http://publicationethics.org/members/avances-en-psicologia-latinoamericana</a></span></p>
+</div>
+<div id="peerReviewProcess">
+<h3>Proceso de evaluación por pares</h3>
+<p>El comité editorial evalúa la pertinencia de los manuscritos remitidos y verifica el cumplimiento de los requisitos solicitados en la sección <a href="/index.php/apl/about/submissions#authorGuidelines">“Directrices para los autores”</a> . Si cumple con estos requisitos, a continuación se da inicio al proceso de revisión por pares a cargo de un editor asociado, en el que es evaluado por dos especialistas en la materia.&nbsp; El manuscrito debe cumplir los criterios de envío especificados para ser enviado a revisión por pares, de lo contrario, será devuelto a los autores.</p>
+<p>Este proceso de tipo doble ciego se realiza de forma anónima y la única persona que conoce las identidades tanto del autor como del revisor es el editor de la revista, quien se encarga de enviar la correspondencia.&nbsp; Los manuscritos sometidos a APL pueden ser revisados en cuanto a su originalidad utilizando algún software especializado (ej. turnitin)</p>
+<p>La revisión inicial toma por lo general&nbsp; entre 4 y 8 semanas dependiento de su adherencia a las normas de publicación especificadas por la revista. Si el manuscrito cumple todas&nbsp; las condiciones de envío, el proceso de revisión por pares tiene una duración aproximada de entre 6 y 12 meses, dependiento de varios aspectos como la respuesta de los pares y la agilidad de los autores para&nbsp;atender a sus recomendaciones. En algunos casos, los manuscritos pueden ser enviados a una segunda ronda de revisión.</p>
+<p>Cuando los autores deseen someter manuscritos que hayan sido rechazados por otras revistas con evaluación por pares, podrán someter junto con sus manuscritos los conceptos de revisiones anteriores.&nbsp;</p>
+<p>Los procesos de revisión, evaluación por pares y publicación no acarrean costos para los autores.</p>
+</div>
+<div id="openAccessPolicy">
+<h3>Política de acceso abierto</h3>
+<p>Esta revista provee acceso libre inmediato a su contenido bajo la premisa de que hacer disponible gratuitamente al público el conocimiento resultado de investigación favorece un mayor intercambio de conocimiento global.</p>
+</div>
+<div id="custom-0">
+<h3>Principios éticos</h3>
+<p>&nbsp;Avances en Psicología Latinoamericana se acoge a los lineamientos de la APA en cuanto a los estándares y ética en la publicación &nbsp;(<a href="http://www.apa.org/pubs/authors/ethics02.pdf">http://www.apa.org/pubs/authors/ethics02.pdf</a>) y los del<span class="apple-converted-space">&nbsp;</span><em>Committee on Publication Ethics</em><span class="apple-converted-space">&nbsp;</span>(COPE) [<em>Comité de Ética en las Publicaciones</em>]&nbsp;(<a href="http://publicationethics.org/">http://publicationethics.org/</a>).&nbsp;&nbsp;</p>
+<p>&nbsp;Se espera que los investigadores se acojan a los estándares éticos tanto para la investigación con seres humanos como con animales. En la carta de presentación del manuscrito, se debe establecer la originalidad del documento, especificando el aporte de los autores en la elaboración del mismo. Adicionalmente, que el manuscrito no se encuentra en proceso de evaluación en otra revista. La carta debe estar firmada por todos los autores.</p>
+<p>&nbsp;Cuando se trate de un artículo empírico, hacer mención de la evaluación y aprobación del proyecto de investigación por parte de un comité de ética habilitado para tal fin, siempre que sea pertinente.</p>
+<p>&nbsp;Sin excepción, siempre que la publicación de los resultados de una investigación involucre recolección de información con sujetos humanos, los investigadores deberán explicitar en el manuscrito los procedimientos de consentimiento informado, &nbsp;y &nbsp;de asentimiento cuando hayan participado personas sin capacidad legal para consentir.</p>
+<p>Siempre que una investigación implique alguna forma de engaño a los participantes, este tipo de procedimiento debe estar justificado como parte integral del diseño de la investigación, y los participantes deben ser informados tan pronto como sea posible sobre el engaño. En todo caso, antes de finalizar la fase recolección de información. Adicionalmente, se debe permitir que los participantes retiren su información si es su deseo.</p>
+<p>&nbsp;APL considera que la publicación de información o datos que han sido publicados previamente en cualquier otro formato constituye una violación a los principios éticos de publicación. De ahí la declaración de los autores en el sentido de que su manuscrito es original e inédito sin la cual no se da inicio al proceso de evaluación.</p>
+<p>&nbsp;De acuerdo con los principios éticos de la APA, una vez publicados los resultados de una investigación los autores &nbsp;deben estar en disposición de permitir que otros investigadores examinen sus datos (por un periodo de 5 años) para conducir nuevos análisis y evaluar las afirmaciones realizadas en el contexto de la publicación, y solamente con este propósito. &nbsp;En cualquier caso, se observará ante todo la protección de la confidencialidad de la información y la anonimidad de los participantes.</p>
+<p>&nbsp;Los autores se comprometen a acreditar debidamente todas sus fuentes de información, así como su propio trabajo, y a permitir que la revista evalúe el cumplimiento de este aspecto utilizando los medios que considere necesarios (ej. mediante el uso de software Turnitin y otros). La asignación de los autores, debe reflejar la contribución real de los mismos a la realización del trabajo publicado sin importar su estatus. Contribuciones menores pueden ser reconocidas en la nota de autor.&nbsp;</p>
+</div>
+<div id="custom-1">
+<h3>Política antiplagio</h3>
+<p>Los manuscritos que se sometan a revisión en APL deben ser originales e inéditos.&nbsp; APL revisará la originalidad de todos los manuscritos sometidos a la revista a través de diferentes medios, entre esos, la herramienta Turnitin. Al someter un artículo a revisión, los autores aceptan que el documento sea examinado con el fin de evitar situaciones de plagio y promover las políticas de ética en las publicaciones.</p>
+</div>
+<div id="custom-2">
+<h3>Política autoarchivo</h3>
+<p>Los trabajos publicados en la revista,&nbsp;<em><strong>se permite el autoarchivo en los repositorios de las instituciones a las que pertenecen los autores</strong></em>,&nbsp;<strong><em>de la versión publicada por el editor</em>&nbsp;</strong>(published version) y se recomienda incluir en el registro la URL correspondiente al documento en el repositorio EdocUR.</p>
+<p><strong>Condiciones:</strong></p>
+<ul>
+<li class="show">Los derechos de autor y editorial deben ser acreditados</li>
+<li class="show">Debe agregarse un enlace o link &nbsp;a la &nbsp;versión del editor.</li>
+<li class="show">Se debe agregar &nbsp;la versión publicada por el editor (published version)</li>
+</ul>
+</div>
+<div id="sponsors">
+<h3>Sponsors</h3>
+<ul>
+<li class="show"><a href="http://www.urosario.edu.co/">Universidad del Rosario</a></li>
+</ul>
+</div>
+<div id="history">
+<h3>Historial de la revista</h3>
+<p>La revista <em>Avances en Psicología Latinoamericana</em> fue fundada por el Dr. Rubén Ardila en 1982 con el título de <em>Avances en Psicología Clínica Latinoamericana </em>(ISSN: 0120-3797). Se publicó con ese título hasta 2003. A partir de 2004 pasó a tener su título actual (ISSN 1794-4724). Desde 2007 pasó de ser publicada por la Fundación para el Avance de la Psicología a la Universidad del Rosario. También en ese año pasó de publicarse una vez al año a publicarse dos veces al año (junio y diciembre). En 2013, la revista tuvo otros dos hitos: pasó a convertirse en una revista exclusivamente electrónica (ISSNe 2145-4515) y a ser una revista cuatrimestral. La revista incluye desde 2004 la Galería Latinoamericana de Arte en Portada, que resalta cada año la obra de un artista latinoamericano; algunos de los artistas son también psicólogos.</p>
+</div>',
+    'pt_BR' => '<div id="focusAndScope">
+<h3>Foco e Escopo</h3>
+<p><em>Avances en Psicología Latinoamericana</em>&nbsp;(APL) é uma revista eletrônica quadrimestral com avaliação por pares, que publica artigos em todas as áreas da psicologia. A revista se dirige a científicos e profissionais em psicologia e disciplinas afins.</p>
+<p>Inclui contribuições empíricas e teóricas originais e excepcionalmente revisões de literatura de alta qualidade. Se publicam artigos escritos em espanhol, inglês, português ou italiano com resumo e palavras-chave (obtidas do Thesaurus da <em>American Psychological Association</em>) em espanhol e inglês. Os artigos enviados devem seguir as normas do Manual de Estilo de Publicações da <em>American Psychological Association</em> (Sexta edição, 2010).</p>
+<p>A revista APL utiliza a plataforma <em>Open Journal System</em> (OJS) a qual não gera custos para os leitores e, por política, também não acarreia custos para os autores pelos processos de revisão, avaliação por pares e publicação.&nbsp;</p>
+<p>DOI:&nbsp;<a href="http://dx.doi.org/10.12804/apl">http://dx.doi.org/10.12804/apl</a></p>
+<p>COPE (JM11891):&nbsp;<a href="http://publicationethics.org/members/avances-en-psicologia-latinoamericana">http://publicationethics.org/members/avances-en-psicologia-latinoamericana</a></p>
+</div>
+<div id="peerReviewProcess">
+<h3>Processo de Avaliação pelos Pares</h3>
+<p>O comité editorial avalia a pertinência dos manuscritos remitidos e verifica o cumprimento dos requisitos solicitados na seção “Diretrizes para os autores”. Se cumpre com estes requisitos, a continuação se dá início ao processo de revisão por pares, no que é avaliado por dois especialistas na matéria. Este processo de tipo duplo cego se realiza de forma anónima e a única pessoa que conhece as identidades tanto do autor quanto do revisor é o editor da revista, quem se encarrega de enviar a correspondência. Os processos de revisão, avaliação por pares e publicação não acarreiam custos para os autores.&nbsp;</p>
+</div>
+<div id="openAccessPolicy">
+<h3>Política de Acesso Livre</h3>
+<p>Esta revista provê acesso livre imediato a seu conteúdo sob a premissa que fazer disponível gratuitamente ao público o conhecimento resultado de investigação favorece um maior intercâmbio de conhecimento global.&nbsp;</p>
+</div>
+<div id="custom-0">
+<h3>Princípios éticos</h3>
+<p><em>Avances em Psicología</em> se acolhe às diretrizes da APA em quanto aos standards e ética na publicação (<a href="http://www.apa.org/pubs/authors/ethics02.pdf">http://www.apa.org/pubs/authors/ethics02.pdf</a>) e os do <em>Committee on Publication Ethic</em>s&nbsp;(COPE) [Comité de Ética nas Publicações]&nbsp;<a href="http://publicationethics.org/">http://publicationethics.org/</a></p>
+<p>&nbsp;Se espera que os pesquisadores se acolham aos standards éticos tanto para a pesquisa com seres humanos quanto com animais. Na carta de originalidade, deve-se fazer menção da avaliação e aprovação do projeto de pesquisa por parte de um comité de ética habilitado tal fim sempre que seja requerido.</p>
+<p>Sem exceção, sempre que a publicação dos resultados de uma pesquisa envolva recolecção de informação com sujeitos humanos, os pesquisadores deverão explicitar no manuscrito os procedimentos de consentimento informado, e de assentimento quando tenham participado pessoas sem capacidade legal para consentir.</p>
+<p>Sempre que uma pesquisa implique alguma forma de engano aos participantes, este tipo de procedimento deve ser justificado como parte integral do desenho da pesquisa, e os participantes devem ser informados logo que seja possível sobre o engano. Em todo caso, antes de finalizar a fase recolecção de informação. Adicionalmente, se deve permitir que os participantes retirem a sua informação se assim o desejarem.</p>
+<p>APL considera que a publicação de informação ou dados que têm sido publicados previamente em qualquer outro formato constitui uma violação aos princípios éticos de publicação. Daí que junto ao manuscrito os autores devem apresentar uma carta de originalidade que inclui este aspecto e sem a qual não se dá início ao processo de avaliação.</p>
+<p>De acordo com os princípios éticos da APA, uma vez publicados os resultados de uma pesquisa os autores devem estar em disposição de permitir que outros pesquisadores examinem os seus dados (por um período de 5 anos) para conduzir novas análises e avaliar as afirmações realizadas no contexto da publicação e só com este propósito. Em qualquer caso, se observará ante todo a proteção da confidencialidade da informação e o anonimato dos participantes.</p>
+<p>Os autores comprometem-se a acreditar devidamente todas as suas fontes de informação, assim como o seu próprio trabalho, e a permitir que a revista avalie o cumprimento deste aspecto utilizando os meios que considere necessários (ex. mediante o uso do software Turnitin e outros). A assinação dos autores, devem refletir a contribuição real dos mesmos à realização do trabalho publicado sem importar o seu status. Contribuições menores podem ser reconhecidas na nota do autor.&nbsp;</p>
+</div>
+<div id="custom-1">
+<h3>Política anti-plágio</h3>
+<p>APL revisará a originalidade de todos os manuscritos submetidos à revista através de diferentes meios, entre esses, a ferramenta Turnitin. Ao submeter um artigo a revisão, os autores aceitam que o documento seja examinado com o fim de evitar situações de plágio e promover as políticas de ética nas publicações.&nbsp;</p>
+</div>
+<div id="sponsors">
+<h3>Sponsors</h3>
+<ul>
+<li class="show"><a href="http://www.urosario.edu.co/">Universidad del Rosario</a></li>
+</ul>
+</div>
+<div id="history">
+<h3>Histórico do periódico</h3>
+<p>A revista <em>Avances en Psicología Latinoamericana</em>&nbsp;foi fundada pelo Dr. Rubén Ardila em 1987 com o título de <em>Avances en Psicología Clínica Latinoamericana</em><em>&nbsp;</em>(ISSN: 0120-3797). Se publicou com esse título até 2003. A partir de 2004 passou a ter seu título atual (ISSN 1794-4724). Desde 2007 passou de ser publicada pela <em>Fundación para el Avance de la Psicología</em> à <em>Universidad del Rosario</em>. Também nesse ano passou de publicar-se uma vez ao ano a se publicar duas vezes ao ano (junho e dezembro). Em 2013, a revista teve outros dois acontecimentos: passou a se converter em uma revista exclusivamente eletrônica (ISSNe 2145-4515) e a ser uma revista quadrimestral. A revista inclui desde 2004 a Galeria Latino-Americana da Arte em portada, que ressalta cada ano a obra de um artista latino-americano; alguns dos artistas são também psicólogos.&nbsp;</p>
+</div>',
   ),
-  'editorialTeam' => 
-  array (
-    'en_US' => '<div id="group"><h4>Director APL</h4><p>Dr. Miguel Gutiérrez-Peláez, Colombia</p><h4>Editora General</h4><p>Dra. Luisa Fernanda Ramírez, Colombia</p><h4>Editores Asociados</h4><p>Dra. Mónica Roncancio Moreno, Colombia</p><p>Doutora Marília Pinheiro de Carvalho</p><p>Dra. Eunice Castro Seixas, Portugal</p><p>Dra. Jenny Amanda Ortiz Muñoz, Colombia</p><p>Dr. Carlos J Nieto Silva</p><p>Dr. Cesar López Rodríguez, España</p><p>Dra. Elina Boycheva, España</p><p>Dr. Luis Manuel Silva, Colombia</p><p>Dra. Giovanna Bartucci, Brasil</p><p>Dr. James Ferreira Moura Jr, Brasil</p><p>Dr. Karlos Luna, Portugal</p><p>Dra. Sara Cadavid, Colombia</p><p>Dra. Martha del Rosario Peña-Sarmiento, Colombia</p><p>Dr. Juan Felipe Cardona Londoño, Colombia</p><p>Dr. Bruno Marinho de Sousa, Brasil</p><p>Dra. Ana Karla Silva Soares, Brasil</p><p>Dr. Oliver Muller, Colombia</p><p>Dra. Lina Maria Perilla-Rodriguez, Brasil</p><p>Dra. Ximena Palacios Espinosa, Colombia</p><p>Dr. Leonardo Gomes Bernardino, Brasil</p><h4></h4><p>Dr. Kate Ellis, American University in Cairo (AUC), Egipto</p><p>Dr. Bruna Zani, Università di Bologna, Italia</p><p>Dr. Héctor López, Argentina</p><p>Dr. Stijn Vanheule, Professor of Psychoanalysis and Clinical Psychodiagnostics at Ghent University, Bélgica</p><p>Dra. Lucía Rossi</p><p>Chidambaram Ramanathan, Estados Unidos</p><p>Professor Dr. Sefa Bulut, Turquía</p><p>Doctor Rolando Díaz-Loving, México</p><p>Rebeca Puche-Navarro, Colombia</p><p>Dra. Francoise Venezia Contreras Torres, Colombia</p><p>Alfonso Villalobos-Pérez, Costa Rica</p><p>Doctora Alba Elisabeth Mustaca, Argentina</p><p>Dr. Lisa Rosenthal, Estados Unidos</p><h4>Gestor de Indexación</h4><p>Prof. Andrés M. Pérez-Acosta, Colombia</p><h4>Asistente editorial</h4><p>Maria Margarita Villota, Colombia</p></div>',
-    'es_ES' => '<div id="group"><h4>Director</h4><p>Dr. Miguel Gutiérrez-Peláez, Universidad del Rosario, Colombia</p><h4>Editora General</h4><p>Dra. Luisa Fernanda Ramírez, Universidad del Rosario, Colombia</p><h4>Editores Asociados</h4><p>Dra. Mónica Roncancio Moreno, Universidad Pontificia Bolivariana, Colombia</p><p>Doutora Marília Pinheiro de Carvalho</p><p>Dra. Eunice Castro Seixas, Universidad de Lisboa
-ISEG
-Centro de Sociología Económica de las Organizaciones, Portugal</p><p>Dra. Jenny Amanda Ortiz Muñoz, Jenny A. Ortiz M. PhD.
-Programa de Psicología
-Universidad del Rosario, Colombia</p><p>Dr. Carlos J Nieto Silva, Universidad del Rosario</p><p>Dr. Cesar López Rodríguez, Universidad Autónoma de Madrid (España), España</p><p>Dra. Elina Boycheva, Universidad de Salamanca, España</p><p>Dr. Luis Manuel Silva, Pontificia Universidad Javeriana de Bogotá (Colombia), Colombia</p><p>Dra. Giovanna Bartucci, Psicanalista
-Associação Brasileira de Psicanálise de Casal e Família (ABPCF), Brasil</p><p>Dr. James Ferreira Moura Jr, Instituto de Humanidades e Letras da Universidade da Integração Internacional da Lusofonia Afro-Brasileira (UNILAB)
-Programa de Pós-graduação em Psicologia da Universidade Federal do Ceará (UFC), Brasil</p><p>Dr. Karlos Luna, Escola de Psicologia, Universidade do Minho (Portugal), Portugal</p><p>Dra. Sara Cadavid, Universidad del Rosario, Colombia</p><p>Dra. Martha del Rosario Peña-Sarmiento, Universidad Católica de Colombia, Colombia</p><p>Dr. Juan Felipe Cardona Londoño, Universidad del Valle, Colombia</p><p>Dr. Bruno Marinho de Sousa, Universidade Federal de Goiás, Brasil</p><p>Dra. Ana Karla Silva Soares, Universidade Federal do Mato Grosso do Sul
-Federal University of Mato Grosso do Sul, Brasil</p><p>Dr. Oliver Muller, Universidad del Rosario, Colombia</p><p>Dra. Lina Maria Perilla-Rodriguez, Asociación Colombiana para el Avance de la Ciencia, Brasil</p><p>Dra. Ximena Palacios Espinosa, Universidad del Rosario, Colombia</p><p>Dr. Leonardo Gomes Bernardino, Instituto de Psicologia da Universidade Federal de Uberlândia (UFU), Brasil</p><h4>Comite Científico</h4><p>Dr. Kate Ellis, American University in Cairo (AUC), Egipto</p><p>Dr. Bruna Zani, Italia</p><p>Dr. Héctor López, Universidad de Buenos Aires, Argentina</p><p>Dr. Stijn Vanheule, Bélgica</p><p>Dra. Lucía Rossi, Universidad de Buenos Aires (UBA), Argentina</p><p>Chidambaram Ramanathan, The University of Memphis, Estados Unidos</p><p>Professor Dr. Sefa Bulut, Ibn Haldun University, Istanbul, Turkey, Turquía</p><p>Doctor Rolando Díaz-Loving, Universidad Nacional Autónoma de México, México</p><p>Rebeca Puche-Navarro, Universidad del Valle, Colombia</p><p>Dra. Francoise Venezia Contreras Torres, Universidad del Rosario, Colombia</p><p>Alfonso Villalobos-Pérez, Universidad de Iberoamérica, Costa Rica</p><p>Doctora Alba Elisabeth Mustaca, Centro de Altos Estudios de Ciencias Humanas y de la Salud (CAECIHS)- Facultad de Psicología y Ciencias Humanas- Universidad Abierta Interamericana, Argentina</p><p>Dr. Lisa Rosenthal, Pace University, Estados Unidos</p><h4>Gestor de Indexación</h4><p>Prof. Andrés M. Pérez-Acosta, Universidad del Rosario, Colombia</p><h4>Asistente editorial</h4><p>Maria Margarita Villota, Universidad del Rosario, Colombia</p></div>',
-    'pt_BR' => '<div id="group"><h4>Director</h4><p>Dr. Miguel Gutiérrez-Peláez, Colombia</p><h4>Editora General</h4><p>Dra. Luisa Fernanda Ramírez, Colombia</p><h4>Editores Asociados</h4><p>Dra. Mónica Roncancio Moreno, Colombia</p><p>Doutora Marília Pinheiro de Carvalho, Universidade Federal do Pará (Brasil)</p><p>Dra. Eunice Castro Seixas, Portugal</p><p>Dra. Jenny Amanda Ortiz Muñoz, Colombia</p><p>Dr. Carlos J Nieto Silva</p><p>Dr. Cesar López Rodríguez, España</p><p>Dra. Elina Boycheva, España</p><p>Dr. Luis Manuel Silva, Colombia</p><p>Dra. Giovanna Bartucci, Brasil</p><p>Dr. James Ferreira Moura Jr, Brasil</p><p>Dr. Karlos Luna, Portugal</p><p>Dra. Sara Cadavid, Colombia</p><p>Dra. Martha del Rosario Peña-Sarmiento, Colombia</p><p>Dr. Juan Felipe Cardona Londoño, Colombia</p><p>Dr. Bruno Marinho de Sousa, Universidade Federal de Goiás, Regional Catalão, Brasil, Brasil</p><p>Dra. Ana Karla Silva Soares, Universidade Federal do Mato Grosso do Sul, Brasil</p><p>Dr. Oliver Muller, Colombia</p><p>Dra. Lina Maria Perilla-Rodriguez, Brasil</p><p>Dra. Ximena Palacios Espinosa, Colombia</p><p>Dr. Leonardo Gomes Bernardino, Brasil</p><h4>Comite Científico</h4><p>Dr. Kate Ellis, Egipto</p><p>Dr. Bruna Zani, Italia</p><p>Dr. Héctor López, Argentina</p><p>Dr. Stijn Vanheule, Bélgica</p><p>Dra. Lucía Rossi</p><p>Chidambaram Ramanathan, Estados Unidos</p><p>Professor Dr. Sefa Bulut, Turquía</p><p>Doctor Rolando Díaz-Loving, México</p><p>Rebeca Puche-Navarro, Colombia</p><p>Dra. Francoise Venezia Contreras Torres, Colombia</p><p>Alfonso Villalobos-Pérez, Costa Rica</p><p>Doctora Alba Elisabeth Mustaca, Argentina</p><p>Dr. Lisa Rosenthal, Estados Unidos</p><h4>Gestor de Indexación</h4><p>Prof. Andrés M. Pérez-Acosta, Colombia</p><h4>Asistente editorial</h4><p>Maria Margarita Villota, Colombia</p></div>',
-  ),
-  'themePluginPath' => 'default',
+  'themePluginPath' => 'bootstrap3',
 ); ?>

@@ -15,6 +15,17 @@
 
 {if $navigationMenu}
 	<ul id="{$id|escape}" class="{$ulClass|escape}">
+		{capture assign="homeUrl"}
+			{if $currentJournal && $multipleContexts}
+				{url page="index" router=$smarty.const.ROUTE_PAGE}
+			{else}
+				{url context="index" router=$smarty.const.ROUTE_PAGE}
+			{/if}
+		{/capture}
+		<li class="{$liClass|escape}">
+			<a href="{$homeUrl}">{translate key="common.homepageNavigationLabel"}</a>
+		</li>
+		
 		{foreach key=field item=navigationMenuItemAssignment from=$navigationMenu->menuTree}
 			{if !$navigationMenuItemAssignment->navigationMenuItem->getIsDisplayed()}
 				{continue}

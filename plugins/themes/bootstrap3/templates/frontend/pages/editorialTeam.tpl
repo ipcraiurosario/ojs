@@ -10,18 +10,20 @@
  * @uses $currentJournal Journal The current journal
  *}
 {include file="frontend/components/header.tpl" pageTitle="about.editorialTeam"}
+</main>
 
-<div id="main-content" class="page page_editorial_team">
+<main class="pkp_structure_main col-md-9">
+	<div id="main-content" class="page page_editorial_team">
 
-	{include file="frontend/components/breadcrumbs.tpl" currentTitleKey="about.editorialTeam"}
+		{include file="frontend/components/breadcrumbs.tpl" currentTitleKey="about.editorialTeam"}
 
-	{* Page Title *}
-	<div class="page-header">
-		<h1>{translate key="about.editorialTeam"}</h1>
-	</div>
-	{* /Page Title *}
+		{* Page Title *}
+		<div class="page-header">
+			<h1>{translate key="about.editorialTeam"}</h1>
+		</div>
+		{* /Page Title *}
 
-	{$currentJournal->getLocalizedSetting('editorialTeam')}
-</div><!-- .page -->
+		{$currentJournal->getLocalizedSetting('editorialTeam')}
+	</div><!-- .page -->
 
-{include file="common/frontend/footer.tpl"}
+	{include file="common/frontend/footer.tpl"}

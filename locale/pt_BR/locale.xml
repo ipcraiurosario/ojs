@@ -1168,5 +1168,35 @@ Pode-se opcionalmente informar o motivo pelo qual está sendo desativado o cadas
 
 	<message key="editor.issues.backIssues">Edições anteriores</message>
 	<message key="editor.issues.futureIssues">Edições futuras</message>
+	
+	<!-- Etiquetas faltantes en locale:EN -->
+	<message key="section.policy">Política de Seção</message>
+	<message key="subscriptions.status.noSubscription">Você não tem uma assinatura ativa.</message>
+	<message key="manager.setup.porticoDescription">O Portico é um serviço sem fins lucrativos comprometido com a preservação de publicações digitais, incluindo periódicos eletrônicos, e-books e coleções históricas digitalizadas. Se seu diário assinou um contrato com o Portico, ative-o aqui:</message>
+	<message key="about.onlineSubmissions.submitToSection"><![CDATA[Faça um novo envio para a seção <a href="{$url}"> {$ name} </a>.]]></message>
+	<message key="payment.type.publication.required">A taxa de publicação é devido ao pagamento.</message>
+	<message key="payment.requestPublicationFee">Solicitar taxa de publicação ({$ feeAmount})</message>
+	<message key="payment.notFound">Um pagamento foi solicitado, mas a solicitação expirou. Entre em contato com o Journal Manager para obter detalhes.</message>
+	<message key="log.editor.recommendation">Uma recomendação do editor ({$ decision}) para o artigo {$ submitId} foi registrada por {$ editorName}.</message>
+	<message key="notification.type.public">Anúncios Públicos</message>
+	<message key="notification.type.publicationScheduled">Este envio foi agendado para publicação.</message>
+	<message key="navigation.subscriptions">Assinaturas</message>
+	<message key="log.editor.submissionExpedited">{$editorName} assumiu o processo de edição do artigo {$ submitId}.</message>
+	<message key="catalog.sortBy">Ordem dos artigos</message>
+	<message key="catalog.sortBy.categoryDescription">Escolha como encomendar artigos nesta categoria.</message>
 
+	<message key="log.editor.recommendation">{$ editorName} registrou uma recomendação editorial para o artigo {$ submitId}: ({$ decision})</message>
+	<message key="notification.type.publicationScheduled">Esta remessa foi agendada para publicação.</message>
+	<message key="navigation.subscriptions">Assinaturas</message>
+	<message key="log.editor.submissionExpedited">{$ editorName} cuidará do processo de edição do artigo {$ submitId}.</message>
+	<message key="subscriptions.status.noSubscription">Você não tem uma assinatura ativa.</message>
+	<message key="manager.setup.porticoDescription">O Portico é um serviço sem fins lucrativos comprometido com a preservação de publicações digitais, incluindo revistas e livros eletrônicos e coleções históricas digitalizadas. Se sua revista assinou um contrato com o Portico, ative-o aqui:</message>
+	<message key="payment.type.publication.required">A taxa de publicação está com pagamento pendente.</message>
+	<message key="payment.requestPublicationFee">Solicitar taxa de publicação ({$ feeAmount})</message>
+	<message key="payment.notFound">Um pagamento foi solicitado, mas a solicitação expirou. Entre em contato com o administrador da revista para obter mais detalhes.</message>
+	<message key="notification.type.public">Avisos públicos</message>
+
+
+	<!-- Etiquetas propias CRAI -->
+	<message key="article.qr">Digitalize aqui para fazer o download</message>
 </locale>

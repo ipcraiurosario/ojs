@@ -581,4 +581,10 @@
   'submission.currentCoverImage' => 'Imagen actual',
   'catalog.browseTitles' => 'Explorar {$numTitles} títulos',
   'catalog.noTitlesSection' => 'No se ha publicado ningún título aún para esta sección.',
+  'submission.parsedCitations.DOI' => 'DOI',
+  'log.review.reviewUnconsidered' => '{$ editorName} marcou a revisão da rodada {$ round} para envio {$ submitId} como não considerada.',
+  'submission.list.assignEditor' => 'Atribuir editor',
+  'category.coverImage' => 'Imagem da capa',
+  'catalog.category.noItems' => 'Nada foi publicado nesta categoria ainda.',
+  'catalog.category.subcategories' => 'Subcategorias',
 ); ?>

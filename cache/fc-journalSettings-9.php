@@ -154,7 +154,6 @@ Le paragraphe qui commence « Ce dernier sujet... » est à effacer. </pre>',
   array (
     0 => 'en_US',
     1 => 'es_ES',
-    2 => 'fr_CA',
     3 => 'pt_BR',
   ),
   'rtAbstract' => true,
@@ -273,35 +272,6 @@ Le paragraphe qui commence « Ce dernier sujet... » est à effacer. </pre>',
   ),
   'navItems' => 
   array (
-    'en_US' => 
-    array (
-      0 => 
-      array (
-        'name' => '',
-        'url' => '',
-      ),
-    ),
-    'es_ES' => 
-    array (
-      0 => 
-      array (
-        'name' => 'Índice Anual',
-        'isLiteral' => '1',
-        'url' => '/index.php/acdi/pages/view/indice-anual',
-      ),
-      1 => 
-      array (
-        'name' => 'Información Pares evaluadores',
-        'isLiteral' => '1',
-        'url' => '/index.php/acdi/pages/view/pares-evaluadores',
-      ),
-      2 => 
-      array (
-        'name' => 'Formato de revisión',
-        'isLiteral' => '1',
-        'url' => '/index.php/acdi/pages/view/formato-revision',
-      ),
-    ),
     'pt_BR' => 
     array (
       0 => 
@@ -578,14 +548,12 @@ Le paragraphe qui commence « Ce dernier sujet... » est à effacer. </pre>',
   array (
     0 => 'en_US',
     1 => 'es_ES',
-    2 => 'fr_CA',
     3 => 'pt_BR',
   ),
   'supportedFormLocales' => 
   array (
     0 => 'en_US',
     1 => 'es_ES',
-    2 => 'fr_CA',
     3 => 'pt_BR',
   ),
   'homeHeaderTitleImageAltText' => 
@@ -612,10 +580,9 @@ Le paragraphe qui commence « Ce dernier sujet... » est à effacer. </pre>',
   'statViews' => true,
   'description' => 
   array (
-    'es_ES' => '<div id="journal_Des" class="tab-content"><div id="journalDescription" class="tab-pane fade in active row"><div class="col-sm-6" style="text-align: justify;">El Anuario es una publicación científica arbitrada que tiene como objetivo difundir, en Colombia y en el exterior, la producción de conocimiento sobre Derecho Internacional. Para ello, publica artículos inéditos en las áreas del Derecho Internacional Público, Derecho Internacional Privado, Derecho Internacional de los Derechos Humanos, Derecho Internacional Económico y Arbitraje Internacional de Inversión escritos por investigadores nacionales y extranjeros. Su periodicidad es anual y el volumen del año correspondiente se publica en el mes de enero. Se reciben contribuciones en español, inglés, francés y portugués.<br /> <br /><div id="DOI"><strong>DOI:</strong> <a href="http://dx.doi.org/10.12804/acdi">http://dx.doi.org/10.12804/acdi</a></div><br /><br /> <a class="spreaker-player" href="https://www.spreaker.com/user/urosarioradio/programa-82-anuario-colombiano-de-derech" data-resource="episode_id=15093206" data-theme="light" data-autoplay="false" data-playlist="false" data-cover="https://d3wo5wojvuv7l.cloudfront.net/images.spreaker.com/original/588a5a128060564f351a59331cf525cd.jpg" data-width="100%" data-height="200px">Escucha"Anuario colombiano de Derecho" en Spreaker.</a><script type="text/javascript" src="https://widget.spreaker.com/widgets.js"></script></div><div class="col-sm-3"><strong>Clasificación OCDE:</strong> <br /> <strong>Gran área:</strong>Ciencias Sociales<br /> <strong>Área conocimiento:</strong>Derecho<br /> <strong>Disciplina:</strong>Derecho</div><!--<div id="cope" class="col-sm-2">
-        <a href="http://publicationethics.org/members/anuario-colombiano-de-derecho-internacional" target="_blank"><img src="/public/site/images/webmaster/ACDI.png" alt="" /></a></div>--></div><div id="journalTeam" class="tab-pane fade">1</div><div id="journalIndexin" class="tab-pane fade"><!--<a id="Redalyc" href="https://www.redalyc.org/revista.oa?id=4295">Redalyc</a> <a id="Dialnet" href="https://dialnet.unirioja.es/servlet/revista?codigo=22842">Dialnet</a> <a id="circ" href="https://clasificacioncirc.es/ficha_revista?id=250851">CIRC</a> <a id="worldcat" href="https://www.worldcat.org/title/anuario-colombiano-de-derecho-internacional-acdi/oclc/880363754&amp;referer=brief_results">Worldcat</a> <a id="EJL" href="https://rzblx1.uni-regensburg.de/ezeit/detail.phtml?bibid=AAAAA&amp;colors=7&amp;lang=en&amp;jour_id=249625">EJL</a> <a id="Scilit" href="https://www.scilit.net/statistic-publisher-journal/6612/582121" target="_blank">Scilit</a> <a id="vlex" href="https://vlex.com/librarians-center/">Vlex</a> <a id="MIAR" href="http://miar.ub.edu/issn/2027-1131" target="_blank">MIAR</a> <a id="actualidadIberoamericana" href="http://www.citrevistas.cl/actualidad/b2b_g8.htm">Act. Iberoa.</a> <a id="sjr" href="http://scimagojr.com/journalsearch.php?q=21100235613&amp;tip=sid&amp;clean=0" target="_blank">Scopus</a> <a id="ESCI" href="http://science.thomsonreuters.com/cgi-bin/jrnlst/jlresults.cgi?PC=MASTER&amp;ISSN=2027-1131" target="_blank">ESCI</a> <a id="DOAJ" href="https://doaj.org/toc/2145-4493" target="_blank">DOAJ</a> <a id="REDIB" href="https://www.redib.org/recursos/Record/oai_revista1294-anuario-colombiano-derecho-internacional--acdi" target="_blank">REDIB</a> <a id="Dialnet" href="http://dialnet.unirioja.es/servlet/revista?codigo=22842" target="_blank">Dialnet</a> <a id="CLASE" href="http://132.248.9.1:8991/F/UJUGPFJHAHFI4K2DN6LGN47EIN4M1C7KQ21HADNBQMGXFM6D7A-23231?func=find-acc&amp;acc_sequence=000804779" target="_blank">CLASE</a> <a id="JournalGuide" href="https://www.journalguide.com/journals/acdi-anuario-colombiano-de-derecho-internacional" target="_blank">JournalGuide</a>--><h4>IBC–Índice bibliográfico de citaciones</h4><ul><li>Scimago Journal Ranking – SCR (Q2)</li></ul><h4>IB–Índice bibliográfico</h4><ul><li>Elsevier: Scopus</li><li>Clarivate: Emerging Sources Citation Index –ESCI</li></ul><h4>BBCS–Bases bibliográficas con comité de selección</h4><ul><li>Research Data bases –EBSCO: Fuente Académica Premier, Fuente Académica Plus</li><li>Red Iberoamericana de Innovación y Conocimiento científico –REDIB</li><li>Citas Latinoamericanas en Ciencias Sociales y Humanidades–CLASE</li><li>Directory of Open Access Journals DOAJ</li><li>Red de Revistas Científicas de América Latina y El Caribe</li><li>España y Portugal –RedALyC</li><li>Red Iberoamericana de Innovación y Conocimiento Científico –REDIB</li><li>Clasificación Integrada de Revistas Científicas–CIRC (Ciencias humanas–C, ciencias sociales–C)</li><li>HeinOnline</li></ul><h4>Bases de datos bibliográficas</h4><ul><li>Ulrich\'s International Periodicals Directory</li><li>WorldCat</li><li>Scilit</li><li>Electronic Journals Library (Elektronische Zeitschriftenbibliothek o EZB)</li><li>Vlex</li><li>MIAR</li><li>Actualidad Iberoamericana</li></ul></div><div id="journalMetrics" class="tab-pane fade"><div class="row"><div id="googlescholar" class="col-sm-6"><table style="width: 100%;"><thead><tr><th colspan="2">Google Scholar</th></tr></thead><tbody><tr><td><strong>Citas</strong></td><td>193</td></tr><tr><td><strong>Índice h</strong></td><td>8</td></tr><tr><td><strong>Índice i10</strong></td><td>4</td></tr></tbody><tfoot><tr><td colspan="2">Ver perfil en <a href="https://scholar.google.com/citations?user=8jc4FFgAAAAJ" target="_blank">Google Scholars</a></td></tr><tr><td colspan="2"><strong>Fuente:</strong> Google Scholars. Marzo 2019</td></tr></tfoot></table></div><div id="scimago" class="col-sm-6"><a title="SCImago Journal &amp; Country Rank" href="http://www.scimagojr.com/journalsearch.php?q=21100235613&amp;tip=sid&amp;exact=no"><img src="http://www.scimagojr.com/journal_img.php?id=21100235613" alt="SCImago Journal &amp; Country Rank" border="0" /></a></div></div></div></div>',
-    'en_US' => '<p><img src="/public/site/images/astridbermudez/acdi_pprincipal_1.jpg" alt="" />  </p><p>The Colombian Yearbook of International Law <em>ACDI<em>–</em></em><em>Anuario Colombiano de Derecho Internacional</em>   is a peer-reviewed scientific publication whose goal is to disseminate knowledge both inside and outside Colombia regarding the production of International Law. It publishes previously unpublished articles written by Colombian and international researchers in the areas of Public International Law, Private International Law, International Human Rights Law, International Economic Law, and International Investment Arbitration.</p><p>The Yearbook is published annually each January with a volume corresponding to the calendar year that has just begun. Articles are accepted in Spanish, English, French, and Portuguese.</p><p>Indexed in Scopus, Fuente Académica Premier (EBSCO), Red Iberoamericana de Innovación y Conocimiento Científico (REDIB) y Directory of Open Access Journals (DOAJ), Dialnet y Citas Latinoamericanas en Ciencias Sociales y Humanidades (Clase).</p><a title="SCImago Journal &amp; Country Rank" href="http://www.scimagojr.com/journalsearch.php?q=21100235613&amp;tip=sid&amp;exact=no"><img src="http://www.scimagojr.com/journal_img.php?id=21100235613" alt="SCImago Journal &amp; Country Rank" border="0" /></a>',
-    'pt_BR' => '<p><span lang="PT-BR">O Anuário é uma publicação científica arbitrada que tem como objetivo difundir, na Colômbia e no exterior, a produção de conhecimento sobre Direito Internacional. Para isto, publica artigos inéditos nas </span>áreas do Direito Internacional Público, Direito Internacional Privado, Direito Internacional dos Direitos Humanos, Direito Internacional Econômico e Arbitragem Internacional de Investimento escritos por pesquisadores nacionais e estrangeiros.</p><p><span lang="PT-BR">A sua periodicidade é anual e o volume do ano correspondente publica-se no mês de janeiro.</span></p><p><span lang="PT-BR">Recebem-se contribuições em espanhol, inglês, francês e português.</span></p><img src="http://www.scimagojr.com/journal_img.php?id=21100235613" alt="SCImago Journal &amp; Country Rank" border="0" />',
+    'es_ES' => '<div class="col-md-12" style="text-align: justify;">El Anuario es una publicación científica arbitrada que tiene como objetivo difundir, en Colombia y en el exterior, la producción de conocimiento sobre Derecho Internacional. Para ello, publica artículos inéditos en las áreas del Derecho Internacional Público, Derecho Internacional Privado, Derecho Internacional de los Derechos Humanos, Derecho Internacional Económico y Arbitraje Internacional de Inversión escritos por investigadores nacionales y extranjeros. Su periodicidad es anual y el volumen del año correspondiente se publica en el mes de enero. Se reciben contribuciones en español, inglés, francés y portugués.<br><br><iframe src="https://widget.spreaker.com/player?episode_id=15093206&amp;theme=light&amp;autoplay=false&amp;playlist=false&amp;cover_image_url=https%3A%2F%2Fd3wo5wojvuv7l.cloudfront.net%2Fimages.spreaker.com%2Foriginal%2F588a5a128060564f351a59331cf525cd.jpg" width="100%" height="200px" frameborder="0"></iframe><br><br><strong>Clasificación OCDE:</strong> <br><strong>Gran área:</strong>Ciencias Sociales<br><strong>Área conocimiento:</strong>Derecho<br><strong>Disciplina:</strong>Derecho</div>',
+    'en_US' => '<div class="col-md-12" style="text-align: justify;">The Colombian Yearbook of International Law <em>ACDI<em>–</em></em><em>Anuario Colombiano de Derecho Internacional</em> &nbsp; is a peer-reviewed scientific publication whose goal is to disseminate knowledge both inside and outside Colombia regarding the production of International Law. It publishes previously unpublished articles written by Colombian and international researchers in the areas of Public International Law, Private International Law, International Human Rights Law, International Economic Law, and International Investment Arbitration.<br><br>The Yearbook is published annually each January with a volume corresponding to the calendar year that has just begun. Articles are accepted in Spanish, English, French, and Portuguese. <br><br>Indexed in&nbsp;Scopus, Fuente Académica Premier (EBSCO), Red Iberoamericana de Innovación y Conocimiento Científico (REDIB) y Directory of Open Access Journals (DOAJ), Dialnet y Citas Latinoamericanas en Ciencias Sociales y Humanidades (Clase). <br><br><iframe src="https://widget.spreaker.com/player?episode_id=15093206&amp;theme=light&amp;autoplay=false&amp;playlist=false&amp;cover_image_url=https%3A%2F%2Fd3wo5wojvuv7l.cloudfront.net%2Fimages.spreaker.com%2Foriginal%2F588a5a128060564f351a59331cf525cd.jpg" width="100%" height="200px" frameborder="0"></iframe><br><br><strong>Clasificación OCDE:</strong> <br><strong>Gran área:</strong>Ciencias Sociales<br><strong>Área conocimiento:</strong>Derecho<br><strong>Disciplina:</strong>Derecho</div>',
+    'pt_BR' => '<div class="col-md-12" style="text-align: justify;">O Anuário é uma publicação científica arbitrada que tem como objetivo difundir, na Colômbia e no exterior, a produção de conhecimento sobre Direito Internacional. Para isto, publica artigos inéditos nas&nbsp;áreas do Direito Internacional Público, Direito Internacional Privado, Direito Internacional dos Direitos Humanos, Direito Internacional Econômico e Arbitragem Internacional de Investimento escritos por pesquisadores nacionais e estrangeiros. <br><br>A sua periodicidade é anual e o volume do ano correspondente publica-se no mês de janeiro. <br><br>Recebem-se contribuições em espanhol, inglês, francês e português.<br><br><iframe src="https://widget.spreaker.com/player?episode_id=15093206&amp;theme=light&amp;autoplay=false&amp;playlist=false&amp;cover_image_url=https%3A%2F%2Fd3wo5wojvuv7l.cloudfront.net%2Fimages.spreaker.com%2Foriginal%2F588a5a128060564f351a59331cf525cd.jpg" width="100%" height="200px" frameborder="0"></iframe> <br><br><strong>Clasificación OCDE:</strong> <br><strong>Gran área:</strong>Ciencias Sociales<br><strong>Área conocimiento:</strong>Derecho<br><strong>Disciplina:</strong>Derecho</div>',
   ),
   'pageHeaderTitleImage' => 
   array (
@@ -634,6 +601,285 @@ Le paragraphe qui commence « Ce dernier sujet... » est à effacer. </pre>',
     'es_ES' => '<p>La evaluación de los artículos establece 5 de pautas de revisión:</p><p>1. Originalidad del artículo </p><p>2. Revisión del estado del arte </p><p>3. Metodología</p><p>4. Coherencia y claridad en la exposición de las ideas</p><p>5. Relevancia y análisis de los resultados</p>',
     'en_US' => '<p>Evaluation by academic peers</p><p>Once a manuscript is submitted to the journal in keeping with the guidelines for authors, the editorial team will review the document to verify that it complies with the journal’s minimum requirements. The editorial team will perform the first evaluation of the manuscript based on the minimum requirements for submission and on the results of its examination for originality and plagiarism using the software Turnitin and other sources of information.</p><p>This prliminary review will identify the articles to be assigned to academic peers, who will in turn determine which articles are appropriate for publication in the journal based on specific criteria for form and content.</p><p>The results of this evaluation will be communicated to the author no more than six months after the submission is received. If the evaluation process exceeds the period of time stipulated in the guidelines for publication, the editor or another person responsible for this task will inform the author regarding the state of the process.</p><p>The peer evaluation may have three kinds of results. First, “accepted without changes” or “with minor changes” means that the author must make minimal changes in order to modify data or specific points as suggested by the evaluator. The period of time stipulated to make these changes is one (1) week. Second, acceptance conditioned on “major changes” means that despite providing research and contents that are of interest to those who share the author or authors’ area of focus, the article requires structural modifications or other substantial changes before publication. The maximum period of time allowed for making suggested changes to the text will be no longer than four (4) weeks. Third, an evaluator may have found that the article does not respond to a research question or its contents or results are not clear or convincing. These manuscripts will be returned to their authors, who may modify or rework them for a second consideration fooor publication in  the Yearbook or in another journal. If an author decides to re-submit the article to the Yearbook, he or she should send a letter explaining the changes made so that evaluators will be aware of the new approach to the research if they are called upon to reevaluate the article.</p><p>The anonymity of all authors and evaluators will be maintained throughout the evaluation process in order to avoid any kind of conflict of interest.</p>',
   ),
+  'pageHeaderLogoImage' => 
+  array (
+    'es_ES' => 
+    array (
+      'name' => 'Logo.UR.White.png',
+      'uploadName' => 'pageHeaderLogoImage_es_ES.png',
+      'width' => 834,
+      'height' => 322,
+      'dateUploaded' => '2019-09-05 10:47:00',
+      'altText' => 'Universidad del Rosario',
+    ),
+  ),
+  'additionalHomeContent' => 
+  array (
+    'es_ES' => '<p><strong>ISSN-e:</strong> 2145-4493<br><strong>ISSN:</strong> 2027-1131 <br><strong>DOI:</strong> <a title="doi" href="http://dx.doi.org/10.12804/disertaciones">http://dx.doi.org/10.12804/disertaciones</a></p>',
+    'en_US' => '<p><strong>ISSN-e:</strong> 2145-4493<br><strong>ISSN:</strong> 2027-1131 <br><strong>DOI:</strong> <a title="doi" href="http://dx.doi.org/10.12804/disertaciones">http://dx.doi.org/10.12804/disertaciones</a></p>',
+    'pt_BR' => '<p><strong>ISSN-e:</strong> 2145-4493<br><strong>ISSN:</strong> 2027-1131 <br><strong>DOI:</strong> <a title="doi" href="http://dx.doi.org/10.12804/disertaciones">http://dx.doi.org/10.12804/disertaciones</a></p>',
+  ),
+  'editorialTeam' => 
+  array (
+    'es_ES' => '<div id="group">
+<h4>Comité Científico</h4>
+<p>Antônio Augusto Cançado Trindade, Juez de la Corte Internacional de Justicia, Miembro del Curatorium de la Academia de Derecho Internacional de La Haya, profesor de la Universidad de Brasilia - Brasil, miembro titular de l’Institut de Droit international.</p>
+<p>Djamchid Momtaz, Miembro del Curatorium de la Academia de Derecho Internacional de La Haya, profesor de la Universidad de Teherán - Irán, miembro titular de l’Institut de Droit international., Irán, República islámica de</p>
+<p>Eduardo Valencia Ospina, Miembro y Relator Especial de la Comisión de Derecho Internacional de las Naciones Unidas.</p>
+<p>Marcelo Kohen, Profesor del Instituto de altos Estudios Internacionales y del Desarrollo IHEID, Ginebra – Suiza, miembro asociado de l’Institut de Droit international., Suiza</p>
+<p>Pierre Klein, Profesor de la Universidad Libre de Bruselas-Bélgica.</p>
+<p>Didier Boden, Profesor (Maître de conférences) de la Universidad París 1 Panthéon-Sorbonne, Francia</p>
+<h4>Comité Editorial</h4>
+<p>Laura Victoria García-Matamoros, Universidad del Rosario, Colombia</p>
+<p>María Isabel Torres Cazorla, Profesora de la Universidad de Málaga, Málaga – España., México</p>
+<p>Rafael Arturo Prieto Sanjuán, Profesor de la Pontificia Universidad Javeriana, Bogotá – Colombia., Colombia</p>
+<p>Carlos Enrique Arévalo Narváez, Profesor de la Universidad de La Sabana, Bogotá – Colombia., Colombia</p>
+<p>Ilias Bantekas, Profesor de la Universidad de Brunel, Londres – Reino Unido.</p>
+<p>José Germán Burgos, Profesor de la Universidad Nacional de Colombia, Bogotá – Colombia.</p>
+<h4>Director - Editor</h4>
+<p>Ricardo Abello-Galvis, Universidad del Rosario, Colombia</p>
+<h4>Coordinación Editorial</h4>
+<p>Laura Duperret, Universidad del Rosario, Colombia, Colombia</p>
+</div>',
+    'en_US' => '<div id="group">
+<h4>Scientific Committee</h4>
+<p>Antônio Augusto Cançado Trindade</p>
+<p>Djamchid Momtaz, Irán, República islámica de</p>
+<p>Eduardo Valencia Ospina</p>
+<p>Marcelo Kohen, Suiza</p>
+<p>Pierre Klein</p>
+<p>Didier Boden, Francia</p>
+<h4>Editorial Committee</h4>
+<p>Laura Victoria García-Matamoros, Colombia</p>
+<p>María Isabel Torres Cazorla, México</p>
+<p>Rafael Arturo Prieto Sanjuán, Colombia</p>
+<p>Carlos Enrique Arévalo Narváez, Colombia</p>
+<p>Ilias Bantekas</p>
+<p>José Germán Burgos</p>
+<h4>Editor in Chief</h4>
+<p>Ricardo Abello-Galvis, Colombia</p>
+<h4>Editorial Assistant</h4>
+<p>Laura Duperret, Colombia</p>
+</div>',
+    'pt_BR' => '<div id="group">
+<h4>Comité Científico</h4>
+<p>Antônio Augusto Cançado Trindade</p>
+<p>Djamchid Momtaz, Irán, República islámica de</p>
+<p>Eduardo Valencia Ospina</p>
+<p>Marcelo Kohen, Suiza</p>
+<p>Pierre Klein</p>
+<p>Didier Boden, Francia</p>
+<h4>Comité Editorial</h4>
+<p>Laura Victoria García-Matamoros, Colombia</p>
+<p>María Isabel Torres Cazorla, México</p>
+<p>Rafael Arturo Prieto Sanjuán, Colombia</p>
+<p>Carlos Enrique Arévalo Narváez, Colombia</p>
+<p>Ilias Bantekas</p>
+<p>José Germán Burgos</p>
+<h4>Director - Editor</h4>
+<p>Ricardo Abello-Galvis, Colombia</p>
+<h4>Coordinación Editorial</h4>
+<p>Laura Duperret, Colombia</p>
+</div>',
+    'fr_CA' => '<div id="group"><h4>Comité Científico</h4><p>Antônio Augusto Cançado Trindade</p><p>Djamchid Momtaz, Irán, República islámica de</p><p>Eduardo Valencia Ospina</p><p>Marcelo Kohen, Suiza</p><p>Pierre Klein</p><p>Didier Boden, Francia</p><h4>Comité Editorial</h4><p>Laura Victoria García-Matamoros, Colombia</p><p>María Isabel Torres Cazorla, México</p><p>Rafael Arturo Prieto Sanjuán, Colombia</p><p>Carlos Enrique Arévalo Narváez, Colombia</p><p>Ilias Bantekas</p><p>José Germán Burgos</p><h4>Director - Editor</h4><p>Ricardo Abello-Galvis, Colombia</p><h4>Coordinación Editorial</h4><p>Laura Duperret, Colombia</p></div>',
+  ),
+  'about' => 
+  array (
+    'es_ES' => '<div id="focusAndScope">
+<h3>Enfoque y alcance</h3>
+<p>El Anuario Colombiano de Derecho Internacional es una revista académica de periodicidad anual, adscrita a la Facultad de Jurisprudencia de la Universidad del Rosario –Colombia, que se edita con el apoyo de la Fundación Cavelier del Derecho. Cuenta con un Editor, un Comité Editorial y un Comité Científico que garantizan la pertinencia y calidad de los artículos publicados. Recibe artículos de investigación, reflexión y revisión relacionados únicamente con temas de Derecho Internacional bien sea en áreas de Derecho Internacional Público, Derecho Internacional Privado, Derecho Internacional de los Derechos Humanos, Derecho Internacional Económico y Arbitraje Internacional de Inversión. Además publica artículos en cualquiera de los idiomas oficiales de la Organización de los Estados Americanos - OEA, es decir, castellano, inglés, francés y portugués, por ser esta la primera organización regional que regula todo lo relativo al Derecho Internacional en el hemisferio americano. Así mismo, el Anuario pretende abrir un espacio a los jóvenes internacionalistas para que, de la mano de aquellos que gozan ya de un reconocimiento, publiquen sus&nbsp;investigaciones para así darlas a conocer a la comunidad académica nacional e internacional.&nbsp;</p>
+</div>
+<div id="peerReviewProcess">
+<h3>Proceso de evaluación por pares</h3>
+<p>Los artículos presentados para el proceso de publicación de la revista deben ser originales e inéditos, es decir, no deben haber sido publicados en medios impresos o digitales. Tampoco pueden estar en proceso de evaluación, ni tener compromisos editoriales con otra publicación.</p>
+<p>Una vez aprobado el documento mediante proceso de revisión “doble-ciego” la revista tendrá en exclusividad la publicación del artículo. Si el autor quiere publicar su artículo nuevamente la revista donde se publique deberá indicar los datos completos del ACDI y solicitar autorización al editor que realizó la primera publicación.&nbsp;</p>
+<p><strong>Evaluación por pares académicos</strong></p>
+<p>Una vez postulado el artículo a la revista y de acuerdo con las directrices para autores, el equipo editorial revisará que el documento cumpla con los requisitos mínimos exigidos por la revista. Así mismo, realizará un primer filtro de evaluación basado en los requisitos mínimos de presentación y en los resultados obtenidos de la revisión de originalidad y plagio en el software <em>Turnitin</em>, además de otras fuentes de información.</p>
+<p>Con esta primera revisión se definen los artículos que serán asignados a pares académicos, uno internacional y otro nacional, expertos en el tema, quienes a su vez evaluarán, según criterios específicos tanto de forma como de contenido, cuáles artículos son pertinentes para publicación.</p>
+<p>El resultado de la evaluación será comunicado al autor en un periodo no mayor a seis meses a partir de la fecha de recibido. Cuando el proceso de evaluación exceda el tiempo estipulado en las normas de publicación, el editor o la persona encargada deberán informar al autor sobre esta situación.</p>
+<p>La evaluación por pares tiene tres tipos de resultado. Primero, “<em>sin modificaciones</em>” o con “<em>modificaciones leves” </em>quiere decir que el artículo requiere una revisión mínima por parte del autor para ajustar datos y aspectos puntuales sugeridos por el evaluador; el plazo estipulado para aplicar los cambios es de una (1) semana. Segundo, con <em>“modificaciones profundas”</em> quiere decir que el artículo, a pesar de tener un contenido y una investigación de interés para el área, requiere de ajustes estructurales o modificaciones sustanciales en el documento; el plazo máximo para la inclusión de los ajustes en el texto no debe ser mayor a cuatro (4) semanas. En tercer lugar, se encuentran los artículos que no responden a una pregunta de investigación y su contenido o resultados no son claros ni contundentes. La evaluación de estos artículos se le entregará al autor para que pueda corregir y replantear el documento, bien sea para publicarlo en otra revista o para volverlo a postular al anuario ACDI. En el caso de querer re-postular el artículo, el autor deberá remitir una carta explicando cuáles fueron los cambios que se hicieron al documento para que los evaluadores puedan tener una idea del nuevo planteamiento de la investigación en el momento de volverlo a evaluar. Si los dictámenes de ambos pares no coinciden, el equipo editorial asignará un tercer par.</p>
+<p>Durante el proceso de evaluación la revista mantendrá en el anonimato tanto los datos de los autores como de los evaluadores para que no se presente ningún tipo de conflicto de interés.&nbsp;El proceso de evaluación puede llevar hasta seis meses.</p>
+</div>
+<div id="openAccessPolicy">
+<h3>Política de acceso abierto</h3>
+<p>Esta revista provee acceso libre inmediato a su contenido bajo el principio de que hacer disponible gratuitamente investigación al publico y apoya a un mayor intercambio de conocimiento global.</p>
+</div>
+<div id="custom-0">
+<h3>Anuario Colombiano de Derecho Internacional - ACDI</h3>
+<p>Para la Facultad de Jurisprudencia de la Universidad del Rosario y la Asociación Cavelier del Derecho es un placer presentar ante la comunidad académica el Anuario Colombiano de Derecho Internacional - ACDI, aceptado en el índice internacional Scopus de Elsevier,&nbsp;&nbsp;Fuente Académica Premier (EBSCO), Open Access Jounrals (DOAJ), Red Iberoamericana de Innovación y Conocimiento Científicos (REDIB), Dialnet y Citas Latinoamericanas en Ciencias Sociales y Humanidades (Clase)</p>
+<p>El Anuario busca promover, en Colombia y en el exterior, el conocimiento del Derecho Internacional y para esto se propone publicar artículos inéditos en las áreas de&nbsp;Derecho Internacional Público, Derecho Internacional Privado, Derecho Internacional de los Derechos Humanos, Derecho Internacional Económico y Arbitraje Internacional de Inversión, escritos por investigadores nacionales y extranjeros. Así mismo, el Anuario pretende abrir un espacio a los jóvenes internacionalistas para que, de la mano de aquellos que gozan ya de un reconocimiento, publiquen sus investigaciones para así darlas a conocer a la comunidad académica nacional e internacional.</p>
+<p>Todos los artículos publicados son sometidos a evaluación de pares académicos con el propósito de garantizar la calidad de los mismos. Al ser esta obra un Anuario de Derecho Internacional, queremos invitar a publicar a todos los internacionalistas colombianos y extranjeros, que podrán presentar sus artículos en cualquiera de los idiomas oficiales de la Organización de los Estados Americanos - OEA, es decir, castellano, inglés, francés y portugués, por ser esta la organización regional que regula todo lo relativo al Derecho Internacional en el hemisferio americano.</p>
+<p>El Anuario también hace un reconocimiento a aquellos internacionalistas que marcaron el Derecho Internacional en el país y que pusieron en alto el nombre de Colombia en ésta área del Derecho. En este sentido recordamos especialmente al Dr. Jesús María Yepes quien descolló como jurista en el mundo internacional, lo que le valió haber sido invitado por la Academia de Derecho Internacional de La Haya a su prestigioso curso en tres ocasiones. En efecto, en 1930 dictó “La contribución de America Latina al desarrollo del derecho internacional público y privado”; en 1934 “Los problemas fundamentales del derecho de gentes en América” y en 1947, “Los acuerdos regionales y el derecho internacional”. Para ilustrar la magnitud y el respeto que tenía el Dr. Yepes como internacionalista es necesario recalcar que el honor de haber dictado tres cursos en la Academia sólo lo han tenido maestros del Derecho Internacional como Hans Kelsen y Roberto Ago.</p>
+<p>En la Academia también estuvieron el Dr. José Francisco Urrutia y el Dr. Diego Uribe Vargas. El primero dictó, en 1928, el curso “La codificación del derecho internacional en America” y el segundo presentó la conferencia inaugural del curso de Derecho Internacional Público en 1984 titulada “Los derechos humanos de tercera generación”. Además, el Dr. Uribe Vargas es actualmente miembro del Curatorium de la Academia de Derecho Internacional de La Haya.</p>
+<p>Hay un tercer grupo de reconocidos internacionalistas a quienes extendemos este reconocimiento por haber sido ellos quienes también abrieron, y siguen abriendo, el camino para las nuevas generaciones de internacionalistas, entre ellos están el Dr. Marco Gerardo Monroy Cabra, el Dr. Rafael Nieto Navia, el Dr. César Moyano (QEPD), el Dr. Enrique Gaviria Liévano, el Padre Luis Fernando Álvarez Londoño, S.J. y, obviamente, el Dr. Germán Cavelier (QEPD) fundador de la Asociación Cavelier del Derecho, entidad que ha apoyado incondicionalmente el presente proyecto.</p>
+</div>
+<div id="custom-1">
+<h3>Política autoarchivo</h3>
+<p><em>En los trabajos publicados en la revista, se permite el autoarchivo en los repositorios de las instituciones a las que pertenecen los autores, de la versión publicada por el editor (published version) y se recomienda incluir en el registro la URL correspondiente al documento en el repositorio EdocUR.</em></p>
+<p><strong><em>&nbsp;</em></strong><strong><em>Condiciones:</em></strong><strong><em>&nbsp;</em></strong></p>
+<ul>
+<li class="show"><em>Los derechos de autor y editorial deben ser acreditados</em></li>
+<li class="show"><em>Debe agregarse un enlace o link&nbsp; a la&nbsp; versión del editor.</em></li>
+<li class="show"><em>Se debe agregar&nbsp; la versión publicada por el editor (published version)</em></li>
+</ul>
+</div>
+<div id="custom-2">
+<h3>Guía de buenas prácticas</h3>
+<p>La Universidad del Rosario como miembro del Committee on Publication Ethics (COPE) adopta en su integridad los principios de transparencia y buenas prácticas de las publicaciones cientificas propuestas por COPE&nbsp;de la siguiente manera:</p>
+<ol>
+<li class="show"><strong>Proceso de revisión de pares:</strong>&nbsp;Cada una de las publicaciones periodicas de la Universidad del Rosario en sus políticas editoriales implementará un procedimiento de revisión de contenidos por un grupo de pares expertos quienes verificarán la alta calidad académica y científica de los artículos sometidos a su consideración.</li>
+<li class="show"><strong>Consejos editoriales o de redacción:</strong>&nbsp; Existirá un consejo editorial o de redacción en cada una de las publicaciones periódicas de la Universidad.&nbsp; Los miembros de este consejo serán expertos reconocidos en el área de conocimiento de la revista.</li>
+<li class="show"><strong>Información de contacto:</strong>&nbsp; Las publicaciones periodicas de la Universidad del Rosario pondrán a disposición del público los nombres de los miembros del consejo y la información de contacto de la publicación.</li>
+<li class="show"><strong>Tasas:</strong>&nbsp;Las revistas de la Universidad informarán sobre las tasas que deberán asumirse para el proceso de publicaciones. Esta información estará disponible para cada uno de los autores y de la comunidad académica en general en todo momento y especialmente previo al proceso de presentación del manuscrito para evaluación.</li>
+<li class="show"><strong>Derechos de autor:</strong>&nbsp;Las publicaciones periodicas incluirán expresamente las politicas editoriales en lo correspondiente con los Derechos de Autor aplicables a las mismas, de forma tal que para el autor y el lector no exista duda frente a la modalidad bajo la cual se ponen los artículos a disposición del público.</li>
+<li class="show"><strong>Procedimiento para la identificación, seguimiento y control de malas prácticas en las publicaciones:&nbsp;</strong>El consejo de cada una de las publicaciones periodicas de la Universidad tomará todas las medidas razonables para identificar y prevenir la publicación de trabajos donde se haya producido una mala práctica como el plagio, la indebida citación, la falsificación de datos, entre otros.&nbsp; Los procedimientos adoptados por la Universidad&nbsp; para garantizar este procedimiento corresponderán a los diagramas de flujo implementados por&nbsp;<strong>COPE</strong>.</li>
+<li class="show"><strong>Propiedad y gestión:&nbsp;</strong>Las publicaciones periodicas de la Universidad incluirán en un lugar visible<strong>&nbsp;</strong>la titularidad de las mismas y la forma de gestión y de operación de cada una de ellas.</li>
+<li class="show"><strong>Sitio Web:&nbsp;</strong>El consejo de cada una de las publicaciones periodicas garantizará que los contenidos alojados en su sitio Web cuenten con los más altos estandares éticos y profesionales.&nbsp; No se incluirá en los sitios Web información que induzca a error en sus lectores y/o autores y no se imitará información de otras revistas o publicaciones.</li>
+<li class="show"><strong>Nombre de la revista:&nbsp;&nbsp;</strong>El nombre de la revista deberá incluirse en un lugar visible y no deberá producir confusión entre los autores y lectores.&nbsp; Se procurará por la originalidad del nombre de la revista para que no induzca a error con otras publicaciones.</li>
+<li class="show"><strong>Conflicto de interés:&nbsp;&nbsp;</strong>Las publicaciones periódicas de la Universidad deberán promover politicas claras sobre el manejo de los posibles conflictos de interés de los editores, autores y pares evaluadores.</li>
+<li class="show"><strong>Acceso:&nbsp;</strong>Se privilegiará el acceso abierto a los contenidos de las publicaciones de la Universidad acatando las recomendaciones y utilizando las licencias diseñadas para proteger los derechos de los autores en estos casos. Cualquier modificación en este tipo de acceso, será indicado en las políticas editoriales de cada una de las publicaciones la cual señalará la modalidad en que la revista, y su contenido, estén disponibles para sus lectores.</li>
+<li class="show"><strong>Fuentes de ingresos:&nbsp;&nbsp;</strong>Las publicaciones periódicas son financiadas internamente por la Universidad. Cualquier modelo de negocios y/o fuente de ingresos diferente será informado en el sitio web de cada una de las revistas.</li>
+<li class="show"><strong>Publicidad:&nbsp;&nbsp;</strong>Las publicaciones periodicas de la Universidad incluirán unicamente anuncios y/o publicidad académica, anuncios de otra naturaleza estarán prohibidos.</li>
+<li class="show"><strong>Cronograma de publicación:&nbsp;</strong>Cada una de las revistas de la Universidad deberá &nbsp;incluir en su sitio Web y de forma visible su cronograma editorial anual.</li>
+<li class="show"><strong>Archivo:</strong>&nbsp;Las publicaciones periodicas de la Universidad contarán con una copia de seguridad electrónica para la preservación de contenidos editoriales.</li>
+<li class="show"><strong>Marketing directo:</strong>&nbsp;Cualquier actividad de marketing directo, incluyendo la solicitud de los manuscritos que se realizan en nombre de la revista, deberá ser apropiado, no intrusivo y con objetivos bien definidos.</li>
+</ol>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Además de los principios previamente adoptados, la Universidad se obliga a cumplir los siguientes compromisos:</p>
+<p><strong>Confidencialidad:</strong>&nbsp;Se implementarán todas las medidas necesarias para garantizar que los contenidos de los artículos sean confidenciales en todo el proceso previo a la publicación.&nbsp; Los miembros del consejo mantendrán la confidencialidad de los artículos sometidos a su consideración y no revelarán la información a terceros.</p>
+<p><br><strong>Comités de ética:</strong>&nbsp; Los editores o miembros de consejos de las publicaciones periódicas de la Universidad podrán solicitar, según su propio criterio o de conformidad con el contenido de la publicación, el concepto del Comité de Ética de la Universidad en contenidos que así lo justifiquen.</p>
+<p><br><strong>Independencia:</strong>&nbsp; Los miembros del consejo de cada publicación periódica de la Universidad deberán manifestar los posibles conflictos de interés—político, social, intelectual, religioso personal u otro— ante la evaluación de nuevos contenidos y la decisión de su inclusión en la revista. El consejo, en cabeza del editor, deberá regular el procedimiento a seguir en estos casos.</p>
+<p><strong>Dar a conocer a la comunidad general y en especial a los consejos las siguientes guías:</strong></p>
+<div>
+<ul>
+<li class="show">Guias éticas para pares.</li>
+<li class="show">Guías de retractación.</li>
+<li class="show">Cualquier otra guía que, para el efecto, establezca COPE</li>
+</ul>
+<div><strong><br>Velar por la integridad científica y de la investigación.&nbsp;</strong></div>
+<div>&nbsp;</div>
+<div><strong>Informar sobre los casos de mala conducta demostrada que afectan la confiabilidad de los trabajos publicados.</strong></div>
+<div>&nbsp;</div>
+<div><strong>Iniciar investigaciones sobre las denuncias de mala práctica en la investigación y/o errores en la publicación.</strong></div>
+<p>Por su parte, las publicaciones periodicas de la Universidad se obligan a cumplir, además de los compromisos previamente señalados, los siguientes:</p>
+</div>
+<ul>
+<li class="show">Publicar los datos de contacto de su editor en jefe que debe actuar como punto de contacto para cuestiones relativas a la integridad de la investigación y la publicación.</li>
+<li class="show">Informar a otras instituciones si existe sospecha de una mala conducta de sus autores,&nbsp; proporcionando evidencia que apoye estas preocupaciones.</li>
+</ul>
+<ul>
+<li class="show">Cooperar con las investigaciones y responder a las preguntas institucionales sobre las alegaciones de mala conducta.</li>
+</ul>
+<ul>
+<li class="show">Estar preparado para emitir retractaciones o correcciones cuando se haya comprobado una mala conducta del investigador y/o autor resultado de una investigación pertinente.</li>
+<li class="show">&nbsp;Tener políticas para responder a instituciones y otras organizaciones que investigan casos de&nbsp; mala práctica.</li>
+</ul>
+<ul>
+<li class="show">Intercambiar información con respecto a los casos de presunta mala práctica, para permitir que las revistas puedan llevar a cabo investigaciones con mayor eficiencia y eficacia, esto con miras a lograr la preservación de la integridad del registro científico.</li>
+</ul>
+<p>Las publicaciones periodicas de la Universidad&nbsp; adoptarán y seguirán los diagramas de flujo&nbsp;en el caso de las siguientes inquietudes:</p>
+<ol>
+<li class="show">¿Qué hacer si sospecha que una publicación es redundante o duplicada (a) Sospecha de publicación redundante en un manuscrito recibido?</li>
+<li class="show">¿Qué hacer si sospecha que una publicación es redundante o duplicada (b) Sospecha de publicación redundante en un artículo publicado?</li>
+<li class="show">¿Qué hacer si sospecha que hay plagio (a) Sospecha de plagio en un manuscrito recibido?</li>
+<li class="show">¿Qué hacer si sospecha que hay plagio (b) Sospecha de plagio en un artículo publicado?</li>
+<li class="show">¿Qué hacer si sospecha que hay datos inventados (a) Sospecha de datos inventados en un manuscrito recibido?</li>
+<li class="show">¿Qué hacer si sospecha que hay datos inventados (b) Sospecha de datos inventados en un artículo publicado?</li>
+<li class="show">Cambios de autoría (a) El autor correspondiente solicita añadir un autor adicional antes de la publicación.</li>
+<li class="show">Cambios de autoría (b) El autor correspondiente solicita eliminar un autor antes de la publicación.</li>
+<li class="show">Cambios de autoría (c) Solicitud para agregar un autor adicional después de la publicación.</li>
+<li class="show">Cambios de autoría (d) Solicitud para eliminar un autor después de la publicación.</li>
+<li class="show">Qué hacer si el revisor sospecha que hay un conflicto de interés (CdI) no revelado en un manuscrito recibido.</li>
+<li class="show">Qué hacer si un lector sospecha que hay conflicto de interés (CdI) no declarado en un artículo publicado.</li>
+<li class="show">Qué hacer si sospecha que hay un problema de ética en un manuscrito recibido.</li>
+<li class="show">Los demás que para el efecto señale&nbsp;<strong>COPE</strong>.</li>
+</ol>
+</div>
+<div id="custom-3">
+<h3>Fuentes de financiamiento</h3>
+<p>Las fuentes de financiamiento del ACDI son la Asociación Cavelier del Derecho y la Facultad de Jurisprudencia de la Universidad del Rosario.</p>
+</div>
+<div id="custom-4">
+<h3>Tarifas de publicación</h3>
+<p>El ACDI no realiza ningún cobro por la postulación, evaluación y publicación de los artículos sometidos.</p>
+</div>
+<div id="sponsors">
+<h3>Sponsors</h3>
+<ul>
+<li class="show"><a href="http://www.cavelier.com">Asociación Cavelier del Derecho</a></li>
+</ul>
+</div>',
+    'en_US' => '<div id="focusAndScope">
+<h3>Focus and Scope</h3>
+<p>The Yearbook is published annually. It is an academic journal affiliated with the School of Law at the Universidad del Rosario in Bogotá, Colombia, and edited with the assistance of the <em>Asociación Cavelier del Derecho</em>. The Editor, Editorial Committee, and Scientific Committee of the Yearbook guarantee the relevance and quality of the articles it publishes. The Yearbook accepts research, reflection, and review articles dedicated exclusively to areas of International Law including Public International law, Private International Law, International Human Rights Law, International Economic Law, and International Investment Arbitration. It publishes articles in Spanish, English, French, and Portuguese, all the official languages of the Organization of American States (OAS), since the OAS is the first regional organization to regulate all matters concerning International Law in the American Hemisphere. In addition, the Yearbook provides a space for young internationalists to publish their research results with the help of recognized figures in International Law, and thereby achieve recognition in the Colombian and international academic community.</p>
+</div>
+<div id="peerReviewProcess">
+<h3>Peer Review Process</h3>
+<p>Articles submitted for publication in the Journal should be original and should not have been previously published in any print or digital medium. In addition, they should not be undergoing evaluation by any other publication, nor should their author have made any commitment for their publication elsewhere.</p>
+<p>Once a submission is approved through a double-blind process, the journal will have exclusive rights to its publication. If after an article’s publication in the journal, its author wishes to publish it again elsewhere, the journal where it is published should accompany it with complete data on the ACDI and request authorization from the editor responsible for its first publication.</p>
+<p>Evaluation by academic peers</p>
+<p>Once a manuscript is submitted to the journal in keeping with the guidelines for authors, the editorial team will review the document to verify that it complies with the journal’s minimum requirements. The editorial team will perform the first evaluation of the manuscript based on the minimum requirements for submission and on the results of its examination for originality and plagiarism using the software Turnitin and other sources of information.</p>
+<p>This prliminary review will identify the articles to be assigned to academic peers, who will in turn determine which articles are appropriate for publication in the journal based on specific criteria for form and content.</p>
+<p>The results of this evaluation will be communicated to the author no more than six months after the submission is received. If the evaluation process exceeds the period of time stipulated in the guidelines for publication, the editor or another person responsible for this task will inform the author regarding the state of the process.</p>
+<p>The peer evaluation may have three kinds of results. First, “accepted without changes” or “with minor changes” means that the author must make minimal changes in order to modify data or specific points as suggested by the evaluator. The period of time stipulated to make these changes is one (1) week. Second, acceptance conditioned on “major changes” means that despite providing research and contents that are of interest to those who share the author or authors’ area of focus, the article requires structural modifications or other substantial changes before publication. The maximum period of time allowed for making suggested changes to the text will be no longer than four (4) weeks. Third, an evaluator may have found that the article does not respond to a research question or its contents or results are not clear or convincing. These manuscripts will be returned to their authors, who may modify or rework them for a second consideration for publication in the Yearbook or in another journal. If an author decides to re-submit the article to the Yearbook, he or she should send a letter explaining the changes made so that evaluators will be aware of the new approach to the research if they are called upon to reevaluate the article.</p>
+<p>The anonymity of all authors and evaluators will be maintained throughout the evaluation process in order to avoid any kind of conflict of interest.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+<div id="openAccessPolicy">
+<h3>Open Access Policy</h3>
+<p>This journal provides immediate open access to its content on the principle that making research freely available to the public supports a greater global exchange of knowledge.</p>
+</div>
+<div id="custom-0">
+<h3>Self-archiving policy</h3>
+<p><em>All the articles published in the journal are allowed to be self-archived on the institutional repositories of each of the academic institutions to which the authors of the article belong. This policy includes only the published versions of the articles. We encourage the authors to include the article’s EdocUR URL when they archive the documents on their repositories.</em></p>
+<p><em>Terms:</em></p>
+<ul>
+<li class="show"><em>Author and publisher rights must be credited.</em></li>
+<li class="show"><em>A link to the published version of the article must be added.</em></li>
+<li class="show"><em>Only the published version of the article should be self-archived.</em></li>
+</ul>
+</div>
+<div id="sponsors">
+<h3>Sponsors</h3>
+<ul>
+<li class="show"><a href="http://www.cavelier.com">Asociación Cavelier del Derecho</a></li>
+</ul>
+</div>',
+    'fr_CA' => '
+							<div id="openAccessPolicy">
+							<h3>Politique d\'accès libre</h3>
+							<p>Cette revue procure un libre accès immédiat à son contenu se basant sur le principe qu\'en mettant la recherche publiquement disponible facilite un plus grand échange du savoir, à l\'échelle de la planète.</p>
+							</div>
+								<div id="sponsors">
+								<h3>Sponsors</h3><ul><li>
+											<a href="http://www.cavelier.com">Asociación Cavelier del Derecho</a></li></ul></div>',
+    'pt_BR' => '<div id="focusAndScope">
+<h3>Foco e Escopo</h3>
+<p>O Anuário Colombiano de Direito Internacional é uma revista acadêmica de periodicidade anual, adscrita à Faculdade de Jurisprudência da Universidad del Rosario – Colômbia, que se edita com o apoio da Fundação Cavelier do Direito. Conta com um Editor, um Comité Editorial e um Comité Científico que garantem a pertinência e qualidade dos artigos publicados. Recebe artigos de investigação, reflexão e revisão relacionados unicamente com temas de Direito Internacional seja nas Áreas de Direito Internacional Público, Direito Internacional Privado, Direito Internacional dos Direitos Humanos, Direito Internacional Econômico e Arbitragem Internacional de Investimento. Além disso publica artigos em qualquer língua oficial da Organização dos Estados Americanos – OEA, é dizer, castelhano, inglês, francês e português, por ser esta a primeira organização regional que regula todo o relativo ao Direito Internacional no hemisfério americano. Igualmente, o anuário pretende abrir um espaço aos jovens internacionalistas para que, da mão daqueles que desfrutam já de um reconhecimento, publiquem as suas investigações para assim dá-las a conhecer à comunidade acadêmica nacional e internacional.&nbsp;</p>
+</div>
+<div id="peerReviewProcess">
+<h3>Processo de Avaliação pelos Pares</h3>
+<p>Os artigos apresentados para o processo de publicação da revista devem ser originais e inéditos, é dizer, não devem ter sido publicados em meios impressos ou digitais. Também não podem estar em processo de avaliação, nem ter compromissos editoriais com outra publicação.</p>
+<p>Uma vez seja aprovado o documento mediante processo de revisão “duplo-cega” a revista terá em exclusividades a publicação do artigo. Se o autor quer publicar o seu artigo novamente a revista onde se publique deverá indicar os dados completos do ACDI e solicitar autorização ao editor que realizou a primeira publicação.</p>
+<p><strong>Avaliação por pares acadêmicos</strong></p>
+<p>Uma vez postulado o artigo à revista e de acordo com as diretrizes para autores, a equipe editorial revisará que o documento cumpra com os requisitos mínimos exigidos pela revista. Igualmente, realizará um primeiro filtro de avaliação baseado nos requisitos mínimos de apresentação e nos resultados obtidos da revisão de originalidade e plágio no software Turnitin, além de outras fontes de informação.</p>
+<p>Com esta primeira revisão definem-se os artigos que serão designados a pares acadêmicos, quem a sua vez avaliarão, segundos critérios específicos tanto de forma quanto de conteúdo, quais artigos são pertinentes para publicação.</p>
+<p>O resultado de avaliação será comunicado ao autor em um período não maior a seis meses a partir da data de recebido. Quando o processo de avaliação exceda o tempo estipulado nas normas de publicação, o editor ou a pessoa encarregada deverão informar ao autor sobre esta situação.</p>
+<p>A avaliação por pares tem três tipos de resultado. Primeiro, “sem modificações” ou com “modificações leves” quer dizer que o artigo requer uma revisão mínima por parte do autor para ajustar dados e aspetos pontuais sugeridos pelo avaliador; o prazo estipulado para aplicar as correções é de uma (1) semana. Segundo, com “modificações profundas” quer dizer que o artigo, apesar de ter um conteúdo e uma investigação de interesse para a área, requer de ajustes estruturais ou modificações substanciais no documento; o prazo máximo para a inclusão dos ajustes o texto não deve ser maior a quatro (4) semanas. Em terceiro lugar, se encontram os artigos que não respondem a uma pergunta de investigação e o seu conteúdo ou resultados não são claros nem contundentes. A avaliação destes artigos se lhe entregarão ao autor para que possa corrigir e reapresentar o documento, seja para publicá-lo em outra revista, seja para voltar a postulá-lo ao Anuário ACDI. No caso de querer re-postular o artigo, o autor deverá remitir uma carta explicando quais foram as mudanças que se fizeram ao documento para que os avaliadores consigam ter uma ideia do novo enfoque da investigação no momento de avalia-lo mais uma vez.</p>
+<p>Durante o processo de avaliação a revista manterá no anonimato tanto os dados dos autores quanto dos avaliadores para que não se apresente nenhum tipo de conflito de interesse.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+<div id="sponsors">
+<h3>Sponsors</h3>
+<ul>
+<li class="show"><a href="http://www.cavelier.com">Asociación Cavelier del Derecho</a></li>
+</ul>
+</div>',
+  ),
   'copyrightYearBasis' => '',
   'journalPageFooter' => 
   array (
@@ -649,99 +895,5 @@ Le paragraphe qui commence « Ce dernier sujet... » est à effacer. </pre>',
 
 </div>',
   ),
-  'about' => 
-  array (
-    'en_US' => '
-							<div id="focusAndScope">
-							<h3>Focus and Scope</h3>
-							<p><p>The Yearbook is published annually. It is an academic journal affiliated with the School of Law at the Universidad del Rosario in Bogotá, Colombia, and edited with the assistance of the <em>Asociación Cavelier del Derecho</em>. The Editor, Editorial Committee, and Scientific Committee of the Yearbook guarantee the relevance and quality of the articles it publishes. The Yearbook accepts research, reflection, and review articles dedicated exclusively to areas of International Law including Public International law, Private International Law, International Human Rights Law, International Economic Law, and International Investment Arbitration. It publishes articles in Spanish, English, French, and Portuguese, all the official languages of the Organization of American States (OAS), since the OAS is the first regional organization to regulate all matters concerning International Law in the American Hemisphere. In addition, the Yearbook provides a space for young internationalists to publish their research results with the help of recognized figures in International Law, and thereby achieve recognition in the Colombian and international academic community.</p></p>
-							</div>
-							<div id="peerReviewProcess">
-							<h3>Peer Review Process</h3>
-							<p><p>Articles submitted for publication in the Journal should be original and should not have been previously published in any print or digital medium. In addition, they should not be undergoing evaluation by any other publication, nor should their author have made any commitment for their publication elsewhere.</p><p>Once a submission is approved through a double-blind process, the journal will have exclusive rights to its publication. If after an article’s publication in the journal, its author wishes to publish it again elsewhere, the journal where it is published should accompany it with complete data on the ACDI and request authorization from the editor responsible for its first publication.</p><p>Evaluation by academic peers</p><p>Once a manuscript is submitted to the journal in keeping with the guidelines for authors, the editorial team will review the document to verify that it complies with the journal’s minimum requirements. The editorial team will perform the first evaluation of the manuscript based on the minimum requirements for submission and on the results of its examination for originality and plagiarism using the software Turnitin and other sources of information.</p><p>This prliminary review will identify the articles to be assigned to academic peers, who will in turn determine which articles are appropriate for publication in the journal based on specific criteria for form and content.</p><p>The results of this evaluation will be communicated to the author no more than six months after the submission is received. If the evaluation process exceeds the period of time stipulated in the guidelines for publication, the editor or another person responsible for this task will inform the author regarding the state of the process.</p><p>The peer evaluation may have three kinds of results. First, “accepted without changes” or “with minor changes” means that the author must make minimal changes in order to modify data or specific points as suggested by the evaluator. The period of time stipulated to make these changes is one (1) week. Second, acceptance conditioned on “major changes” means that despite providing research and contents that are of interest to those who share the author or authors’ area of focus, the article requires structural modifications or other substantial changes before publication. The maximum period of time allowed for making suggested changes to the text will be no longer than four (4) weeks. Third, an evaluator may have found that the article does not respond to a research question or its contents or results are not clear or convincing. These manuscripts will be returned to their authors, who may modify or rework them for a second consideration for publication in the Yearbook or in another journal. If an author decides to re-submit the article to the Yearbook, he or she should send a letter explaining the changes made so that evaluators will be aware of the new approach to the research if they are called upon to reevaluate the article.</p><p>The anonymity of all authors and evaluators will be maintained throughout the evaluation process in order to avoid any kind of conflict of interest.</p><p> </p><p> </p></p>
-							</div>
-							<div id="openAccessPolicy">
-							<h3>Open Access Policy</h3>
-							<p>This journal provides immediate open access to its content on the principle that making research freely available to the public supports a greater global exchange of knowledge.</p>
-							</div>
-								<div id="custom-0">
-								<h3>Self-archiving policy</h3>
-								<p><p><em>All the articles published in the journal are allowed to be self-archived on the institutional repositories of each of the academic institutions to which the authors of the article belong. This policy includes only the published versions of the articles. We encourage the authors to include the article’s EdocUR URL when they archive the documents on their repositories.</em></p><p><em>Terms:</em></p><ul><li><em>Author and publisher rights must be credited.</em></li><li><em>A link to the published version of the article must be added.</em></li><li><em>Only the published version of the article should be self-archived.</em></li></ul></p>
-								</div>
-								<div id="sponsors">
-								<h3>Sponsors</h3><ul><li>
-											<a href="http://www.cavelier.com">Asociación Cavelier del Derecho</a></li></ul></div>',
-    'es_ES' => '
-							<div id="focusAndScope">
-							<h3>Enfoque y alcance</h3>
-							<p>El Anuario Colombiano de Derecho Internacional es una revista académica de periodicidad anual, adscrita a la Facultad de Jurisprudencia de la Universidad del Rosario –Colombia, que se edita con el apoyo de la Fundación Cavelier del Derecho. Cuenta con un Editor, un Comité Editorial y un Comité Científico que garantizan la pertinencia y calidad de los artículos publicados. Recibe artículos de investigación, reflexión y revisión relacionados únicamente con temas de Derecho Internacional bien sea en áreas de Derecho Internacional Público, Derecho Internacional Privado, Derecho Internacional de los Derechos Humanos, Derecho Internacional Económico y Arbitraje Internacional de Inversión. Además publica artículos en cualquiera de los idiomas oficiales de la Organización de los Estados Americanos - OEA, es decir, castellano, inglés, francés y portugués, por ser esta la primera organización regional que regula todo lo relativo al Derecho Internacional en el hemisferio americano. Así mismo, el Anuario pretende abrir un espacio a los jóvenes internacionalistas para que, de la mano de aquellos que gozan ya de un reconocimiento, publiquen sus <span>investigaciones para así darlas a conocer a la comunidad académica nacional e internacional. </span></p>
-							</div>
-							<div id="peerReviewProcess">
-							<h3>Proceso de evaluación por pares</h3>
-							<p><p>Los artículos presentados para el proceso de publicación de la revista deben ser originales e inéditos, es decir, no deben haber sido publicados en medios impresos o digitales. Tampoco pueden estar en proceso de evaluación, ni tener compromisos editoriales con otra publicación.</p><p>Una vez aprobado el documento mediante proceso de revisión “doble-ciego” la revista tendrá en exclusividad la publicación del artículo. Si el autor quiere publicar su artículo nuevamente la revista donde se publique deberá indicar los datos completos del ACDI y solicitar autorización al editor que realizó la primera publicación. </p><p><strong>Evaluación por pares académicos</strong></p><p>Una vez postulado el artículo a la revista y de acuerdo con las directrices para autores, el equipo editorial revisará que el documento cumpla con los requisitos mínimos exigidos por la revista. Así mismo, realizará un primer filtro de evaluación basado en los requisitos mínimos de presentación y en los resultados obtenidos de la revisión de originalidad y plagio en el software <em>Turnitin</em>, además de otras fuentes de información.</p><p>Con esta primera revisión se definen los artículos que serán asignados a pares académicos, uno internacional y otro nacional, expertos en el tema, quienes a su vez evaluarán, según criterios específicos tanto de forma como de contenido, cuáles artículos son pertinentes para publicación.</p><p>El resultado de la evaluación será comunicado al autor en un periodo no mayor a seis meses a partir de la fecha de recibido. Cuando el proceso de evaluación exceda el tiempo estipulado en las normas de publicación, el editor o la persona encargada deberán informar al autor sobre esta situación.</p><p>La evaluación por pares tiene tres tipos de resultado. Primero, “<em>sin modificaciones</em>” o con “<em>modificaciones leves” </em>quiere decir que el artículo requiere una revisión mínima por parte del autor para ajustar datos y aspectos puntuales sugeridos por el evaluador; el plazo estipulado para aplicar los cambios es de una (1) semana. Segundo, con <em>“modificaciones profundas”</em> quiere decir que el artículo, a pesar de tener un contenido y una investigación de interés para el área, requiere de ajustes estructurales o modificaciones sustanciales en el documento; el plazo máximo para la inclusión de los ajustes en el texto no debe ser mayor a cuatro (4) semanas. En tercer lugar, se encuentran los artículos que no responden a una pregunta de investigación y su contenido o resultados no son claros ni contundentes. La evaluación de estos artículos se le entregará al autor para que pueda corregir y replantear el documento, bien sea para publicarlo en otra revista o para volverlo a postular al anuario ACDI. En el caso de querer re-postular el artículo, el autor deberá remitir una carta explicando cuáles fueron los cambios que se hicieron al documento para que los evaluadores puedan tener una idea del nuevo planteamiento de la investigación en el momento de volverlo a evaluar. Si los dictámenes de ambos pares no coinciden, el equipo editorial asignará un tercer par.</p><p>Durante el proceso de evaluación la revista mantendrá en el anonimato tanto los datos de los autores como de los evaluadores para que no se presente ningún tipo de conflicto de interés. <span>El proceso de evaluación puede llevar hasta seis meses.</span></p></p>
-							</div>
-							<div id="openAccessPolicy">
-							<h3>Política de acceso abierto</h3>
-							<p>Esta revista provee acceso libre inmediato a su contenido bajo el principio de que hacer disponible gratuitamente investigación al publico y apoya a un mayor intercambio de conocimiento global.</p>
-							</div>
-								<div id="custom-0">
-								<h3>Anuario Colombiano de Derecho Internacional - ACDI</h3>
-								<p><p>Para la Facultad de Jurisprudencia de la Universidad del Rosario y la Asociación Cavelier del Derecho es un placer presentar ante la comunidad académica el Anuario Colombiano de Derecho Internacional - ACDI, aceptado en el índice internacional Scopus de Elsevier,  Fuente Académica Premier (EBSCO), Open Access Jounrals (DOAJ), Red Iberoamericana de Innovación y Conocimiento Científicos (REDIB), Dialnet y Citas Latinoamericanas en Ciencias Sociales y Humanidades (Clase)</p><p>El Anuario busca promover, en Colombia y en el exterior, el conocimiento del Derecho Internacional y para esto se propone publicar artículos inéditos en las áreas de <span>Derecho Internacional Público, Derecho Internacional Privado, Derecho Internacional de los Derechos Humanos, Derecho Internacional Económico y Arbitraje Internacional de Inversión,</span> escritos por investigadores nacionales y extranjeros. Así mismo, el Anuario pretende abrir un espacio a los jóvenes internacionalistas para que, de la mano de aquellos que gozan ya de un reconocimiento, publiquen sus investigaciones para así darlas a conocer a la comunidad académica nacional e internacional.</p><p>Todos los artículos publicados son sometidos a evaluación de pares académicos con el propósito de garantizar la calidad de los mismos. Al ser esta obra un Anuario de Derecho Internacional, queremos invitar a publicar a todos los internacionalistas colombianos y extranjeros, que podrán presentar sus artículos en cualquiera de los idiomas oficiales de la Organización de los Estados Americanos - OEA, es decir, castellano, inglés, francés y portugués, por ser esta la organización regional que regula todo lo relativo al Derecho Internacional en el hemisferio americano.</p><p>El Anuario también hace un reconocimiento a aquellos internacionalistas que marcaron el Derecho Internacional en el país y que pusieron en alto el nombre de Colombia en ésta área del Derecho. En este sentido recordamos especialmente al Dr. Jesús María Yepes quien descolló como jurista en el mundo internacional, lo que le valió haber sido invitado por la Academia de Derecho Internacional de La Haya a su prestigioso curso en tres ocasiones. En efecto, en 1930 dictó “La contribución de America Latina al desarrollo del derecho internacional público y privado”; en 1934 “Los problemas fundamentales del derecho de gentes en América” y en 1947, “Los acuerdos regionales y el derecho internacional”. Para ilustrar la magnitud y el respeto que tenía el Dr. Yepes como internacionalista es necesario recalcar que el honor de haber dictado tres cursos en la Academia sólo lo han tenido maestros del Derecho Internacional como Hans Kelsen y Roberto Ago.</p><p>En la Academia también estuvieron el Dr. José Francisco Urrutia y el Dr. Diego Uribe Vargas. El primero dictó, en 1928, el curso “La codificación del derecho internacional en America” y el segundo presentó la conferencia inaugural del curso de Derecho Internacional Público en 1984 titulada “Los derechos humanos de tercera generación”. Además, el Dr. Uribe Vargas es actualmente miembro del Curatorium de la Academia de Derecho Internacional de La Haya.</p><p>Hay un tercer grupo de reconocidos internacionalistas a quienes extendemos este reconocimiento por haber sido ellos quienes también abrieron, y siguen abriendo, el camino para las nuevas generaciones de internacionalistas, entre ellos están el Dr. Marco Gerardo Monroy Cabra, el Dr. Rafael Nieto Navia, el Dr. César Moyano (QEPD), el Dr. Enrique Gaviria Liévano, el Padre Luis Fernando Álvarez Londoño, S.J. y, obviamente, el Dr. Germán Cavelier (QEPD) fundador de la Asociación Cavelier del Derecho, entidad que ha apoyado incondicionalmente el presente proyecto.</p></p>
-								</div>
-								<div id="custom-1">
-								<h3>Política autoarchivo</h3>
-								<p><p><em>En los trabajos publicados en la revista, se permite el autoarchivo en los repositorios de las instituciones a las que pertenecen los autores, de la versión publicada por el editor (published version) y se recomienda incluir en el registro la URL correspondiente al documento en el repositorio EdocUR.</em></p><p><strong><em> </em></strong><strong><em>Condiciones:</em></strong><strong><em> </em></strong></p><ul><li><em>Los derechos de autor y editorial deben ser acreditados</em></li><li><em>Debe agregarse un enlace o link  a la  versión del editor.</em></li><li><em>Se debe agregar  la versión publicada por el editor (published version)</em></li></ul></p>
-								</div>
-								<div id="custom-2">
-								<h3>Guía de buenas prácticas</h3>
-								<p><p>La Universidad del Rosario como miembro del Committee on Publication Ethics (COPE) adopta en su integridad los principios de transparencia y buenas prácticas de las publicaciones cientificas propuestas por COPE de la siguiente manera:</p><ol><li><strong>Proceso de revisión de pares:</strong> Cada una de las publicaciones periodicas de la Universidad del Rosario en sus políticas editoriales implementará un procedimiento de revisión de contenidos por un grupo de pares expertos quienes verificarán la alta calidad académica y científica de los artículos sometidos a su consideración.</li><li><strong>Consejos editoriales o de redacción:</strong>  Existirá un consejo editorial o de redacción en cada una de las publicaciones periódicas de la Universidad.  Los miembros de este consejo serán expertos reconocidos en el área de conocimiento de la revista.</li><li><strong>Información de contacto:</strong>  Las publicaciones periodicas de la Universidad del Rosario pondrán a disposición del público los nombres de los miembros del consejo y la información de contacto de la publicación.</li><li><strong>Tasas:</strong> Las revistas de la Universidad informarán sobre las tasas que deberán asumirse para el proceso de publicaciones. Esta información estará disponible para cada uno de los autores y de la comunidad académica en general en todo momento y especialmente previo al proceso de presentación del manuscrito para evaluación.</li><li><strong>Derechos de autor:</strong> Las publicaciones periodicas incluirán expresamente las politicas editoriales en lo correspondiente con los Derechos de Autor aplicables a las mismas, de forma tal que para el autor y el lector no exista duda frente a la modalidad bajo la cual se ponen los artículos a disposición del público.</li><li><strong>Procedimiento para la identificación, seguimiento y control de malas prácticas en las publicaciones: </strong>El consejo de cada una de las publicaciones periodicas de la Universidad tomará todas las medidas razonables para identificar y prevenir la publicación de trabajos donde se haya producido una mala práctica como el plagio, la indebida citación, la falsificación de datos, entre otros.  Los procedimientos adoptados por la Universidad  para garantizar este procedimiento corresponderán a los diagramas de flujo implementados por <strong>COPE</strong>.</li><li><strong>Propiedad y gestión: </strong>Las publicaciones periodicas de la Universidad incluirán en un lugar visible<strong> </strong>la titularidad de las mismas y la forma de gestión y de operación de cada una de ellas.</li><li><strong>Sitio Web: </strong>El consejo de cada una de las publicaciones periodicas garantizará que los contenidos alojados en su sitio Web cuenten con los más altos estandares éticos y profesionales.  No se incluirá en los sitios Web información que induzca a error en sus lectores y/o autores y no se imitará información de otras revistas o publicaciones.</li><li><strong>Nombre de la revista:  </strong>El nombre de la revista deberá incluirse en un lugar visible y no deberá producir confusión entre los autores y lectores.  Se procurará por la originalidad del nombre de la revista para que no induzca a error con otras publicaciones.</li><li><strong>Conflicto de interés:  </strong>Las publicaciones periódicas de la Universidad deberán promover politicas claras sobre el manejo de los posibles conflictos de interés de los editores, autores y pares evaluadores.</li><li><strong>Acceso: </strong>Se privilegiará el acceso abierto a los contenidos de las publicaciones de la Universidad acatando las recomendaciones y utilizando las licencias diseñadas para proteger los derechos de los autores en estos casos. Cualquier modificación en este tipo de acceso, será indicado en las políticas editoriales de cada una de las publicaciones la cual señalará la modalidad en que la revista, y su contenido, estén disponibles para sus lectores.</li><li><strong>Fuentes de ingresos:  </strong>Las publicaciones periódicas son financiadas internamente por la Universidad. Cualquier modelo de negocios y/o fuente de ingresos diferente será informado en el sitio web de cada una de las revistas.</li><li><strong>Publicidad:  </strong>Las publicaciones periodicas de la Universidad incluirán unicamente anuncios y/o publicidad académica, anuncios de otra naturaleza estarán prohibidos.</li><li><strong>Cronograma de publicación: </strong>Cada una de las revistas de la Universidad deberá  incluir en su sitio Web y de forma visible su cronograma editorial anual.</li><li><strong>Archivo:</strong> Las publicaciones periodicas de la Universidad contarán con una copia de seguridad electrónica para la preservación de contenidos editoriales.</li><li><strong>Marketing directo:</strong> Cualquier actividad de marketing directo, incluyendo la solicitud de los manuscritos que se realizan en nombre de la revista, deberá ser apropiado, no intrusivo y con objetivos bien definidos.</li></ol><p> </p><p> </p><p>Además de los principios previamente adoptados, la Universidad se obliga a cumplir los siguientes compromisos:</p><p><strong>Confidencialidad:</strong> Se implementarán todas las medidas necesarias para garantizar que los contenidos de los artículos sean confidenciales en todo el proceso previo a la publicación.  Los miembros del consejo mantendrán la confidencialidad de los artículos sometidos a su consideración y no revelarán la información a terceros.</p><p><br /><strong>Comités de ética:</strong>  Los editores o miembros de consejos de las publicaciones periódicas de la Universidad podrán solicitar, según su propio criterio o de conformidad con el contenido de la publicación, el concepto del Comité de Ética de la Universidad en contenidos que así lo justifiquen.</p><p><br /><strong>Independencia:</strong>  Los miembros del consejo de cada publicación periódica de la Universidad deberán manifestar los posibles conflictos de interés—político, social, intelectual, religioso personal u otro— ante la evaluación de nuevos contenidos y la decisión de su inclusión en la revista. El consejo, en cabeza del editor, deberá regular el procedimiento a seguir en estos casos.</p><p><strong>Dar a conocer a la comunidad general y en especial a los consejos las siguientes guías:</strong></p><div><ul><li>Guias éticas para pares.</li><li>Guías de retractación.</li><li>Cualquier otra guía que, para el efecto, establezca COPE</li></ul><div><strong><br />Velar por la integridad científica y de la investigación. </strong></div><div> </div><div><strong>Informar sobre los casos de mala conducta demostrada que afectan la confiabilidad de los trabajos publicados.</strong></div><div> </div><div><strong>Iniciar investigaciones sobre las denuncias de mala práctica en la investigación y/o errores en la publicación.</strong></div><p>Por su parte, las publicaciones periodicas de la Universidad se obligan a cumplir, además de los compromisos previamente señalados, los siguientes:</p></div><ul><li>Publicar los datos de contacto de su editor en jefe que debe actuar como punto de contacto para cuestiones relativas a la integridad de la investigación y la publicación.</li><li>Informar a otras instituciones si existe sospecha de una mala conducta de sus autores,  proporcionando evidencia que apoye estas preocupaciones.</li></ul><ul><li>Cooperar con las investigaciones y responder a las preguntas institucionales sobre las alegaciones de mala conducta.</li></ul><ul><li>Estar preparado para emitir retractaciones o correcciones cuando se haya comprobado una mala conducta del investigador y/o autor resultado de una investigación pertinente.</li><li> Tener políticas para responder a instituciones y otras organizaciones que investigan casos de  mala práctica.</li></ul><ul><li>Intercambiar información con respecto a los casos de presunta mala práctica, para permitir que las revistas puedan llevar a cabo investigaciones con mayor eficiencia y eficacia, esto con miras a lograr la preservación de la integridad del registro científico.</li></ul><p>Las publicaciones periodicas de la Universidad  adoptarán y seguirán los diagramas de flujo en el caso de las siguientes inquietudes:</p><ol><li>¿Qué hacer si sospecha que una publicación es redundante o duplicada (a) Sospecha de publicación redundante en un manuscrito recibido?</li><li>¿Qué hacer si sospecha que una publicación es redundante o duplicada (b) Sospecha de publicación redundante en un artículo publicado?</li><li>¿Qué hacer si sospecha que hay plagio (a) Sospecha de plagio en un manuscrito recibido?</li><li>¿Qué hacer si sospecha que hay plagio (b) Sospecha de plagio en un artículo publicado?</li><li>¿Qué hacer si sospecha que hay datos inventados (a) Sospecha de datos inventados en un manuscrito recibido?</li><li>¿Qué hacer si sospecha que hay datos inventados (b) Sospecha de datos inventados en un artículo publicado?</li><li>Cambios de autoría (a) El autor correspondiente solicita añadir un autor adicional antes de la publicación.</li><li>Cambios de autoría (b) El autor correspondiente solicita eliminar un autor antes de la publicación.</li><li>Cambios de autoría (c) Solicitud para agregar un autor adicional después de la publicación.</li><li>Cambios de autoría (d) Solicitud para eliminar un autor después de la publicación.</li><li>Qué hacer si el revisor sospecha que hay un conflicto de interés (CdI) no revelado en un manuscrito recibido.</li><li>Qué hacer si un lector sospecha que hay conflicto de interés (CdI) no declarado en un artículo publicado.</li><li>Qué hacer si sospecha que hay un problema de ética en un manuscrito recibido.</li><li>Los demás que para el efecto señale <strong>COPE</strong>.</li></ol></p>
-								</div>
-								<div id="custom-3">
-								<h3>Fuentes de financiamiento</h3>
-								<p><span>Las fuentes de financiamiento del ACDI son la Asociación Cavelier del Derecho y la Facultad de Jurisprudencia de la Universidad del Rosario.</span></p>
-								</div>
-								<div id="custom-4">
-								<h3>Tarifas de publicación</h3>
-								<p><span>El ACDI no realiza ningún cobro por la postulación, evaluación y publicación de los artículos sometidos.</span></p>
-								</div>
-								<div id="sponsors">
-								<h3>Sponsors</h3><ul><li>
-											<a href="http://www.cavelier.com">Asociación Cavelier del Derecho</a></li></ul></div>',
-    'fr_CA' => '
-							<div id="openAccessPolicy">
-							<h3>Politique d\'accès libre</h3>
-							<p>Cette revue procure un libre accès immédiat à son contenu se basant sur le principe qu\'en mettant la recherche publiquement disponible facilite un plus grand échange du savoir, à l\'échelle de la planète.</p>
-							</div>
-								<div id="sponsors">
-								<h3>Sponsors</h3><ul><li>
-											<a href="http://www.cavelier.com">Asociación Cavelier del Derecho</a></li></ul></div>',
-    'pt_BR' => '
-							<div id="focusAndScope">
-							<h3>Foco e Escopo</h3>
-							<p><p>O Anuário Colombiano de Direito Internacional é uma revista acadêmica de periodicidade anual, adscrita à Faculdade de Jurisprudência da Universidad del Rosario – Colômbia, que se edita com o apoio da Fundação Cavelier do Direito. Conta com um Editor, um Comité Editorial e um Comité Científico que garantem a pertinência e qualidade dos artigos publicados. Recebe artigos de investigação, reflexão e revisão relacionados unicamente com temas de Direito Internacional seja nas Áreas de Direito Internacional Público, Direito Internacional Privado, Direito Internacional dos Direitos Humanos, Direito Internacional Econômico e Arbitragem Internacional de Investimento. Além disso publica artigos em qualquer língua oficial da Organização dos Estados Americanos – OEA, é dizer, castelhano, inglês, francês e português, por ser esta a primeira organização regional que regula todo o relativo ao Direito Internacional no hemisfério americano. Igualmente, o anuário pretende abrir um espaço aos jovens internacionalistas para que, da mão daqueles que desfrutam já de um reconhecimento, publiquem as suas investigações para assim dá-las a conhecer à comunidade acadêmica nacional e internacional. </p></p>
-							</div>
-							<div id="peerReviewProcess">
-							<h3>Processo de Avaliação pelos Pares</h3>
-							<p><p>Os artigos apresentados para o processo de publicação da revista devem ser originais e inéditos, é dizer, não devem ter sido publicados em meios impressos ou digitais. Também não podem estar em processo de avaliação, nem ter compromissos editoriais com outra publicação.</p><p>Uma vez seja aprovado o documento mediante processo de revisão “duplo-cega” a revista terá em exclusividades a publicação do artigo. Se o autor quer publicar o seu artigo novamente a revista onde se publique deverá indicar os dados completos do ACDI e solicitar autorização ao editor que realizou a primeira publicação.</p><p><strong>Avaliação por pares acadêmicos</strong></p><p>Uma vez postulado o artigo à revista e de acordo com as diretrizes para autores, a equipe editorial revisará que o documento cumpra com os requisitos mínimos exigidos pela revista. Igualmente, realizará um primeiro filtro de avaliação baseado nos requisitos mínimos de apresentação e nos resultados obtidos da revisão de originalidade e plágio no software Turnitin, além de outras fontes de informação.</p><p>Com esta primeira revisão definem-se os artigos que serão designados a pares acadêmicos, quem a sua vez avaliarão, segundos critérios específicos tanto de forma quanto de conteúdo, quais artigos são pertinentes para publicação.</p><p>O resultado de avaliação será comunicado ao autor em um período não maior a seis meses a partir da data de recebido. Quando o processo de avaliação exceda o tempo estipulado nas normas de publicação, o editor ou a pessoa encarregada deverão informar ao autor sobre esta situação.</p><p>A avaliação por pares tem três tipos de resultado. Primeiro, “sem modificações” ou com “modificações leves” quer dizer que o artigo requer uma revisão mínima por parte do autor para ajustar dados e aspetos pontuais sugeridos pelo avaliador; o prazo estipulado para aplicar as correções é de uma (1) semana. Segundo, com “modificações profundas” quer dizer que o artigo, apesar de ter um conteúdo e uma investigação de interesse para a área, requer de ajustes estruturais ou modificações substanciais no documento; o prazo máximo para a inclusão dos ajustes o texto não deve ser maior a quatro (4) semanas. Em terceiro lugar, se encontram os artigos que não respondem a uma pergunta de investigação e o seu conteúdo ou resultados não são claros nem contundentes. A avaliação destes artigos se lhe entregarão ao autor para que possa corrigir e reapresentar o documento, seja para publicá-lo em outra revista, seja para voltar a postulá-lo ao Anuário ACDI. No caso de querer re-postular o artigo, o autor deverá remitir uma carta explicando quais foram as mudanças que se fizeram ao documento para que os avaliadores consigam ter uma ideia do novo enfoque da investigação no momento de avalia-lo mais uma vez.</p><p>Durante o processo de avaliação a revista manterá no anonimato tanto os dados dos autores quanto dos avaliadores para que não se apresente nenhum tipo de conflito de interesse.</p><p> </p><p> </p><p> </p></p>
-							</div>
-								<div id="sponsors">
-								<h3>Sponsors</h3><ul><li>
-											<a href="http://www.cavelier.com">Asociación Cavelier del Derecho</a></li></ul></div>',
-  ),
-  'editorialTeam' => 
-  array (
-    'en_US' => '<div id="group"><h4>Scientific Committee</h4><p>Antônio Augusto Cançado Trindade</p><p>Djamchid Momtaz, Irán, República islámica de</p><p>Eduardo Valencia Ospina</p><p>Marcelo Kohen, Suiza</p><p>Pierre Klein</p><p>Didier Boden, Francia</p><h4>Editorial Committee</h4><p>Laura Victoria García-Matamoros, Colombia</p><p>María Isabel Torres Cazorla, México</p><p>Rafael Arturo Prieto Sanjuán, Colombia</p><p>Carlos Enrique Arévalo Narváez, Colombia</p><p>Ilias Bantekas</p><p>José Germán Burgos</p><h4>Editor in Chief</h4><p>Ricardo Abello-Galvis, Colombia</p><h4>Editorial Assistant</h4><p>Laura Duperret, Colombia</p></div>',
-    'es_ES' => '<div id="group"><h4>Comité Científico</h4><p>Antônio Augusto Cançado Trindade, Juez de la Corte Internacional de Justicia,
-Miembro del Curatorium de la Academia de
-Derecho Internacional de La Haya, profesor de la
-Universidad de Brasilia - Brasil, miembro titular
-de l’Institut de Droit international.</p><p>Djamchid Momtaz, Miembro del Curatorium de la Academia de Derecho Internacional de La Haya, profesor de la Universidad de Teherán - Irán, miembro titular de l’Institut de Droit international., Irán, República islámica de</p><p>Eduardo Valencia Ospina, Miembro y Relator Especial de la Comisión de Derecho Internacional de las Naciones Unidas.</p><p>Marcelo Kohen, Profesor del Instituto de altos Estudios
-Internacionales y del Desarrollo IHEID, Ginebra – Suiza, miembro asociado de l’Institut de Droit international., Suiza</p><p>Pierre Klein, Profesor de la Universidad Libre de Bruselas-Bélgica.</p><p>Didier Boden, Profesor (Maître de conférences) de la Universidad París 1 Panthéon-Sorbonne, Francia</p><h4>Comité Editorial</h4><p>Laura Victoria García-Matamoros, Universidad del Rosario, Colombia</p><p>María Isabel Torres Cazorla, Profesora de la Universidad de Málaga,
-Málaga – España., México</p><p>Rafael Arturo Prieto Sanjuán, Profesor de la Pontificia Universidad
-Javeriana, Bogotá – Colombia., Colombia</p><p>Carlos Enrique Arévalo Narváez, Profesor de la Universidad de La Sabana,
-Bogotá – Colombia., Colombia</p><p>Ilias Bantekas, Profesor de la Universidad de Brunel, Londres – Reino Unido.</p><p>José Germán Burgos, Profesor de la Universidad Nacional de Colombia, Bogotá – Colombia.</p><h4>Director - Editor</h4><p>Ricardo Abello-Galvis, Universidad del Rosario, Colombia</p><h4>Coordinación Editorial</h4><p>Laura Duperret, Universidad del Rosario, Colombia, Colombia</p></div>',
-    'fr_CA' => '<div id="group"><h4>Comité Científico</h4><p>Antônio Augusto Cançado Trindade</p><p>Djamchid Momtaz, Irán, República islámica de</p><p>Eduardo Valencia Ospina</p><p>Marcelo Kohen, Suiza</p><p>Pierre Klein</p><p>Didier Boden, Francia</p><h4>Comité Editorial</h4><p>Laura Victoria García-Matamoros, Colombia</p><p>María Isabel Torres Cazorla, México</p><p>Rafael Arturo Prieto Sanjuán, Colombia</p><p>Carlos Enrique Arévalo Narváez, Colombia</p><p>Ilias Bantekas</p><p>José Germán Burgos</p><h4>Director - Editor</h4><p>Ricardo Abello-Galvis, Colombia</p><h4>Coordinación Editorial</h4><p>Laura Duperret, Colombia</p></div>',
-    'pt_BR' => '<div id="group"><h4>Comité Científico</h4><p>Antônio Augusto Cançado Trindade</p><p>Djamchid Momtaz, Irán, República islámica de</p><p>Eduardo Valencia Ospina</p><p>Marcelo Kohen, Suiza</p><p>Pierre Klein</p><p>Didier Boden, Francia</p><h4>Comité Editorial</h4><p>Laura Victoria García-Matamoros, Colombia</p><p>María Isabel Torres Cazorla, México</p><p>Rafael Arturo Prieto Sanjuán, Colombia</p><p>Carlos Enrique Arévalo Narváez, Colombia</p><p>Ilias Bantekas</p><p>José Germán Burgos</p><h4>Director - Editor</h4><p>Ricardo Abello-Galvis, Colombia</p><h4>Coordinación Editorial</h4><p>Laura Duperret, Colombia</p></div>',
-  ),
-  'themePluginPath' => 'default',
+  'themePluginPath' => 'bootstrap3',
 ); ?>
